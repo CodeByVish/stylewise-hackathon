@@ -1,0 +1,23 @@
+{
+  "id": "body_B",
+  "mesh_ref": "fixtures/meshes/body_B.glb",
+  "model": "mannequin-v0",
+  "target_cm": {
+    "height_cm": 178,
+    "chest_cm": 104,
+    "waist_cm": 90,
+    "hip_cm": 102
+  },
+  "measured_cm": {
+    "height": 178.0,
+    "hip": 101.96,
+    "waist": 89.96,
+    "chest": 103.96
+  },
+  "fit_error_cm": {
+    "height": 0.0,
+    "hip": -0.04,
+    "waist": -0.04,
+    "chest": -0.04
+  }
+}

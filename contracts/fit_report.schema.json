@@ -1,0 +1,166 @@
+{
+  "$defs": {
+    "Provenance": {
+      "properties": {
+        "body_source": {
+          "title": "Body Source",
+          "type": "string"
+        },
+        "garment_source": {
+          "title": "Garment Source",
+          "type": "string"
+        },
+        "body_model": {
+          "title": "Body Model",
+          "type": "string"
+        },
+        "engine_version": {
+          "title": "Engine Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "body_source",
+        "garment_source",
+        "body_model",
+        "engine_version"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "RegionResult": {
+      "properties": {
+        "body_cm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Body Cm"
+        },
+        "garment_cm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Garment Cm"
+        },
+        "ease_cm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ease Cm"
+        },
+        "verdict": {
+          "enum": [
+            "tight",
+            "ok",
+            "loose",
+            "unknown"
+          ],
+          "title": "Verdict",
+          "type": "string"
+        }
+      },
+      "required": [
+        "body_cm",
+        "garment_cm",
+        "ease_cm",
+        "verdict"
+      ],
+      "title": "RegionResult",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "contract_version": {
+      "default": "0.1.0",
+      "title": "Contract Version",
+      "type": "string"
+    },
+    "body_mesh_ref": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Body Mesh Ref"
+    },
+    "garment_mesh_ref": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Garment Mesh Ref"
+    },
+    "body_fit_error_cm": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Body Fit Error Cm",
+      "type": "object"
+    },
+    "regions": {
+      "additionalProperties": {
+        "$ref": "#/$defs/RegionResult"
+      },
+      "title": "Regions",
+      "type": "object"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "unknowns": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unknowns",
+      "type": "array"
+    },
+    "provenance": {
+      "$ref": "#/$defs/Provenance"
+    },
+    "advice_facts": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Advice Facts",
+      "type": "array"
+    }
+  },
+  "required": [
+    "body_mesh_ref",
+    "garment_mesh_ref",
+    "body_fit_error_cm",
+    "regions",
+    "warnings",
+    "unknowns",
+    "provenance",
+    "advice_facts"
+  ],
+  "title": "FitReport",
+  "type": "object"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "top-01",
+  "category": "top",
+  "size": "M",
+  "spec_cm": {
+    "chest": 98,
+    "waist": 84,
+    "hip": 104,
+    "length": 68
+  },
+  "spec_source": "SYNTHETIC fixture chart (replace with sourced chart)",
+  "mesh_ref": "fixtures/meshes/garment_top_M.glb"
+}

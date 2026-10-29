@@ -1,0 +1,27 @@
+{
+  "contract_version": "0.1.0",
+  "body": {
+    "height_cm": 155.0,
+    "chest_cm": 84.0,
+    "waist_cm": 68.0,
+    "hip_cm": 92.0,
+    "pose": "standing"
+  },
+  "garment": {
+    "id": "top-01",
+    "category": "top",
+    "size": "M",
+    "spec_cm": {
+      "chest": 98.0,
+      "waist": 84.0,
+      "hip": 104.0,
+      "length": 68.0
+    },
+    "spec_source": "SYNTHETIC fixture chart (replace with sourced chart)",
+    "mesh_ref": "fixtures/meshes/garment_top_M.glb"
+  },
+  "preferences": {
+    "closure": null,
+    "fit_pref": null
+  }
+}
