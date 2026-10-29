@@ -1,0 +1,45 @@
+{
+  "contract_version": "0.1.0",
+  "body_mesh_ref": "fixtures/meshes/body_B.glb",
+  "garment_mesh_ref": "fixtures/meshes/garment_top_M.glb",
+  "body_fit_error_cm": {
+    "height": 0.0,
+    "hip": -0.04,
+    "waist": -0.04,
+    "chest": -0.04
+  },
+  "regions": {
+    "chest": {
+      "body_cm": 104.0,
+      "garment_cm": 98.0,
+      "ease_cm": -6.0,
+      "verdict": "tight"
+    },
+    "waist": {
+      "body_cm": 90.0,
+      "garment_cm": 84.0,
+      "ease_cm": -6.0,
+      "verdict": "tight"
+    },
+    "hip": {
+      "body_cm": 102.0,
+      "garment_cm": 104.0,
+      "ease_cm": 2.0,
+      "verdict": "ok"
+    }
+  },
+  "warnings": [],
+  "unknowns": [],
+  "provenance": {
+    "body_source": "user-provided measurements",
+    "garment_source": "SYNTHETIC fixture chart (replace with sourced chart)",
+    "body_model": "mannequin-v0",
+    "engine_version": "0.1.0"
+  },
+  "advice_facts": [
+    "chest ease -6.0 cm (garment 98.0 cm vs body 104.0 cm) -> tight for regular fit",
+    "waist ease -6.0 cm (garment 84.0 cm vs body 90.0 cm) -> tight for regular fit",
+    "hip ease +2.0 cm (garment 104.0 cm vs body 102.0 cm) -> ok for regular fit",
+    "Ease is arithmetic difference only; it does not prove comfort."
+  ]
+}

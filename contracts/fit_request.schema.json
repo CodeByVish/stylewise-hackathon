@@ -1,0 +1,233 @@
+{
+  "$defs": {
+    "BodyInput": {
+      "properties": {
+        "height_cm": {
+          "exclusiveMaximum": 230,
+          "exclusiveMinimum": 100,
+          "title": "Height Cm",
+          "type": "number"
+        },
+        "chest_cm": {
+          "anyOf": [
+            {
+              "exclusiveMaximum": 200,
+              "exclusiveMinimum": 50,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chest Cm"
+        },
+        "waist_cm": {
+          "anyOf": [
+            {
+              "exclusiveMaximum": 200,
+              "exclusiveMinimum": 40,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Waist Cm"
+        },
+        "hip_cm": {
+          "anyOf": [
+            {
+              "exclusiveMaximum": 200,
+              "exclusiveMinimum": 50,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hip Cm"
+        },
+        "pose": {
+          "default": "standing",
+          "enum": [
+            "standing",
+            "seated"
+          ],
+          "title": "Pose",
+          "type": "string"
+        }
+      },
+      "required": [
+        "height_cm"
+      ],
+      "title": "BodyInput",
+      "type": "object"
+    },
+    "GarmentInput": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "category": {
+          "title": "Category",
+          "type": "string"
+        },
+        "size": {
+          "title": "Size",
+          "type": "string"
+        },
+        "spec_cm": {
+          "$ref": "#/$defs/GarmentSpec"
+        },
+        "spec_source": {
+          "title": "Spec Source",
+          "type": "string"
+        },
+        "mesh_ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mesh Ref"
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "size",
+        "spec_cm",
+        "spec_source"
+      ],
+      "title": "GarmentInput",
+      "type": "object"
+    },
+    "GarmentSpec": {
+      "properties": {
+        "chest": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chest"
+        },
+        "waist": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Waist"
+        },
+        "hip": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hip"
+        },
+        "length": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Length"
+        }
+      },
+      "title": "GarmentSpec",
+      "type": "object"
+    },
+    "Preferences": {
+      "properties": {
+        "closure": {
+          "anyOf": [
+            {
+              "enum": [
+                "front_open",
+                "pullover"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Closure"
+        },
+        "fit_pref": {
+          "anyOf": [
+            {
+              "enum": [
+                "snug",
+                "regular",
+                "relaxed"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fit Pref"
+        }
+      },
+      "title": "Preferences",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "contract_version": {
+      "default": "0.1.0",
+      "title": "Contract Version",
+      "type": "string"
+    },
+    "body": {
+      "$ref": "#/$defs/BodyInput"
+    },
+    "garment": {
+      "$ref": "#/$defs/GarmentInput"
+    },
+    "preferences": {
+      "$ref": "#/$defs/Preferences",
+      "default": {
+        "closure": null,
+        "fit_pref": null
+      }
+    }
+  },
+  "required": [
+    "body",
+    "garment"
+  ],
+  "title": "FitRequest",
+  "type": "object"
+}
