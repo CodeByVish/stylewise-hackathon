@@ -72,14 +72,18 @@ export function useSpokenReplies() {
     setSpeaking(false); setStatus("");
   }, []);
   useEffect(() => {
-    setSupported(typeof window.speechSynthesis !== "undefined" ||
-      (typeof Worker !== "undefined" && typeof WebAssembly !== "undefined" && typeof AudioContext !== "undefined"));
     const useLocal = ["localhost", "127.0.0.1"].includes(window.location.hostname);
     const remoteUrl = process.env.NEXT_PUBLIC_VOICE_URL || "";
     const useRemote = !useLocal && remoteUrl.startsWith("https://");
-    setRemoteVoice(useRemote);
-    setLocalVoice(useLocal || useRemote);
     let cancelled = false;
+    queueMicrotask(() => {
+      if (cancelled) return;
+      setSupported(typeof window.speechSynthesis !== "undefined" ||
+        (typeof Worker !== "undefined" && typeof WebAssembly !== "undefined" && typeof AudioContext !== "undefined"));
+      setRemoteVoice(useRemote);
+      setLocalVoice(useLocal || useRemote);
+      try { setEnabled(localStorage.getItem("stylewise-spoken-replies") === "true"); } catch { /* Storage is optional. */ }
+    });
     const check = async () => {
       if (!useLocal && !useRemote) return;
       try {
@@ -90,7 +94,6 @@ export function useSpokenReplies() {
     };
     void check();
     const timer = setInterval(() => { void check(); }, 10000);
-    try { setEnabled(localStorage.getItem("stylewise-spoken-replies") === "true"); } catch { /* Storage is optional. */ }
     if (typeof BroadcastChannel !== "undefined") {
       channel.current = new BroadcastChannel("stylewise-audio");
       channel.current.onmessage = () => stop();
@@ -101,7 +104,7 @@ export function useSpokenReplies() {
       active.current++; request.current?.abort(); sources.current.forEach(player => player.stop()); sources.current.clear(); finishPlayback.current?.();
       if (context.current && context.current.state !== "closed") void context.current.close();
     };
-  }, []);
+  }, [stop]);
   const speak = useCallback(async (text: string, voice: VoiceId, stylistId = "american-genz") => {
     text = normalizeSpokenText(text);
     if (!supported || !text) return;
@@ -112,7 +115,7 @@ export function useSpokenReplies() {
       await unlock();
       if (active.current !== id) return;
       const audioContext = context.current!;
-      if (localVoice) {
+      if (localVoice && (localReady || remoteVoice)) {
         const controller = new AbortController(); request.current = controller;
         let nextTime = 0;
         const playing: Promise<void>[] = [];
@@ -190,7 +193,7 @@ export function useSpokenReplies() {
         setError(`Your stylist could not speak. ${cause instanceof Error ? cause.message.slice(0, 100) : "Audio playback failed."} Try Hear stylist in Chrome. The text reply is still available.`);
       }
     }
-  }, [supported, stop, unlock, localVoice, remoteVoice]);
+  }, [supported, stop, unlock, localVoice, remoteVoice, localReady]);
   function toggleEnabled(value: boolean) {
     setEnabled(value);
     try { localStorage.setItem("stylewise-spoken-replies", String(value)); } catch { /* Storage is optional. */ }

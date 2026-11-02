@@ -72,3 +72,16 @@ def nisha_chat(req: NishaRequest) -> NishaReply:
 def fit_evaluate(req: FitRequest) -> FitReport:
     # invalid requests get FastAPI's 422 with pydantic's field errors
     return evaluate(req)
+
+
+@app.post("/viewer/scene")
+def viewer_scene(req: OutfitRequest):
+    from fastapi import HTTPException, Response
+    from .viewer import scene_bytes
+    if len(req.items) > 4:
+        raise HTTPException(status_code=422, detail="Use at most four outfit pieces")
+    try:
+        glb = scene_bytes(req.model_dump_json())
+        return Response(glb, media_type="model/gltf-binary")
+    except (ValueError, KeyError, FileNotFoundError) as error:
+        raise HTTPException(status_code=422, detail=str(error)) from error

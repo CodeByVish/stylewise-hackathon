@@ -21,7 +21,7 @@ export function useSpeechInput(onTranscript: (text: string) => void, embedded = 
   const callback = useRef(onTranscript);
   useEffect(() => { callback.current = onTranscript; }, [onTranscript]);
   useEffect(() => {
-    setSupported(typeof navigator.mediaDevices?.getUserMedia === "function" && typeof AudioWorkletNode !== "undefined" && typeof AudioContext !== "undefined" && typeof Worker !== "undefined" && typeof WebAssembly !== "undefined");
+    queueMicrotask(() => setSupported(typeof navigator.mediaDevices?.getUserMedia === "function" && typeof AudioWorkletNode !== "undefined" && typeof AudioContext !== "undefined" && typeof Worker !== "undefined" && typeof WebAssembly !== "undefined"));
     const refresh = () => navigator.mediaDevices?.enumerateDevices?.().then(devices => setMicrophones(devices.filter(device => device.kind === "audioinput"))).catch(() => {});
     void refresh();
     navigator.mediaDevices?.addEventListener?.("devicechange", refresh);

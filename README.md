@@ -58,6 +58,14 @@ Neither workstream should block on the other: P0 runs against synthetic garment 
 | Nov 3 | Freeze implementation, methods, limitations, docs, and demo; clean-run rehearsal. |
 | Nov 4 | Verify provenance, privacy, eligibility, demo links, and submission deadline; submit early. |
 
+## P1 implementation baseline
+
+The app now includes a Three.js fitting room, two illustrative garment GLBs, measurement/size controls, local garment photo preview, numeric ease comparison, and fit-request export/report import.
+
+These are synthetic integration fixtures, not verified retail assets. The body is fixed; measurement inputs update arithmetic only. SAM, P0's API, and existing Nisha voice/text navigation are not connected in this starter.
+
+Checks: `npm run lint`, `npm run build`, `npm run test:fixtures` (Node 22.18+ for the fixture test's TypeScript import). Regenerate assets with `npm run fixtures:generate`.
+
 ## Getting started
 
 Requirements: Node.js and npm.

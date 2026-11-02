@@ -9,7 +9,7 @@ export const NISHA = {
   greeting: "Hi beta, I'm Nisha. Tell me your measurements or pick a silhouette, and I'll check the fit with you.",
 } as const;
 
-export const FIT_API = process.env.NEXT_PUBLIC_FIT_API_URL || "http://127.0.0.1:8000";
+export const FIT_API = process.env.NEXT_PUBLIC_FIT_API_URL || "/api/engine";
 
 export type ChatTurn = { role: "user" | "assistant"; content: string };
 
@@ -23,7 +23,8 @@ export type FitContext = {
     waist_cm?: number;
     hip_cm?: number;
   };
-  garment_size?: "S" | "M";
+  garment_id?: string;
+  garment_size?: string;
   preferences?: { fit_pref?: "snug" | "regular" | "relaxed"; closure?: "front_open" | "pullover" };
 };
 

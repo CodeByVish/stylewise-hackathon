@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "size": "M",
+  "measurementsCm": {
+    "height": 168,
+    "chest": 90,
+    "waist": 74,
+    "hip": 96
+  },
+  "bodyMeshUrl": "/fixtures/body.glb",
+  "garmentMeshUrl": "/fixtures/top-m.glb",
+  "easeCm": {
+    "chest": 8,
+    "waist": 10
+  },
+  "warnings": [
+    "Static fixture mannequin: changing measurements updates arithmetic only, not the 3D body.",
+    "Static garment meshes do not simulate cloth or resolve body intersections."
+  ],
+  "unknowns": [
+    "Fabric stretch and drape",
+    "Physical comfort and mobility"
+  ],
+  "advice": "Compare the documented dimensions before deciding. These ease differences do not establish comfort or physical fit.",
+  "provenance": "Synthetic demonstration specifications from the team execution plan; not a retail size chart."
+}

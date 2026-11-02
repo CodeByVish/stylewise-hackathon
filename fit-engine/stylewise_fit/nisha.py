@@ -27,12 +27,14 @@ def _env(name: str) -> str | None:
     """Process env first, then the repo-root .env (never committed)."""
     if os.environ.get(name):
         return os.environ[name]
-    dotenv = Path(__file__).resolve().parents[2] / ".env"
-    if dotenv.exists():
-        for line in dotenv.read_text().splitlines():
-            k, _, v = line.partition("=")
-            if k.strip() == name and v.strip():
-                return v.strip().strip('"').strip("'")
+    root = Path(__file__).resolve().parents[2]
+    for filename in (".env.local", ".env"):
+        dotenv = root / filename
+        if dotenv.exists():
+            for line in dotenv.read_text().splitlines():
+                k, _, v = line.partition("=")
+                if k.strip() == name and v.strip():
+                    return v.strip().strip('"').strip("'")
     return None
 GARMENT_SIZES = ("S", "M")
 MAX_TOOL_ROUNDS = 3

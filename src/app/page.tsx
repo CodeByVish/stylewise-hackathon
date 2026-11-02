@@ -1,7 +1,2 @@
-export default function Home() {
-  return (
-    <main>
-      <div>Hello world!</div>
-    </main>
-  );
-}
+import EngineFitLab from '@/components/engine-fit-lab';
+export default function Home(){return <EngineFitLab/>;}
