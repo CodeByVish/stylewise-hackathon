@@ -5,7 +5,7 @@ fit.evaluate on a garment from our own size-chart fixtures (the model never supp
 and returns only the report's facts. Nisha may paraphrase those facts and nothing else.
 
 Env (same names as scripts/muse_smoke.py): MODEL_API_KEY or META_API_KEY, MUSE_MODEL,
-META_API_BASE (default https://api.meta.ai/v1). Without a key, /nisha/chat still answers from
+META_API_BASE (default https://api.meta.ai/v1). The repo-root .env is read too. Without a key, /nisha/chat still answers from
 the engine with a fixed Nisha template, so the demo works offline.
 """
 import json
@@ -20,6 +20,20 @@ from .fit import evaluate
 from .schemas import BodyInput, FitReport, FitRequest, GarmentInput, Preferences
 
 FIXTURES = Path(__file__).resolve().parents[2] / "fixtures"
+DEFAULT_MODEL = "muse-spark-1.3"  # verified with tool calling on 2026-11-02
+
+
+def _env(name: str) -> str | None:
+    """Process env first, then the repo-root .env (never committed)."""
+    if os.environ.get(name):
+        return os.environ[name]
+    dotenv = Path(__file__).resolve().parents[2] / ".env"
+    if dotenv.exists():
+        for line in dotenv.read_text().splitlines():
+            k, _, v = line.partition("=")
+            if k.strip() == name and v.strip():
+                return v.strip().strip('"').strip("'")
+    return None
 GARMENT_SIZES = ("S", "M")
 MAX_TOOL_ROUNDS = 3
 
@@ -64,6 +78,7 @@ TOOL = {
 
 class FitContext(BaseModel):
     body: BodyInput | None = None
+    garment_id: str | None = None  # catalogue item (GET /catalogue); None = the Fit Lab fixture top
     garment_size: str | None = None
     preferences: Preferences = Preferences()
 
@@ -117,7 +132,7 @@ def context_args(ctx: FitContext) -> dict | None:
     if ctx.body is None or ctx.garment_size is None:
         return None
     b = ctx.body
-    args = {"garment_size": ctx.garment_size, "height_cm": b.height_cm, "chest_cm": b.chest_cm,
+    args = {"garment_id": ctx.garment_id, "garment_size": ctx.garment_size, "height_cm": b.height_cm, "chest_cm": b.chest_cm,
             "waist_cm": b.waist_cm, "hip_cm": b.hip_cm, "fit_pref": ctx.preferences.fit_pref}
     if b.preset:
         args |= {"preset_shape": b.preset.shape, "preset_size": b.preset.usual_size, "preset_sex": b.preset.sex}
@@ -142,8 +157,8 @@ def template_reply(report: FitReport) -> str:
 
 def _chat(messages: list[dict]) -> dict:
     base = os.environ.get("META_API_BASE", "https://api.meta.ai/v1").rstrip("/")
-    key = os.environ.get("MODEL_API_KEY") or os.environ.get("META_API_KEY")
-    body = {"model": os.environ["MUSE_MODEL"], "messages": messages, "tools": [TOOL]}
+    key = _env("MODEL_API_KEY") or _env("META_API_KEY")
+    body = {"model": _env("MUSE_MODEL") or DEFAULT_MODEL, "messages": messages, "tools": [TOOL]}
     req = urllib.request.Request(f"{base}/chat/completions", data=json.dumps(body).encode(),
                                  headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=60) as r:
@@ -151,7 +166,7 @@ def _chat(messages: list[dict]) -> dict:
 
 
 def muse_configured() -> bool:
-    return bool((os.environ.get("MODEL_API_KEY") or os.environ.get("META_API_KEY")) and os.environ.get("MUSE_MODEL"))
+    return bool(_env("MODEL_API_KEY") or _env("META_API_KEY"))
 
 
 def chat(req: NishaRequest) -> NishaReply:

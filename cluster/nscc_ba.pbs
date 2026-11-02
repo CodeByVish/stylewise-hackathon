@@ -1,0 +1,14 @@
+#!/bin/bash
+# NSCC ASPIRE 2A (PBS Pro): B-A with 50 random bodies. Submit from the repo root:  qsub cluster/nscc_ba.pbs
+#PBS -N stylewise-ba
+#PBS -P personal-riddhima
+#PBS -q normal
+#PBS -l select=1:ncpus=32:mem=64gb
+#PBS -l walltime=01:00:00
+#PBS -j oe
+#PBS -o stylewise-ba.log
+
+cd "$PBS_O_WORKDIR"
+export OMP_NUM_THREADS=1
+[ -x research/mhr-env/bin/python ] || { echo "research/mhr-env missing: rerun cluster/setup_env.sh"; exit 1; }
+research/mhr-env/bin/python -W ignore fit-engine/experiments/mhr_ba.py 50 --workers 32

@@ -570,43 +570,269 @@
     "name": "Cream silk blouse",
     "category": "top",
     "fabric": "silk",
-    "sizes": {},
-    "spec_source": null
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 91.5,
+          "waist": 73
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 96.5,
+          "waist": 79
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 102,
+          "waist": 85
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 108,
+          "waist": 91
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 114.5,
+          "waist": 97.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
   },
   "blush-shell-top": {
     "name": "Blush satin shell top",
     "category": "top",
     "fabric": "satin",
-    "sizes": {},
-    "spec_source": null
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 87.5,
+          "waist": 69
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 92.5,
+          "waist": 75
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 98,
+          "waist": 81
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 87
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 110.5,
+          "waist": 93.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
   },
   "silk-skirt": {
     "name": "Gold silk skirt",
     "category": "bottom",
     "fabric": "silk",
-    "sizes": {},
-    "spec_source": null
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "waist": 62,
+          "hip": 99.5
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "waist": 68,
+          "hip": 104.5
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "waist": 74,
+          "hip": 109.5
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "waist": 80,
+          "hip": 114.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "waist": 86.5,
+          "hip": 120.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
   },
   "charcoal-skirt": {
     "name": "Charcoal pencil skirt",
     "category": "bottom",
     "fabric": "wool",
-    "sizes": {},
-    "spec_source": null
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "waist": 62,
+          "hip": 91.5
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "waist": 68,
+          "hip": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "waist": 74,
+          "hip": 101.5
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "waist": 80,
+          "hip": 106.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "waist": 86.5,
+          "hip": 112.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
   },
   "emerald-wrap-dress": {
     "name": "Emerald wrap dress",
     "category": "dress",
     "fabric": "silk",
-    "sizes": {},
-    "spec_source": null
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 87.5,
+          "waist": 65,
+          "hip": 97.5
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 92.5,
+          "waist": 71,
+          "hip": 102.5
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 98,
+          "waist": 77,
+          "hip": 107.5
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 83,
+          "hip": 112.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 110.5,
+          "waist": 89.5,
+          "hip": 118.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
   },
   "black-satin-dress": {
     "name": "Black satin midi dress",
     "category": "dress",
     "fabric": "polyester",
-    "sizes": {},
-    "spec_source": null
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 87.5,
+          "waist": 67,
+          "hip": 95.5
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 92.5,
+          "waist": 73,
+          "hip": 100.5
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 98,
+          "waist": 79,
+          "hip": 105.5
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 85,
+          "hip": 110.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 110.5,
+          "waist": 91.5,
+          "hip": 116.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
   },
   "uniqlo-crew-tee": {
     "name": "Crew neck T-shirt (Uniqlo SG)",
@@ -656,12 +882,12 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "UNIQLO SG Unisex Crew Neck T-Shirt product page, Product Size table (flat-laid body width x2), pasted 2026-11-02; product URL not recorded. Sleeve column ignored (76-83 cm is inconsistent with a short sleeve)"
+    "spec_source": "UNIQLO SG Unisex Crew Neck T-Shirt product page, Product Size table (flat-laid body width x2), https://www.uniqlo.com/sg/en/products/E465193-000/00 (accessed 2026-11-02). Sleeve column ignored (76-83 cm is inconsistent with a short sleeve)"
   },
   "uniqlo-dress-E487286": {
     "name": "Long dress E487286 (Uniqlo SG)",
     "category": "dress",
-    "fabric": null,
+    "fabric": "cotton elastane",
     "sizes": {
       "XS": {
         "spec_cm": {
@@ -706,7 +932,7 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "UNIQLO SG product E487286, Product Size table (body width x2 = bust; hip width taken as circumference), https://www.uniqlo.com/sg/en/products/E487286-000/00 (accessed 2026-11-02). Fabric not recorded; bust below body size suggests a stretch knit"
+    "spec_source": "UNIQLO SG product E487286, Product Size table (body width x2 = bust; hip width taken as circumference), https://www.uniqlo.com/sg/en/products/E487286-000/00 (accessed 2026-11-02). Fabric: cotton with stretch (team-confirmed), so the bust can give a little"
   },
   "reference-dress": {
     "name": "Short-sleeve casual dress (reference)",

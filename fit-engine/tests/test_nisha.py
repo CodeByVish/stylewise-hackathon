@@ -12,6 +12,7 @@ CTX = {"body": {"height_cm": 168, "chest_cm": 90, "waist_cm": 74, "hip_cm": 96},
 def offline(monkeypatch):
     for k in ("MODEL_API_KEY", "META_API_KEY", "MUSE_MODEL"):
         monkeypatch.delenv(k, raising=False)
+    monkeypatch.setattr(nisha, "_env", lambda name: None)  # ignore a developer's .env
 
 
 @pytest.fixture
@@ -75,3 +76,8 @@ def test_bad_tool_args_go_back_to_model(online, monkeypatch):
     monkeypatch.setattr(nisha, "_chat", lambda m: next(calls))
     r = chat(ask("fit?"))
     assert r.reply == "Beta, which size?" and r.report is None
+
+
+def test_offline_with_catalogue_garment(offline):
+    r = chat(ask("Will the kurta fit?", ctx={**CTX, "garment_id": "green-kurta"}))
+    assert r.report.garment_mesh_ref is None and r.report.regions["chest"].garment_cm == 99

@@ -61,17 +61,17 @@ UNIQLO_ITEMS = {
         "name": "Crew neck T-shirt (Uniqlo SG)", "category": "top", "fabric": None,
         "body_width": {"XS": 45.5, "S": 47.5, "M": 49.5, "L": 52.5, "XL": 55.5, "2XL": 58.5, "3XL": 61.5},
         "source": "UNIQLO SG Unisex Crew Neck T-Shirt product page, Product Size table (flat-laid body "
-                  "width x2), pasted 2026-11-02; product URL not recorded. Sleeve column ignored "
+                  "width x2), https://www.uniqlo.com/sg/en/products/E465193-000/00 (accessed 2026-11-02). Sleeve column ignored "
                   "(76-83 cm is inconsistent with a short sleeve)",
     },
     "uniqlo-dress-E487286": {
-        "name": "Long dress E487286 (Uniqlo SG)", "category": "dress", "fabric": None,
+        "name": "Long dress E487286 (Uniqlo SG)", "category": "dress", "fabric": "cotton elastane",
         "body_width": {"XS": 38, "S": 40.5, "M": 43, "L": 45.5, "XL": 48.5, "2XL": 51.5},
         # "Hip width" is read as a full circumference: doubled it would be 217-271 cm
         "hip": {"XS": 108.5, "S": 113.5, "M": 118.5, "L": 123.5, "XL": 129.5, "2XL": 135.5},
         "source": "UNIQLO SG product E487286, Product Size table (body width x2 = bust; hip width "
                   "taken as circumference), https://www.uniqlo.com/sg/en/products/E487286-000/00 "
-                  "(accessed 2026-11-02). Fabric not recorded; bust below body size suggests a stretch knit",
+                  "(accessed 2026-11-02). Fabric: cotton with stretch (team-confirmed), so the bust can give a little",
     },
     "reference-dress": {
         "name": "Short-sleeve casual dress (reference)", "category": "dress", "fabric": None,
@@ -80,6 +80,24 @@ UNIQLO_ITEMS = {
                   "(UNIQLO SG Clothing Fit Guide), not a specific product's measurements",
     },
 }
+
+
+# ESTIMATED garments (no product measurements yet): Uniqlo SG women's BODY chart midpoints
+# (docs/sources/uniqlo_sizing_chart_dataset.pdf) + a design-ease guess per garment type.
+# Labelled synthetic so every report warns. Replace with product measurements when available.
+UQ_BODY = {"bust": {"XS": 81.5, "S": 86.5, "M": 92, "L": 98, "XL": 104.5},
+           "waist": {"XS": 61, "S": 67, "M": 73, "L": 79, "XL": 85.5},
+           "hip": {"XS": 87.5, "S": 92.5, "M": 97.5, "L": 102.5, "XL": 108.5}}
+ESTIMATED_EASE = {  # cm added to body: project guesses by garment type
+    "cream-silk-blouse": {"chest": 10, "waist": 12},           # relaxed woven blouse
+    "blush-shell-top": {"chest": 6, "waist": 8},               # close-fitting shell
+    "silk-skirt": {"waist": 1, "hip": 12},                     # A-line skirt
+    "charcoal-skirt": {"waist": 1, "hip": 4},                  # pencil skirt
+    "emerald-wrap-dress": {"chest": 6, "waist": 4, "hip": 10},
+    "black-satin-dress": {"chest": 6, "waist": 6, "hip": 8},
+}
+ESTIMATED_SOURCE = ("ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease "
+                    "guess for this garment type; not product measurements")
 
 
 def spec(kind: str, row: dict) -> tuple[dict, dict]:
@@ -104,13 +122,18 @@ def main() -> None:
                 sizes[size] = {"spec_cm": {k: v for k, v in cm.items() if v is not None}, "stretch_cm": give}
         out[gid] = {"name": name, "category": cat, "fabric": fab, "sizes": sizes,
                     "spec_source": SOURCE if kind else None}
+    for gid, ease in ESTIMATED_EASE.items():
+        body_key = {"chest": "bust", "waist": "waist", "hip": "hip"}
+        out[gid]["sizes"] = {z: {"spec_cm": {r: UQ_BODY[body_key[r]][z] + e for r, e in ease.items()},
+                                 "stretch_cm": {}} for z in UQ_BODY["bust"]}
+        out[gid]["spec_source"] = ESTIMATED_SOURCE
     for gid, u in UNIQLO_ITEMS.items():
         out[gid] = {"name": u["name"], "category": u["category"], "fabric": u["fabric"],
                     "sizes": {z: {"spec_cm": {"chest": 2 * w} | ({"hip": u["hip"][z]} if "hip" in u else {}),
                                   "stretch_cm": {}} for z, w in u["body_width"].items()},
                     "spec_source": u["source"]}
     OUT.write_text(json.dumps(out, indent=2) + "\n")
-    print(f"{sum(1 for g in out.values() if g['sizes'])} of {len(out)} items have sourced garment cm -> {OUT}")
+    print(f"{sum(1 for g in out.values() if g['sizes'])} of {len(out)} items have garment cm (see spec_source for how each was obtained) -> {OUT}")
 
 
 if __name__ == "__main__":

@@ -1,89 +1,89 @@
-# P0 → P1 handoff (contract v0.3.0)
+# P0 → P1 handoff (contract v0.4.0)
 
-Everything P1 needs from P0 to wire the Fit Lab to real data. Items marked **TODO (Riddhima)** are not in the repo yet.
+Everything P1 needs from P0 to wire the Fit Lab to real data. Field-level rules are in [README.md](README.md).
 
 ## 1. Fit API
 
 Run from `fit-engine/`:
 ```bash
-pip install -e ".[api]"            # or: uv pip install -e ".[api]"
+uv pip install -e ".[api]"          # or: pip install -e ".[api]"
 uvicorn stylewise_fit.server:app --port 8000
 ```
-- `GET /health` → `{"ok": true, "engine_version": "...", "contract_version": "0.3.0"}`
-- `POST /fit/evaluate`: body = FitRequest JSON, response = FitReport JSON. Invalid input returns 422 with the field errors.
-- CORS allows `http://localhost:3000` (the Next.js dev server).
-- Schemas: [fit_request.schema.json](fit_request.schema.json), [fit_report.schema.json](fit_report.schema.json). Field rules: [README.md](README.md).
+For Nisha on Muse, put your own key (from your dev.meta.ai account) in the repo-root `.env` as `META_API_KEY=...`. The model defaults to `muse-spark-1.3` (override with `MUSE_MODEL`). Without a key, Nisha answers from a fixed template instead.
 
-**Sample: measured body** (the Fit Lab screenshot's inputs: 168 / 90 / 74 / 96, size M):
+| Endpoint | In → out |
+|---|---|
+| `GET /health` | `{"ok", "engine_version", "contract_version": "0.4.0", "muse": true/false}` |
+| `POST /fit/evaluate` | FitRequest → FitReport (422 with field errors on bad input) |
+| `GET /catalogue` | Stylewise catalogue items: `garment_id`, `name`, `category`, `fabric`, `sizes`, `fittable` |
+| `POST /fit/outfit` | `{"body", "items": [{"garment_id", "size"}], "preferences"}` → one `{garment_id, size, report, error}` per piece |
+| `POST /nisha/chat` | `{"messages", "context"}` → `{"reply", "report", "source": "muse" \| "engine-template"}` |
+
+CORS allows `http://localhost:3000`. Schemas: [fit_request.schema.json](fit_request.schema.json), [fit_report.schema.json](fit_report.schema.json).
+
+**Sample: an outfit on measured inputs** (the Fit Lab form, 168 / 90 / 74 / 96):
 ```json
 {
-  "body": {"source": "measured", "height_cm": 168, "chest_cm": 90, "waist_cm": 74, "hip_cm": 96},
-  "garment": {"id": "top-01", "category": "top", "size": "M",
-              "spec_cm": {"chest": 98, "waist": 84, "hip": 104, "length": 68},
-              "spec_source": "SYNTHETIC fixture chart (replace with sourced chart)",
-              "mesh_ref": "fixtures/meshes/garment_top_M.glb"},
+  "body": {"height_cm": 168, "chest_cm": 90, "waist_cm": 74, "hip_cm": 96},
+  "items": [{"garment_id": "green-kurta", "size": "M"}, {"garment_id": "gold-trousers", "size": "M"}],
   "preferences": {"fit_pref": "regular"}
 }
 ```
-The response gives chest ease +8 and waist ease +10 (both `ok`), and hip ease +8, plus a warning that the size chart has no verified source.
+Kurta: chest +9 ok, waist +17 loose. Trousers: waist +12 ok (elastic waist, `stretch_cm` 6), hip +6 ok.
 
-**Sample: preset body** (user skips measurements):
-```json
-{
-  "body": {"source": "preset", "height_cm": 168,
-           "preset": {"shape": "rectangle", "usual_size": "M", "sex": "female"}},
-  "garment": {"...": "same as above"}
-}
-```
-The response includes `regions.*.uncertainty_cm` (±2.7), possibly `verdict: "borderline"`, `provenance.body_preset_id: "female_rectangle_M_165"` and `body_mesh_ref: "fixtures/presets/female_rectangle_M_165.glb"`.
+**Sample: preset body** (user skips measurements): replace `body` with
+`{"source": "preset", "height_cm": 168, "preset": {"shape": "rectangle", "usual_size": "M", "sex": "female"}}`.
+The report then has `uncertainty_cm` ±2.7, possibly `borderline`, and `body_mesh_ref: "fixtures/presets/female_rectangle_M_165.glb"`.
 
 **UI rules:**
-- Show only `advice_facts` as explanatory text. Show `unknowns` under "What we don't know yet" (as the current design already does).
-- Show `borderline` as "could go either way", never as ok/tight.
-- Never compute ease in the frontend. Use `regions.*.ease_cm`.
+- Show only `advice_facts` as explanatory text. Show `unknowns` under "What we don't know yet" and `warnings` visibly. Every estimated or unverified chart carries a warning.
+- `borderline` means "could go either way", including "fits only if the garment stretches". Never show it as ok.
+- Never compute ease in the frontend. Use `regions.*.ease_cm` and `regions.*.stretch_cm`.
 
-Ready-made request/response pairs: `fixtures/req_{A,B,C}_{S,M}.json` → `fixtures/report_*.json`.
+## 2. Garments (`GET /catalogue`)
 
-## 2. Body GLB conventions
+| Items | Where the cm come from | Engine warning |
+|---|---|---|
+| 3 kurtas, 3 trousers, 6 kurta sets | Indubindu garment chart (brand page, garment measurements) | none |
+| `uniqlo-crew-tee` | Uniqlo SG product E465193, Product Size table | none (a Uniqlo L is tight on a general L body: brand sizing differs) |
+| `uniqlo-dress-E487286` | Uniqlo SG product E487286, Product Size table; cotton stretch | none |
+| blouse, shell top, 2 skirts, 2 dresses, `reference-dress` | **Estimated**: Uniqlo body chart + design-ease guess | "no verified source" |
+| Fit Lab `top-01` (S, M) | synthetic fixture | "no verified source" |
 
-- Meters, **Y-up**, origin on the floor between the feet, the body faces **+Z**, one mesh per file.
-- **Mannequin fixtures:** `fixtures/meshes/body_{A,B,C}.glb` (lofted shell, exact girths).
-- **MHR preset bodies:** `fixtures/presets/<sex>_<shape>_<size>_<height>.glb`. That's 210 files: female 155/165/175 cm, male 165/175/185 cm, sizes XS–3XL, and shapes hourglass / triangle / inverted_triangle / rectangle / oval (display names: The Balance / The Anchor / The Summit / The Column / The Orbit). `fixtures/presets/index.json` lists the targets, fitted girths and errors for each.
-- MHR bodies are in an **A-pose** (arms ~45° down), and each file is ~650 KB with 18k vertices. The garment must be authored in the same frame so it drops on with an identity transform.
-- **Heads up:** the MHR presets are being regenerated with ISO-style bust/waist/hip landmarks and a female/male shoulder-to-hip cue, so women's presets no longer look male. File names and conventions stay the same. Use the new `fixtures/presets/` once it lands; until then the mannequin is the safer default for demos.
+The source of all of these is `fit-engine/scripts/make_catalogue_garments.py`, and each item's `spec_source` says exactly where its numbers came from.
 
-## 3. Garment and size measurements
+## 3. Bodies and GLB conventions
 
-- Current fixture: `top-01` ("The everyday top"), sizes S and M, in `fixtures/garment_top_{S,M}.json`:
+- Meters, **Y-up**, origin on the floor between the feet, the body faces **+Z**, A-pose.
+- **MHR presets (final, 2026-11-02):** `fixtures/presets/<sex>_<shape>_<size>_<height>.glb`. 210 files: female 155/165/175 cm, male 165/175/185 cm, XS–3XL, five shapes (The Balance / The Anchor / The Summit / The Column / The Orbit). All 210 are within their stated ± range. Women's presets have female proportions. `index.json` lists each preset's targets, fitted girths and errors.
+- Mannequin fixtures: `fixtures/meshes/body_{A,B,C}.glb`.
 
-  | size | chest | waist | hip | length |
-  |---|---|---|---|---|
-  | S | 86 | 72 | 94 | 66 |
-  | M | 98 | 84 | 104 | 68 |
+## 4. Garment-on-body view
 
-- These are **SYNTHETIC**. `spec_source` says so, and the engine warns about it.
-- **TODO (Riddhima):** which real garment and product photo we're using, and its **sourced** S/M size chart (brand page URL + access date). When it's chosen, put it in `fixtures/garment_top_{S,M}.json` with `spec_source` naming the chart. The engine refuses nothing, but it flags unsourced charts.
+```bash
+cd fit-engine
+.venv/bin/python scripts/render_fit.py female_rectangle_M_165 green-kurta:M gold-trousers:M
+.venv/bin/python scripts/render_fit.py female_triangle_M_165,female_oval_XL_165 emerald-wrap-dress:M   # several bodies
+```
+- Writes `fixtures/fits/<name>.png` (front/side/back, with dashed lines and verdicts at chest/waist/hip).
+- For a single body it also writes `<name>.glb`: the body plus each garment as a separate node, vertex-coloured. **Load the GLB in the orbit viewer for 360°.**
+- Garments are a **fit shell**: the body pushed out by the garment's ease. Skirts, dresses, kurtas and long tops hang as one piece below the hip; sleeves are typical lengths per garment type. It shows the room a garment leaves, **not cloth drape** (no folds or gravity). Say so in the UI.
 
-## 4. SAM
+## 5. SAM
 
-See [docs/SAM_ACCESS.md](../docs/SAM_ACCESS.md). In short: Meta Model API, `POST https://api.meta.ai/v1/responses` with `model: "sam-3.1"`, the **same `MODEL_API_KEY` as Muse**. Smoke test: `fit-engine/scripts/sam_smoke.py`. Masks are for display only; pixels are never turned into cm.
+See [docs/SAM_ACCESS.md](../docs/SAM_ACCESS.md). Meta Model API, `POST https://api.meta.ai/v1/responses`, `model: "sam-3.1"`, with your own `MODEL_API_KEY`. Verified on 2026-11-02 with `fit-engine/scripts/sam_smoke.py`. Masks are for display only; pixels are never turned into cm.
 
-## 5. Nisha voice/text flow (now in this branch)
+## 6. Nisha voice/text
 
-Ported from the Stylewise app (`Vishakha-Kulkarni/stylewise`, branch `riddhimajain/finaltouches`). Only the persona and voice were brought over; the wardrobe/shopping planner was left behind. Nisha runs on **Meta Muse Spark**, not AWS.
+Ported from the Stylewise app (`Vishakha-Kulkarni/stylewise`, branch `riddhimajain/finaltouches`): persona and voice only. Runs on **Meta Muse Spark**.
+- `context`: `{"body": {...}, "garment_id": "green-kurta", "garment_size": "M", "preferences": {...}}`. Pass the item the user is looking at. Without `garment_id` it uses `top-01`.
+- Muse calls `evaluate_fit`. Garment cm always come from our charts, and Nisha may only repeat the report's facts.
+- Frontend:
+  - `src/lib/nisha.ts`: `askNisha(messages, context)`, set `NEXT_PUBLIC_FIT_API_URL`.
+  - Voice in: `src/hooks/useSpeechInput.ts` (Whisper in the browser).
+  - Voice out: `src/hooks/useSpokenReplies.ts` (Kokoro in the browser, or `scripts/voice/server.py` on port 8081).
+  - Run `npm install` first.
 
-- **Backend:** `POST /nisha/chat` on the fit API (`fit-engine/stylewise_fit/nisha.py`).
-  - Request: `{"messages": [{"role": "user", "content": "Will the M fit?"}], "context": {"body": {...same as FitRequest.body...}, "garment_size": "M", "preferences": {"fit_pref": "regular"}}}`
-  - Response: `{"reply": "...", "report": FitReport | null, "source": "muse" | "engine-template"}`
-  - Muse calls the `evaluate_fit` tool. Garment cm always come from `fixtures/garment_top_{S,M}.json`, never from the model. Nisha may only repeat the report's facts.
-  - Without `MODEL_API_KEY` + `MUSE_MODEL`, it still answers with a fixed Nisha template built from the engine output, so the demo works offline. `GET /health` reports `"muse": true/false`.
-- **Frontend:**
-  - `src/lib/nisha.ts`: `askNisha(messages, context)`, the persona, and `NEXT_PUBLIC_FIT_API_URL` (default `http://127.0.0.1:8000`).
-  - Voice in: `src/hooks/useSpeechInput.ts` (Whisper Small, runs in the browser).
-  - Voice out: `src/hooks/useSpokenReplies.ts` (Kokoro in the browser, or the optional Mac voice server `scripts/voice/server.py` on port 8081).
-  - Supporting files: `src/lib/voice/*`. Needs `npm install` (adds `@huggingface/transformers` and `kokoro-js`).
-- Wire the Fit Lab: pass the form values as `context`, show `reply` in a chat bubble, speak it with `useSpokenReplies`, and render `report` exactly like `/fit/evaluate`.
+## 7. Branch
 
-## 6. Branch
-
-P0's work is on `riddhimakain/MHRsetup` (not merged yet): the API, contract v0.3.0, ANSUR II sizes, MHR presets and cluster scripts.
+P0's work is on `riddhimakain/MHRsetup`: the API, contract v0.4.0, ANSUR II sizes, MHR presets, catalogue charts, Nisha, the fit view and the cluster scripts.
