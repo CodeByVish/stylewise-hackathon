@@ -1,6 +1,8 @@
 {
-  "contract_version": "0.1.0",
+  "contract_version": "0.3.0",
   "body": {
+    "source": "measured",
+    "preset": null,
     "height_cm": 165.0,
     "chest_cm": 90.0,
     "waist_cm": 74.0,

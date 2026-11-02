@@ -45,3 +45,9 @@ next-env.d.ts
 __pycache__/
 *.egg-info/
 .pytest_cache/
+
+# third-party research clones and model assets
+/research/
+
+# preset render images (regenerate with fit-engine/scripts/render_presets.py)
+/fixtures/presets/renders/

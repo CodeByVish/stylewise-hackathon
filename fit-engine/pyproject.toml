@@ -8,11 +8,13 @@ dependencies = [
     "scipy>=1.11",
     "trimesh>=4.0",
     "shapely>=2.0",
+    "networkx>=3.0",  # trimesh needs it for section loops in measure.torso_circumference
     "pydantic>=2.6",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8"]
+dev = ["pytest>=8", "httpx>=0.27"]
+api = ["fastapi>=0.110", "uvicorn>=0.29"]
 
 [project.scripts]
 stylewise-fit = "stylewise_fit.cli:main"

@@ -2,6 +2,26 @@
   "$defs": {
     "BodyInput": {
       "properties": {
+        "source": {
+          "default": "measured",
+          "enum": [
+            "measured",
+            "preset"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "preset": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BodyPreset"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "height_cm": {
           "exclusiveMaximum": 230,
           "exclusiveMinimum": 100,
@@ -64,6 +84,50 @@
         "height_cm"
       ],
       "title": "BodyInput",
+      "type": "object"
+    },
+    "BodyPreset": {
+      "description": "For users who prefer not to share measurements: silhouette + usual size.",
+      "properties": {
+        "shape": {
+          "enum": [
+            "hourglass",
+            "triangle",
+            "inverted_triangle",
+            "rectangle",
+            "oval"
+          ],
+          "title": "Shape",
+          "type": "string"
+        },
+        "usual_size": {
+          "enum": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL"
+          ],
+          "title": "Usual Size",
+          "type": "string"
+        },
+        "sex": {
+          "default": "female",
+          "enum": [
+            "female",
+            "male"
+          ],
+          "title": "Sex",
+          "type": "string"
+        }
+      },
+      "required": [
+        "shape",
+        "usual_size"
+      ],
+      "title": "BodyPreset",
       "type": "object"
     },
     "GarmentInput": {
@@ -206,7 +270,7 @@
   },
   "properties": {
     "contract_version": {
-      "default": "0.1.0",
+      "default": "0.3.0",
       "title": "Contract Version",
       "type": "string"
     },

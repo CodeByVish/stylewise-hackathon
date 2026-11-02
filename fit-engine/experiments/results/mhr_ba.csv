@@ -1,0 +1,4 @@
+body,nfev,seconds,mean_v2v_cm,height_target,height_err,chest_target,chest_err,waist_target,waist_err,hip_target,hip_err
+0,15,35.1,0.05,155.85,0.0,99.43,-0.47,85.15,0.27,98.43,0.22
+1,15,71.7,0.04,164.66,0.0,115.17,0.47,104.48,-0.65,113.36,-0.08
+2,15,67.8,0.08,157.72,0.0,111.56,-0.73,95.17,0.54,112.52,-0.15

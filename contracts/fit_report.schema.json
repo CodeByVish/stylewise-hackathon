@@ -6,6 +6,18 @@
           "title": "Body Source",
           "type": "string"
         },
+        "body_preset_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Body Preset Id"
+        },
         "garment_source": {
           "title": "Garment Source",
           "type": "string"
@@ -63,11 +75,17 @@
           ],
           "title": "Ease Cm"
         },
+        "uncertainty_cm": {
+          "default": 0.0,
+          "title": "Uncertainty Cm",
+          "type": "number"
+        },
         "verdict": {
           "enum": [
             "tight",
             "ok",
             "loose",
+            "borderline",
             "unknown"
           ],
           "title": "Verdict",
@@ -86,7 +104,7 @@
   },
   "properties": {
     "contract_version": {
-      "default": "0.1.0",
+      "default": "0.3.0",
       "title": "Contract Version",
       "type": "string"
     },

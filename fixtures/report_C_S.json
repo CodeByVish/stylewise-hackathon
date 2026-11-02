@@ -1,5 +1,5 @@
 {
-  "contract_version": "0.1.0",
+  "contract_version": "0.3.0",
   "body_mesh_ref": "fixtures/meshes/body_C.glb",
   "garment_mesh_ref": "fixtures/meshes/garment_top_S.glb",
   "body_fit_error_cm": {
@@ -13,18 +13,21 @@
       "body_cm": 84.0,
       "garment_cm": 86.0,
       "ease_cm": 2.0,
+      "uncertainty_cm": 0.0,
       "verdict": "ok"
     },
     "waist": {
       "body_cm": 68.0,
       "garment_cm": 72.0,
       "ease_cm": 4.0,
+      "uncertainty_cm": 0.0,
       "verdict": "ok"
     },
     "hip": {
       "body_cm": 92.0,
       "garment_cm": 94.0,
       "ease_cm": 2.0,
+      "uncertainty_cm": 0.0,
       "verdict": "ok"
     }
   },
@@ -32,6 +35,7 @@
   "unknowns": [],
   "provenance": {
     "body_source": "user-provided measurements",
+    "body_preset_id": null,
     "garment_source": "SYNTHETIC fixture chart (replace with sourced chart)",
     "body_model": "mannequin-v0",
     "engine_version": "0.1.0"

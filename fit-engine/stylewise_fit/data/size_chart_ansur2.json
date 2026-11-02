@@ -1,0 +1,172 @@
+{
+  "source": "ANSUR II public data (Gordon et al. 2014, US Army NSRDEC), via openlab.psu.edu",
+  "method": "ISO 8559-3 approach: chest primary, P5-P95 split into 5 equal intervals",
+  "sexes": {
+    "female": {
+      "n": 1986,
+      "sha256": "ed7e800aa97a4d42f8286b988be2fe1883a2e789588169db959864b707d1757a",
+      "sizes": [
+        {
+          "size": "XS",
+          "chest_min_cm": 82.4,
+          "chest_max_cm": 87.8,
+          "chest_cm": 85.1,
+          "n": 304,
+          "coverage": 0.153,
+          "median_waist_cm": 76.5,
+          "median_hip_cm": 95.4,
+          "median_height_cm": 161.3
+        },
+        {
+          "size": "S",
+          "chest_min_cm": 87.8,
+          "chest_max_cm": 93.2,
+          "chest_cm": 90.5,
+          "n": 518,
+          "coverage": 0.261,
+          "median_waist_cm": 81.2,
+          "median_hip_cm": 99.3,
+          "median_height_cm": 161.9
+        },
+        {
+          "size": "M",
+          "chest_min_cm": 93.2,
+          "chest_max_cm": 98.6,
+          "chest_cm": 95.9,
+          "n": 464,
+          "coverage": 0.234,
+          "median_waist_cm": 86.8,
+          "median_hip_cm": 103.3,
+          "median_height_cm": 163.2
+        },
+        {
+          "size": "L",
+          "chest_min_cm": 98.6,
+          "chest_max_cm": 104.0,
+          "chest_cm": 101.3,
+          "n": 341,
+          "coverage": 0.172,
+          "median_waist_cm": 92.7,
+          "median_hip_cm": 106.2,
+          "median_height_cm": 163.6
+        },
+        {
+          "size": "XL",
+          "chest_min_cm": 104.0,
+          "chest_max_cm": 109.4,
+          "chest_cm": 106.7,
+          "n": 165,
+          "coverage": 0.083,
+          "median_waist_cm": 97.9,
+          "median_hip_cm": 108.9,
+          "median_height_cm": 164.4
+        },
+        {
+          "size": "2XL",
+          "chest_min_cm": 109.4,
+          "chest_max_cm": 114.8,
+          "chest_cm": 112.1,
+          "n": 67,
+          "coverage": 0.034,
+          "median_waist_cm": 102.5,
+          "median_hip_cm": 113.1,
+          "median_height_cm": 166.4
+        },
+        {
+          "size": "3XL",
+          "chest_min_cm": 114.8,
+          "chest_max_cm": 120.2,
+          "chest_cm": 117.5,
+          "n": 25,
+          "coverage": 0.013,
+          "median_waist_cm": 109.5,
+          "median_hip_cm": 115.7,
+          "median_height_cm": 165.9
+        }
+      ]
+    },
+    "male": {
+      "n": 4082,
+      "sha256": "0547aea0170e5293de519389981135e75803f02e6d40c77ace740decc0caac64",
+      "sizes": [
+        {
+          "size": "XS",
+          "chest_min_cm": 92.2,
+          "chest_max_cm": 97.9,
+          "chest_cm": 95.1,
+          "n": 565,
+          "coverage": 0.138,
+          "median_waist_cm": 81.7,
+          "median_hip_cm": 94.0,
+          "median_height_cm": 173.4
+        },
+        {
+          "size": "S",
+          "chest_min_cm": 97.9,
+          "chest_max_cm": 103.6,
+          "chest_cm": 100.8,
+          "n": 920,
+          "coverage": 0.225,
+          "median_waist_cm": 88.0,
+          "median_hip_cm": 98.3,
+          "median_height_cm": 174.6
+        },
+        {
+          "size": "M",
+          "chest_min_cm": 103.6,
+          "chest_max_cm": 109.3,
+          "chest_cm": 106.4,
+          "n": 1006,
+          "coverage": 0.246,
+          "median_waist_cm": 95.0,
+          "median_hip_cm": 102.4,
+          "median_height_cm": 175.1
+        },
+        {
+          "size": "L",
+          "chest_min_cm": 109.3,
+          "chest_max_cm": 115.0,
+          "chest_cm": 112.2,
+          "n": 769,
+          "coverage": 0.188,
+          "median_waist_cm": 101.2,
+          "median_hip_cm": 106.1,
+          "median_height_cm": 176.6
+        },
+        {
+          "size": "XL",
+          "chest_min_cm": 115.0,
+          "chest_max_cm": 120.7,
+          "chest_cm": 117.8,
+          "n": 419,
+          "coverage": 0.103,
+          "median_waist_cm": 107.2,
+          "median_hip_cm": 110.2,
+          "median_height_cm": 177.7
+        },
+        {
+          "size": "2XL",
+          "chest_min_cm": 120.7,
+          "chest_max_cm": 126.4,
+          "chest_cm": 123.6,
+          "n": 151,
+          "coverage": 0.037,
+          "median_waist_cm": 112.8,
+          "median_hip_cm": 113.5,
+          "median_height_cm": 178.7
+        },
+        {
+          "size": "3XL",
+          "chest_min_cm": 126.4,
+          "chest_max_cm": 132.1,
+          "chest_cm": 129.2,
+          "n": 45,
+          "coverage": 0.011,
+          "median_waist_cm": 118.6,
+          "median_hip_cm": 118.1,
+          "median_height_cm": 181.8
+        }
+      ]
+    }
+  }
+}

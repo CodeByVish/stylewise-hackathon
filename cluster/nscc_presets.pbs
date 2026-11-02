@@ -1,0 +1,16 @@
+#!/bin/bash
+# NSCC ASPIRE 2A (PBS Pro). Submit from the repo root:  qsub cluster/nscc_presets.pbs
+#PBS -N stylewise-presets
+#PBS -P personal-riddhima
+#PBS -q normal
+#PBS -l select=1:ncpus=32:mem=64gb
+#PBS -l walltime=01:00:00
+#PBS -j oe
+#PBS -o stylewise-presets.log
+
+cd "$PBS_O_WORKDIR"
+export OMP_NUM_THREADS=1
+[ -x research/mhr-env/bin/python ] || { echo "research/mhr-env missing: rerun cluster/setup_env.sh"; exit 1; }
+[ -f research/MHR/assets/mhr_model.pt ] || { echo "MHR model missing: rerun cluster/setup_env.sh"; exit 1; }
+research/mhr-env/bin/python -W ignore fit-engine/scripts/gen_presets.py \
+  --workers 32 --max-nfev 25 --out fixtures/presets
