@@ -1,4 +1,10 @@
-# Stylewise shared contract v0.3.0
+# Stylewise shared contract v0.4.0
+
+**Changes in v0.4.0:** fabric and stretch.
+- `garment.fabric` (e.g. `silk`, `velvet`, `cotton elastane`) and `garment.stretch_cm` (`{region: cm}`, the mechanical give of an elastic or drawstring waist taken from the size chart's range).
+- `regions.*.stretch_cm`: how far the garment can give at that region (fabric + elastic).
+- A region that fits **only when stretched** is `borderline`, with an `advice_facts` line saying so. Thick fabrics (velvet, wool) raise the minimum ease. Unknown fabric goes into `unknowns`. These rules are project heuristics (`fit-engine/stylewise_fit/fabric.py`), not measurements.
+- New endpoints: `GET /catalogue` (Stylewise catalogue items, and whether they have sourced garment cm) and `POST /fit/outfit` (`{body, items: [{garment_id, size}], preferences}` → one FitReport per piece). The source is `fit-engine/scripts/make_catalogue_garments.py`: Indubindu garment chart for kurtas, trousers and kurta sets; blouses, skirts and dresses have no sourced chart yet.
 
 **Changes in v0.3.0:**
 - `body.preset.sex` (`female` or `male`, default `female`): picks the size chart and shape prototypes.

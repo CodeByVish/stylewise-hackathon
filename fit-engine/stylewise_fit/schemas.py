@@ -3,7 +3,7 @@ from typing import Literal, Optional
 
 from pydantic import BaseModel, Field, model_validator
 
-CONTRACT_VERSION = "0.3.0"
+CONTRACT_VERSION = "0.4.0"
 
 Pose = Literal["standing", "seated"]
 # borderline: the verdict would change within the estimate's uncertainty range
@@ -52,6 +52,10 @@ class GarmentInput(BaseModel):
     spec_cm: GarmentSpec
     spec_source: str  # where the size chart came from; never "llm"
     mesh_ref: Optional[str] = None
+    # e.g. "silk", "velvet", "cotton elastane"; unknown fabric -> stretch/bulk reported as unknown
+    fabric: Optional[str] = None
+    # mechanical give per region from the chart's range (elastic/drawstring waist), cm
+    stretch_cm: dict[str, float] = {}
 
 
 class Preferences(BaseModel):
@@ -72,6 +76,8 @@ class RegionResult(BaseModel):
     ease_cm: Optional[float]
     # +/- on body_cm and ease_cm; 0 for measured input, size half-step for presets
     uncertainty_cm: float = 0.0
+    # how far the garment can give at this region (fabric + elastic); 0 for rigid
+    stretch_cm: float = 0.0
     verdict: Verdict
 
 

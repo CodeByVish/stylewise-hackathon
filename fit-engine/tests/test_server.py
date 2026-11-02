@@ -28,3 +28,29 @@ def test_evaluate_matches_fixture_report(name):
 def test_invalid_request_is_422():
     r = client.post("/fit/evaluate", json={"body": {"height_cm": 40}})
     assert r.status_code == 422
+
+
+def test_catalogue_marks_unsourced_items():
+    items = {i["garment_id"]: i for i in client.get("/catalogue").json()}
+    assert items["green-kurta"]["fittable"] and not items["blush-shell-top"]["fittable"]
+
+
+def test_outfit_reports_each_piece():
+    r = client.post("/fit/outfit", json={
+        "body": {"height_cm": 165, "chest_cm": 90, "waist_cm": 74, "hip_cm": 98},
+        "items": [{"garment_id": "green-kurta", "size": "M"}, {"garment_id": "gold-trousers", "size": "M"},
+                  {"garment_id": "blush-shell-top", "size": "M"}]}).json()
+    kurta, trousers, shell = r
+    assert kurta["report"]["regions"]["chest"]["ease_cm"] == 9  # Indubindu M bust 99 - 90
+    assert trousers["report"]["regions"]["waist"]["stretch_cm"] == 6  # elastic waist 86-92
+    assert shell["report"] is None and "no sourced garment measurements" in shell["error"]
+
+
+def test_uniqlo_tee_chest_is_twice_body_width_and_reference_dress_warns():
+    body = {"height_cm": 165, "chest_cm": 90}
+    tee, dress, kurta = client.post("/fit/outfit", json={"body": body, "items": [
+        {"garment_id": "uniqlo-crew-tee", "size": "M"}, {"garment_id": "reference-dress", "size": "M"},
+        {"garment_id": "green-kurta", "size": "M"}]}).json()
+    assert tee["report"]["regions"]["chest"]["garment_cm"] == 99  # 2 x 49.5
+    assert not tee["report"]["warnings"] and not kurta["report"]["warnings"]
+    assert any("no verified source" in w for w in dress["report"]["warnings"])

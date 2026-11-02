@@ -162,6 +162,26 @@
           ],
           "default": null,
           "title": "Mesh Ref"
+        },
+        "fabric": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fabric"
+        },
+        "stretch_cm": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "default": {},
+          "title": "Stretch Cm",
+          "type": "object"
         }
       },
       "required": [
@@ -270,7 +290,7 @@
   },
   "properties": {
     "contract_version": {
-      "default": "0.3.0",
+      "default": "0.4.0",
       "title": "Contract Version",
       "type": "string"
     },

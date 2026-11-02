@@ -26,8 +26,12 @@ def _acceptable(r: dict, shape: str, uncertainty_cm: float) -> bool:
 
 
 def _target(sex: str, shape: str, size: str, height: float) -> dict:
+    from stylewise_fit.mhr_body import shoulder_hip_target  # torch import stays in workers
+
     e = estimate(shape, size, sex)
-    return {"height": height, "chest": e.chest_cm, "waist": e.waist_cm, "hip": e.hip_cm}
+    # shoulder_hip is a ratio, not cm: the sex cue that keeps female presets from reading as male
+    return {"height": height, "chest": e.chest_cm, "waist": e.waist_cm, "hip": e.hip_cm,
+            "shoulder_hip": round(shoulder_hip_target(sex, e.chest_cm, e.hip_cm), 3)}
 
 
 def _entry_ok(c: dict) -> bool:

@@ -80,6 +80,11 @@
           "title": "Uncertainty Cm",
           "type": "number"
         },
+        "stretch_cm": {
+          "default": 0.0,
+          "title": "Stretch Cm",
+          "type": "number"
+        },
         "verdict": {
           "enum": [
             "tight",
@@ -104,7 +109,7 @@
   },
   "properties": {
     "contract_version": {
-      "default": "0.3.0",
+      "default": "0.4.0",
       "title": "Contract Version",
       "type": "string"
     },

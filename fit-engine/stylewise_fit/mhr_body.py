@@ -22,6 +22,20 @@ REGIONS = ("chest", "waist", "hip")
 # vertex at 42-60% (lands at 55.8%). ISO 8559-1 measures bust and hip girth at these points.
 LANDMARK_VERTS = {"bust_point": 6034, "buttock": 7323}
 ARM_ROOT_JOINTS = (39, 75)  # shoulders; clavicles (38, 74) stay with the torso
+# Sex cue: shoulder-joint distance / hip breadth on the mesh. ANSUR II biacromial/hip breadth
+# medians are 1.037 (F) and 1.204 (M). Assuming MHR's mean body sits midway between them, its
+# mesh ratio 0.914 maps to 1.12, giving mesh targets F 0.846, M 0.983. Calibration assumption.
+SHOULDER_HIP_TARGET = {"female": 0.846, "male": 0.983}
+# ANSUR II median hip - bust girth (cm): the hip a typical body of that sex has at a given bust
+TYPICAL_HIP_MINUS_BUST = {"female": 7.7, "male": -3.7}
+SHAPE_RATIO_WEIGHT = 100.0
+
+
+def shoulder_hip_target(sex: str, bust_cm: float, hip_cm: float) -> float:
+    """Sex target adjusted for the shape's own hips (hip breadth ~ hip girth): narrow-hipped
+    shapes (inverted triangle) get broader-looking shoulders, wide-hipped ones narrower."""
+    typical_hip = bust_cm + TYPICAL_HIP_MINUS_BUST[sex]
+    return SHOULDER_HIP_TARGET[sex] * typical_hip / hip_cm
 PRIOR_WEIGHT = 2.0  # cm of residual per unit coeff; project choice
 _DEFAULT = Path(__file__).resolve().parents[2] / "research/MHR/assets/mhr_model.pt"
 
@@ -38,12 +52,25 @@ def mesh_for(coeffs: np.ndarray, height_target_cm: float | None = None) -> trime
     g = torch.zeros(1, 45)
     g[0, :N_SHAPE] = torch.as_tensor(coeffs, dtype=torch.float32)
     with torch.no_grad():
-        v, _ = model(g, torch.zeros(1, 204), torch.zeros(1, 72))
+        v, skel = model(g, torch.zeros(1, 204), torch.zeros(1, 72))
     verts = v[0].numpy() / 100.0  # cm -> m
     verts[:, 1] -= verts[:, 1].min()  # feet on floor
+    scale = 1.0
     if height_target_cm is not None:
-        verts *= (height_target_cm / 100.0) / verts[:, 1].max()
-    return trimesh.Trimesh(verts, faces, process=False)
+        scale = (height_target_cm / 100.0) / verts[:, 1].max()
+        verts *= scale
+    mesh = trimesh.Trimesh(verts, faces, process=False)
+    sh = skel[0, list(ARM_ROOT_JOINTS), :3].numpy() / 100.0
+    mesh.metadata["shoulder_m"] = float(np.linalg.norm(sh[0] - sh[1])) * scale  # joint centres
+    return mesh
+
+
+def shoulder_hip_ratio(mesh: trimesh.Trimesh) -> float:
+    """Shoulder-joint distance / hip breadth (arm-free slice at the buttock vertex). A sex cue."""
+    y = mesh.vertices[LANDMARK_VERTS["buttock"], 1]
+    seg, fi = trimesh.intersections.mesh_plane(mesh, [0, 1, 0], [0, y, 0], return_faces=True)
+    x = seg[~_arm_faces()[fi]].reshape(-1, 3)[:, 0]
+    return mesh.metadata["shoulder_m"] / float(x.max() - x.min())
 
 
 @lru_cache(maxsize=1)
@@ -92,8 +119,12 @@ def fit(target: dict[str, float], max_nfev: int = 15, prior_weight: float = PRIO
     hourglass/oval need a weaker one to reach their targets.
     """
     def residuals(c):
-        m = measure(mesh_for(c, target["height"]))
-        return np.concatenate([[m[k] - target[k] for k in REGIONS], prior_weight * c])
+        mesh = mesh_for(c, target["height"])
+        m = measure(mesh)
+        extra = []
+        if "shoulder_hip" in target:  # optional sex cue; 0.01 of ratio weighs like 1 cm of girth
+            extra = [SHAPE_RATIO_WEIGHT * (shoulder_hip_ratio(mesh) - target["shoulder_hip"])]
+        return np.concatenate([[m[k] - target[k] for k in REGIONS], extra, prior_weight * c])
 
     def jac(c, step=0.05):
         # explicit forward differences: scipy's built-in 2-point jac returned zero at c=0
@@ -105,7 +136,7 @@ def fit(target: dict[str, float], max_nfev: int = 15, prior_weight: float = PRIO
     start = np.zeros(N_SHAPE) if x0 is None else np.asarray(x0, dtype=float)
     res = least_squares(residuals, start, jac=jac, max_nfev=max_nfev)
     mesh = mesh_for(res.x, target["height"])
-    got = measure(mesh)
+    got = {k: float(v) for k, v in (measure(mesh) | {"shoulder_hip": shoulder_hip_ratio(mesh)}).items()}
     return {
         "coeffs": res.x,
         "measured": got,

@@ -1,5 +1,5 @@
 {
-  "contract_version": "0.3.0",
+  "contract_version": "0.4.0",
   "body_mesh_ref": "fixtures/meshes/body_A.glb",
   "garment_mesh_ref": "fixtures/meshes/garment_top_M.glb",
   "body_fit_error_cm": {
@@ -14,6 +14,7 @@
       "garment_cm": 98.0,
       "ease_cm": 8.0,
       "uncertainty_cm": 0.0,
+      "stretch_cm": 0.0,
       "verdict": "ok"
     },
     "waist": {
@@ -21,6 +22,7 @@
       "garment_cm": 84.0,
       "ease_cm": 10.0,
       "uncertainty_cm": 0.0,
+      "stretch_cm": 0.0,
       "verdict": "ok"
     },
     "hip": {
@@ -28,11 +30,16 @@
       "garment_cm": 104.0,
       "ease_cm": 6.0,
       "uncertainty_cm": 0.0,
+      "stretch_cm": 0.0,
       "verdict": "ok"
     }
   },
-  "warnings": [],
-  "unknowns": [],
+  "warnings": [
+    "garment size chart has no verified source; treat ease as unverified"
+  ],
+  "unknowns": [
+    "fabric not given: stretch and fabric thickness are not modeled"
+  ],
   "provenance": {
     "body_source": "user-provided measurements",
     "body_preset_id": null,

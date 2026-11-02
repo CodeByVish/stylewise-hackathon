@@ -91,3 +91,37 @@ def test_unsourced_spec_warns():
     r = req("M", 98, 84)
     r.garment.spec_source = "llm"
     assert evaluate(r).warnings
+
+
+def fabric_req(chest, fabric=None, stretch=None, pref=None):
+    return FitRequest.model_validate({
+        "body": {"height_cm": 165, "chest_cm": 90, "waist_cm": 74},
+        "garment": {"id": "g", "category": "top", "size": "M", "spec_cm": {"chest": chest, "waist": 74},
+                    "spec_source": "fixture size chart", "fabric": fabric, "stretch_cm": stretch or {}},
+        "preferences": {"fit_pref": pref} if pref else {},
+    })
+
+
+def test_unknown_fabric_is_reported():
+    assert any(u.startswith("fabric not given") for u in evaluate(fabric_req(98)).unknowns)
+
+
+def test_rigid_fabric_stays_tight():
+    assert evaluate(fabric_req(91, "silk")).regions["chest"].verdict == "tight"  # +1 < regular min 2
+
+
+def test_stretch_fabric_fits_only_by_stretching():
+    r = evaluate(fabric_req(91, "cotton elastane"))  # +1 relaxed, gives ~4.6 cm
+    assert r.regions["chest"].verdict == "borderline"
+    assert r.regions["chest"].stretch_cm > 4
+    assert any("fits only if the garment stretches" in f for f in r.advice_facts)
+
+
+def test_elastic_waist_from_chart_range():
+    r = evaluate(fabric_req(98, "silk", stretch={"waist": 7}))  # waist ease 0, elastic gives 7
+    assert r.regions["waist"].verdict == "borderline"
+
+
+def test_bulky_fabric_raises_minimum_ease():
+    assert evaluate(fabric_req(92.5, "cotton")).regions["chest"].verdict == "ok"   # +2.5
+    assert evaluate(fabric_req(92.5, "velvet")).regions["chest"].verdict == "tight"  # needs 3
