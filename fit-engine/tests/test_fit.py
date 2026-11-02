@@ -125,3 +125,9 @@ def test_elastic_waist_from_chart_range():
 def test_bulky_fabric_raises_minimum_ease():
     assert evaluate(fabric_req(92.5, "cotton")).regions["chest"].verdict == "ok"   # +2.5
     assert evaluate(fabric_req(92.5, "velvet")).regions["chest"].verdict == "tight"  # needs 3
+
+
+def test_rib_knit_gives_more_than_plain_stretch():
+    rib = evaluate(fabric_req(84, "cotton rib knit")).regions["chest"]       # -6 relaxed, rib gives 8.4
+    plain = evaluate(fabric_req(84, "cotton elastane")).regions["chest"]     # gives only 4.2
+    assert rib.verdict == "borderline" and plain.verdict == "tight"

@@ -4,7 +4,7 @@ Body model and preset results for Stylewise. Every number below can be regenerat
 
 ## Summary
 
-- **MHR works as the body model.** From height plus three girths, the inverse fit reaches a mean girth error of 0.40 cm on synthetic bodies (B-A, n=3).
+- **MHR works as the body model.** From height plus three girths, the inverse fit reaches a mean girth error of 0.01 cm (worst 0.04 cm) and 0.8 mm mean surface distance on 50 synthetic bodies (B-A). Single-girth edits stay local (B-B).
 - **210 preset bodies** (2 sexes × 5 silhouettes × XS–3XL × 3 heights) were fitted on NSCC ASPIRE 2A. **All 210 land inside their stated ± range and keep their FFIT shape class**; mean girth error 0.15 cm. Girths are measured at ISO 8559-1-style landmarks, and women's presets have female proportions.
 - Sizes come from **real data**: ANSUR II, split into sizes with the ISO 8559-3 approach.
 - The fit engine handles **fabric**: stretch, elastic waists and bulky fabrics (section 7).
@@ -32,6 +32,17 @@ MHR (facebookresearch/MHR; Apache-2.0 code and assets), TorchScript `mhr_model.p
 | 2 | 157.7 | 111.6 / −0.73 | 95.2 / +0.54 | 112.5 / −0.15 | 68 s |
 
 Mean abs girth error **0.40 cm**, worst **0.73 cm**. Caveats: n=3; every run hit the step cap; the references come from the same model and operator, so this tests the fitting procedure, not real anthropometry; four numbers do not uniquely determine a body.
+
+**B-A at n = 50 (NSCC, final settings: ISO-style landmarks, prior 0.2, 25 steps)** → `results/mhr_ba_n50.csv`, `cluster/nscc_ba.pbs`. 50 random bodies (20 coeffs ~ N(0, 0.7), height 155–185 cm), each reproducible from (seed, index).
+
+| | n = 3 (old landmarks, prior 2.0, 15 steps) | n = 50 (final) |
+|---|---|---|
+| mean abs girth error | 0.40 cm | **0.01 cm** |
+| median / p95 / worst | – / – / 0.73 cm | 0.00 / 0.02 / **0.04 cm** |
+| mean vertex distance to the reference body | – | **0.08 cm** (max 0.16) |
+| time per body | 35–72 s | 79 s (1 core) |
+
+Within MHR's own shape space, height + 3 girths recover the body almost exactly, not just its numbers. The vertex distance shows this. **Caveat:** the references come from the same model and the same measurement operator, and from the same prior distribution the fit assumes. This shows the procedure works; it is not validation against real people.
 
 ## 2b. B-B: editing one measurement
 
@@ -154,6 +165,7 @@ Ease = garment − body assumes a rigid garment, and fabric breaks that assumpti
 - **Rigid wovens** (silk, satin, cotton, polyester): no give. Below the minimum ease, the verdict is tight.
 - **Stretch** (elastane, jersey, knit): the garment can give 5% of its girth. **Elastic or drawstring waists** give the range printed on the chart (e.g. Indubindu pant waist 86–92 cm → 6 cm). A region that only fits by stretching is `borderline`, with an `advice_facts` line saying so.
 - **Bulky** (velvet, wool): +1 cm minimum ease for the fabric's own thickness.
+- **Rib knit**: the garment can give 10% of its girth, since rib knits are cut to sit below body size. A plain stretch blend gives 5%.
 - **Unknown fabric** is listed under `unknowns`, never assumed rigid.
 
 ## 8. Garment sources

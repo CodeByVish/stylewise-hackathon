@@ -47,12 +47,18 @@ def _model():
     return m, m.character_torch.mesh.faces.numpy()
 
 
-def mesh_for(coeffs: np.ndarray, height_target_cm: float | None = None) -> trimesh.Trimesh:
+def mesh_for(coeffs: np.ndarray, height_target_cm: float | None = None,
+             bones: dict[int, float] | None = None) -> trimesh.Trimesh:
+    """bones: optional MHR model-parameter values (e.g. per-bone scales, see experiments/height_bones.py).
+    The global scale to height_target_cm is applied after them."""
     model, faces = _model()
     g = torch.zeros(1, 45)
     g[0, :N_SHAPE] = torch.as_tensor(coeffs, dtype=torch.float32)
+    mp = torch.zeros(1, 204)
+    for i, val in (bones or {}).items():
+        mp[0, i] = val
     with torch.no_grad():
-        v, skel = model(g, torch.zeros(1, 204), torch.zeros(1, 72))
+        v, skel = model(g, mp, torch.zeros(1, 72))
     verts = v[0].numpy() / 100.0  # cm -> m
     verts[:, 1] -= verts[:, 1].min()  # feet on floor
     scale = 1.0
@@ -111,7 +117,7 @@ def measure(mesh: trimesh.Trimesh) -> dict[str, float]:
 
 
 def fit(target: dict[str, float], max_nfev: int = 15, prior_weight: float = PRIOR_WEIGHT,
-        x0: np.ndarray | None = None) -> dict:
+        x0: np.ndarray | None = None, bones: dict[int, float] | None = None) -> dict:
     """target: height/chest/waist/hip in cm -> coeffs, achieved measurements, errors, mesh.
     x0: warm start (e.g. a previous fit's coeffs); defaults to MHR's mean body.
 
@@ -119,7 +125,7 @@ def fit(target: dict[str, float], max_nfev: int = 15, prior_weight: float = PRIO
     hourglass/oval need a weaker one to reach their targets.
     """
     def residuals(c):
-        mesh = mesh_for(c, target["height"])
+        mesh = mesh_for(c, target["height"], bones)
         m = measure(mesh)
         extra = []
         if "shoulder_hip" in target:  # optional sex cue; 0.01 of ratio weighs like 1 cm of girth
@@ -135,7 +141,7 @@ def fit(target: dict[str, float], max_nfev: int = 15, prior_weight: float = PRIO
     t0 = time.time()
     start = np.zeros(N_SHAPE) if x0 is None else np.asarray(x0, dtype=float)
     res = least_squares(residuals, start, jac=jac, max_nfev=max_nfev)
-    mesh = mesh_for(res.x, target["height"])
+    mesh = mesh_for(res.x, target["height"], bones)
     got = {k: float(v) for k, v in (measure(mesh) | {"shoulder_hip": shoulder_hip_ratio(mesh)}).items()}
     return {
         "coeffs": res.x,

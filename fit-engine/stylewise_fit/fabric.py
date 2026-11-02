@@ -24,6 +24,8 @@ FABRICS = {
     # stretch
     "jersey": Fabric(stretch_pct=0.05), "knit": Fabric(stretch_pct=0.05),
     "elastane": Fabric(stretch_pct=0.05), "spandex": Fabric(stretch_pct=0.05),
+    # rib knits are cut to sit below body size; more give than a plain stretch blend
+    "rib": Fabric(stretch_pct=0.10),
 }
 
 
@@ -33,7 +35,7 @@ def fabric(name: str | None) -> Fabric | None:
         return None
     name = name.lower()
     # blends: any stretch fibre in the name wins ("cotton elastane", "viscose jersey")
-    for key in ("elastane", "spandex", "jersey", "knit"):
+    for key in ("rib", "elastane", "spandex", "jersey", "knit"):
         if key in name:
             return FABRICS[key]
     return next((f for k, f in FABRICS.items() if k in name), None)
