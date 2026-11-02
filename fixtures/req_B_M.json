@@ -1,6 +1,8 @@
 {
-  "contract_version": "0.1.0",
+  "contract_version": "0.4.0",
   "body": {
+    "source": "measured",
+    "preset": null,
     "height_cm": 178.0,
     "chest_cm": 104.0,
     "waist_cm": 90.0,
@@ -18,7 +20,9 @@
       "length": 68.0
     },
     "spec_source": "SYNTHETIC fixture chart (replace with sourced chart)",
-    "mesh_ref": "fixtures/meshes/garment_top_M.glb"
+    "mesh_ref": "fixtures/meshes/garment_top_M.glb",
+    "fabric": null,
+    "stretch_cm": {}
   },
   "preferences": {
     "closure": null,

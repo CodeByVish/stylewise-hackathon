@@ -1,0 +1,17 @@
+{
+  "id": "fixture-studio-top",
+  "name": "The everyday top",
+  "source": "Synthetic demonstration specifications from the team execution plan; not a retail size chart.",
+  "sizes": {
+    "S": {
+      "chestCm": 86,
+      "waistCm": 72,
+      "meshUrl": "/fixtures/top-s.glb"
+    },
+    "M": {
+      "chestCm": 98,
+      "waistCm": 84,
+      "meshUrl": "/fixtures/top-m.glb"
+    }
+  }
+}

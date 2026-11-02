@@ -1,0 +1,987 @@
+{
+  "green-kurta": {
+    "name": "Green kurta",
+    "category": "top",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 89,
+          "waist": 81
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 94,
+          "waist": 86
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 99,
+          "waist": 91
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 109,
+          "waist": 101.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "evening-kurta": {
+    "name": "Evening embroidered kurta",
+    "category": "top",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 89,
+          "waist": 81
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 94,
+          "waist": 86
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 99,
+          "waist": 91
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 109,
+          "waist": 101.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "ivory-kurta": {
+    "name": "Ivory festive kurta",
+    "category": "top",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 89,
+          "waist": 81
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 94,
+          "waist": 86
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 99,
+          "waist": 91
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 109,
+          "waist": 101.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "gold-trousers": {
+    "name": "Gold trousers",
+    "category": "bottom",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "waist": 74,
+          "hip": 92
+        },
+        "stretch_cm": {
+          "waist": 7
+        }
+      },
+      "S": {
+        "spec_cm": {
+          "waist": 81,
+          "hip": 97
+        },
+        "stretch_cm": {
+          "waist": 6
+        }
+      },
+      "M": {
+        "spec_cm": {
+          "waist": 86,
+          "hip": 102
+        },
+        "stretch_cm": {
+          "waist": 6
+        }
+      },
+      "L": {
+        "spec_cm": {
+          "waist": 92
+        },
+        "stretch_cm": {
+          "waist": 5
+        }
+      },
+      "XL": {
+        "spec_cm": {
+          "waist": 97,
+          "hip": 112
+        },
+        "stretch_cm": {
+          "waist": 7
+        }
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "cream-bottom": {
+    "name": "Cream trousers",
+    "category": "bottom",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "waist": 74,
+          "hip": 92
+        },
+        "stretch_cm": {
+          "waist": 7
+        }
+      },
+      "S": {
+        "spec_cm": {
+          "waist": 81,
+          "hip": 97
+        },
+        "stretch_cm": {
+          "waist": 6
+        }
+      },
+      "M": {
+        "spec_cm": {
+          "waist": 86,
+          "hip": 102
+        },
+        "stretch_cm": {
+          "waist": 6
+        }
+      },
+      "L": {
+        "spec_cm": {
+          "waist": 92
+        },
+        "stretch_cm": {
+          "waist": 5
+        }
+      },
+      "XL": {
+        "spec_cm": {
+          "waist": 97,
+          "hip": 112
+        },
+        "stretch_cm": {
+          "waist": 7
+        }
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "navy-bottom": {
+    "name": "Navy trousers",
+    "category": "bottom",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "waist": 74,
+          "hip": 92
+        },
+        "stretch_cm": {
+          "waist": 7
+        }
+      },
+      "S": {
+        "spec_cm": {
+          "waist": 81,
+          "hip": 97
+        },
+        "stretch_cm": {
+          "waist": 6
+        }
+      },
+      "M": {
+        "spec_cm": {
+          "waist": 86,
+          "hip": 102
+        },
+        "stretch_cm": {
+          "waist": 6
+        }
+      },
+      "L": {
+        "spec_cm": {
+          "waist": 92
+        },
+        "stretch_cm": {
+          "waist": 5
+        }
+      },
+      "XL": {
+        "spec_cm": {
+          "waist": 97,
+          "hip": 112
+        },
+        "stretch_cm": {
+          "waist": 7
+        }
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "ivory-set": {
+    "name": "Ivory festive outfit",
+    "category": "outfit",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 89,
+          "waist": 81,
+          "hip": 92
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 94,
+          "waist": 86,
+          "hip": 97
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 99,
+          "waist": 91,
+          "hip": 102
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 109,
+          "waist": 101.5,
+          "hip": 112
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "green-set": {
+    "name": "Green daytime set",
+    "category": "outfit",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 89,
+          "waist": 81,
+          "hip": 92
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 94,
+          "waist": 86,
+          "hip": 97
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 99,
+          "waist": 91,
+          "hip": 102
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 109,
+          "waist": 101.5,
+          "hip": 112
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "navy-set": {
+    "name": "Navy evening set",
+    "category": "outfit",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 89,
+          "waist": 81,
+          "hip": 92
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 94,
+          "waist": 86,
+          "hip": 97
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 99,
+          "waist": 91,
+          "hip": 102
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 109,
+          "waist": 101.5,
+          "hip": 112
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "maroon-set": {
+    "name": "Maroon festive set",
+    "category": "outfit",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 89,
+          "waist": 81,
+          "hip": 92
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 94,
+          "waist": 86,
+          "hip": 97
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 99,
+          "waist": 91,
+          "hip": 102
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 109,
+          "waist": 101.5,
+          "hip": 112
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "premium-set": {
+    "name": "Premium festive set",
+    "category": "outfit",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 89,
+          "waist": 81,
+          "hip": 92
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 94,
+          "waist": 86,
+          "hip": 97
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 99,
+          "waist": 91,
+          "hip": 102
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 109,
+          "waist": 101.5,
+          "hip": 112
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "budget-set": {
+    "name": "Budget festive set (unavailable)",
+    "category": "outfit",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 89,
+          "waist": 81,
+          "hip": 92
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 94,
+          "waist": 86,
+          "hip": 97
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 99,
+          "waist": 91,
+          "hip": 102
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 109,
+          "waist": 101.5,
+          "hip": 112
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+  },
+  "cream-silk-blouse": {
+    "name": "Cream silk blouse",
+    "category": "top",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 91.5,
+          "waist": 73
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 96.5,
+          "waist": 79
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 102,
+          "waist": 85
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 108,
+          "waist": 91
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 114.5,
+          "waist": 97.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+  },
+  "blush-shell-top": {
+    "name": "Blush satin shell top",
+    "category": "top",
+    "fabric": "satin",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 87.5,
+          "waist": 69
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 92.5,
+          "waist": 75
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 98,
+          "waist": 81
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 87
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 110.5,
+          "waist": 93.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+  },
+  "silk-skirt": {
+    "name": "Gold silk skirt",
+    "category": "bottom",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "waist": 62,
+          "hip": 99.5
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "waist": 68,
+          "hip": 104.5
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "waist": 74,
+          "hip": 109.5
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "waist": 80,
+          "hip": 114.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "waist": 86.5,
+          "hip": 120.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+  },
+  "charcoal-skirt": {
+    "name": "Charcoal pencil skirt",
+    "category": "bottom",
+    "fabric": "wool",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "waist": 62,
+          "hip": 91.5
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "waist": 68,
+          "hip": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "waist": 74,
+          "hip": 101.5
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "waist": 80,
+          "hip": 106.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "waist": 86.5,
+          "hip": 112.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+  },
+  "emerald-wrap-dress": {
+    "name": "Emerald wrap dress",
+    "category": "dress",
+    "fabric": "silk",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 87.5,
+          "waist": 65,
+          "hip": 97.5
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 92.5,
+          "waist": 71,
+          "hip": 102.5
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 98,
+          "waist": 77,
+          "hip": 107.5
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 83,
+          "hip": 112.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 110.5,
+          "waist": 89.5,
+          "hip": 118.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+  },
+  "black-satin-dress": {
+    "name": "Black satin midi dress",
+    "category": "dress",
+    "fabric": "polyester",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 87.5,
+          "waist": 67,
+          "hip": 95.5
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 92.5,
+          "waist": 73,
+          "hip": 100.5
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 98,
+          "waist": 79,
+          "hip": 105.5
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 104,
+          "waist": 85,
+          "hip": 110.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 110.5,
+          "waist": 91.5,
+          "hip": 116.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+  },
+  "uniqlo-crew-tee": {
+    "name": "Crew neck T-shirt (Uniqlo SG)",
+    "category": "top",
+    "fabric": null,
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 91.0
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 95.0
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 99.0
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 105.0
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 111.0
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "chest": 117.0
+        },
+        "stretch_cm": {}
+      },
+      "3XL": {
+        "spec_cm": {
+          "chest": 123.0
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "UNIQLO SG Unisex Crew Neck T-Shirt product page, Product Size table (flat-laid body width x2), https://www.uniqlo.com/sg/en/products/E465193-000/00 (accessed 2026-11-02). Sleeve column ignored (76-83 cm is inconsistent with a short sleeve)"
+  },
+  "uniqlo-dress-E487286": {
+    "name": "Long dress E487286 (Uniqlo SG)",
+    "category": "dress",
+    "fabric": "cotton elastane",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 76,
+          "hip": 108.5
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 81.0,
+          "hip": 113.5
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 86,
+          "hip": 118.5
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 91.0,
+          "hip": 123.5
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 97.0,
+          "hip": 129.5
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "chest": 103.0,
+          "hip": 135.5
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "UNIQLO SG product E487286, Product Size table (body width x2 = bust; hip width taken as circumference), https://www.uniqlo.com/sg/en/products/E487286-000/00 (accessed 2026-11-02). Fabric: cotton with stretch (team-confirmed), so the bust can give a little"
+  },
+  "reference-dress": {
+    "name": "Short-sleeve casual dress (reference)",
+    "category": "dress",
+    "fabric": null,
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 88.0
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 92.0
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 96.0
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 102.0
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 108.0
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "chest": 114.0
+        },
+        "stretch_cm": {}
+      },
+      "3XL": {
+        "spec_cm": {
+          "chest": 120.0
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "UNVERIFIED reference table 'based on Uniqlo height-to-size mapping patterns' (UNIQLO SG Clothing Fit Guide), not a specific product's measurements"
+  }
+}

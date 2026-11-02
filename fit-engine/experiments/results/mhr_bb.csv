@@ -1,0 +1,7 @@
+body,edit,edited_err_cm,d_chest_cm,d_hip_cm,d_shoulder_hip,arms_mm,legs_mm,head_mm,torso_max_mm,d_waist_cm
+female_rectangle_M_165,waist +4,-0.08,0.05,0.02,0.0,0.4,0.8,0.0,10.9,
+female_rectangle_M_165,hip +4,0.03,-0.01,,-0.001,0.5,1.4,0.0,14.4,0.02
+female_rectangle_M_165,chest +4,-0.01,,-0.01,-0.0,0.3,0.7,0.0,16.0,0.04
+male_rectangle_L_175,waist +4,-0.02,0.03,0.01,0.0,0.2,0.6,0.0,10.3,
+male_rectangle_L_175,hip +4,-0.1,-0.01,,-0.0,0.7,1.4,0.0,13.6,0.01
+male_rectangle_L_175,chest +4,-0.04,,-0.0,-0.0,0.4,0.8,0.0,12.2,0.03

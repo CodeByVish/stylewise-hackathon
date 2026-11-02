@@ -1,0 +1,7772 @@
+[
+  {
+    "id": "female_hourglass_2XL_155",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_hourglass_2XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 112.1,
+      "waist": 87.1,
+      "hip": 113.1,
+      "shoulder_hip": 0.896
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 112.02,
+      "waist": 87.19,
+      "hip": 112.97,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.08,
+      "waist": 0.09,
+      "hip": -0.13
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 91.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_2XL_165",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_hourglass_2XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 112.1,
+      "waist": 87.1,
+      "hip": 113.1,
+      "shoulder_hip": 0.896
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 112.03,
+      "waist": 87.18,
+      "hip": 113.01,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.07,
+      "waist": 0.08,
+      "hip": -0.09
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 95.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_2XL_175",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_hourglass_2XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 112.1,
+      "waist": 87.1,
+      "hip": 113.1,
+      "shoulder_hip": 0.896
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 112.04,
+      "waist": 87.16,
+      "hip": 113.06,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.06,
+      "waist": 0.06,
+      "hip": -0.04
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 23,
+    "seconds": 85.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_3XL_155",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_hourglass_3XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 117.5,
+      "waist": 92.5,
+      "hip": 118.5,
+      "shoulder_hip": 0.894
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 117.07,
+      "waist": 93.07,
+      "hip": 118.28,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.43,
+      "waist": 0.57,
+      "hip": -0.22
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 21,
+    "seconds": 66.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_3XL_165",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_hourglass_3XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 117.5,
+      "waist": 92.5,
+      "hip": 118.5,
+      "shoulder_hip": 0.894
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 117.43,
+      "waist": 92.58,
+      "hip": 118.39,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.07,
+      "waist": 0.08,
+      "hip": -0.11
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 104.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_3XL_175",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_hourglass_3XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 117.5,
+      "waist": 92.5,
+      "hip": 118.5,
+      "shoulder_hip": 0.894
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 117.43,
+      "waist": 92.57,
+      "hip": 118.43,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.07,
+      "waist": 0.07,
+      "hip": -0.07
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 93.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_L_155",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_hourglass_L_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 101.3,
+      "waist": 76.3,
+      "hip": 102.3,
+      "shoulder_hip": 0.901
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 101.21,
+      "waist": 76.39,
+      "hip": 102.23,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.09,
+      "waist": 0.09,
+      "hip": -0.07
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 95.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_L_165",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_hourglass_L_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 101.3,
+      "waist": 76.3,
+      "hip": 102.3,
+      "shoulder_hip": 0.901
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 101.23,
+      "waist": 76.36,
+      "hip": 102.29,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.07,
+      "waist": 0.06,
+      "hip": -0.01
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 24,
+    "seconds": 100.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_L_175",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_hourglass_L_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 101.3,
+      "waist": 76.3,
+      "hip": 102.3,
+      "shoulder_hip": 0.901
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 101.26,
+      "waist": 76.33,
+      "hip": 102.36,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.04,
+      "waist": 0.03,
+      "hip": 0.06
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 22,
+    "seconds": 66.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_M_155",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_hourglass_M_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 95.9,
+      "waist": 70.9,
+      "hip": 96.9,
+      "shoulder_hip": 0.904
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 95.82,
+      "waist": 70.98,
+      "hip": 96.87,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.08,
+      "waist": 0.08,
+      "hip": -0.03
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 24,
+    "seconds": 89.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_M_165",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_hourglass_M_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 95.9,
+      "waist": 70.9,
+      "hip": 96.9,
+      "shoulder_hip": 0.904
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 95.84,
+      "waist": 70.94,
+      "hip": 96.95,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.06,
+      "waist": 0.04,
+      "hip": 0.05
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 20,
+    "seconds": 85.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_M_175",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_hourglass_M_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 95.9,
+      "waist": 70.9,
+      "hip": 96.9,
+      "shoulder_hip": 0.904
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 95.87,
+      "waist": 70.91,
+      "hip": 97.04,
+      "shoulder_hip": 0.91
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.03,
+      "waist": 0.01,
+      "hip": 0.14
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 84.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_S_155",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_hourglass_S_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 90.5,
+      "waist": 65.5,
+      "hip": 91.5,
+      "shoulder_hip": 0.908
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 90.42,
+      "waist": 65.56,
+      "hip": 91.53,
+      "shoulder_hip": 0.91
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.08,
+      "waist": 0.06,
+      "hip": 0.03
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 21,
+    "seconds": 75.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_S_165",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_hourglass_S_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 90.5,
+      "waist": 65.5,
+      "hip": 91.5,
+      "shoulder_hip": 0.908
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 90.46,
+      "waist": 65.52,
+      "hip": 91.63,
+      "shoulder_hip": 0.91
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.04,
+      "waist": 0.02,
+      "hip": 0.13
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 107.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_S_175",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_hourglass_S_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 90.5,
+      "waist": 65.5,
+      "hip": 91.5,
+      "shoulder_hip": 0.908
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 90.49,
+      "waist": 65.48,
+      "hip": 91.74,
+      "shoulder_hip": 0.91
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.01,
+      "waist": -0.02,
+      "hip": 0.24
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 95.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_XL_155",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_hourglass_XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 106.7,
+      "waist": 81.7,
+      "hip": 107.7,
+      "shoulder_hip": 0.899
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 106.61,
+      "waist": 81.8,
+      "hip": 107.59,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.09,
+      "waist": 0.1,
+      "hip": -0.11
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 118.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_XL_165",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_hourglass_XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 106.7,
+      "waist": 81.7,
+      "hip": 107.7,
+      "shoulder_hip": 0.899
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 106.62,
+      "waist": 81.77,
+      "hip": 107.65,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.08,
+      "waist": 0.07,
+      "hip": -0.05
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 24,
+    "seconds": 92.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_XL_175",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_hourglass_XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 106.7,
+      "waist": 81.7,
+      "hip": 107.7,
+      "shoulder_hip": 0.899
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 106.64,
+      "waist": 81.75,
+      "hip": 107.7,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.06,
+      "waist": 0.05,
+      "hip": 0.0
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 18,
+    "seconds": 61.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_XS_155",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_hourglass_XS_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 85.1,
+      "waist": 60.1,
+      "hip": 86.1,
+      "shoulder_hip": 0.912
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 85.04,
+      "waist": 60.14,
+      "hip": 86.22,
+      "shoulder_hip": 0.91
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.06,
+      "waist": 0.04,
+      "hip": 0.12
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 19,
+    "seconds": 56.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_XS_165",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_hourglass_XS_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 85.1,
+      "waist": 60.1,
+      "hip": 86.1,
+      "shoulder_hip": 0.912
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 85.07,
+      "waist": 60.09,
+      "hip": 86.34,
+      "shoulder_hip": 0.91
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.03,
+      "waist": -0.01,
+      "hip": 0.24
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 20,
+    "seconds": 66.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_hourglass_XS_175",
+    "sex": "female",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_hourglass_XS_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 85.1,
+      "waist": 60.1,
+      "hip": 86.1,
+      "shoulder_hip": 0.912
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 85.1,
+      "waist": 60.06,
+      "hip": 86.49,
+      "shoulder_hip": 0.92
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.0,
+      "waist": -0.04,
+      "hip": 0.39
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 106.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_2XL_155",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_2XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 112.1,
+      "waist": 94.1,
+      "hip": 100.1,
+      "shoulder_hip": 1.012
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 112.09,
+      "waist": 94.13,
+      "hip": 99.98,
+      "shoulder_hip": 1.01
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.01,
+      "waist": 0.03,
+      "hip": -0.12
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 21,
+    "seconds": 77.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_2XL_165",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_2XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 112.1,
+      "waist": 94.1,
+      "hip": 100.1,
+      "shoulder_hip": 1.012
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 112.09,
+      "waist": 94.12,
+      "hip": 100.04,
+      "shoulder_hip": 1.01
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.01,
+      "waist": 0.02,
+      "hip": -0.06
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 108.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_2XL_175",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_2XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 112.1,
+      "waist": 94.1,
+      "hip": 100.1,
+      "shoulder_hip": 1.012
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 112.08,
+      "waist": 94.12,
+      "hip": 100.09,
+      "shoulder_hip": 1.01
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.02,
+      "waist": 0.02,
+      "hip": -0.01
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 24,
+    "seconds": 76.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_3XL_155",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_3XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 117.5,
+      "waist": 99.5,
+      "hip": 105.5,
+      "shoulder_hip": 1.004
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 117.48,
+      "waist": 99.53,
+      "hip": 105.34,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.02,
+      "waist": 0.03,
+      "hip": -0.16
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 96.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_3XL_165",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_3XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 117.5,
+      "waist": 99.5,
+      "hip": 105.5,
+      "shoulder_hip": 1.004
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 117.49,
+      "waist": 99.52,
+      "hip": 105.4,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.01,
+      "waist": 0.02,
+      "hip": -0.1
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 119.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_3XL_175",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_3XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 117.5,
+      "waist": 99.5,
+      "hip": 105.5,
+      "shoulder_hip": 1.004
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 117.49,
+      "waist": 99.52,
+      "hip": 105.46,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.01,
+      "waist": 0.02,
+      "hip": -0.04
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 121.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_L_155",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_L_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 101.3,
+      "waist": 83.3,
+      "hip": 89.3,
+      "shoulder_hip": 1.033
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 101.28,
+      "waist": 83.32,
+      "hip": 89.27,
+      "shoulder_hip": 1.03
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.02,
+      "waist": 0.02,
+      "hip": -0.03
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 89.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_L_165",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_L_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 101.3,
+      "waist": 83.3,
+      "hip": 89.3,
+      "shoulder_hip": 1.033
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 101.26,
+      "waist": 83.33,
+      "hip": 89.32,
+      "shoulder_hip": 1.03
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.04,
+      "waist": 0.03,
+      "hip": 0.02
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 16,
+    "seconds": 33.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_L_175",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_L_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 101.3,
+      "waist": 83.3,
+      "hip": 89.3,
+      "shoulder_hip": 1.033
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 101.29,
+      "waist": 83.3,
+      "hip": 89.39,
+      "shoulder_hip": 1.03
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.01,
+      "waist": -0.0,
+      "hip": 0.09
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 18,
+    "seconds": 59.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_M_155",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_M_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 95.9,
+      "waist": 77.9,
+      "hip": 83.9,
+      "shoulder_hip": 1.045
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 95.88,
+      "waist": 77.92,
+      "hip": 83.91,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.02,
+      "waist": 0.02,
+      "hip": 0.01
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 22,
+    "seconds": 67.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_M_165",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_M_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 95.9,
+      "waist": 77.9,
+      "hip": 83.9,
+      "shoulder_hip": 1.045
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 95.87,
+      "waist": 77.91,
+      "hip": 83.98,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.03,
+      "waist": 0.01,
+      "hip": 0.08
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 19,
+    "seconds": 51.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_M_175",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_M_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 95.9,
+      "waist": 77.9,
+      "hip": 83.9,
+      "shoulder_hip": 1.045
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 95.9,
+      "waist": 77.88,
+      "hip": 84.06,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.0,
+      "waist": -0.02,
+      "hip": 0.16
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 24,
+    "seconds": 97.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_S_155",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_S_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 90.5,
+      "waist": 72.5,
+      "hip": 78.5,
+      "shoulder_hip": 1.058
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 90.46,
+      "waist": 72.52,
+      "hip": 78.57,
+      "shoulder_hip": 1.06
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.04,
+      "waist": 0.02,
+      "hip": 0.07
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 18,
+    "seconds": 47.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_S_165",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_S_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 90.5,
+      "waist": 72.5,
+      "hip": 78.5,
+      "shoulder_hip": 1.058
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 90.49,
+      "waist": 72.49,
+      "hip": 78.66,
+      "shoulder_hip": 1.06
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.01,
+      "waist": -0.01,
+      "hip": 0.16
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 20,
+    "seconds": 79.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_S_175",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_S_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 90.5,
+      "waist": 72.5,
+      "hip": 78.5,
+      "shoulder_hip": 1.058
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 90.52,
+      "waist": 72.45,
+      "hip": 78.76,
+      "shoulder_hip": 1.06
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.02,
+      "waist": -0.05,
+      "hip": 0.26
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 23,
+    "seconds": 92.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_XL_155",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 106.7,
+      "waist": 88.7,
+      "hip": 94.7,
+      "shoulder_hip": 1.022
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 106.68,
+      "waist": 88.72,
+      "hip": 94.62,
+      "shoulder_hip": 1.02
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.02,
+      "waist": 0.02,
+      "hip": -0.08
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 20,
+    "seconds": 69.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_XL_165",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 106.7,
+      "waist": 88.7,
+      "hip": 94.7,
+      "shoulder_hip": 1.022
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 106.68,
+      "waist": 88.72,
+      "hip": 94.68,
+      "shoulder_hip": 1.02
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.02,
+      "waist": 0.02,
+      "hip": -0.02
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 101.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_XL_175",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 106.7,
+      "waist": 88.7,
+      "hip": 94.7,
+      "shoulder_hip": 1.022
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 106.67,
+      "waist": 88.71,
+      "hip": 94.74,
+      "shoulder_hip": 1.02
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.03,
+      "waist": 0.01,
+      "hip": 0.04
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 19,
+    "seconds": 64.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_XS_155",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_XS_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 85.1,
+      "waist": 67.1,
+      "hip": 73.1,
+      "shoulder_hip": 1.074
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 85.07,
+      "waist": 67.1,
+      "hip": 73.25,
+      "shoulder_hip": 1.07
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.03,
+      "waist": -0.0,
+      "hip": 0.15
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 24,
+    "seconds": 75.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_XS_165",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_XS_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 85.1,
+      "waist": 67.1,
+      "hip": 73.1,
+      "shoulder_hip": 1.074
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 85.11,
+      "waist": 67.06,
+      "hip": 73.36,
+      "shoulder_hip": 1.08
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.01,
+      "waist": -0.04,
+      "hip": 0.26
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 21,
+    "seconds": 64.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_inverted_triangle_XS_175",
+    "sex": "female",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_inverted_triangle_XS_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 85.1,
+      "waist": 67.1,
+      "hip": 73.1,
+      "shoulder_hip": 1.074
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 85.13,
+      "waist": 67.03,
+      "hip": 73.52,
+      "shoulder_hip": 1.08
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.03,
+      "waist": -0.07,
+      "hip": 0.42
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 93.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_2XL_155",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_oval_2XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 112.1,
+      "waist": 110.1,
+      "hip": 109.1,
+      "shoulder_hip": 0.929
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 112.18,
+      "waist": 110.05,
+      "hip": 109.0,
+      "shoulder_hip": 0.93
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.08,
+      "waist": -0.05,
+      "hip": -0.1
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 84.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_2XL_165",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_oval_2XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 112.1,
+      "waist": 110.1,
+      "hip": 109.1,
+      "shoulder_hip": 0.929
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 112.36,
+      "waist": 109.7,
+      "hip": 109.25,
+      "shoulder_hip": 0.93
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.26,
+      "waist": -0.4,
+      "hip": 0.15
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 52.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_2XL_175",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_oval_2XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 112.1,
+      "waist": 110.1,
+      "hip": 109.1,
+      "shoulder_hip": 0.929
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 112.6,
+      "waist": 109.5,
+      "hip": 109.47,
+      "shoulder_hip": 0.93
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.5,
+      "waist": -0.6,
+      "hip": 0.37
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 115.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_3XL_155",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_oval_3XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 117.5,
+      "waist": 115.5,
+      "hip": 114.5,
+      "shoulder_hip": 0.925
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 117.53,
+      "waist": 115.49,
+      "hip": 114.35,
+      "shoulder_hip": 0.92
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.03,
+      "waist": -0.01,
+      "hip": -0.15
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 20,
+    "seconds": 65.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_3XL_165",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_oval_3XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 117.5,
+      "waist": 115.5,
+      "hip": 114.5,
+      "shoulder_hip": 0.925
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 117.6,
+      "waist": 115.4,
+      "hip": 114.47,
+      "shoulder_hip": 0.92
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.1,
+      "waist": -0.1,
+      "hip": -0.03
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 88.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_3XL_175",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_oval_3XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 117.5,
+      "waist": 115.5,
+      "hip": 114.5,
+      "shoulder_hip": 0.925
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 117.72,
+      "waist": 115.29,
+      "hip": 114.58,
+      "shoulder_hip": 0.93
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.22,
+      "waist": -0.21,
+      "hip": 0.08
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 66.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_L_155",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_oval_L_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 101.3,
+      "waist": 99.3,
+      "hip": 98.3,
+      "shoulder_hip": 0.938
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 101.66,
+      "waist": 98.83,
+      "hip": 98.54,
+      "shoulder_hip": 0.94
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.36,
+      "waist": -0.47,
+      "hip": 0.24
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 56.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_L_165",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_oval_L_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 101.3,
+      "waist": 99.3,
+      "hip": 98.3,
+      "shoulder_hip": 0.938
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 101.85,
+      "waist": 98.46,
+      "hip": 98.75,
+      "shoulder_hip": 0.94
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.55,
+      "waist": -0.84,
+      "hip": 0.45
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 62.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_L_175",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_oval_L_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 101.3,
+      "waist": 99.3,
+      "hip": 98.3,
+      "shoulder_hip": 0.938
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 102.04,
+      "waist": 98.42,
+      "hip": 99.06,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.74,
+      "waist": -0.88,
+      "hip": 0.76
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 88.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_M_155",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_oval_M_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 95.9,
+      "waist": 93.9,
+      "hip": 92.9,
+      "shoulder_hip": 0.943
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 96.28,
+      "waist": 92.9,
+      "hip": 93.4,
+      "shoulder_hip": 0.94
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.38,
+      "waist": -1.0,
+      "hip": 0.5
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 55.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_M_165",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_oval_M_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 95.9,
+      "waist": 93.9,
+      "hip": 92.9,
+      "shoulder_hip": 0.943
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 96.85,
+      "waist": 92.9,
+      "hip": 93.49,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.95,
+      "waist": -1.0,
+      "hip": 0.59
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 22,
+    "seconds": 84.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_M_175",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_oval_M_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 95.9,
+      "waist": 93.9,
+      "hip": 92.9,
+      "shoulder_hip": 0.943
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 96.54,
+      "waist": 92.6,
+      "hip": 93.85,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.64,
+      "waist": -1.3,
+      "hip": 0.95
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 73.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_S_155",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_oval_S_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 90.5,
+      "waist": 88.5,
+      "hip": 87.5,
+      "shoulder_hip": 0.949
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 91.21,
+      "waist": 87.73,
+      "hip": 88.07,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.71,
+      "waist": -0.77,
+      "hip": 0.57
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 111.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_S_165",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_oval_S_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 90.5,
+      "waist": 88.5,
+      "hip": 87.5,
+      "shoulder_hip": 0.949
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 91.16,
+      "waist": 87.38,
+      "hip": 88.47,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.66,
+      "waist": -1.12,
+      "hip": 0.97
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 130.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_S_175",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_oval_S_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 90.5,
+      "waist": 88.5,
+      "hip": 87.5,
+      "shoulder_hip": 0.949
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 91.21,
+      "waist": 87.24,
+      "hip": 88.55,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.71,
+      "waist": -1.26,
+      "hip": 1.05
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 61.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_XL_155",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_oval_XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 106.7,
+      "waist": 104.7,
+      "hip": 103.7,
+      "shoulder_hip": 0.933
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 106.93,
+      "waist": 104.5,
+      "hip": 103.7,
+      "shoulder_hip": 0.93
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.23,
+      "waist": -0.2,
+      "hip": 0.0
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 73.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_XL_165",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_oval_XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 106.7,
+      "waist": 104.7,
+      "hip": 103.7,
+      "shoulder_hip": 0.933
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 107.22,
+      "waist": 104.06,
+      "hip": 103.91,
+      "shoulder_hip": 0.93
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.52,
+      "waist": -0.64,
+      "hip": 0.21
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 56.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_XL_175",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_oval_XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 106.7,
+      "waist": 104.7,
+      "hip": 103.7,
+      "shoulder_hip": 0.933
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 107.5,
+      "waist": 103.73,
+      "hip": 104.24,
+      "shoulder_hip": 0.94
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.8,
+      "waist": -0.97,
+      "hip": 0.54
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 53.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_XS_155",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_oval_XS_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 85.1,
+      "waist": 83.1,
+      "hip": 82.1,
+      "shoulder_hip": 0.956
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 85.64,
+      "waist": 81.9,
+      "hip": 82.91,
+      "shoulder_hip": 0.96
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.54,
+      "waist": -1.2,
+      "hip": 0.81
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 86.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_XS_165",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_oval_XS_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 85.1,
+      "waist": 83.1,
+      "hip": 82.1,
+      "shoulder_hip": 0.956
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 85.54,
+      "waist": 81.81,
+      "hip": 83.22,
+      "shoulder_hip": 0.96
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.44,
+      "waist": -1.29,
+      "hip": 1.12
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 59.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_oval_XS_175",
+    "sex": "female",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_oval_XS_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 85.1,
+      "waist": 83.1,
+      "hip": 82.1,
+      "shoulder_hip": 0.956
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 85.89,
+      "waist": 81.85,
+      "hip": 83.73,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.79,
+      "waist": -1.25,
+      "hip": 1.63
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 63.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_2XL_155",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_rectangle_2XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 112.1,
+      "waist": 98.1,
+      "hip": 114.1,
+      "shoulder_hip": 0.888
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 112.07,
+      "waist": 98.15,
+      "hip": 113.97,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.03,
+      "waist": 0.05,
+      "hip": -0.13
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 87.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_2XL_165",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_rectangle_2XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 112.1,
+      "waist": 98.1,
+      "hip": 114.1,
+      "shoulder_hip": 0.888
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 112.08,
+      "waist": 98.13,
+      "hip": 114.02,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.02,
+      "waist": 0.03,
+      "hip": -0.08
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 22,
+    "seconds": 74.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_2XL_175",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_rectangle_2XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 112.1,
+      "waist": 98.1,
+      "hip": 114.1,
+      "shoulder_hip": 0.888
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 112.11,
+      "waist": 98.09,
+      "hip": 114.09,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.01,
+      "waist": -0.01,
+      "hip": -0.01
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 17,
+    "seconds": 35.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_3XL_155",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_rectangle_3XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 117.5,
+      "waist": 103.5,
+      "hip": 119.5,
+      "shoulder_hip": 0.886
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 117.48,
+      "waist": 103.55,
+      "hip": 119.35,
+      "shoulder_hip": 0.88
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.02,
+      "waist": 0.05,
+      "hip": -0.15
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 117.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_3XL_165",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_rectangle_3XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 117.5,
+      "waist": 103.5,
+      "hip": 119.5,
+      "shoulder_hip": 0.886
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 117.48,
+      "waist": 103.54,
+      "hip": 119.39,
+      "shoulder_hip": 0.88
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.02,
+      "waist": 0.04,
+      "hip": -0.11
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 21,
+    "seconds": 67.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_3XL_175",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_rectangle_3XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 117.5,
+      "waist": 103.5,
+      "hip": 119.5,
+      "shoulder_hip": 0.886
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 117.49,
+      "waist": 103.52,
+      "hip": 119.44,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.01,
+      "waist": 0.02,
+      "hip": -0.06
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 20,
+    "seconds": 63.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_L_155",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_rectangle_L_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 101.3,
+      "waist": 87.3,
+      "hip": 103.3,
+      "shoulder_hip": 0.893
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 101.28,
+      "waist": 87.32,
+      "hip": 103.25,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.02,
+      "waist": 0.02,
+      "hip": -0.05
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 17,
+    "seconds": 45.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_L_165",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_rectangle_L_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 101.3,
+      "waist": 87.3,
+      "hip": 103.3,
+      "shoulder_hip": 0.893
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 101.32,
+      "waist": 87.28,
+      "hip": 103.33,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.02,
+      "waist": -0.02,
+      "hip": 0.03
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 17,
+    "seconds": 38.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_L_175",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_rectangle_L_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 101.3,
+      "waist": 87.3,
+      "hip": 103.3,
+      "shoulder_hip": 0.893
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 101.34,
+      "waist": 87.25,
+      "hip": 103.41,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.04,
+      "waist": -0.05,
+      "hip": 0.11
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 84.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_M_155",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_rectangle_M_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 95.9,
+      "waist": 81.9,
+      "hip": 97.9,
+      "shoulder_hip": 0.895
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 95.9,
+      "waist": 81.9,
+      "hip": 97.91,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.0,
+      "waist": -0.0,
+      "hip": 0.01
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 19,
+    "seconds": 56.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_M_165",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_rectangle_M_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 95.9,
+      "waist": 81.9,
+      "hip": 97.9,
+      "shoulder_hip": 0.895
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 95.93,
+      "waist": 81.86,
+      "hip": 98.0,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.03,
+      "waist": -0.04,
+      "hip": 0.1
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 22,
+    "seconds": 69.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_M_175",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_rectangle_M_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 95.9,
+      "waist": 81.9,
+      "hip": 97.9,
+      "shoulder_hip": 0.895
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 95.96,
+      "waist": 81.82,
+      "hip": 98.09,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.06,
+      "waist": -0.08,
+      "hip": 0.19
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 21,
+    "seconds": 62.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_S_155",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_rectangle_S_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 90.5,
+      "waist": 76.5,
+      "hip": 92.5,
+      "shoulder_hip": 0.898
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 90.52,
+      "waist": 76.47,
+      "hip": 92.59,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.02,
+      "waist": -0.03,
+      "hip": 0.09
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 70.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_S_165",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_rectangle_S_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 90.5,
+      "waist": 76.5,
+      "hip": 92.5,
+      "shoulder_hip": 0.898
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 90.55,
+      "waist": 76.43,
+      "hip": 92.68,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.05,
+      "waist": -0.07,
+      "hip": 0.18
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 73.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_S_175",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_rectangle_S_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 90.5,
+      "waist": 76.5,
+      "hip": 92.5,
+      "shoulder_hip": 0.898
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 90.58,
+      "waist": 76.39,
+      "hip": 92.8,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.08,
+      "waist": -0.11,
+      "hip": 0.3
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 90.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_XL_155",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_rectangle_XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 106.7,
+      "waist": 92.7,
+      "hip": 108.7,
+      "shoulder_hip": 0.89
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 106.67,
+      "waist": 92.74,
+      "hip": 108.6,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.03,
+      "waist": 0.04,
+      "hip": -0.1
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 24,
+    "seconds": 87.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_XL_165",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_rectangle_XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 106.7,
+      "waist": 92.7,
+      "hip": 108.7,
+      "shoulder_hip": 0.89
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 106.7,
+      "waist": 92.71,
+      "hip": 108.67,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.0,
+      "waist": 0.01,
+      "hip": -0.03
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 19,
+    "seconds": 51.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_XL_175",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_rectangle_XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 106.7,
+      "waist": 92.7,
+      "hip": 108.7,
+      "shoulder_hip": 0.89
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 106.73,
+      "waist": 92.67,
+      "hip": 108.75,
+      "shoulder_hip": 0.89
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.03,
+      "waist": -0.03,
+      "hip": 0.05
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 18,
+    "seconds": 51.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_XS_155",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_rectangle_XS_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 85.1,
+      "waist": 71.1,
+      "hip": 87.1,
+      "shoulder_hip": 0.901
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 85.14,
+      "waist": 71.04,
+      "hip": 87.28,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.04,
+      "waist": -0.06,
+      "hip": 0.18
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 22,
+    "seconds": 60.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_XS_165",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_rectangle_XS_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 85.1,
+      "waist": 71.1,
+      "hip": 87.1,
+      "shoulder_hip": 0.901
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 85.17,
+      "waist": 71.0,
+      "hip": 87.4,
+      "shoulder_hip": 0.9
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.07,
+      "waist": -0.1,
+      "hip": 0.3
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 79.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_rectangle_XS_175",
+    "sex": "female",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_rectangle_XS_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 85.1,
+      "waist": 71.1,
+      "hip": 87.1,
+      "shoulder_hip": 0.901
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 85.21,
+      "waist": 70.95,
+      "hip": 87.56,
+      "shoulder_hip": 0.91
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.11,
+      "waist": -0.15,
+      "hip": 0.46
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 24,
+    "seconds": 77.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_2XL_155",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_triangle_2XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 112.1,
+      "waist": 104.1,
+      "hip": 124.1,
+      "shoulder_hip": 0.817
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 112.13,
+      "waist": 104.1,
+      "hip": 123.96,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.03,
+      "waist": 0.0,
+      "hip": -0.14
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 22,
+    "seconds": 98.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_2XL_165",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_triangle_2XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 112.1,
+      "waist": 104.1,
+      "hip": 124.1,
+      "shoulder_hip": 0.817
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 112.16,
+      "waist": 104.07,
+      "hip": 124.03,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.06,
+      "waist": -0.03,
+      "hip": -0.07
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 21,
+    "seconds": 68.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_2XL_175",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/female_triangle_2XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 112.1,
+      "waist": 104.1,
+      "hip": 124.1,
+      "shoulder_hip": 0.817
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 112.19,
+      "waist": 104.03,
+      "hip": 124.11,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.09,
+      "waist": -0.07,
+      "hip": 0.01
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 86.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_3XL_155",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_triangle_3XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 117.5,
+      "waist": 109.5,
+      "hip": 129.5,
+      "shoulder_hip": 0.818
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 117.55,
+      "waist": 109.5,
+      "hip": 129.34,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.05,
+      "waist": 0.0,
+      "hip": -0.16
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 111.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_3XL_165",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_triangle_3XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 117.5,
+      "waist": 109.5,
+      "hip": 129.5,
+      "shoulder_hip": 0.818
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 117.54,
+      "waist": 109.49,
+      "hip": 129.39,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.04,
+      "waist": -0.01,
+      "hip": -0.11
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 91.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_3XL_175",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/female_triangle_3XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 117.5,
+      "waist": 109.5,
+      "hip": 129.5,
+      "shoulder_hip": 0.818
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 117.57,
+      "waist": 109.45,
+      "hip": 129.46,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.07,
+      "waist": -0.05,
+      "hip": -0.04
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 22,
+    "seconds": 71.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_L_155",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_triangle_L_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 101.3,
+      "waist": 93.3,
+      "hip": 113.3,
+      "shoulder_hip": 0.814
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 101.38,
+      "waist": 93.25,
+      "hip": 113.27,
+      "shoulder_hip": 0.81
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.08,
+      "waist": -0.05,
+      "hip": -0.03
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 19,
+    "seconds": 57.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_L_165",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_triangle_L_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 101.3,
+      "waist": 93.3,
+      "hip": 113.3,
+      "shoulder_hip": 0.814
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 101.41,
+      "waist": 93.2,
+      "hip": 113.35,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.11,
+      "waist": -0.1,
+      "hip": 0.05
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 102.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_L_175",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/female_triangle_L_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 101.3,
+      "waist": 93.3,
+      "hip": 113.3,
+      "shoulder_hip": 0.814
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 101.45,
+      "waist": 93.16,
+      "hip": 113.43,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.15,
+      "waist": -0.14,
+      "hip": 0.13
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 86.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_M_155",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_triangle_M_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 95.9,
+      "waist": 87.9,
+      "hip": 107.9,
+      "shoulder_hip": 0.812
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 96.01,
+      "waist": 87.81,
+      "hip": 107.93,
+      "shoulder_hip": 0.81
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.11,
+      "waist": -0.09,
+      "hip": 0.03
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 19,
+    "seconds": 52.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_M_165",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_triangle_M_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 95.9,
+      "waist": 87.9,
+      "hip": 107.9,
+      "shoulder_hip": 0.812
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 96.04,
+      "waist": 87.76,
+      "hip": 108.03,
+      "shoulder_hip": 0.81
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.14,
+      "waist": -0.14,
+      "hip": 0.13
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 91.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_M_175",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/female_triangle_M_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 95.9,
+      "waist": 87.9,
+      "hip": 107.9,
+      "shoulder_hip": 0.812
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 96.07,
+      "waist": 87.72,
+      "hip": 108.12,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.17,
+      "waist": -0.18,
+      "hip": 0.22
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 88.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_S_155",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_triangle_S_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 90.5,
+      "waist": 82.5,
+      "hip": 102.5,
+      "shoulder_hip": 0.811
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 90.64,
+      "waist": 82.37,
+      "hip": 102.61,
+      "shoulder_hip": 0.81
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.14,
+      "waist": -0.13,
+      "hip": 0.11
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 23,
+    "seconds": 71.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_S_165",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_triangle_S_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 90.5,
+      "waist": 82.5,
+      "hip": 102.5,
+      "shoulder_hip": 0.811
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 90.67,
+      "waist": 82.32,
+      "hip": 102.72,
+      "shoulder_hip": 0.81
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.17,
+      "waist": -0.18,
+      "hip": 0.22
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 89.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_S_175",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/female_triangle_S_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 90.5,
+      "waist": 82.5,
+      "hip": 102.5,
+      "shoulder_hip": 0.811
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 90.69,
+      "waist": 82.29,
+      "hip": 102.84,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.19,
+      "waist": -0.21,
+      "hip": 0.34
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 99.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_XL_155",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_triangle_XL_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 106.7,
+      "waist": 98.7,
+      "hip": 118.7,
+      "shoulder_hip": 0.815
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 106.75,
+      "waist": 98.68,
+      "hip": 118.61,
+      "shoulder_hip": 0.81
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.05,
+      "waist": -0.02,
+      "hip": -0.09
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 21,
+    "seconds": 71.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_XL_165",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_triangle_XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 106.7,
+      "waist": 98.7,
+      "hip": 118.7,
+      "shoulder_hip": 0.815
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 106.79,
+      "waist": 98.63,
+      "hip": 118.69,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.09,
+      "waist": -0.07,
+      "hip": -0.01
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 85.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_XL_175",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/female_triangle_XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 106.7,
+      "waist": 98.7,
+      "hip": 118.7,
+      "shoulder_hip": 0.815
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 106.82,
+      "waist": 98.59,
+      "hip": 118.77,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.12,
+      "waist": -0.11,
+      "hip": 0.07
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 22,
+    "seconds": 74.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_XS_155",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_triangle_XS_155.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 155.0,
+      "chest": 85.1,
+      "waist": 77.1,
+      "hip": 97.1,
+      "shoulder_hip": 0.809
+    },
+    "measured_cm": {
+      "height": 155.0,
+      "chest": 85.27,
+      "waist": 76.93,
+      "hip": 97.32,
+      "shoulder_hip": 0.81
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.17,
+      "waist": -0.17,
+      "hip": 0.22
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 87.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_XS_165",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_triangle_XS_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 85.1,
+      "waist": 77.1,
+      "hip": 97.1,
+      "shoulder_hip": 0.809
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 85.3,
+      "waist": 76.88,
+      "hip": 97.45,
+      "shoulder_hip": 0.81
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.2,
+      "waist": -0.22,
+      "hip": 0.35
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 123.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "female_triangle_XS_175",
+    "sex": "female",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/female_triangle_XS_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 85.1,
+      "waist": 77.1,
+      "hip": 97.1,
+      "shoulder_hip": 0.809
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 85.32,
+      "waist": 76.84,
+      "hip": 97.61,
+      "shoulder_hip": 0.82
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.22,
+      "waist": -0.26,
+      "hip": 0.51
+    },
+    "uncertainty_cm": 2.7,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 80.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_2XL_165",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_hourglass_2XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 123.6,
+      "waist": 99.6,
+      "hip": 123.6,
+      "shoulder_hip": 0.954
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 123.56,
+      "waist": 99.67,
+      "hip": 123.45,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.04,
+      "waist": 0.07,
+      "hip": -0.15
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 71.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_2XL_175",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_hourglass_2XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 123.6,
+      "waist": 99.6,
+      "hip": 123.6,
+      "shoulder_hip": 0.954
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 123.54,
+      "waist": 99.68,
+      "hip": 123.47,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.06,
+      "waist": 0.08,
+      "hip": -0.13
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 108.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_2XL_185",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_hourglass_2XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 123.6,
+      "waist": 99.6,
+      "hip": 123.6,
+      "shoulder_hip": 0.954
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 123.59,
+      "waist": 99.64,
+      "hip": 123.5,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.01,
+      "waist": 0.04,
+      "hip": -0.1
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 138.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_3XL_165",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_hourglass_3XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 129.2,
+      "waist": 105.2,
+      "hip": 129.2,
+      "shoulder_hip": 0.955
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 129.09,
+      "waist": 105.34,
+      "hip": 128.99,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.11,
+      "waist": 0.14,
+      "hip": -0.21
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 93.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_3XL_175",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_hourglass_3XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 129.2,
+      "waist": 105.2,
+      "hip": 129.2,
+      "shoulder_hip": 0.955
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 129.13,
+      "waist": 105.29,
+      "hip": 129.05,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.07,
+      "waist": 0.09,
+      "hip": -0.15
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 115.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_3XL_185",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_hourglass_3XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 129.2,
+      "waist": 105.2,
+      "hip": 129.2,
+      "shoulder_hip": 0.955
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 129.14,
+      "waist": 105.27,
+      "hip": 129.08,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.06,
+      "waist": 0.07,
+      "hip": -0.12
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 115.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_L_165",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_hourglass_L_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 112.2,
+      "waist": 88.2,
+      "hip": 112.2,
+      "shoulder_hip": 0.951
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 112.13,
+      "waist": 88.28,
+      "hip": 112.08,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.07,
+      "waist": 0.08,
+      "hip": -0.12
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 132.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_L_175",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_hourglass_L_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 112.2,
+      "waist": 88.2,
+      "hip": 112.2,
+      "shoulder_hip": 0.951
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 112.13,
+      "waist": 88.27,
+      "hip": 112.12,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.07,
+      "waist": 0.07,
+      "hip": -0.08
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 113.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_L_185",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_hourglass_L_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 112.2,
+      "waist": 88.2,
+      "hip": 112.2,
+      "shoulder_hip": 0.951
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 112.15,
+      "waist": 88.25,
+      "hip": 112.17,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.05,
+      "waist": 0.05,
+      "hip": -0.03
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 24,
+    "seconds": 94.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_M_165",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_hourglass_M_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 106.4,
+      "waist": 82.4,
+      "hip": 106.4,
+      "shoulder_hip": 0.949
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 106.31,
+      "waist": 82.48,
+      "hip": 106.32,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.09,
+      "waist": 0.08,
+      "hip": -0.08
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 125.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_M_175",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_hourglass_M_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 106.4,
+      "waist": 82.4,
+      "hip": 106.4,
+      "shoulder_hip": 0.949
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 106.33,
+      "waist": 82.46,
+      "hip": 106.36,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.07,
+      "waist": 0.06,
+      "hip": -0.04
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 88.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_M_185",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_hourglass_M_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 106.4,
+      "waist": 82.4,
+      "hip": 106.4,
+      "shoulder_hip": 0.949
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 106.36,
+      "waist": 82.43,
+      "hip": 106.42,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.04,
+      "waist": 0.03,
+      "hip": 0.02
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 22,
+    "seconds": 65.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_S_165",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_hourglass_S_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 100.8,
+      "waist": 76.8,
+      "hip": 100.8,
+      "shoulder_hip": 0.947
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 100.72,
+      "waist": 76.87,
+      "hip": 100.75,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.08,
+      "waist": 0.07,
+      "hip": -0.05
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 87.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_S_175",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_hourglass_S_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 100.8,
+      "waist": 76.8,
+      "hip": 100.8,
+      "shoulder_hip": 0.947
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 100.75,
+      "waist": 76.84,
+      "hip": 100.82,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.05,
+      "waist": 0.04,
+      "hip": 0.02
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 19,
+    "seconds": 75.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_S_185",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_hourglass_S_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 100.8,
+      "waist": 76.8,
+      "hip": 100.8,
+      "shoulder_hip": 0.947
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 100.78,
+      "waist": 76.81,
+      "hip": 100.89,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.02,
+      "waist": 0.01,
+      "hip": 0.09
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 22,
+    "seconds": 78.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_XL_165",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_hourglass_XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 117.8,
+      "waist": 93.8,
+      "hip": 117.8,
+      "shoulder_hip": 0.952
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 117.72,
+      "waist": 93.9,
+      "hip": 117.66,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.08,
+      "waist": 0.1,
+      "hip": -0.14
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 110.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_XL_175",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_hourglass_XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 117.8,
+      "waist": 93.8,
+      "hip": 117.8,
+      "shoulder_hip": 0.952
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 117.73,
+      "waist": 93.88,
+      "hip": 117.69,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.07,
+      "waist": 0.08,
+      "hip": -0.11
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 134.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_XL_185",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_hourglass_XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 117.8,
+      "waist": 93.8,
+      "hip": 117.8,
+      "shoulder_hip": 0.952
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 117.74,
+      "waist": 93.86,
+      "hip": 117.73,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.06,
+      "waist": 0.06,
+      "hip": -0.07
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 25,
+    "seconds": 144.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_XS_165",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_hourglass_XS_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 95.1,
+      "waist": 71.1,
+      "hip": 95.1,
+      "shoulder_hip": 0.945
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 95.04,
+      "waist": 71.16,
+      "hip": 95.11,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.06,
+      "waist": 0.06,
+      "hip": 0.01
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 23,
+    "seconds": 71.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_XS_175",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_hourglass_XS_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 95.1,
+      "waist": 71.1,
+      "hip": 95.1,
+      "shoulder_hip": 0.945
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 95.07,
+      "waist": 71.12,
+      "hip": 95.19,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.03,
+      "waist": 0.02,
+      "hip": 0.09
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 24,
+    "seconds": 78.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_hourglass_XS_185",
+    "sex": "male",
+    "shape": "hourglass",
+    "display_name": "The Balance",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_hourglass_XS_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 95.1,
+      "waist": 71.1,
+      "hip": 95.1,
+      "shoulder_hip": 0.945
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 95.09,
+      "waist": 71.08,
+      "hip": 95.28,
+      "shoulder_hip": 0.95
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.01,
+      "waist": -0.02,
+      "hip": 0.18
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "hourglass",
+    "ffit_class_of_mesh": "hourglass",
+    "nfev": 23,
+    "seconds": 77.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_2XL_165",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_2XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 123.6,
+      "waist": 109.6,
+      "hip": 112.6,
+      "shoulder_hip": 1.047
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 123.6,
+      "waist": 109.62,
+      "hip": 112.42,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.0,
+      "waist": 0.02,
+      "hip": -0.18
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 22,
+    "seconds": 94.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_2XL_175",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_2XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 123.6,
+      "waist": 109.6,
+      "hip": 112.6,
+      "shoulder_hip": 1.047
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 123.6,
+      "waist": 109.61,
+      "hip": 112.47,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.0,
+      "waist": 0.01,
+      "hip": -0.13
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 18,
+    "seconds": 61.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_2XL_185",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_2XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 123.6,
+      "waist": 109.6,
+      "hip": 112.6,
+      "shoulder_hip": 1.047
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 123.6,
+      "waist": 109.6,
+      "hip": 112.52,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.0,
+      "waist": 0.0,
+      "hip": -0.08
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 18,
+    "seconds": 65.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_3XL_165",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_3XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 129.2,
+      "waist": 115.2,
+      "hip": 118.2,
+      "shoulder_hip": 1.044
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 129.2,
+      "waist": 115.22,
+      "hip": 117.99,
+      "shoulder_hip": 1.04
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.0,
+      "waist": 0.02,
+      "hip": -0.21
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 107.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_3XL_175",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_3XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 129.2,
+      "waist": 115.2,
+      "hip": 118.2,
+      "shoulder_hip": 1.044
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 129.2,
+      "waist": 115.21,
+      "hip": 118.04,
+      "shoulder_hip": 1.04
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.0,
+      "waist": 0.01,
+      "hip": -0.16
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 22,
+    "seconds": 90.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_3XL_185",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_3XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 129.2,
+      "waist": 115.2,
+      "hip": 118.2,
+      "shoulder_hip": 1.044
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 129.2,
+      "waist": 115.21,
+      "hip": 118.09,
+      "shoulder_hip": 1.04
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.0,
+      "waist": 0.01,
+      "hip": -0.11
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 83.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_L_165",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_L_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 112.2,
+      "waist": 98.2,
+      "hip": 101.2,
+      "shoulder_hip": 1.054
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 112.2,
+      "waist": 98.21,
+      "hip": 101.1,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.0,
+      "waist": 0.01,
+      "hip": -0.1
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 17,
+    "seconds": 50.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_L_175",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_L_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 112.2,
+      "waist": 98.2,
+      "hip": 101.2,
+      "shoulder_hip": 1.054
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 112.2,
+      "waist": 98.2,
+      "hip": 101.15,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.0,
+      "waist": 0.0,
+      "hip": -0.05
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 15,
+    "seconds": 37.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_L_185",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_L_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 112.2,
+      "waist": 98.2,
+      "hip": 101.2,
+      "shoulder_hip": 1.054
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 112.21,
+      "waist": 98.19,
+      "hip": 101.2,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.01,
+      "waist": -0.01,
+      "hip": 0.0
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 23,
+    "seconds": 84.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_M_165",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_M_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 106.4,
+      "waist": 92.4,
+      "hip": 95.4,
+      "shoulder_hip": 1.058
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 106.4,
+      "waist": 92.4,
+      "hip": 95.35,
+      "shoulder_hip": 1.06
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.0,
+      "waist": 0.0,
+      "hip": -0.05
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 18,
+    "seconds": 63.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_M_175",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_M_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 106.4,
+      "waist": 92.4,
+      "hip": 95.4,
+      "shoulder_hip": 1.058
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 106.4,
+      "waist": 92.4,
+      "hip": 95.4,
+      "shoulder_hip": 1.06
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.0,
+      "waist": -0.0,
+      "hip": 0.0
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 21,
+    "seconds": 87.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_M_185",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_M_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 106.4,
+      "waist": 92.4,
+      "hip": 95.4,
+      "shoulder_hip": 1.058
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 106.42,
+      "waist": 92.38,
+      "hip": 95.45,
+      "shoulder_hip": 1.06
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.02,
+      "waist": -0.02,
+      "hip": 0.05
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 21,
+    "seconds": 72.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_S_165",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_S_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 100.8,
+      "waist": 86.8,
+      "hip": 89.8,
+      "shoulder_hip": 1.063
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 100.8,
+      "waist": 86.8,
+      "hip": 89.8,
+      "shoulder_hip": 1.06
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.0,
+      "waist": -0.0,
+      "hip": -0.0
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 17,
+    "seconds": 55.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_S_175",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_S_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 100.8,
+      "waist": 86.8,
+      "hip": 89.8,
+      "shoulder_hip": 1.063
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 100.81,
+      "waist": 86.78,
+      "hip": 89.85,
+      "shoulder_hip": 1.06
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.01,
+      "waist": -0.02,
+      "hip": 0.05
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 19,
+    "seconds": 48.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_S_185",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_S_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 100.8,
+      "waist": 86.8,
+      "hip": 89.8,
+      "shoulder_hip": 1.063
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 100.83,
+      "waist": 86.76,
+      "hip": 89.92,
+      "shoulder_hip": 1.06
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.03,
+      "waist": -0.04,
+      "hip": 0.12
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 84.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_XL_165",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 117.8,
+      "waist": 103.8,
+      "hip": 106.8,
+      "shoulder_hip": 1.05
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 117.8,
+      "waist": 103.81,
+      "hip": 106.66,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.0,
+      "waist": 0.01,
+      "hip": -0.14
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 21,
+    "seconds": 61.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_XL_175",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 117.8,
+      "waist": 103.8,
+      "hip": 106.8,
+      "shoulder_hip": 1.05
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 117.8,
+      "waist": 103.81,
+      "hip": 106.71,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.0,
+      "waist": 0.01,
+      "hip": -0.09
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 106.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_XL_185",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 117.8,
+      "waist": 103.8,
+      "hip": 106.8,
+      "shoulder_hip": 1.05
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 117.8,
+      "waist": 103.8,
+      "hip": 106.76,
+      "shoulder_hip": 1.05
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.0,
+      "waist": -0.0,
+      "hip": -0.04
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 18,
+    "seconds": 68.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_XS_165",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_XS_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 95.1,
+      "waist": 81.1,
+      "hip": 84.1,
+      "shoulder_hip": 1.068
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 95.1,
+      "waist": 81.08,
+      "hip": 84.16,
+      "shoulder_hip": 1.07
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.0,
+      "waist": -0.02,
+      "hip": 0.06
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 19,
+    "seconds": 62.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_XS_175",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_XS_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 95.1,
+      "waist": 81.1,
+      "hip": 84.1,
+      "shoulder_hip": 1.068
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 95.13,
+      "waist": 81.06,
+      "hip": 84.23,
+      "shoulder_hip": 1.07
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.03,
+      "waist": -0.04,
+      "hip": 0.13
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 24,
+    "seconds": 71.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_inverted_triangle_XS_185",
+    "sex": "male",
+    "shape": "inverted_triangle",
+    "display_name": "The Summit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_inverted_triangle_XS_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 95.1,
+      "waist": 81.1,
+      "hip": 84.1,
+      "shoulder_hip": 1.068
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 95.15,
+      "waist": 81.03,
+      "hip": 84.31,
+      "shoulder_hip": 1.07
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.05,
+      "waist": -0.07,
+      "hip": 0.21
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "inverted_triangle",
+    "ffit_class_of_mesh": "inverted_triangle",
+    "nfev": 25,
+    "seconds": 84.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_2XL_165",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_oval_2XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 123.6,
+      "waist": 119.1,
+      "hip": 118.6,
+      "shoulder_hip": 0.994
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 123.61,
+      "waist": 119.12,
+      "hip": 118.41,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.01,
+      "waist": 0.02,
+      "hip": -0.19
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 64.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_2XL_175",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_oval_2XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 123.6,
+      "waist": 119.1,
+      "hip": 118.6,
+      "shoulder_hip": 0.994
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 123.62,
+      "waist": 119.1,
+      "hip": 118.47,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.02,
+      "waist": -0.0,
+      "hip": -0.13
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 55.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_2XL_185",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_oval_2XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 123.6,
+      "waist": 119.1,
+      "hip": 118.6,
+      "shoulder_hip": 0.994
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 123.68,
+      "waist": 119.01,
+      "hip": 118.57,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.08,
+      "waist": -0.09,
+      "hip": -0.03
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 57.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_3XL_165",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_oval_3XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 129.2,
+      "waist": 124.7,
+      "hip": 124.2,
+      "shoulder_hip": 0.993
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 129.21,
+      "waist": 124.75,
+      "hip": 123.95,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.01,
+      "waist": 0.05,
+      "hip": -0.25
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 21,
+    "seconds": 52.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_3XL_175",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_oval_3XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 129.2,
+      "waist": 124.7,
+      "hip": 124.2,
+      "shoulder_hip": 0.993
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 129.21,
+      "waist": 124.72,
+      "hip": 124.03,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.01,
+      "waist": 0.02,
+      "hip": -0.17
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 51.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_3XL_185",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_oval_3XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 129.2,
+      "waist": 124.7,
+      "hip": 124.2,
+      "shoulder_hip": 0.993
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 129.23,
+      "waist": 124.69,
+      "hip": 124.09,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.03,
+      "waist": -0.01,
+      "hip": -0.11
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 54.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_L_165",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_oval_L_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 112.2,
+      "waist": 107.7,
+      "hip": 107.2,
+      "shoulder_hip": 0.995
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 112.24,
+      "waist": 107.67,
+      "hip": 107.11,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.04,
+      "waist": -0.03,
+      "hip": -0.09
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 62.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_L_175",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_oval_L_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 112.2,
+      "waist": 107.7,
+      "hip": 107.2,
+      "shoulder_hip": 0.995
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 112.34,
+      "waist": 107.4,
+      "hip": 107.34,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.14,
+      "waist": -0.3,
+      "hip": 0.14
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 52.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_L_185",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_oval_L_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 112.2,
+      "waist": 107.7,
+      "hip": 107.2,
+      "shoulder_hip": 0.995
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 112.61,
+      "waist": 107.26,
+      "hip": 107.37,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.41,
+      "waist": -0.44,
+      "hip": 0.17
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 21,
+    "seconds": 61.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_M_165",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_oval_M_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 106.4,
+      "waist": 101.9,
+      "hip": 101.4,
+      "shoulder_hip": 0.996
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 106.71,
+      "waist": 101.57,
+      "hip": 101.4,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.31,
+      "waist": -0.33,
+      "hip": 0.0
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 66.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_M_175",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_oval_M_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 106.4,
+      "waist": 101.9,
+      "hip": 101.4,
+      "shoulder_hip": 0.996
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 106.59,
+      "waist": 101.56,
+      "hip": 101.61,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.19,
+      "waist": -0.34,
+      "hip": 0.21
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 22,
+    "seconds": 65.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_M_185",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_oval_M_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 106.4,
+      "waist": 101.9,
+      "hip": 101.4,
+      "shoulder_hip": 0.996
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 106.88,
+      "waist": 101.35,
+      "hip": 101.68,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.48,
+      "waist": -0.55,
+      "hip": 0.28
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 21,
+    "seconds": 40.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_S_165",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_oval_S_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 100.8,
+      "waist": 96.3,
+      "hip": 95.8,
+      "shoulder_hip": 0.996
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 100.99,
+      "waist": 96.0,
+      "hip": 95.97,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.19,
+      "waist": -0.3,
+      "hip": 0.17
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 48.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_S_175",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_oval_S_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 100.8,
+      "waist": 96.3,
+      "hip": 95.8,
+      "shoulder_hip": 0.996
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 101.19,
+      "waist": 95.75,
+      "hip": 96.06,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.39,
+      "waist": -0.55,
+      "hip": 0.26
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 18,
+    "seconds": 57.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_S_185",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_oval_S_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 100.8,
+      "waist": 96.3,
+      "hip": 95.8,
+      "shoulder_hip": 0.996
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 101.3,
+      "waist": 95.57,
+      "hip": 96.48,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.5,
+      "waist": -0.73,
+      "hip": 0.68
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 73.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_XL_165",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_oval_XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 117.8,
+      "waist": 113.3,
+      "hip": 112.8,
+      "shoulder_hip": 0.994
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 117.82,
+      "waist": 113.3,
+      "hip": 112.66,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.02,
+      "waist": 0.0,
+      "hip": -0.14
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 54.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_XL_175",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_oval_XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 117.8,
+      "waist": 113.3,
+      "hip": 112.8,
+      "shoulder_hip": 0.994
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 117.86,
+      "waist": 113.24,
+      "hip": 112.73,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.06,
+      "waist": -0.06,
+      "hip": -0.07
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 58.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_XL_185",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_oval_XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 117.8,
+      "waist": 113.3,
+      "hip": 112.8,
+      "shoulder_hip": 0.994
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 118.14,
+      "waist": 112.86,
+      "hip": 112.91,
+      "shoulder_hip": 0.99
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.34,
+      "waist": -0.44,
+      "hip": 0.11
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 24,
+    "seconds": 59.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_XS_165",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_oval_XS_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 95.1,
+      "waist": 90.6,
+      "hip": 90.1,
+      "shoulder_hip": 0.997
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 95.28,
+      "waist": 90.18,
+      "hip": 90.38,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.18,
+      "waist": -0.42,
+      "hip": 0.28
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 19,
+    "seconds": 67.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_XS_175",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_oval_XS_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 95.1,
+      "waist": 90.6,
+      "hip": 90.1,
+      "shoulder_hip": 0.997
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 95.4,
+      "waist": 89.88,
+      "hip": 90.72,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.3,
+      "waist": -0.72,
+      "hip": 0.62
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 23,
+    "seconds": 54.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_oval_XS_185",
+    "sex": "male",
+    "shape": "oval",
+    "display_name": "The Orbit",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_oval_XS_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 95.1,
+      "waist": 90.6,
+      "hip": 90.1,
+      "shoulder_hip": 0.997
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 95.46,
+      "waist": 90.18,
+      "hip": 90.53,
+      "shoulder_hip": 1.0
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.36,
+      "waist": -0.42,
+      "hip": 0.43
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "oval",
+    "ffit_class_of_mesh": "oval",
+    "nfev": 25,
+    "seconds": 78.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_2XL_165",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_rectangle_2XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 123.6,
+      "waist": 111.1,
+      "hip": 121.1,
+      "shoulder_hip": 0.973
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 123.57,
+      "waist": 111.16,
+      "hip": 120.95,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.03,
+      "waist": 0.06,
+      "hip": -0.15
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 24,
+    "seconds": 77.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_2XL_175",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_rectangle_2XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 123.6,
+      "waist": 111.1,
+      "hip": 121.1,
+      "shoulder_hip": 0.973
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 123.55,
+      "waist": 111.16,
+      "hip": 120.95,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.05,
+      "waist": 0.06,
+      "hip": -0.15
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 113.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_2XL_185",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_rectangle_2XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 123.6,
+      "waist": 111.1,
+      "hip": 121.1,
+      "shoulder_hip": 0.973
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 123.58,
+      "waist": 111.13,
+      "hip": 121.0,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.02,
+      "waist": 0.03,
+      "hip": -0.1
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 91.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_3XL_165",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_rectangle_3XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 129.2,
+      "waist": 116.7,
+      "hip": 126.7,
+      "shoulder_hip": 0.974
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 129.15,
+      "waist": 116.78,
+      "hip": 126.52,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.05,
+      "waist": 0.08,
+      "hip": -0.18
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 84.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_3XL_175",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_rectangle_3XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 129.2,
+      "waist": 116.7,
+      "hip": 126.7,
+      "shoulder_hip": 0.974
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 129.19,
+      "waist": 116.74,
+      "hip": 126.57,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": -0.01,
+      "waist": 0.04,
+      "hip": -0.13
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 88.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_3XL_185",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_rectangle_3XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 129.2,
+      "waist": 116.7,
+      "hip": 126.7,
+      "shoulder_hip": 0.974
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 129.16,
+      "waist": 116.74,
+      "hip": 126.56,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.04,
+      "waist": 0.04,
+      "hip": -0.14
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 108.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_L_165",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_rectangle_L_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 112.2,
+      "waist": 99.7,
+      "hip": 109.7,
+      "shoulder_hip": 0.972
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 112.16,
+      "waist": 99.74,
+      "hip": 109.58,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.04,
+      "waist": 0.04,
+      "hip": -0.12
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 23,
+    "seconds": 53.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_L_175",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_rectangle_L_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 112.2,
+      "waist": 99.7,
+      "hip": 109.7,
+      "shoulder_hip": 0.972
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 112.2,
+      "waist": 99.71,
+      "hip": 109.64,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.0,
+      "waist": 0.01,
+      "hip": -0.06
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 69.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_L_185",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_rectangle_L_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 112.2,
+      "waist": 99.7,
+      "hip": 109.7,
+      "shoulder_hip": 0.972
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 112.22,
+      "waist": 99.68,
+      "hip": 109.7,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.02,
+      "waist": -0.02,
+      "hip": 0.0
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 18,
+    "seconds": 57.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_M_165",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_rectangle_M_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 106.4,
+      "waist": 93.9,
+      "hip": 103.9,
+      "shoulder_hip": 0.972
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 106.39,
+      "waist": 93.92,
+      "hip": 103.83,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.01,
+      "waist": 0.02,
+      "hip": -0.07
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 23,
+    "seconds": 55.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_M_175",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_rectangle_M_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 106.4,
+      "waist": 93.9,
+      "hip": 103.9,
+      "shoulder_hip": 0.972
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 106.42,
+      "waist": 93.89,
+      "hip": 103.9,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.02,
+      "waist": -0.01,
+      "hip": -0.0
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 20,
+    "seconds": 54.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_M_185",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_rectangle_M_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 106.4,
+      "waist": 93.9,
+      "hip": 103.9,
+      "shoulder_hip": 0.972
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 106.44,
+      "waist": 93.86,
+      "hip": 103.96,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.04,
+      "waist": -0.04,
+      "hip": 0.06
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 81.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_S_165",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_rectangle_S_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 100.8,
+      "waist": 88.3,
+      "hip": 98.3,
+      "shoulder_hip": 0.971
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 100.81,
+      "waist": 88.29,
+      "hip": 98.29,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.01,
+      "waist": -0.01,
+      "hip": -0.01
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 20,
+    "seconds": 54.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_S_175",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_rectangle_S_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 100.8,
+      "waist": 88.3,
+      "hip": 98.3,
+      "shoulder_hip": 0.971
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 100.84,
+      "waist": 88.26,
+      "hip": 98.36,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.04,
+      "waist": -0.04,
+      "hip": 0.06
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 81.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_S_185",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_rectangle_S_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 100.8,
+      "waist": 88.3,
+      "hip": 98.3,
+      "shoulder_hip": 0.971
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 100.86,
+      "waist": 88.23,
+      "hip": 98.43,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.06,
+      "waist": -0.07,
+      "hip": 0.13
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 84.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_XL_165",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_rectangle_XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 117.8,
+      "waist": 105.3,
+      "hip": 115.3,
+      "shoulder_hip": 0.973
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 117.73,
+      "waist": 105.38,
+      "hip": 115.12,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.07,
+      "waist": 0.08,
+      "hip": -0.18
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 23,
+    "seconds": 70.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_XL_175",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_rectangle_XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 117.8,
+      "waist": 105.3,
+      "hip": 115.3,
+      "shoulder_hip": 0.973
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 117.77,
+      "waist": 105.33,
+      "hip": 115.19,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": -0.03,
+      "waist": 0.03,
+      "hip": -0.11
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 112.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_XL_185",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_rectangle_XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 117.8,
+      "waist": 105.3,
+      "hip": 115.3,
+      "shoulder_hip": 0.973
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 117.8,
+      "waist": 105.3,
+      "hip": 115.25,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.0,
+      "waist": 0.0,
+      "hip": -0.05
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 23,
+    "seconds": 81.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_XS_165",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_rectangle_XS_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 95.1,
+      "waist": 82.6,
+      "hip": 92.6,
+      "shoulder_hip": 0.97
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 95.13,
+      "waist": 82.56,
+      "hip": 92.67,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.03,
+      "waist": -0.04,
+      "hip": 0.07
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 97.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_XS_175",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_rectangle_XS_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 95.1,
+      "waist": 82.6,
+      "hip": 92.6,
+      "shoulder_hip": 0.97
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 95.16,
+      "waist": 82.53,
+      "hip": 92.75,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.06,
+      "waist": -0.07,
+      "hip": 0.15
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 23,
+    "seconds": 84.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_rectangle_XS_185",
+    "sex": "male",
+    "shape": "rectangle",
+    "display_name": "The Column",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_rectangle_XS_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 95.1,
+      "waist": 82.6,
+      "hip": 92.6,
+      "shoulder_hip": 0.97
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 95.18,
+      "waist": 82.5,
+      "hip": 92.83,
+      "shoulder_hip": 0.97
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.08,
+      "waist": -0.1,
+      "hip": 0.23
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "rectangle",
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 88.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_2XL_165",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_triangle_2XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 123.6,
+      "waist": 121.6,
+      "hip": 134.6,
+      "shoulder_hip": 0.876
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 123.7,
+      "waist": 121.57,
+      "hip": 134.44,
+      "shoulder_hip": 0.87
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.1,
+      "waist": -0.03,
+      "hip": -0.16
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 111.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_2XL_175",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_triangle_2XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 123.6,
+      "waist": 121.6,
+      "hip": 134.6,
+      "shoulder_hip": 0.876
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 123.77,
+      "waist": 121.47,
+      "hip": 134.54,
+      "shoulder_hip": 0.88
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.17,
+      "waist": -0.13,
+      "hip": -0.06
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 19,
+    "seconds": 71.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_2XL_185",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "2XL",
+    "mesh_ref": "fixtures/presets/male_triangle_2XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 123.6,
+      "waist": 121.6,
+      "hip": 134.6,
+      "shoulder_hip": 0.876
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 123.75,
+      "waist": 121.49,
+      "hip": 134.53,
+      "shoulder_hip": 0.88
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.15,
+      "waist": -0.11,
+      "hip": -0.07
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 93.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_3XL_165",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_triangle_3XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 129.2,
+      "waist": 127.2,
+      "hip": 140.2,
+      "shoulder_hip": 0.88
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 129.27,
+      "waist": 127.2,
+      "hip": 140.01,
+      "shoulder_hip": 0.88
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.07,
+      "waist": -0.0,
+      "hip": -0.19
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 91.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_3XL_175",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_triangle_3XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 129.2,
+      "waist": 127.2,
+      "hip": 140.2,
+      "shoulder_hip": 0.88
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 129.26,
+      "waist": 127.19,
+      "hip": 140.03,
+      "shoulder_hip": 0.88
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.06,
+      "waist": -0.01,
+      "hip": -0.17
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 154.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_3XL_185",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "3XL",
+    "mesh_ref": "fixtures/presets/male_triangle_3XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 129.2,
+      "waist": 127.2,
+      "hip": 140.2,
+      "shoulder_hip": 0.88
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 129.3,
+      "waist": 127.14,
+      "hip": 140.08,
+      "shoulder_hip": 0.88
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.1,
+      "waist": -0.06,
+      "hip": -0.12
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 22,
+    "seconds": 74.4,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_L_165",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_triangle_L_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 112.2,
+      "waist": 110.2,
+      "hip": 123.2,
+      "shoulder_hip": 0.866
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 112.34,
+      "waist": 110.1,
+      "hip": 123.1,
+      "shoulder_hip": 0.87
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.14,
+      "waist": -0.1,
+      "hip": -0.1
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 17,
+    "seconds": 57.8,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_L_175",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_triangle_L_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 112.2,
+      "waist": 110.2,
+      "hip": 123.2,
+      "shoulder_hip": 0.866
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 112.39,
+      "waist": 110.05,
+      "hip": 123.17,
+      "shoulder_hip": 0.87
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.19,
+      "waist": -0.15,
+      "hip": -0.03
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 106.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_L_185",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "L",
+    "mesh_ref": "fixtures/presets/male_triangle_L_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 112.2,
+      "waist": 110.2,
+      "hip": 123.2,
+      "shoulder_hip": 0.866
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 112.43,
+      "waist": 110.0,
+      "hip": 123.23,
+      "shoulder_hip": 0.87
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.23,
+      "waist": -0.2,
+      "hip": 0.03
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 89.6,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_M_165",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_triangle_M_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 106.4,
+      "waist": 104.4,
+      "hip": 117.4,
+      "shoulder_hip": 0.86
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 106.6,
+      "waist": 104.25,
+      "hip": 117.36,
+      "shoulder_hip": 0.86
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.2,
+      "waist": -0.15,
+      "hip": -0.04
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 24,
+    "seconds": 65.1,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_M_175",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_triangle_M_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 106.4,
+      "waist": 104.4,
+      "hip": 117.4,
+      "shoulder_hip": 0.86
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 106.64,
+      "waist": 104.19,
+      "hip": 117.43,
+      "shoulder_hip": 0.86
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.24,
+      "waist": -0.21,
+      "hip": 0.03
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 95.7,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_M_185",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "M",
+    "mesh_ref": "fixtures/presets/male_triangle_M_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 106.4,
+      "waist": 104.4,
+      "hip": 117.4,
+      "shoulder_hip": 0.86
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 106.66,
+      "waist": 104.16,
+      "hip": 117.51,
+      "shoulder_hip": 0.86
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.26,
+      "waist": -0.24,
+      "hip": 0.11
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 78.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_S_165",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_triangle_S_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 100.8,
+      "waist": 98.8,
+      "hip": 111.8,
+      "shoulder_hip": 0.854
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 101.05,
+      "waist": 98.59,
+      "hip": 111.83,
+      "shoulder_hip": 0.85
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.25,
+      "waist": -0.21,
+      "hip": 0.03
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 23,
+    "seconds": 70.3,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_S_175",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_triangle_S_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 100.8,
+      "waist": 98.8,
+      "hip": 111.8,
+      "shoulder_hip": 0.854
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 101.07,
+      "waist": 98.55,
+      "hip": 111.91,
+      "shoulder_hip": 0.86
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.27,
+      "waist": -0.25,
+      "hip": 0.11
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 70.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_S_185",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "S",
+    "mesh_ref": "fixtures/presets/male_triangle_S_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 100.8,
+      "waist": 98.8,
+      "hip": 111.8,
+      "shoulder_hip": 0.854
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 101.12,
+      "waist": 98.49,
+      "hip": 111.99,
+      "shoulder_hip": 0.86
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.32,
+      "waist": -0.31,
+      "hip": 0.19
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 89.2,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_XL_165",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_triangle_XL_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 117.8,
+      "waist": 115.8,
+      "hip": 128.8,
+      "shoulder_hip": 0.871
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 117.89,
+      "waist": 115.75,
+      "hip": 128.65,
+      "shoulder_hip": 0.87
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.09,
+      "waist": -0.05,
+      "hip": -0.15
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 23,
+    "seconds": 77.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_XL_175",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_triangle_XL_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 117.8,
+      "waist": 115.8,
+      "hip": 128.8,
+      "shoulder_hip": 0.871
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 117.95,
+      "waist": 115.69,
+      "hip": 128.72,
+      "shoulder_hip": 0.87
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.15,
+      "waist": -0.11,
+      "hip": -0.08
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 23,
+    "seconds": 87.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_XL_185",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XL",
+    "mesh_ref": "fixtures/presets/male_triangle_XL_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 117.8,
+      "waist": 115.8,
+      "hip": 128.8,
+      "shoulder_hip": 0.871
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 117.99,
+      "waist": 115.64,
+      "hip": 128.78,
+      "shoulder_hip": 0.87
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.19,
+      "waist": -0.16,
+      "hip": -0.02
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 24,
+    "seconds": 76.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_XS_165",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_triangle_XS_165.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 165.0,
+      "chest": 95.1,
+      "waist": 93.1,
+      "hip": 106.1,
+      "shoulder_hip": 0.847
+    },
+    "measured_cm": {
+      "height": 165.0,
+      "chest": 95.35,
+      "waist": 92.86,
+      "hip": 106.21,
+      "shoulder_hip": 0.85
+    },
+    "fit_error_cm": {
+      "height": -0.0,
+      "chest": 0.25,
+      "waist": -0.24,
+      "hip": 0.11
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 21,
+    "seconds": 57.9,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_XS_175",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_triangle_XS_175.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 175.0,
+      "chest": 95.1,
+      "waist": 93.1,
+      "hip": 106.1,
+      "shoulder_hip": 0.847
+    },
+    "measured_cm": {
+      "height": 175.0,
+      "chest": 95.72,
+      "waist": 92.5,
+      "hip": 106.42,
+      "shoulder_hip": 0.85
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.62,
+      "waist": -0.6,
+      "hip": 0.32
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 70.5,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  },
+  {
+    "id": "male_triangle_XS_185",
+    "sex": "male",
+    "shape": "triangle",
+    "display_name": "The Anchor",
+    "usual_size": "XS",
+    "mesh_ref": "fixtures/presets/male_triangle_XS_185.glb",
+    "model": "mhr-lod1",
+    "target_cm": {
+      "height": 185.0,
+      "chest": 95.1,
+      "waist": 93.1,
+      "hip": 106.1,
+      "shoulder_hip": 0.847
+    },
+    "measured_cm": {
+      "height": 185.0,
+      "chest": 95.48,
+      "waist": 92.71,
+      "hip": 106.42,
+      "shoulder_hip": 0.85
+    },
+    "fit_error_cm": {
+      "height": 0.0,
+      "chest": 0.38,
+      "waist": -0.39,
+      "hip": 0.32
+    },
+    "uncertainty_cm": 2.9,
+    "ffit_class_of_target": "triangle",
+    "ffit_class_of_mesh": "triangle",
+    "nfev": 25,
+    "seconds": 95.0,
+    "prior_weight": 0.2,
+    "warm_start": null,
+    "accepted": true
+  }
+]
