@@ -86,3 +86,31 @@ def test_exhausted_primary_key_switches_to_backup(monkeypatch):
     assert previews._generate({}, previews.api_keys()) == {'b64_json': 'aGk='}
     assert used == ['primary', 'backup'] and previews.KEY_STATUS['active'] == 'backup'
     assert previews.api_keys() == ['backup']  # later images go straight to the backup key
+
+
+def test_cache_hits_never_spend_the_daily_budget(tmp_path, monkeypatch):
+    import json as _json
+    row = {'id': 'female_rectangle_M_165', 'measured_cm': {'height': 165, 'chest': 92.5, 'waist': 78.5, 'hip': 94.5}}
+    for name in ('fixtures/presets', 'fixtures/garment_photos', 'fit-engine/scripts'):
+        (tmp_path / name).mkdir(parents=True, exist_ok=True)
+    (tmp_path / 'fixtures/presets/female_rectangle_M_165.glb').write_bytes(b'body')
+    (tmp_path / 'fixtures/presets/index.json').write_text(_json.dumps([row]))
+    (tmp_path / 'fit-engine/scripts/render_fit.py').write_text('guide')
+    (tmp_path / 'fixtures/garment_photos/dress.jpg').write_bytes(b'photo')
+    env = {'PREVIEW_DAILY_LIMIT': '1', 'MODEL_API_KEY': 'key'}
+    monkeypatch.setattr(previews, 'ROOT', tmp_path)
+    monkeypatch.setattr(previews, 'PHOTOS', tmp_path / 'fixtures/garment_photos')
+    monkeypatch.setattr(previews, 'CACHE', tmp_path / 'cache')
+    monkeypatch.setattr(previews, '_env', lambda name: env.get(name))
+    monkeypatch.setattr(previews, '_BUDGET', {'day': None, 'used': 0})
+    monkeypatch.setattr(previews, 'guide_png', lambda *args: b'guide')
+    from stylewise_fit import catalogue as catalogue_module
+    monkeypatch.setattr(catalogue_module, 'catalogue', lambda: {'dress': {'name': 'Dress', 'category': 'dress', 'sizes': {}}})
+    calls = []
+    monkeypatch.setattr(previews.urllib.request, 'urlopen',
+                        lambda req, timeout=0: calls.append(1) or io.BytesIO(_json.dumps({'data': [{'b64_json': 'aGk='}]}).encode()))
+    args = ('rectangle', 'M', 'female', 165, 'dress', 'M')
+    assert previews.preview(*args) == b'hi'          # miss: one paid image, the whole budget of 1
+    for _ in range(5):
+        assert previews.preview(*args) == b'hi'      # hits: served from the cache, no budget, no call
+    assert len(calls) == 1 and previews._BUDGET['used'] == 1
