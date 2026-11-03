@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Stylewise Fit Lab",
-  description: "Explore wardrobe-aware outfits and evidence-based fit decisions.",
+  description: "See how every size sits on your shape, from real brand size charts and a measured body model.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

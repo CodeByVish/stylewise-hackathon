@@ -195,7 +195,7 @@ export default function EngineFitLab() {
         </aside>
 
         <section className="room-stage" aria-label="Garment preview">
-          <div className="room-stage-heading"><div><span className="room-overline">IN THE FITTING ROOM</span><h2>{item?.name || 'Loading your garment…'}<span>Size {garmentSize}</span></h2></div><span className="room-stage-index">{look === 'real' ? 'AI PREVIEW' : '3D BODY MODEL'}</span></div>
+          <div className="room-stage-heading"><div><span className="room-overline">IN THE FITTING ROOM</span><h2>{item?.name || 'Loading your garment…'}<span>Size {garmentSize}</span></h2></div><span className="room-stage-index">{look === 'real' ? 'STYLED VIEW' : '3D BODY MODEL'}</span></div>
           <div className="room-stage-image">
             {mode === 'preset' ? look === 'real'
               ? <RealisticView key={JSON.stringify({ body, garmentId, garmentSize, preferences, view, pair })} body={body} garmentId={garmentId} size={garmentSize} preferences={preferences} view={view} hasPhoto={!!item?.photo} pair={pair} />
@@ -205,7 +205,7 @@ export default function EngineFitLab() {
             <div className="room-angle-controls" aria-label="Preview angle">{((look === '3d' ? ['front', 'quarter', 'side', 'back'] : ['front', 'side', 'back']) as View[]).map(angle => <button key={angle} aria-pressed={view === angle} onClick={() => { setView(angle); setRotating(false); }}>{angle === 'quarter' ? '¾' : angle}</button>)}</div>
             {look === '3d' && <button className="room-rotate" aria-pressed={rotating} onClick={() => setRotating(!rotating)}>{rotating ? 'Pause rotation' : 'Rotate model'}</button>}
           </div>
-          <div className="room-stage-foot"><p>{mode === 'measured' ? 'Numeric fit comparison' : look === 'real' ? 'AI illustration. Use the chart comparison to assess size.' : 'Estimated body geometry. Garments are not shown in 3D.'}</p><button disabled={mode !== 'preset'} onClick={() => changeLook(look === 'real' ? '3d' : 'real')}>{look === 'real' ? 'Your body model ↗' : 'Back to garment preview ↗'}</button></div>
+          <div className="room-stage-foot"><p>{mode === 'measured' ? 'Numeric fit comparison' : look === 'real' ? 'Styled on your measured body with Meta Muse Image. Use the chart comparison to assess size.' : 'Estimated body geometry. Garments are not shown in 3D.'}</p><button disabled={mode !== 'preset'} onClick={() => changeLook(look === 'real' ? '3d' : 'real')}>{look === 'real' ? '3D body model ↗' : 'Back to styled view ↗'}</button></div>
 
           <section className="room-browse" aria-label="Browse garments"><div className="room-browse-heading"><h3>Find your next piece</h3><div><button aria-label="Previous garments" onClick={() => rail.current?.scrollBy({ left: -240, behavior: 'smooth' })}>←</button><button aria-label="Next garments" onClick={() => rail.current?.scrollBy({ left: 240, behavior: 'smooth' })}>→</button></div></div>
             <div className="room-categories" aria-label="Garment categories">{categories.map(([id, name]) => <button key={id} aria-pressed={category === id} onClick={() => setCategory(id)}>{name}</button>)}</div>
@@ -251,6 +251,6 @@ export default function EngineFitLab() {
       const value = results?.find(result => result.size === size && result.garment_id === garmentId);
       const fit = fitSummary(value?.report, sex);
       return <article className={`room-compare-card ${fit.verdict}`} key={size}><div className="room-compare-image">{dialog === 'compare' && mode === 'preset' ? <RealisticView key={JSON.stringify({ body, garmentId, size, preferences, pair })} body={body} garmentId={garmentId} size={size} preferences={preferences} view="front" hasPhoto={!!item?.photo} pair={pair} /> : <p>Numeric comparison</p>}</div><div className="room-compare-copy"><span>SIZE {size}</span><h3>{fit.text}</h3><dl>{['chest', 'waist', 'hip'].map(region => <div key={region}><dt>{regionLabel(region, sex)}</dt><dd>{dimensionLabel(value?.report?.regions[region]?.ease_cm ?? null)}</dd></div>)}</dl>{value?.report?.warnings[0] && <p className="room-source-warning">{value.report.warnings[0]}</p>}<button onClick={() => { selectSize(size); setDialog(null); }}>View size {size} <span aria-hidden="true">↗</span></button></div></article>;
-    })}</div><p className="room-comparison-note">Same preset and fit preference for each size. These are AI illustrations, not cloth simulations; body appearance may vary. Use the numeric report to compare fit.</p></FittingDialog>
+    })}</div><p className="room-comparison-note">Same preset and fit preference for each size. These are styled views generated with Meta Muse Image, not cloth simulations; body appearance may vary. Use the numeric report to compare fit.</p></FittingDialog>
   </div>;
 }

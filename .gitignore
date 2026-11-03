@@ -55,3 +55,4 @@ __pycache__/
 # Browser test output
 /test-results/
 /playwright-report/
+!.env.example
