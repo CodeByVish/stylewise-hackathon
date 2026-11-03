@@ -94,6 +94,15 @@ def _generate(body: dict, keys: list[str]) -> dict:
     raise RuntimeError("no Meta API key available")
 
 
+_LOCKS: dict[str, "threading.Lock"] = {}
+
+
+def _lock_for(name: str):
+    import threading
+
+    return _LOCKS.setdefault(name, threading.Lock())
+
+
 class CacheOnly(RuntimeError):
     """A preview that is not pre-generated, on a deployment that only serves cached images."""
 
@@ -290,6 +299,14 @@ def preview(shape: str, usual_size: str, sex: str, height_cm: float, garment_id:
         return cached.read_bytes()
     if only_cached:
         return None
+    # one generation per look: a second request for the same new look waits here, then reads the cache
+    with _lock_for(cached.name):
+        if cached.exists():
+            return cached.read_bytes()
+        return _draw(cached, preset, garment_id, size, view, pair, template, images_from, reference, fit)
+
+
+def _draw(cached, preset, garment_id, size, view, pair, template, images_from, reference, fit) -> bytes:
     # Public deployments set PREVIEW_CACHE_ONLY=1: visitors see the pre-generated demo set, and nobody can
     # spend the team's Meta credits by clicking through new combinations.
     # an explicit daily limit wins: live try-ons stay on (within the cap) even if cache-only is left set
