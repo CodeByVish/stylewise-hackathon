@@ -8,6 +8,7 @@ must keep this NOTICE file and credit the original authors, as required by secti
 
 Third-party models and data used, under their own terms:
 - Meta Momentum Human Rig (MHR) body model
-- Meta Model API: Muse (chat), muse-image-1.0 (images), SAM (segmentation)
+- Meta Model API: Muse Spark (chat), muse-image-1.0 (images), SAM 3.1 (segmentation)
+- Meta Muse Spark Open (open weights), served by Baseten
 - ANSUR II anthropometric survey (U.S. Army, public domain)
 - Brand size charts cited per garment in fit-engine/stylewise_fit/data/catalogue_garments.json
