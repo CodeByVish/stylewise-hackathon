@@ -1,0 +1,20 @@
+# Render blueprint: the fit engine as a free Docker web service.
+# Render dashboard: New > Blueprint > pick this repo. Then set the secret env vars in the dashboard.
+services:
+  - type: web
+    name: stylewise-fit-engine
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: PREVIEW_CACHE_ONLY
+        value: "1"          # public demo: serve the pre-generated images, never spend credits on new ones
+      - key: MODEL_API_KEY
+        sync: false         # Meta Model API key (set in the dashboard, never committed)
+      - key: NISHA_API_BASE
+        sync: false         # e.g. https://inference.baseten.co/v1 to run Nisha on Muse Spark Open
+      - key: NISHA_API_KEY
+        sync: false         # Baseten key
+      - key: MUSE_MODEL
+        sync: false         # e.g. meta-models/muse-spark-open-1026

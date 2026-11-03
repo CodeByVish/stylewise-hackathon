@@ -3,9 +3,9 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { readGarmentPhoto, type GarmentPhoto } from '@/lib/garment-photo';
 type Result={masks:{id:string;bounds:{left:number;top:number;right:number;bottom:number};width:number;height:number;path:string;confidence?:number}[];provenance:{model:string;source:string;prompt:string;timestamp:string}};
-export default function SamGarment({photo,onPhotoChange}:{photo:GarmentPhoto|null;onPhotoChange:(photo:GarmentPhoto|null)=>void}){
+export default function SamGarment({photo,onPhotoChange,garment='garment'}:{photo:GarmentPhoto|null;onPhotoChange:(photo:GarmentPhoto|null)=>void;garment?:string}){
   const image=photo?.data||'';const source=photo?.source||'';const [dimensions,setDimensions]=useState({width:1,height:1});
-  const [prompt,setPrompt]=useState('kurta');const [busy,setBusy]=useState(false);
+  const [prompt,setPrompt]=useState(garment);const [busy,setBusy]=useState(false);
   const [storedResult,setStoredResult]=useState<{input:string;data:Result}|null>(null);
   const inputKey=JSON.stringify([image,source,prompt]);
   const result=storedResult?.input===inputKey?storedResult.data:null;const [error,setError]=useState('');

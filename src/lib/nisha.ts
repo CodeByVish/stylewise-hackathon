@@ -34,11 +34,14 @@ export type NishaReply = {
   source: "muse" | "engine-template";
 };
 
-export async function askNisha(messages: ChatTurn[], context: FitContext = {}): Promise<NishaReply> {
+// shareMeasurements: the user's consent to send their body measurements to the Meta Model API.
+// Without it the fit is still computed on our server; Muse sees only the garment and the verdicts.
+// Names, emails and phone numbers are removed from every message on the server either way.
+export async function askNisha(messages: ChatTurn[], context: FitContext = {}, shareMeasurements = false): Promise<NishaReply> {
   const response = await fetch(`${FIT_API}/nisha/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ messages, context }),
+    body: JSON.stringify({ messages, context, share_measurements: shareMeasurements }),
   });
   if (!response.ok) throw new Error(`Nisha is unavailable (HTTP ${response.status}). Is the fit API running on ${FIT_API}?`);
   return response.json();

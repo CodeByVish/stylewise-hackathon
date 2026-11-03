@@ -2,6 +2,7 @@ const allowed = new Map([
   ['GET:health', '/health'], ['GET:catalogue', '/catalogue'],
   ['POST:fit/outfit', '/fit/outfit'], ['POST:fit/evaluate', '/fit/evaluate'],
   ['POST:nisha/chat', '/nisha/chat'], ['POST:viewer/scene', '/viewer/scene'],
+  ['POST:preview/photo', '/preview/photo'],
 ]);
 async function proxy(request: Request, context: { params: Promise<{path: string[]}> }) {
   const { path } = await context.params;
@@ -11,7 +12,7 @@ async function proxy(request: Request, context: { params: Promise<{path: string[
     const body = request.method === 'POST' ? await request.text() : undefined;
     if (body && body.length > 100_000) return Response.json({error:'Request too large'}, {status:413});
     const response = await fetch(`${process.env.FIT_API_URL || 'http://127.0.0.1:8000'}${endpoint}`, {
-      method:request.method, body, headers:{'Content-Type':'application/json'}, signal:AbortSignal.timeout(120_000), cache:'no-store',
+      method:request.method, body, headers:{'Content-Type':'application/json'}, signal:AbortSignal.timeout(180_000), cache:'no-store',
     });
     return new Response(response.body, {status:response.status, headers:{'Content-Type':response.headers.get('Content-Type') || 'application/json', 'Cache-Control':'no-store'}});
   } catch {

@@ -29,6 +29,16 @@ SHOULDER_HIP_TARGET = {"female": 0.846, "male": 0.983}
 # ANSUR II median hip - bust girth (cm): the hip a typical body of that sex has at a given bust
 TYPICAL_HIP_MINUS_BUST = {"female": 7.7, "male": -3.7}
 SHAPE_RATIO_WEIGHT = 100.0
+# Belly cue: waist depth / waist breadth, ANSUR II medians (F 0.705, M 0.721). Without it the fit
+# reaches a waist girth by pushing the belly forward (presets measured 0.73-0.87).
+WAIST_DEPTH_TARGET = {"female": 0.705, "male": 0.721}
+# per FFIT shape where ANSUR II has >= 50 bodies of that shape (ovals really are rounder); else the sex median
+WAIST_DEPTH_BY_SHAPE = {"female": {"rectangle": 0.704, "triangle": 0.705, "oval": 0.749},
+                        "male": {"rectangle": 0.712, "inverted_triangle": 0.753, "oval": 0.769}}
+
+
+def waist_depth_target(sex: str, shape: str) -> float:
+    return WAIST_DEPTH_BY_SHAPE[sex].get(shape, WAIST_DEPTH_TARGET[sex])
 
 
 def shoulder_hip_target(sex: str, bust_cm: float, hip_cm: float) -> float:
@@ -36,6 +46,20 @@ def shoulder_hip_target(sex: str, bust_cm: float, hip_cm: float) -> float:
     shapes (inverted triangle) get broader-looking shoulders, wide-hipped ones narrower."""
     typical_hip = bust_cm + TYPICAL_HIP_MINUS_BUST[sex]
     return SHOULDER_HIP_TARGET[sex] * typical_hip / hip_cm
+# Bust girth minus underbust girth (girth 5.5% of stature below the bust point), cm. Without a cap the
+# fitter reaches a small waist by pinching right under the bust, which inflates it (25 cm on hourglass
+# presets, 24 cm on male hourglass). Caps: women ~ a B/C cup (12-15 cm drop), men a flat chest.
+# One-sided: flatter shapes (oval, triangle) are left alone. Project choice.
+BUST_DROP_MAX = {"female": 14.0, "male": 5.0}
+UNDERBUST_BELOW = 0.055  # fraction of stature below the bust point
+
+
+def bust_drop_cm(mesh: trimesh.Trimesh) -> float:
+    y = mesh.vertices[LANDMARK_VERTS["bust_point"], 1]
+    h = mesh.bounds[1, 1] - mesh.bounds[0, 1]
+    return girth_excluding(mesh, y, _arm_faces()) - girth_excluding(mesh, y - UNDERBUST_BELOW * h, _arm_faces())
+
+
 PRIOR_WEIGHT = 2.0  # cm of residual per unit coeff; project choice
 _DEFAULT = Path(__file__).resolve().parents[2] / "research/MHR/assets/mhr_model.pt"
 
@@ -60,6 +84,8 @@ def mesh_for(coeffs: np.ndarray, height_target_cm: float | None = None,
     with torch.no_grad():
         v, skel = model(g, mp, torch.zeros(1, 72))
     verts = v[0].numpy() / 100.0  # cm -> m
+    verts = smooth_groin(verts)  # no anatomy under clothing (see _groin)
+    verts = mannequin_head(verts)  # neutral dress-form head (see mannequin_head)
     verts[:, 1] -= verts[:, 1].min()  # feet on floor
     scale = 1.0
     if height_target_cm is not None:
@@ -69,6 +95,96 @@ def mesh_for(coeffs: np.ndarray, height_target_cm: float | None = None,
     sh = skel[0, list(ARM_ROOT_JOINTS), :3].numpy() / 100.0
     mesh.metadata["shoulder_m"] = float(np.linalg.norm(sh[0] - sh[1])) * scale  # joint centres
     return mesh
+
+
+@lru_cache(maxsize=1)
+def _groin():
+    """Front-groin vertices of the neutral body and a feathered weight per vertex (1 at the centre,
+    0 at the edge, so no seam). MHR's template has male genital geometry on every body; presets
+    replace it with a smooth surface so no anatomy shows under clothing. Fixed topology -> computed once."""
+    model, faces = _model()
+    with torch.no_grad():
+        v, _ = model(torch.zeros(1, 45), torch.zeros(1, 204), torch.zeros(1, 72))
+    V = v[0].numpy()  # cm
+    V[:, 1] -= V[:, 1].min()
+    H = V[:, 1].max()
+    cy, half_y, half_x = 0.48 * H, 0.06 * H, 7.0  # region centred on the groin, front only
+    dy, dx = np.abs(V[:, 1] - cy) / half_y, np.abs(V[:, 0]) / half_x
+    region = np.where((dy < 1) & (dx < 1) & (V[:, 2] > 3.0))[0]
+    w = np.clip(1.6 * (1 - np.maximum(dy[region], dx[region])), 0, 1)  # full strength in the inner part
+    mesh = trimesh.Trimesh(V, faces, process=False)
+    return region, w, [np.array(mesh.vertex_neighbors[i]) for i in region]
+
+
+def smooth_groin(verts: np.ndarray, iterations: int = 80) -> np.ndarray:
+    """Feathered membrane smoothing of the groin: a neutral, clothed-looking surface."""
+    region, w, nbrs = _groin()
+    v = verts.copy()
+    for _ in range(iterations):
+        mean = np.stack([v[n].mean(0) for n in nbrs])
+        v[region] += w[:, None] * (mean - v[region])
+    return v
+
+
+def waist_depth_ratio(mesh: trimesh.Trimesh, y_waist: float) -> float:
+    """Front-back depth / side-to-side breadth of the arm-free slice at the waist."""
+    seg, fi = trimesh.intersections.mesh_plane(mesh, [0, 1, 0], [0, y_waist, 0], return_faces=True)
+    p = seg[~_arm_faces()[fi]].reshape(-1, 3)
+    return float(np.ptp(p[:, 2]) / np.ptp(p[:, 0]))
+
+
+@lru_cache(maxsize=1)
+def _head():
+    """Head vertices above the neck (feathered from 86% to 89% of stature) and their neighbours."""
+    model, faces = _model()
+    with torch.no_grad():
+        v, _ = model(torch.zeros(1, 45), torch.zeros(1, 204), torch.zeros(1, 72))
+    V = v[0].numpy()
+    V[:, 1] -= V[:, 1].min()
+    H = V[:, 1].max()
+    region = np.where(V[:, 1] > 0.86 * H)[0]
+    w = np.clip((V[region, 1] / H - 0.86) / 0.03, 0, 1)
+    mesh = trimesh.Trimesh(V, faces, process=False)
+    return region, w, [np.array(mesh.vertex_neighbors[i]) for i in region]
+
+
+@lru_cache(maxsize=1)
+def _mannequin_head_template():
+    """MHR's neutral head with the face smoothed featureless (store-mannequin look): the skull, jaw,
+    ears and neck keep their real shape; eyes, nose and mouth are membrane-smoothed away."""
+    model, faces = _model()
+    with torch.no_grad():
+        v, _ = model(torch.zeros(1, 45), torch.zeros(1, 204), torch.zeros(1, 72))
+    V = v[0].numpy().astype(float)  # cm
+    V[:, 1] -= V[:, 1].min()
+    H = V[:, 1].max()
+    head = V[:, 1] > 0.885 * H
+    c = V[head].mean(0)
+    # the face: front of the head, between chin and brow
+    face = np.where(head & (V[:, 2] > c[2] + 2.0) & (V[:, 1] > 0.895 * H) & (V[:, 1] < 0.965 * H))[0]
+    mesh = trimesh.Trimesh(V, faces, process=False)
+    nbrs = [np.array(mesh.vertex_neighbors[i]) for i in face]
+    for _ in range(120):
+        V[face] = np.stack([V[n].mean(0) for n in nbrs])
+    return V / 100.0, H / 100.0  # m
+
+
+def mannequin_head(verts: np.ndarray, **_) -> np.ndarray:
+    """Put a featureless store-mannequin head on the body: the neutral head template (same for every
+    preset, faces carry no identity) is moved onto this body's neck and blended in over the neck band,
+    so every preset has a natural head shape with no face. Works on vertices in metres or cm."""
+    region, w, _ = _head()
+    T, Ht = _mannequin_head_template()
+    v = verts.copy()
+    unit = 100.0 if (v[:, 1].max() - v[:, 1].min()) > 10 else 1.0  # cm (model output) or m (presets)
+    Tv = T * unit
+    lift = v[:, 1].min() - Tv[:, 1].min()
+    Tv = Tv + np.array([0.0, lift, 0.0])
+    band = region[(w > 0) & (w < 1)]  # where the head meets the neck: align the template there
+    shift = (v[band] - Tv[band]).mean(0)
+    target = Tv[region] + shift
+    v[region] = v[region] + w[:, None] * (target - v[region])
+    return v
 
 
 def shoulder_hip_ratio(mesh: trimesh.Trimesh) -> float:
@@ -126,10 +242,15 @@ def fit(target: dict[str, float], max_nfev: int = 15, prior_weight: float = PRIO
     """
     def residuals(c):
         mesh = mesh_for(c, target["height"], bones)
-        m = measure(mesh)
+        lm = landmarks(mesh)
+        m = {"height": height_cm(mesh), **{k: lm[k][0] for k in REGIONS}}
         extra = []
         if "shoulder_hip" in target:  # optional sex cue; 0.01 of ratio weighs like 1 cm of girth
-            extra = [SHAPE_RATIO_WEIGHT * (shoulder_hip_ratio(mesh) - target["shoulder_hip"])]
+            extra.append(SHAPE_RATIO_WEIGHT * (shoulder_hip_ratio(mesh) - target["shoulder_hip"]))
+        if "bust_drop_max" in target:  # cm, weighs like girth; only above the cap
+            extra.append(max(0.0, bust_drop_cm(mesh) - target["bust_drop_max"]))
+        if "waist_depth" in target:  # optional belly cue, same weighting
+            extra.append(SHAPE_RATIO_WEIGHT * (waist_depth_ratio(mesh, lm["waist"][1]) - target["waist_depth"]))
         return np.concatenate([[m[k] - target[k] for k in REGIONS], extra, prior_weight * c])
 
     def jac(c, step=0.05):
@@ -142,7 +263,10 @@ def fit(target: dict[str, float], max_nfev: int = 15, prior_weight: float = PRIO
     start = np.zeros(N_SHAPE) if x0 is None else np.asarray(x0, dtype=float)
     res = least_squares(residuals, start, jac=jac, max_nfev=max_nfev)
     mesh = mesh_for(res.x, target["height"], bones)
-    got = {k: float(v) for k, v in (measure(mesh) | {"shoulder_hip": shoulder_hip_ratio(mesh)}).items()}
+    lm = landmarks(mesh)
+    got = {k: float(v) for k, v in (measure(mesh) | {"shoulder_hip": shoulder_hip_ratio(mesh),
+                                                     "waist_depth": waist_depth_ratio(mesh, lm["waist"][1]),
+                                                     "bust_drop": bust_drop_cm(mesh)}).items()}
     return {
         "coeffs": res.x,
         "measured": got,

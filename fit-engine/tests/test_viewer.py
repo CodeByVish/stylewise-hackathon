@@ -1,11 +1,27 @@
+from pathlib import Path
 import io
 
 import trimesh
+import numpy as np
 from fastapi.testclient import TestClient
 
 from stylewise_fit.server import app
+from stylewise_fit.viewer import renderer
 
 client = TestClient(app)
+
+
+def test_loose_trouser_offset_does_not_cross_the_crotch():
+    body = trimesh.load(Path(__file__).resolve().parents[2] / 'fixtures/presets/female_rectangle_XL_165.glb', force='mesh', process=False)
+    render = renderer()
+    heights = body.vertices[body.faces][:, :, 1]
+    landmarks = render.landmark_heights(body)
+    keep = (~render.ARM_FACES) & (heights.max(1) >= 0.1) & (heights.min(1) <= render.waistband(landmarks))
+    mesh = render.smooth_base(body).submesh([np.flatnonzero(keep)], append=True)
+    before = np.asarray(mesh.vertices).copy()
+    render.offset_trousers(mesh, lambda y: np.full_like(y, 0.07))
+    after = np.asarray(mesh.vertices)
+    assert np.all(before[:, 0] * after[:, 0] >= -1e-12)
 
 
 def test_preset_scene_has_body_and_selected_garment():

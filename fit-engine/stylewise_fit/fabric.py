@@ -18,7 +18,7 @@ class Fabric:
 FABRICS = {
     # rigid wovens
     "silk": Fabric(), "satin": Fabric(), "cotton": Fabric(), "linen": Fabric(),
-    "polyester": Fabric(), "nylon": Fabric(), "denim": Fabric(), "leather": Fabric(),
+    "polyester": Fabric(), "nylon": Fabric(), "denim": Fabric(), "leather": Fabric(), "viscose": Fabric(),
     # thick fabrics
     "velvet": Fabric(bulk_cm=1.0), "wool": Fabric(bulk_cm=1.0), "acrylic": Fabric(bulk_cm=0.5),
     # stretch

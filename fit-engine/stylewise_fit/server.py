@@ -6,6 +6,7 @@ from . import __version__
 from pydantic import BaseModel
 
 from .catalogue import catalogue, garment_input
+from .preview import PHOTOS
 from .fit import evaluate
 from .nisha import NishaReply, NishaRequest, chat, muse_configured
 from .schemas import CONTRACT_VERSION, BodyInput, FitReport, FitRequest, Preferences
@@ -31,6 +32,7 @@ class OutfitRequest(BaseModel):
     body: BodyInput
     items: list[OutfitPiece]
     preferences: Preferences = Preferences()
+    tone: str = "grey"  # 3D mannequin finish: grey, light, medium, tan or deep (display only)
 
 
 class PieceResult(BaseModel):
@@ -40,11 +42,22 @@ class PieceResult(BaseModel):
     error: str | None = None  # e.g. no sourced measurements for this item
 
 
+# Keep questionable examples available to engine tests, but out of the demo catalogue.
+# The legacy green kurta uses a men's photo with a women's chart; the ivory set's
+# guide depicts a different cut. Items without photos cannot be previewed faithfully.
+HIDDEN = {"green-kurta", "ivory-set", "ivory-kurta", "gold-trousers", "navy-bottom",
+          "black-satin-dress", "uniqlo-crew-tee", "uniqlo-dress-E487286", "reference-dress",
+          # photos read as menswear or as a coat/cape rather than a women's set; premium and budget share one photo
+          "evening-kurta", "premium-set", "budget-set", "navy-set", "maroon-set"}
+
+
 @app.get("/catalogue")
 def list_catalogue() -> list[dict]:
     """Catalogue items and whether they have sourced garment cm (only those can be fitted)."""
     return [{"garment_id": gid, "name": g["name"], "category": g["category"], "fabric": g["fabric"],
-             "sizes": list(g["sizes"]), "fittable": bool(g["sizes"])} for gid, g in catalogue().items()]
+             "sizes": list(g["sizes"]), "fittable": bool(g["sizes"]), "for": g.get("for", "unisex"),
+             "photo": (PHOTOS / f"{gid}.jpg").exists()}
+            for gid, g in catalogue().items() if gid not in HIDDEN]
 
 
 @app.post("/fit/outfit", response_model=list[PieceResult])
@@ -72,6 +85,45 @@ def nisha_chat(req: NishaRequest) -> NishaReply:
 def fit_evaluate(req: FitRequest) -> FitReport:
     # invalid requests get FastAPI's 422 with pydantic's field errors
     return evaluate(req)
+
+
+class PreviewRequest(BaseModel):
+    body: BodyInput  # a preset body (silhouette + usual size + sex + height)
+    garment_id: str
+    size: str
+    style: str = "mannequin"  # or "illustration"
+    view: str = "front"  # front, side or back
+    preferences: Preferences = Preferences()
+    pair_garment_id: str | None = None  # style a top with a bottom (or vice versa) in the picture
+    pair_size: str | None = None
+
+
+@app.post("/preview/photo")
+def preview_photo(req: PreviewRequest) -> dict:
+    """A visual impression (faceless mannequin by default) next to the measured FitReport.
+    The picture never decides fit: the report does."""
+    from fastapi import HTTPException
+    import base64
+
+    from .preview import CAPTION, CacheOnly, fit_notes, preview
+
+    if req.body.source != "preset" or req.body.preset is None:
+        raise HTTPException(status_code=422, detail="Preview needs a preset body (silhouette + usual size).")
+    try:
+        garment = garment_input(req.garment_id, req.size)
+        report = evaluate(FitRequest(body=req.body, garment=garment, preferences=req.preferences))
+        p = req.body.preset
+        png = preview(p.shape, p.usual_size, p.sex, req.body.height_cm, req.garment_id, req.size, req.style,
+                      fit_notes(report), req.view,
+                      (req.pair_garment_id, req.pair_size) if req.pair_garment_id and req.pair_size else None)  # the picture is told the measured fit, region by region
+    except (ValueError, FileNotFoundError) as error:
+        raise HTTPException(status_code=422, detail=str(error)) from error
+    except CacheOnly as error:  # public demo: only the pre-generated set is served
+        raise HTTPException(status_code=404, detail=str(error)) from error
+    except RuntimeError as error:  # no key (503) or the image model refused / failed (502)
+        raise HTTPException(status_code=503 if "no Meta API key" in str(error) else 502, detail=str(error)) from error
+    return {"image": "data:image/png;base64," + base64.b64encode(png).decode(), "style": req.style, "view": req.view,
+            "caption": CAPTION, "report": report.model_dump()}
 
 
 @app.post("/viewer/scene")

@@ -8,9 +8,13 @@ Writes <out>/<preset_id>.glb and <out>/index.json (targets, achieved, errors, FF
 import argparse
 import json
 import os
+import shutil
+import tempfile
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
+import sys
+sys.path.insert(0, str(Path(__file__).parent))
 from stylewise_fit.presets import (DISPLAY_NAMES, HEIGHTS_CM, SEXES, SHAPES, SIZES, classify, estimate,
                                    preset_id)
 
@@ -26,12 +30,13 @@ def _acceptable(r: dict, shape: str, uncertainty_cm: float) -> bool:
 
 
 def _target(sex: str, shape: str, size: str, height: float) -> dict:
-    from stylewise_fit.mhr_body import shoulder_hip_target  # torch import stays in workers
+    from stylewise_fit.mhr_body import BUST_DROP_MAX, shoulder_hip_target, waist_depth_target  # torch stays in workers
 
     e = estimate(shape, size, sex)
     # shoulder_hip is a ratio, not cm: the sex cue that keeps female presets from reading as male
     return {"height": height, "chest": e.chest_cm, "waist": e.waist_cm, "hip": e.hip_cm,
-            "shoulder_hip": round(shoulder_hip_target(sex, e.chest_cm, e.hip_cm), 3)}
+            "shoulder_hip": round(shoulder_hip_target(sex, e.chest_cm, e.hip_cm), 3),
+            "waist_depth": waist_depth_target(sex, shape), "bust_drop_max": BUST_DROP_MAX[sex] + (4.0 if (sex, shape) == ("female", "hourglass") else 0.0)}
 
 
 def _entry_ok(c: dict) -> bool:
@@ -58,7 +63,10 @@ def run_one(sex: str, shape: str, size: str, height: float, out: str, max_nfev: 
     r = fit(target, max_nfev=max_nfev, prior_weight=prior_weight, x0=x0)
     r["seconds"] += extra
     pid = preset_id(shape, size, height, sex)
-    r["mesh"].export(Path(out) / f"{pid}.glb")
+    from repose import repose  # relaxed arms for display; arms are excluded from every measurement
+    shown = r["mesh"].copy()
+    shown.vertices = repose(shown.vertices)
+    shown.export(Path(out) / f"{pid}.glb")
     m = r["measured"]
     return {
         "id": pid, "sex": sex, "shape": shape, "display_name": DISPLAY_NAMES[shape], "usual_size": size,
@@ -93,9 +101,16 @@ def main() -> None:
         jobs = [j for j in jobs if preset_id(j[1], j[2], j[3], j[0]) in a.only]
     print(f"{len(jobs)} presets on {a.workers} workers", flush=True)
 
+    # Workers and warm-start retries write to separate temporary directories. A rejected
+    # retry must never overwrite the mesh corresponding to the index entry we keep.
+    work = tempfile.TemporaryDirectory(prefix="stylewise-preset-")
+    first_dir = Path(work.name) / "first"
+    retry_dir = Path(work.name) / "retry"
+    first_dir.mkdir()
+    retry_dir.mkdir()
     results = []
     with ProcessPoolExecutor(a.workers) as ex:
-        futs = [ex.submit(run_one, *j, a.out, a.max_nfev, a.prior_weight) for j in jobs]
+        futs = [ex.submit(run_one, *j, str(first_dir), a.max_nfev, a.prior_weight) for j in jobs]
         for f in as_completed(futs):
             r = f.result()
             results.append(r)
@@ -119,14 +134,18 @@ def main() -> None:
     if retry:
         print(f"pass 2: {len(retry)} warm-start refits", flush=True)
         with ProcessPoolExecutor(a.workers) as ex:
-            futs = [ex.submit(run_one, *j, a.out, a.max_nfev, a.prior_weight, nb) for j, nb in retry]
+            futs = [ex.submit(run_one, *j, str(retry_dir), a.max_nfev, a.prior_weight, nb) for j, nb in retry]
             for f in as_completed(futs):
                 r2 = f.result()
                 old = next(r for r in results if r["id"] == r2["id"])
                 print(r2["id"], "from", r2["warm_start"], r2["fit_error_cm"], r2["ffit_class_of_mesh"], flush=True)
                 if r2["accepted"] or max(abs(r2["fit_error_cm"][k]) for k in ("chest", "waist", "hip")) < \
                         max(abs(old["fit_error_cm"][k]) for k in ("chest", "waist", "hip")):
-                    results[results.index(old)] = r2  # run_one already overwrote the GLB
+                    results[results.index(old)] = r2
+                    shutil.copyfile(retry_dir / f'{r2["id"]}.glb', first_dir / f'{r2["id"]}.glb')
+    for result in results:
+        shutil.copyfile(first_dir / f'{result["id"]}.glb', Path(a.out) / f'{result["id"]}.glb')
+    work.cleanup()
     results.sort(key=lambda r: r["id"])
     index = Path(a.out) / "index.json"
     if a.only and index.exists():  # merge re-generated presets into the existing index

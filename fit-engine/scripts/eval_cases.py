@@ -26,8 +26,8 @@ CASES = [  # (label, body, garment_id, size, pref, region, expected verdict, why
     ("Missing hip measurement", B | {"chest_cm": 90}, "green-kurta", "M", None, "hip", "unknown",
      "never estimated when not given"),
     ("Preset body near band edge", {"height_cm": 165, "source": "preset",
-     "preset": {"shape": "rectangle", "usual_size": "M", "sex": "female"}}, "green-kurta", "M", None, "chest",
-     "borderline", "+3.1 cm ±2.7 crosses the 2 cm minimum"),
+     "preset": {"shape": "rectangle", "usual_size": "M", "sex": "female"}}, "green-kurta", "S", None, "chest",
+     "borderline", "+1.5 cm ±2.5 crosses the 2 cm minimum"),
 ]
 
 

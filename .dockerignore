@@ -1,0 +1,17 @@
+# keep the image small and secrets out
+.env
+.env.*
+**/.venv
+node_modules
+.next
+research
+src
+public
+docs
+contracts
+.git
+.claude
+fit-engine/tests
+fit-engine/experiments/*
+!fit-engine/experiments/results
+**/__pycache__

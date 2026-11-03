@@ -47,8 +47,46 @@ def solve_bones(sex: str, h: float, neutral_ratio: float) -> dict[int, float]:
         H = m.vertices[:, 1].max() * 100
         return [H - h, 100 * (crotch_cm(m) / H - want_ratio)]
 
-    x = least_squares(res, [0.0, 0.0], diff_step=0.05, max_nfev=30).x
+    def jac(x, step=0.02):
+        # explicit forward differences: scipy's relative step is 0 at x = 0 (same issue as mhr_body.fit)
+        r0 = np.array(res(x))
+        return np.stack([(np.array(res(x + step * e)) - r0) / step for e in np.eye(2)], 1)
+
+    x = least_squares(res, np.zeros(2), jac=jac, max_nfev=30).x
     return {LEG[0]: float(x[0]), LEG[1]: float(x[0]), SPINE: float(x[1])}
+
+
+def fit_joint(target: dict, sex: str, neutral_ratio: float, x0_bones: dict[int, float], max_nfev: int = 25,
+              prior_weight: float = 0.2) -> dict:
+    """Shape coeffs + leg + spine solved together: girths, stature and ANSUR leg proportion are all
+    residuals, so the girth fit cannot undo the proportion. A tiny global scale fixes stature last."""
+    from stylewise_fit.mhr_body import N_SHAPE, measure
+
+    want = ratio_target(sex, target["height"], neutral_ratio)
+
+    def unpack(x):
+        return x[:N_SHAPE], {LEG[0]: x[N_SHAPE], LEG[1]: x[N_SHAPE], SPINE: x[N_SHAPE + 1]}
+
+    def res(x):
+        c, bones = unpack(x)
+        m = mesh_for(c, target["height"], bones)
+        g = measure(m)
+        raw = mesh_for(c, None, bones)  # unscaled: stature from bones alone
+        H = raw.vertices[:, 1].max() * 100
+        return np.concatenate([[g[k] - target[k] for k in ("chest", "waist", "hip")],
+                               [H - target["height"], 100 * (crotch_cm(m) / (m.vertices[:, 1].max() * 100) - want)],
+                               prior_weight * c])
+
+    def jac(x, step=0.05):
+        r0 = res(x)
+        return np.stack([(res(x + step * e) - r0) / step for e in np.eye(len(x))], 1)
+
+    x0 = np.concatenate([np.zeros(N_SHAPE), [x0_bones[LEG[0]], x0_bones[SPINE]]])
+    x = least_squares(res, x0, jac=jac, max_nfev=max_nfev).x
+    c, bones = unpack(x)
+    m = mesh_for(c, target["height"], bones)
+    g = measure(m)
+    return {"mesh": m, "error": {k: g[k] - target[k] for k in ("chest", "waist", "hip")}, "bones": bones}
 
 
 def main() -> None:
@@ -60,8 +98,11 @@ def main() -> None:
         for h in ((155, 165, 175) if sex == "female" else (165, 175, 185)):
             target = {"height": h, "chest": e.chest_cm, "waist": e.waist_cm, "hip": e.hip_cm}
             bones = solve_bones(sex, h, neutral_ratio)
-            for method, bn in (("global", None), ("bones", bones)):
-                r = fit(target, max_nfev=25, prior_weight=0.2, bones=bn)
+            for method, bn in (("global", None), ("bones", bones), ("joint", bones)):
+                r = fit_joint(target, sex, neutral_ratio, bones) if method == "joint" else \
+                    fit(target, max_nfev=25, prior_weight=0.2, bones=bn)
+                if method == "joint":
+                    bn = bones = r["bones"]
                 H = r["mesh"].vertices[:, 1].max() * 100
                 rows.append({"sex": sex, "height": h, "method": method,
                              "crotch_ratio": round(crotch_cm(r["mesh"]) / H, 4),

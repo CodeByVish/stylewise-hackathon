@@ -9,7 +9,7 @@
 **Changes in v0.3.0:**
 - `body.preset.sex` (`female` or `male`, default `female`): picks the size chart and shape prototypes.
 - `usual_size` adds `2XL` and `3XL`.
-- The size chart is now **ANSUR II** (real data), not synthetic. The uncertainty is ±2.7 cm (women) / ±2.85 cm (men), down from ±4.
+- The size chart was ANSUR II in v0.3.0. Since 2026-11-03 it is a general retail chart (±2.5 cm); see *Body presets* below.
 - Preset ids are now `<sex>_<shape>_<size>_<height>` (e.g. `female_rectangle_M_165`), and height snaps to the nearest generated stature.
 - Preset reports set `body_mesh_ref` to `fixtures/presets/<id>.glb`.
 
@@ -38,14 +38,14 @@ Rules:
 ## Body presets (for users who don't share measurements)
 The user picks a **silhouette** (no shape words in the UI, just the drawing and a neutral name), their sex, their usual size and their height. The engine estimates the girths with a ± range of half a size interval. A region's verdict is `borderline` if it would change anywhere inside that range. Any girth the user does type in overrides the estimate.
 
-**Sizes** come from ANSUR II (US Army 2012, public domain; 1,986 women, 4,082 men), built with the ISO 8559-3 approach: chest is the primary dimension (ISO 8559-2), the central 90% (P5–P95) is split into XS–XL, and 2XL/3XL continue the same interval width above P95 so larger bodies are included. Source: `fit-engine/scripts/ansur_sizes.py` → `fit-engine/stylewise_fit/data/size_chart_ansur2.json`.
+**Sizes** come from a general retail body chart (cm, midpoint of each printed range): `fit-engine/stylewise_fit/data/size_chart_standard.json`. ANSUR II (US military) ran about one size large for a general shopper, so it is no longer used for sizes. It still provides the female/male shoulder-to-hip cue and the waist depth cue. The ± range is half the widest printed bust range: **±2.5 cm**.
 
-| Chest/bust cm | XS | S | M | L | XL | 2XL | 3XL |
+| Bust/chest cm | XS | S | M | L | XL | 2XL | 3XL* |
 |---|---|---|---|---|---|---|---|
-| Women | 85.1 | 90.5 | 95.9 | 101.3 | 106.7 | 112.1 | 117.5 |
-| Men | 95.1 | 100.8 | 106.4 | 112.2 | 117.8 | 123.6 | 129.2 |
+| Women | 81.5 | 87.5 | 92.5 | 99.5 | 106.5 | 114.5 | 122.5 |
+| Men | 86.5 | 91.5 | 99.5 | 109.5 | 119.5 | 129.5 | 139.5 |
 
-Limitation: ANSUR II is a military sample (fitter and younger than the general public, US only). Demographic-specific charts can be added later as further entries in the size chart file.
+\*3XL continues the 2XL step. The chart's primary source URL still needs citing.
 
 **Shapes** are the five standard apparel categories. The boundaries follow FFIT (Simmons, Istook & Devarajan 2004), converted from inches. Each preset is a prototype well inside its category. Source: `fit-engine/stylewise_fit/presets.py`.
 
