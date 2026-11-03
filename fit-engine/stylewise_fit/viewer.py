@@ -37,6 +37,11 @@ def solid(mesh: trimesh.Trimesh, rgb, roughness: float = 0.82) -> trimesh.visual
     return trimesh.visual.TextureVisuals(material=material)
 
 
+# mannequin finishes the shopper can pick; grey matches the realistic view
+TONES = {"grey": [0.62, 0.62, 0.63], "light": [0.93, 0.80, 0.70], "medium": [0.78, 0.60, 0.45],
+         "tan": [0.62, 0.45, 0.32], "deep": [0.40, 0.27, 0.19]}
+
+
 @lru_cache(maxsize=24)
 def scene_bytes(payload: str) -> bytes:
     data = json.loads(payload)
@@ -51,12 +56,29 @@ def scene_bytes(payload: str) -> bytes:
     fractions = json.loads(landmark_file.read_text())[pid]
     landmarks = {key: value * body.bounds[1, 1] for key, value in fractions.items()}
     scene = trimesh.Scene()
-    body.visual = solid(body, [0.62, 0.62, 0.63], roughness=0.68)  # matte grey mannequin: light garments stay visible
+    tone = TONES.get(data.get('tone') or 'grey', TONES['grey'])
+    body.visual = solid(body, tone, roughness=0.68)  # matte mannequin finish, grey by default
     scene.add_geometry(body, node_name='body')
-    under, under_rgb = render.underwear(body, landmarks, preset.sex)  # modesty layer under every garment
-    under.visual = solid(under, under_rgb[0], roughness=0.75)
+    # Modesty layer for the 3D view, built here (not in render_fit, so cached AI images stay valid): briefs
+    # from the smoothed body surface, 6 mm out, so no anatomy reads through, cut just below the crotch;
+    # a bra band for women. Dark charcoal so it reads as opaque fabric against the grey mannequin.
+    H = body.bounds[1, 1]
+    ys = body.vertices[body.faces][:, :, 1]
+    top = render.waistband(landmarks) - 0.02 * H
+    keep = (~render.ARM_FACES) & (ys.max(1) >= 0.452 * H - 0.02) & (ys.min(1) <= top + 0.02)
+    briefs = render.smooth_base(body).submesh([np.where(keep)[0]], append=True)
+    briefs.vertices = briefs.vertices + briefs.vertex_normals * 0.006
+    parts = [render.band(briefs, 0.452 * H, top)]
+    if preset.sex == 'female':
+        parts.append(render.skirt_tube(body, landmarks['chest'] + 0.012 * H, landmarks['chest'] - 0.045 * H,
+                                       0.006, 0.0, rings=10))
+    under = trimesh.util.concatenate(parts)
+    under.visual = solid(under, [0.24, 0.24, 0.26], roughness=0.8)
     scene.add_geometry(under, node_name='underwear')
-    # no hair: the same faceless grey mannequin as the realistic view
+    # moulded mannequin hair (bob / crop), a shade darker than the body: no strands, no face
+    hair_mesh, _ = render.hair(body, preset.sex)
+    hair_mesh.visual = solid(hair_mesh, [c * 0.82 for c in tone], roughness=0.6)
+    scene.add_geometry(hair_mesh, node_name='hair')
     items = [catalogue()[piece['garment_id']] for piece in data['items']]
     cuts = [render.cut_for(piece['garment_id'], it['name'], it['category']) for piece, it in zip(data['items'], items)]
     if render.needs_lower(cuts, [it['category'] for it in items]):  # never a bare-legged kurta

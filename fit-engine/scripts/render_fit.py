@@ -73,6 +73,7 @@ SHOULDER_LINE = 0.80  # hanging garments are one piece from here down (just unde
 # neckline shape: (front depth cm, back depth cm, half-width cm, shape exponent: 1 = V, 2 = round,
 # 4+ = flat/boat), measured down from the base of the neck; collar adds a 3 cm band up the neck
 NECKLINES = {"crew": (5, 2, 8, 2), "round": (9, 3, 10, 2), "v": (16, 3, 9, 1), "boat": (4, 4, 15, 6),
+             "square": (9, 3, 10, 8),
              "collar": (5, 2, 8, 2)}  # a mandarin collar reads as a close crew line: no standing ring
 
 
@@ -86,6 +87,23 @@ def band(mesh: trimesh.Trimesh, y_low: float, y_high: float) -> trimesh.Trimesh:
     straight waistbands and hems instead of the triangle-staircase of whole-face selection."""
     mesh = mesh.slice_plane([0, y_low, 0], [0, 1, 0])
     return mesh.slice_plane([0, y_high, 0], [0, -1, 0])
+
+
+def offset_trousers(mesh: trimesh.Trimesh, offset) -> None:
+    """Offset the legs without pushing their inner surfaces through the centre plane.
+
+    A loose size can have several centimetres of radial ease. Applying that entire
+    amount along the inner-thigh normals crosses the two legs and folds the crotch
+    inside out. Taper just that component near the centre seam.
+    """
+    vertices = np.asarray(mesh.vertices)
+    delta = mesh.vertex_normals * offset(vertices[:, 1])[:, None]
+    toward_centre = vertices[:, 0] * delta[:, 0] < 0
+    limit = np.maximum(np.abs(vertices[:, 0]) - 0.002, 0.0)
+    scale = np.ones(len(vertices))
+    scale[toward_centre] = np.minimum(1.0, limit[toward_centre] /
+                                      np.maximum(np.abs(delta[toward_centre, 0]), 1e-9))
+    mesh.vertices = vertices + delta * scale[:, None]
 
 
 def cut_for(gid: str, name: str, category: str) -> dict:
@@ -343,10 +361,10 @@ def shell(body: trimesh.Trimesh, report, gid: str, name: str, category: str, lm:
         # take a margin of whole triangles, offset, then cut with planes: straight waistband and hems
         keep = (~ARM_FACES) & (ys.max(1) >= hem * H - 0.02) & (ys.min(1) <= waistband(lm) + 0.02)
         sub = base.submesh([np.where(keep)[0]], append=True)
-        sub.vertices = sub.vertices + sub.vertex_normals * off(sub.vertices[:, 1])[:, None]
+        offset_trousers(sub, off)
         parts.append(band(sub, hem * H, waistband(lm)))
     elif category == "bottom":  # skirts: hang from the waistband
-        parts.append(skirt_tube(body, waistband(lm), hem * H, off, (flare or 0) / 100,
+        parts.append(skirt_tube(body, waistband(lm), hem * H, off, (flare or 0) / (200 * np.pi),
                                 flare_from=lm["hip"], openings=openings))
     else:
         # hang the whole torso from the shoulder line, so underwear (bra band) and the chest sit
@@ -373,7 +391,7 @@ def shell(body: trimesh.Trimesh, report, gid: str, name: str, category: str, lm:
         def clear(y):  # just clearance; looseness comes from the garment girth and the straight fall
             return 0.015 + lift
         creases = [(lm[r], min(0.002 + short[r] * 0.0002, 0.006)) for r in short if r in lm]
-        parts.append(skirt_tube(body, tube_top, hem * H, clear, (flare or 0) / 100, rings=rings,
+        parts.append(skirt_tube(body, tube_top, hem * H, clear, (flare or 0) / (200 * np.pi), rings=rings,
                                 flare_from=lm["hip"], openings=openings, girth_at=girth_at, fall_from=lm[cut.get("fall", "waist")],
                                 creases=creases))
         if cut.get("belt"):  # tie belt at the natural waist: a raised 3.5 cm band over the garment

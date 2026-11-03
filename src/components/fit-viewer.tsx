@@ -9,9 +9,12 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 export type View = 'front' | 'side' | 'back' | 'quarter';
 // camera angle around the figure (degrees from the front)
 const VIEW_ANGLE: Record<View, number> = { front: 0, quarter: 35, side: 90, back: 180 };
-export default function FitViewer({ bodyUrl, garmentUrl, view, rotating, showBody, combined = false }: {
-  bodyUrl: string; garmentUrl?: string; combined?: boolean; view: View; rotating: boolean; showBody: boolean;
+const SKIN_TONES = ['#5b382b', '#80533f', '#ad7658', '#c79370', '#ddb99d'];
+
+export default function FitViewer({ bodyUrl, garmentUrl, view, rotating, showBody, combined = false, skinTone }: {
+  bodyUrl: string; garmentUrl?: string; combined?: boolean; view: View; rotating: boolean; showBody: boolean; skinTone?: string;
 }) {
+  const resolvedSkinTone = skinTone ?? SKIN_TONES[[...bodyUrl].reduce((sum, char) => sum + char.charCodeAt(0), 0) % SKIN_TONES.length];
   const host = useRef<HTMLDivElement>(null);
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
   const controlsRef = useRef<OrbitControls | null>(null);
@@ -25,6 +28,15 @@ export default function FitViewer({ bodyUrl, garmentUrl, view, rotating, showBod
     if (bodyRef.current) bodyRef.current.visible = showBody;
     if (controlsRef.current) controlsRef.current.autoRotate = rotating;
   }, [rotating, showBody, view]);
+  useEffect(() => {
+    bodyRef.current?.traverse(child => {
+      if (!(child instanceof THREE.Mesh) || !child.userData.bodySurface) return;
+      const materials = Array.isArray(child.material) ? child.material : [child.material];
+      materials.forEach(material => {
+        if (material instanceof THREE.MeshStandardMaterial) material.color.set(resolvedSkinTone);
+      });
+    });
+  }, [resolvedSkinTone]);
   useEffect(() => {
     const camera = cameraRef.current, controls = controlsRef.current;
     if (!camera || !controls) return;
@@ -93,10 +105,41 @@ export default function FitViewer({ bodyUrl, garmentUrl, view, rotating, showBod
     const observer = new ResizeObserver(resize); observer.observe(container); resize();
     queueMicrotask(() => { if (!disposed) { setFailed(false); setStatus('Loading 3D assets…'); } });
     const loader = new GLTFLoader();
+    const addHairCap = (root: THREE.Object3D) => {
+      const bounds = new THREE.Box3().setFromObject(root);
+      const size = bounds.getSize(new THREE.Vector3());
+      const center = bounds.getCenter(new THREE.Vector3());
+      if (size.y < 0.1) return;
+      const radius = 0.064 * size.y;
+      const geometry = new THREE.SphereGeometry(radius, 48, 24, 0, Math.PI * 2, 0, Math.PI * 0.63);
+      geometry.scale(1, 1.12, 1.04);
+      const material = new THREE.MeshStandardMaterial({ color: '#352820', roughness: 0.92, metalness: 0 });
+      const cap = new THREE.Mesh(geometry, material);
+      cap.name = 'neutral molded hair';
+      cap.position.set(center.x, bounds.max.y - 0.066 * size.y, center.z - 0.006 * size.y);
+      cap.castShadow = true; cap.receiveShadow = true;
+      root.add(cap);
+    };
     const load = async (url: string, isBody: boolean) => {
       const gltf = await loader.loadAsync(url);
       if (disposed) { disposeObject(gltf.scene); return; }
-      if (isBody) { bodyRef.current = combined ? gltf.scene.getObjectByName('body') || gltf.scene : gltf.scene; bodyRef.current.visible = options.current.showBody; }
+      if (isBody) {
+        bodyRef.current = combined ? gltf.scene.getObjectByName('body') || gltf.scene : gltf.scene;
+        bodyRef.current.traverse(child => {
+          if (!(child instanceof THREE.Mesh)) return;
+          child.userData.bodySurface = true;
+          child.material = Array.isArray(child.material)
+            ? child.material.map(material => material.clone())
+            : child.material.clone();
+          const materials = Array.isArray(child.material) ? child.material : [child.material];
+          // an engine scene already carries its finish, underwear and moulded hair
+          if (!combined) materials.forEach(material => {
+            if (material instanceof THREE.MeshStandardMaterial) material.color.set(resolvedSkinTone);
+          });
+        });
+        if (!combined) addHairCap(bodyRef.current);
+        bodyRef.current.visible = options.current.showBody;
+      }
       gltf.scene.traverse(child => {
         if (!(child instanceof THREE.Mesh)) return;
         child.castShadow = true; child.receiveShadow = true;
@@ -117,6 +160,6 @@ export default function FitViewer({ bodyUrl, garmentUrl, view, rotating, showBod
       disposeObject(scene); envMap.dispose(); pmrem.dispose(); renderer.dispose(); renderer.domElement.remove();
       cameraRef.current = null; controlsRef.current = null; frameRef.current = null; bodyRef.current = null;
     };
-  }, [bodyUrl, garmentUrl, combined]);
+  }, [bodyUrl, garmentUrl, combined, resolvedSkinTone]);
   return <><div ref={host} className="canvas-host" role="img" aria-label={`Interactive 3D outfit, ${view} view. Use the view buttons for keyboard navigation.`} />{status && <div className={`viewer-status ${failed ? 'error' : ''}`} role="status">{status}</div>}</>;
 }

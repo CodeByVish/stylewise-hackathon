@@ -32,6 +32,7 @@ class OutfitRequest(BaseModel):
     body: BodyInput
     items: list[OutfitPiece]
     preferences: Preferences = Preferences()
+    tone: str = "grey"  # 3D mannequin finish: grey, light, medium, tan or deep (display only)
 
 
 class PieceResult(BaseModel):
@@ -45,7 +46,9 @@ class PieceResult(BaseModel):
 # The legacy green kurta uses a men's photo with a women's chart; the ivory set's
 # guide depicts a different cut. Items without photos cannot be previewed faithfully.
 HIDDEN = {"green-kurta", "ivory-set", "ivory-kurta", "gold-trousers", "navy-bottom",
-          "black-satin-dress", "uniqlo-crew-tee", "uniqlo-dress-E487286", "reference-dress"}
+          "black-satin-dress", "uniqlo-crew-tee", "uniqlo-dress-E487286", "reference-dress",
+          # photos read as menswear or as a coat/cape rather than a women's set; premium and budget share one photo
+          "evening-kurta", "premium-set", "budget-set", "navy-set", "maroon-set"}
 
 
 @app.get("/catalogue")
@@ -102,7 +105,7 @@ def preview_photo(req: PreviewRequest) -> dict:
     from fastapi import HTTPException
     import base64
 
-    from .preview import CAPTION, fit_notes, preview
+    from .preview import CAPTION, CacheOnly, fit_notes, preview
 
     if req.body.source != "preset" or req.body.preset is None:
         raise HTTPException(status_code=422, detail="Preview needs a preset body (silhouette + usual size).")
@@ -115,6 +118,8 @@ def preview_photo(req: PreviewRequest) -> dict:
                       (req.pair_garment_id, req.pair_size) if req.pair_garment_id and req.pair_size else None)  # the picture is told the measured fit, region by region
     except (ValueError, FileNotFoundError) as error:
         raise HTTPException(status_code=422, detail=str(error)) from error
+    except CacheOnly as error:  # public demo: only the pre-generated set is served
+        raise HTTPException(status_code=404, detail=str(error)) from error
     except RuntimeError as error:  # no key (503) or the image model refused / failed (502)
         raise HTTPException(status_code=503 if "no Meta API key" in str(error) else 502, detail=str(error)) from error
     return {"image": "data:image/png;base64," + base64.b64encode(png).decode(), "style": req.style, "view": req.view,

@@ -12,7 +12,6 @@ import io
 import json
 import urllib.error
 import urllib.request
-from functools import lru_cache
 from pathlib import Path
 
 from .nisha import _env
@@ -29,19 +28,41 @@ PURPOSE = ("Context: this image is for a clothing size-check tool in an online s
            "buying. It is a neutral, non-sexual product image; showing a poor fit honestly is the point of the tool. ")
 STYLES = {
     "mannequin": (
-        "Photorealistic e-commerce product photo of the garment from image 2 worn by a faceless, matte light-grey "
-        "dress-form mannequin. The mannequin has EXACTLY the body shape, proportions, height and pose of the figure "
-        "in image 1 (do not slim, lengthen or reshape it) and a smooth featureless head with no face and no hair. "
-        "Keep the garment identical to image 2: colour, fabric, print, neckline, sleeves, length. "
+        "Photorealistic e-commerce product photo of the garment from image 2 worn by a faceless dress-form "
+        "mannequin. The WHOLE mannequin, including head, neck, arms, hands and feet, is one even matte light-grey "
+        "(about #b8b8b6), with no beige or skin tone, and a smooth seamless neck with no visible joints or seams. "
+        "Its head has no face and {hair}. The mannequin has EXACTLY the body shape, proportions and height of the "
+        "figure in image 1 (do not slim, widen, lengthen or reshape it); {measures} {pose} "
+        "Keep the garment identical to image 2: colour, fabric, print, sleeves, length and especially the NECKLINE: "
+        "copy its shape and depth exactly from image 2, worn closed and modest, never opened, plunging or lower than "
+        "in image 2, with no bare chest showing. "
         "FIT: {fit} "
-        "Plain light background, soft studio light, {view} view exactly as in image 1, full figure."),
+        "Plain light background, soft studio light, {view} view as in image 1, full figure."),
     "illustration": (
         "Soft, minimal fashion illustration (flat colour, light pencil lines) of the garment from image 2 on a "
-        "faceless figure with EXACTLY the body shape, proportions and pose of image 1 (do not slim or reshape). "
+        "faceless figure with EXACTLY the body shape and proportions of image 1 (do not slim or reshape); {measures} {pose} "
         "Keep the garment's colour, print, neckline, sleeves and length from image 2. No facial features. "
-        "FIT: {fit} Plain off-white background, {view} view exactly as in image 1, full figure."),
+        "Its head has {hair}. FIT: {fit} Plain off-white background, {view} view as in image 1, full figure."),
 }
-CAPTION = "Illustrates the measured fit below: tension and slack are drawn from the report's numbers."
+HAIR = {"female": "smooth sculpted hair moulded in the same grey: a neat chin-length bob, like a display mannequin",
+        "male": "smooth sculpted hair moulded in the same grey: a short neat crop, like a display mannequin"}
+POSE = {"female": ("Pose: relaxed and natural, like a styled boutique mannequin: soft shoulders, elbows slightly bent, "
+                   "wrists relaxed with gently curved fingers, arms a little away from the body, and the feet close "
+                   "together (a narrow natural stance, about a hand's width apart)."),
+        "male": ("Pose: relaxed and natural: elbows slightly bent, wrists relaxed, feet about hip-width apart.")}
+
+
+def measures_text(entry: dict) -> str:
+    m = entry["measured_cm"]
+    return (f"its measurements are bust {m['chest']:.0f} cm, waist {m['waist']:.0f} cm, hip {m['hip']:.0f} cm at "
+            f"{m['height']:.0f} cm tall, so draw exactly that size.")
+
+
+class CacheOnly(RuntimeError):
+    """A preview that is not pre-generated, on a deployment that only serves cached images."""
+
+
+CAPTION = "AI-generated illustration; proportions, garment details and fit may be inaccurate. Refer to the measurements."
 
 REGION_WORDS = {"chest": "chest area", "waist": "waist area", "hip": "hip area"}
 
@@ -134,41 +155,65 @@ def guide_png(preset: dict, garment_id: str, size: str, view: str = "front", pai
     return buf.getvalue()
 
 
-@lru_cache(maxsize=64)
 def preview(shape: str, usual_size: str, sex: str, height_cm: float, garment_id: str, size: str,
             style: str = "mannequin", fit: str = "", view: str = "front", pair: tuple[str, str] | None = None) -> bytes:
     if style not in STYLES:
         raise ValueError(f"unknown style {style!r}; expected one of {list(STYLES)}")
-    key = _env("MODEL_API_KEY") or _env("META_API_KEY")
-    if not key:
-        raise RuntimeError("no Meta API key: set META_API_KEY in .env")
+    from .presets import preset_id
+
     preset = {"shape": shape, "usual_size": usual_size, "sex": sex, "height_cm": height_cm}
     if view not in ("front", "side", "back"):
         raise ValueError(f"unknown view {view!r}; expected front, side or back")
     photo = photo_path(garment_id)
-    tag = json.dumps([shape, usual_size, sex, height_cm, garment_id, size, style, fit, view, bool(photo)]
-                     + ([list(pair), bool(photo_path(pair[0]))] if pair else []))
-    cached = CACHE / f"{garment_id}_{size}_{view}_{hashlib.sha1(tag.encode()).hexdigest()[:12]}.png"
-    if cached.exists():
-        return cached.read_bytes()
-    guide = guide_png(preset, garment_id, size, view, pair)
-    uri = lambda b, mime: f"data:{mime};base64,{base64.b64encode(b).decode()}"  # noqa: E731
-    images = [{"image_url": uri(guide, "image/png")}]
-    template = STYLES[style]
-    if photo:
-        images.append({"image_url": uri(photo.read_bytes(), "image/jpeg")})
-    else:  # no photo: describe the garment in words instead of "the garment from image 2"
+    from .catalogue import catalogue
+
+    pid = preset_id(shape, usual_size, height_cm, sex)
+    entry = next(r for r in json.loads((ROOT / "fixtures/presets/index.json").read_text()) if r["id"] == pid)
+    template = STYLES[style].replace("{hair}", HAIR.get(sex, HAIR["female"])) \
+        .replace("{pose}", POSE.get(sex, POSE["female"])).replace("{measures}", measures_text(entry))
+    images_from = [photo] if photo else []
+    if not photo:  # no photo: describe the garment in words instead of "the garment from image 2"
         template = (template.replace("the garment from image 2", described(garment_id))
-                    .replace("Keep the garment identical to image 2: colour, fabric, print, neckline, sleeves, length. ", "")
+                    .replace("Keep the garment identical to image 2: colour, fabric, print, sleeves, length and especially the NECKLINE: "
+                             "copy its shape and depth exactly from image 2, worn closed and modest, never opened, plunging or lower than "
+                             "in image 2, with no bare chest showing. ", "The neckline is worn closed and modest, with no bare chest showing. ")
                     .replace("Keep the garment's colour, print, neckline, sleeves and length from image 2. ", ""))
     if pair:  # styled with a second piece: its photo is the next image, or its description
         pair_photo = photo_path(pair[0])
         if pair_photo:
-            images.append({"image_url": uri(pair_photo.read_bytes(), "image/jpeg")})
-            other = f"the garment from image {len(images)}"
+            images_from.append(pair_photo)
+            other = f"the garment from image {len(images_from) + 1}"
         else:
             other = described(pair[0])
         template = template.replace("FIT: {fit}", f"Styled together with {other}, exactly as in image 1. FIT (first garment): {{fit}}")
+    if garment_id == 'zesica-black-midi-dress' and view != 'front':
+        template += (" This is one continuous, uninterrupted dress from shoulder to hem: no exposed midriff, waist "
+                     "cut-out, crop top or separate skirt. The small gold loop at one side of the ruched waist is "
+                     "decorative only and does not open the dress.")
+    if garment_id == 'manyavar-mens-kurta':
+        template += (" The kurta is a straight, short men's kurta with a level, unbunched hem; "
+                     "the hem hangs freely over the trousers, never tucked in.")
+    # A result is valid only for the inputs that shape it: this body (mesh + its index row), these
+    # garments (catalogue entries + photos), the guide renderer and the final prompt. Unrelated presets
+    # or garments changing must not throw away paid-for images.
+    cat = catalogue()
+    files = [ROOT / "fixtures/presets" / f"{pid}.glb", ROOT / "fit-engine/scripts/render_fit.py", *images_from]
+    tag = json.dumps([pid, entry, garment_id, size, cat[garment_id], pair, pair and cat[pair[0]], style, fit, view,
+                      template, [hashlib.sha256(f.read_bytes()).hexdigest() for f in files]], sort_keys=True, default=str)
+    cached = CACHE / f"{garment_id}_{size}_{view}_{hashlib.sha1(tag.encode()).hexdigest()[:12]}.png"
+    if cached.exists():
+        return cached.read_bytes()
+    # Public deployments set PREVIEW_CACHE_ONLY=1: visitors see the pre-generated demo set, and nobody can
+    # spend the team's Meta credits by clicking through new combinations.
+    if (_env("PREVIEW_CACHE_ONLY") or "").lower() in ("1", "true", "yes"):
+        raise CacheOnly("This combination isn't pre-generated in the public demo. Try The Column with garment "
+                        "size M on body S, M or L, or run Stylewise locally to draw any combination.")
+    key = _env("MODEL_API_KEY") or _env("META_API_KEY")
+    if not key:
+        raise RuntimeError("no Meta API key: set META_API_KEY in .env")
+    guide = guide_png(preset, garment_id, size, view, pair)
+    uri = lambda b, mime: f"data:{mime};base64,{base64.b64encode(b).decode()}"  # noqa: E731
+    images = [{"image_url": uri(guide, "image/png")}] + [{"image_url": uri(f.read_bytes(), "image/jpeg")} for f in images_from]
     # The image model's safety filter sometimes rejects strained-fabric results on curvy figures. Fall back
     # to milder but still honest descriptions rather than to a flattering picture.
     attempts = [fit or "no measurements given.",

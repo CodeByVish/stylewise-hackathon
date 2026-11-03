@@ -46,6 +46,20 @@ def shoulder_hip_target(sex: str, bust_cm: float, hip_cm: float) -> float:
     shapes (inverted triangle) get broader-looking shoulders, wide-hipped ones narrower."""
     typical_hip = bust_cm + TYPICAL_HIP_MINUS_BUST[sex]
     return SHOULDER_HIP_TARGET[sex] * typical_hip / hip_cm
+# Bust girth minus underbust girth (girth 5.5% of stature below the bust point), cm. Without a cap the
+# fitter reaches a small waist by pinching right under the bust, which inflates it (25 cm on hourglass
+# presets, 24 cm on male hourglass). Caps: women ~ a B/C cup (12-15 cm drop), men a flat chest.
+# One-sided: flatter shapes (oval, triangle) are left alone. Project choice.
+BUST_DROP_MAX = {"female": 14.0, "male": 5.0}
+UNDERBUST_BELOW = 0.055  # fraction of stature below the bust point
+
+
+def bust_drop_cm(mesh: trimesh.Trimesh) -> float:
+    y = mesh.vertices[LANDMARK_VERTS["bust_point"], 1]
+    h = mesh.bounds[1, 1] - mesh.bounds[0, 1]
+    return girth_excluding(mesh, y, _arm_faces()) - girth_excluding(mesh, y - UNDERBUST_BELOW * h, _arm_faces())
+
+
 PRIOR_WEIGHT = 2.0  # cm of residual per unit coeff; project choice
 _DEFAULT = Path(__file__).resolve().parents[2] / "research/MHR/assets/mhr_model.pt"
 
@@ -233,6 +247,8 @@ def fit(target: dict[str, float], max_nfev: int = 15, prior_weight: float = PRIO
         extra = []
         if "shoulder_hip" in target:  # optional sex cue; 0.01 of ratio weighs like 1 cm of girth
             extra.append(SHAPE_RATIO_WEIGHT * (shoulder_hip_ratio(mesh) - target["shoulder_hip"]))
+        if "bust_drop_max" in target:  # cm, weighs like girth; only above the cap
+            extra.append(max(0.0, bust_drop_cm(mesh) - target["bust_drop_max"]))
         if "waist_depth" in target:  # optional belly cue, same weighting
             extra.append(SHAPE_RATIO_WEIGHT * (waist_depth_ratio(mesh, lm["waist"][1]) - target["waist_depth"]))
         return np.concatenate([[m[k] - target[k] for k in REGIONS], extra, prior_weight * c])
@@ -249,7 +265,8 @@ def fit(target: dict[str, float], max_nfev: int = 15, prior_weight: float = PRIO
     mesh = mesh_for(res.x, target["height"], bones)
     lm = landmarks(mesh)
     got = {k: float(v) for k, v in (measure(mesh) | {"shoulder_hip": shoulder_hip_ratio(mesh),
-                                                     "waist_depth": waist_depth_ratio(mesh, lm["waist"][1])}).items()}
+                                                     "waist_depth": waist_depth_ratio(mesh, lm["waist"][1]),
+                                                     "bust_drop": bust_drop_cm(mesh)}).items()}
     return {
         "coeffs": res.x,
         "measured": got,

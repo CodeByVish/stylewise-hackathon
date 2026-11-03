@@ -717,45 +717,46 @@
   "cream-silk-blouse": {
     "name": "Cream silk blouse",
     "category": "top",
-    "fabric": "silk",
+    "fabric": "satin (polyester, spandex)",
     "sizes": {
       "XS": {
         "spec_cm": {
-          "chest": 91.5,
-          "waist": 73
+          "chest": 91.9
         },
         "stretch_cm": {}
       },
       "S": {
         "spec_cm": {
-          "chest": 96.5,
-          "waist": 79
+          "chest": 97.0
         },
         "stretch_cm": {}
       },
       "M": {
         "spec_cm": {
-          "chest": 102,
-          "waist": 85
+          "chest": 103.1
         },
         "stretch_cm": {}
       },
       "L": {
         "spec_cm": {
-          "chest": 108,
-          "waist": 91
+          "chest": 112.0
         },
         "stretch_cm": {}
       },
       "XL": {
         "spec_cm": {
-          "chest": 114.5,
-          "waist": 97.5
+          "chest": 122.2
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "chest": 132.1
         },
         "stretch_cm": {}
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "spec_source": "Amazon SG listing B0DRD9P9PN, stretch satin button-down long-sleeve shirt, seller size chart SG Regular (bust, sleeve and shoulder in cm; bust widths are garment-scale), 95% polyester 5% spandex (accessed 2026-11-03). Not stated as body or garment, ASSUMED garment. Applied to the Stylewise catalogue item",
     "cut": {
       "hem": 0.45,
       "sleeve_m": 0.54,
@@ -771,45 +772,40 @@
   "blush-shell-top": {
     "name": "Blush satin shell top",
     "category": "top",
-    "fabric": "satin",
+    "fabric": "satin (polyester, spandex)",
     "sizes": {
-      "XS": {
-        "spec_cm": {
-          "chest": 87.5,
-          "waist": 69
-        },
-        "stretch_cm": {}
-      },
       "S": {
         "spec_cm": {
-          "chest": 92.5,
-          "waist": 75
+          "chest": 94.0
         },
         "stretch_cm": {}
       },
       "M": {
         "spec_cm": {
-          "chest": 98,
-          "waist": 81
+          "chest": 100.1
         },
         "stretch_cm": {}
       },
       "L": {
         "spec_cm": {
-          "chest": 104,
-          "waist": 87
+          "chest": 105.9
         },
         "stretch_cm": {}
       },
       "XL": {
         "spec_cm": {
-          "chest": 110.5,
-          "waist": 93.5
+          "chest": 114.0
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "chest": 121.9
         },
         "stretch_cm": {}
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "spec_source": "Amazon SG listing B0GFV96GTY, SimpleFun silk-satin crew-neck pleated tank, seller size chart (bust S 37, M 39.4, L 41.7, XL 44.9, XXL 48; labelled cm but inches, converted), 94% polyester 6% spandex (accessed 2026-11-03). Not stated as body or garment, ASSUMED garment. Applied to the Stylewise catalogue item",
     "cut": {
       "hem": 0.46,
       "sleeve_m": 0.0,
@@ -823,100 +819,116 @@
     "for": "women"
   },
   "silk-skirt": {
-    "name": "Gold silk skirt",
+    "name": "Black silk skirt",
     "category": "bottom",
-    "fabric": "silk",
+    "fabric": "satin (polyester)",
     "sizes": {
       "XS": {
         "spec_cm": {
-          "waist": 62,
-          "hip": 99.5
+          "waist": 62
         },
         "stretch_cm": {}
       },
       "S": {
         "spec_cm": {
-          "waist": 68,
-          "hip": 104.5
+          "waist": 67
         },
         "stretch_cm": {}
       },
       "M": {
         "spec_cm": {
-          "waist": 74,
-          "hip": 109.5
+          "waist": 72
         },
         "stretch_cm": {}
       },
       "L": {
         "spec_cm": {
-          "waist": 80,
-          "hip": 114.5
+          "waist": 76
         },
         "stretch_cm": {}
       },
       "XL": {
         "spec_cm": {
-          "waist": 86.5,
-          "hip": 120.5
+          "waist": 83
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "waist": 91
         },
         "stretch_cm": {}
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "spec_source": "Amazon SG listing B0B9XFRLXZ, satin high-waist elastic A-line midi skirt, seller size chart SG Regular (waist in cm; hip not given, an A-line skirt is free at the hip) (accessed 2026-11-03). Elastic waist: not stated as body or garment, ASSUMED garment. Applied to the Stylewise catalogue item",
     "cut": {
       "hem": 0.3,
       "flare_cm": 22
     },
     "rgb": [
-      0.612,
-      0.427,
-      0.176
+      0.09,
+      0.09,
+      0.1
     ],
     "for": "women"
   },
   "charcoal-skirt": {
     "name": "Charcoal pencil skirt",
     "category": "bottom",
-    "fabric": "wool",
+    "fabric": "ponte (viscose, nylon, elastane)",
     "sizes": {
       "XS": {
         "spec_cm": {
-          "waist": 62,
-          "hip": 91.5
+          "waist": 60,
+          "hip": 87
         },
-        "stretch_cm": {}
+        "stretch_cm": {
+          "waist": 3,
+          "hip": 3
+        }
       },
       "S": {
         "spec_cm": {
-          "waist": 68,
-          "hip": 96.5
+          "waist": 66,
+          "hip": 92
         },
-        "stretch_cm": {}
+        "stretch_cm": {
+          "waist": 2,
+          "hip": 3
+        }
       },
       "M": {
         "spec_cm": {
-          "waist": 74,
-          "hip": 101.5
+          "waist": 71,
+          "hip": 97
         },
-        "stretch_cm": {}
+        "stretch_cm": {
+          "waist": 2,
+          "hip": 3
+        }
       },
       "L": {
         "spec_cm": {
-          "waist": 80,
-          "hip": 106.5
+          "waist": 76,
+          "hip": 102
         },
-        "stretch_cm": {}
+        "stretch_cm": {
+          "waist": 2,
+          "hip": 3
+        }
       },
       "XL": {
         "spec_cm": {
-          "waist": 86.5,
-          "hip": 112.5
+          "waist": 81,
+          "hip": 107
         },
-        "stretch_cm": {}
+        "stretch_cm": {
+          "waist": 2,
+          "hip": 3
+        }
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "spec_source": "Amazon SG listing B01LXJH57H, H&C premium ponte stretch pencil skirt, brand size chart SG Regular (waist/hip ranges in cm), 67% viscose 28% nylon 5% elastane (accessed 2026-11-03); range interpretation is unverified. Applied to the Stylewise catalogue item",
     "cut": {
       "hem": 0.28,
       "flare_cm": 0,
@@ -938,50 +950,52 @@
   "emerald-wrap-dress": {
     "name": "Emerald wrap dress",
     "category": "dress",
-    "fabric": "silk",
+    "fabric": "satin (polyester, spandex)",
     "sizes": {
       "XS": {
         "spec_cm": {
-          "chest": 87.5,
-          "waist": 65,
-          "hip": 97.5
+          "chest": 85.1,
+          "waist": 70.6
         },
         "stretch_cm": {}
       },
       "S": {
         "spec_cm": {
-          "chest": 92.5,
-          "waist": 71,
-          "hip": 102.5
+          "chest": 87.9,
+          "waist": 72.9
         },
         "stretch_cm": {}
       },
       "M": {
         "spec_cm": {
-          "chest": 98,
-          "waist": 77,
-          "hip": 107.5
+          "chest": 93.0,
+          "waist": 78.0
         },
         "stretch_cm": {}
       },
       "L": {
         "spec_cm": {
-          "chest": 104,
-          "waist": 83,
-          "hip": 112.5
+          "chest": 98.0,
+          "waist": 83.1
         },
         "stretch_cm": {}
       },
       "XL": {
         "spec_cm": {
-          "chest": 110.5,
-          "waist": 89.5,
-          "hip": 118.5
+          "chest": 102.9,
+          "waist": 87.9
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "chest": 108.0,
+          "waist": 93.0
         },
         "stretch_cm": {}
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "spec_source": "Amazon SG listing B0G5YPHM1J, SHINFY satin wrap long-sleeve A-line midi dress, seller size chart (bust/waist labelled cm but inches, converted), 95% polyester 5% spandex, tie waist (accessed 2026-11-03). Not stated as body or garment, ASSUMED garment. Applied to the Stylewise catalogue item",
     "cut": {
       "hem": 0.15,
       "sleeve_m": 0.54,
@@ -1196,12 +1210,12 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Manyavar UC103339 'Textured Green Kurta', SHORT KURTA garment measurement table (cm), https://www.manyavar.com/en-au/kurta/textured-green-kurta/UC103339.html (accessed 2026-11-03); blended viscose, mandarin collar",
+    "spec_source": "Manyavar UC103339 'Textured Green Kurta', SHORT KURTA garment measurement table (cm), https://www.manyavar.com/en-au/kurta/textured-green-kurta/UC103339.html (accessed 2026-11-03); blended viscose, mandarin collar Product photo: generated with Meta Muse Image (no third-party photo is shipped).",
     "cut": {
-      "hem": 0.4,
-      "sleeve_m": 0.54,
+      "hem": 0.46,
+      "sleeve_m": 0.6,
       "layer": 1,
-      "flare_cm": 3,
+      "flare_cm": 0,
       "neck": "collar",
       "openings": [
         {
@@ -1212,9 +1226,9 @@
       ]
     },
     "rgb": [
-      0.275,
-      0.353,
-      0.141
+      0.38,
+      0.36,
+      0.25
     ],
     "for": "men"
   },
@@ -1254,21 +1268,21 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Amazon SG listing B0DHY1L5PX, PARTHVI Anarkali kurta & pant with dupatta, seller size chart 'Kurta-S=36\", M=38\", L=40\", XL=42\", XXL=44\"' (kurta bust, inches; whether body or garment is not stated), https://www.amazon.sg/dp/B0DHY1L5PX (accessed 2026-11-03); rayon, calf length, 3/4 sleeves, round neck",
+    "spec_source": "Amazon SG listing B0DHY1L5PX, PARTHVI Anarkali kurta & pant with dupatta, seller size chart 'Kurta-S=36\", M=38\", L=40\", XL=42\", XXL=44\"' (kurta bust in inches: the listing also says 'Chest Size 36 Inches', so not an EU size; not stated as body or garment, ASSUMED garment, as is usual for kurta listings), https://www.amazon.sg/dp/B0DHY1L5PX (accessed 2026-11-03); rayon, calf length, 3/4 sleeves, round neck Product photo: generated with Meta Muse Image (no third-party photo is shipped).",
     "cut": {
       "hem": 0.1,
       "sleeve_m": 0.4,
       "layer": 1,
-      "flare_cm": 36,
-      "neck": "round",
+      "flare_cm": 75,
+      "neck": "square",
       "openings": [],
       "fall": "chest",
       "legs_to": 0.05
     },
     "rgb": [
-      0.549,
-      0.569,
-      0.58
+      0.467,
+      0.463,
+      0.451
     ],
     "for": "women"
   },
@@ -1277,7 +1291,7 @@
     "category": "outfit",
     "fabric": "cotton blend",
     "sizes": {},
-    "spec_source": "Amazon SG listing B09J6HBQ94, ITOS365 men's cotton-blend kurta pyjama set (accessed 2026-11-03). The listing gives no size chart in cm, so no sizes are claimed",
+    "spec_source": "Amazon SG listing B09J6HBQ94, ITOS365 men's cotton-blend kurta pyjama set (accessed 2026-11-03). The listing gives no size chart in cm, so no sizes are claimed Product photo: generated with Meta Muse Image (no third-party photo is shipped).",
     "cut": {
       "hem": 0.36,
       "sleeve_m": 0.58,
@@ -1294,9 +1308,9 @@
       "legs_to": 0.05
     },
     "rgb": [
-      0.788,
-      0.89,
-      0.639
+      0.659,
+      0.694,
+      0.475
     ],
     "for": "men"
   },
@@ -1354,7 +1368,7 @@
         }
       }
     },
-    "spec_source": "Amazon SG listing B0DR7MTRZP, ZESICA bodycon midi dress, brand size chart SG Regular (bust/waist/hip ranges, length 112-118 cm, cm), https://www.amazon.sg/dp/B0DR7MTRZP (accessed 2026-11-03); 91% polyester 9% elastane, medium stretch, mock neck, cap sleeves, front slit",
+    "spec_source": "Amazon SG listing B0DR7MTRZP, ZESICA bodycon midi dress, brand size chart SG Regular (bust/waist/hip ranges, length 112-118 cm, cm), https://www.amazon.sg/dp/B0DR7MTRZP (accessed 2026-11-03); 91% polyester 9% elastane, medium stretch, mock neck, cap sleeves, front slit. Range interpretation is unverified: the low end is used as garment girth and the span as give Product photo: generated with Meta Muse Image (no third-party photo is shipped).",
     "cut": {
       "hem": 0.13,
       "sleeve_m": 0.08,
@@ -1370,9 +1384,9 @@
       ]
     },
     "rgb": [
-      0.122,
-      0.114,
-      0.118
+      0.094,
+      0.086,
+      0.09
     ],
     "for": "women"
   },

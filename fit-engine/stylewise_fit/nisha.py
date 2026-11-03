@@ -17,6 +17,7 @@ from pydantic import BaseModel
 
 from .catalogue import catalogue, garment_input
 from .fit import evaluate
+from .privacy import scrub
 from .schemas import BodyInput, FitReport, FitRequest, GarmentInput, Preferences
 
 FIXTURES = Path(__file__).resolve().parents[2] / "fixtures"
@@ -72,7 +73,7 @@ TOOL = {
                 "preset_sex": {"type": "string", "enum": ["female", "male"]},
                 "fit_pref": {"type": "string", "enum": ["snug", "regular", "relaxed"]},
             },
-            "required": ["garment_size", "height_cm"],
+            "required": ["garment_size"],  # the body can come from the form (no consent to share it)
         },
     },
 }
@@ -93,6 +94,9 @@ class ChatTurn(BaseModel):
 class NishaRequest(BaseModel):
     messages: list[ChatTurn]
     context: FitContext = FitContext()
+    # The user's consent to send their body measurements to the Meta Model API. Without it Muse sees
+    # only the garment and the engine's verdicts; the fit itself is always computed here.
+    share_measurements: bool = False
 
 
 class NishaReply(BaseModel):
@@ -122,12 +126,20 @@ def run_tool(args: dict) -> FitReport:
     return evaluate(req)
 
 
-def tool_payload(report: FitReport) -> str:
-    """What Muse sees: verdicts and the permitted facts, not the full report."""
-    return json.dumps({
-        "verdicts": {k: r.verdict for k, r in report.regions.items()},
-        "advice_facts": report.advice_facts, "warnings": report.warnings, "unknowns": report.unknowns,
-    })
+def tool_payload(report: FitReport, share_measurements: bool = True) -> str:
+    """What Muse sees: verdicts and the permitted facts, not the full report. Without consent the
+    facts are left out too: they quote body cm (and body = garment chart - ease)."""
+    payload = {"verdicts": {k: r.verdict for k, r in report.regions.items()},
+               "warnings": report.warnings, "unknowns": report.unknowns}
+    if share_measurements:
+        payload["advice_facts"] = report.advice_facts
+    return json.dumps(payload)
+
+
+# garment and fit-preference arguments are not personal; body measurements and shape are
+NON_PERSONAL_ARGS = {"garment_id", "garment_size", "fit_pref"}
+PRIVATE_NOTE = (" (The user has not agreed to share their measurements. Call evaluate_fit with only the garment "
+                "arguments; the server fills in the body. Talk about verdicts, not numbers.)")
 
 
 def context_args(ctx: FitContext) -> dict | None:
@@ -158,8 +170,11 @@ def template_reply(report: FitReport) -> str:
 
 
 def _chat(messages: list[dict]) -> dict:
-    base = os.environ.get("META_API_BASE", "https://api.meta.ai/v1").rstrip("/")
-    key = _env("MODEL_API_KEY") or _env("META_API_KEY")
+    # Nisha can run on Meta's hosted Muse Spark (default) or on the open-weight Muse Spark Open through an
+    # OpenAI-compatible partner such as Baseten: set NISHA_API_BASE, NISHA_API_KEY and MUSE_MODEL
+    # (e.g. https://inference.baseten.co/v1, your Baseten key, meta-models/muse-spark-open-1026).
+    base = (_env("NISHA_API_BASE") or os.environ.get("META_API_BASE", "https://api.meta.ai/v1")).rstrip("/")
+    key = _env("NISHA_API_KEY") or _env("MODEL_API_KEY") or _env("META_API_KEY")
     body = {"model": _env("MUSE_MODEL") or DEFAULT_MODEL, "messages": messages, "tools": [TOOL]}
     req = urllib.request.Request(f"{base}/chat/completions", data=json.dumps(body).encode(),
                                  headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
@@ -168,7 +183,7 @@ def _chat(messages: list[dict]) -> dict:
 
 
 def muse_configured() -> bool:
-    return bool(_env("MODEL_API_KEY") or _env("META_API_KEY"))
+    return bool(_env("NISHA_API_KEY") or _env("MODEL_API_KEY") or _env("META_API_KEY"))
 
 
 def chat(req: NishaRequest) -> NishaReply:
@@ -180,9 +195,14 @@ def chat(req: NishaRequest) -> NishaReply:
         report = run_tool(preset_args)
         return NishaReply(reply=template_reply(report), report=report, source="engine-template")
 
-    ctx = json.dumps({k: v for k, v in (preset_args or {}).items() if v is not None}) or "none"
+    shared = {k: v for k, v in (preset_args or {}).items()
+              if v is not None and (req.share_measurements or k in NON_PERSONAL_ARGS)}
+    ctx = json.dumps(shared) if shared else "none"
+    if not req.share_measurements:
+        ctx += PRIVATE_NOTE
+    # names, emails, phone numbers and addresses never leave the server
     messages = [{"role": "system", "content": SYSTEM.format(context=ctx)},
-                *[m.model_dump() for m in req.messages]]
+                *[{"role": m.role, "content": scrub(m.content)} for m in req.messages]]
     report = None
     for _ in range(MAX_TOOL_ROUNDS):
         msg = _chat(messages)["choices"][0]["message"]
@@ -192,8 +212,11 @@ def chat(req: NishaRequest) -> NishaReply:
         messages.append(msg)
         for call in calls:
             try:
-                report = run_tool(json.loads(call["function"]["arguments"] or "{}"))
-                content = tool_payload(report)
+                args = json.loads(call["function"]["arguments"] or "{}")
+                if not req.share_measurements and preset_args:  # body comes from the form, not from Muse
+                    args = {**args, **{k: v for k, v in preset_args.items() if k not in NON_PERSONAL_ARGS}}
+                report = run_tool(args)
+                content = tool_payload(report, req.share_measurements)
             except (ValueError, KeyError) as e:  # bad arguments go back to the model, not to the user
                 content = json.dumps({"error": str(e)})
             messages.append({"role": "tool", "tool_call_id": call["id"], "content": content})

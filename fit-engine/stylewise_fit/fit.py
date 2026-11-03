@@ -81,8 +81,23 @@ def evaluate(req: FitRequest, body_mesh_ref: str | None = None,
     if req.preferences.closure == "pullover":
         unknowns.append("pullover: neck/shoulder opening dimensions not in size chart")
     src = req.garment.spec_source.lower()
-    if src in ("", "llm", "unknown") or "unverified" in src or "synthetic" in src:
-        warnings.append("garment size chart has no verified source; treat ease as unverified")
+    # "unverified" alone also appears in sourced notes ("range interpretation is unverified")
+    # say where the sizes came from, rather than only that they are unverified
+    if "synthetic" in src and "uniqlo" in src:
+        warnings.append("Sizes estimated from the Uniqlo SG women's size chart plus typical room for this garment "
+                        "type, not from this product's own chart; ease is approximate.")
+    elif "synthetic" in src:
+        warnings.append("Sizes come from a sample test garment, not a real product's chart; ease is approximate.")
+    elif "unverified reference" in src:
+        warnings.append("Sizes taken from a general reference table (UNIQLO SG fit guide pattern), not this "
+                        "product's own chart; ease is approximate.")
+    elif src in ("", "llm", "unknown"):
+        warnings.append("This garment has no size chart source; ease is approximate.")
+    if "assumed garment" in src:
+        warnings.append("The seller does not say whether these are body or garment measurements; we assume garment "
+                        "measurements, as is usual for seller charts. If they are body sizes, the garment is roomier than shown.")
+    if "range interpretation is unverified" in src:
+        warnings.append("The chart ranges may describe body measurements rather than garment stretch; ease is uncertain.")
 
     facts.append("Ease is arithmetic difference only; it does not prove comfort.")
     return FitReport(

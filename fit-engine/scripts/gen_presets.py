@@ -30,13 +30,13 @@ def _acceptable(r: dict, shape: str, uncertainty_cm: float) -> bool:
 
 
 def _target(sex: str, shape: str, size: str, height: float) -> dict:
-    from stylewise_fit.mhr_body import shoulder_hip_target, waist_depth_target  # torch stays in workers
+    from stylewise_fit.mhr_body import BUST_DROP_MAX, shoulder_hip_target, waist_depth_target  # torch stays in workers
 
     e = estimate(shape, size, sex)
     # shoulder_hip is a ratio, not cm: the sex cue that keeps female presets from reading as male
     return {"height": height, "chest": e.chest_cm, "waist": e.waist_cm, "hip": e.hip_cm,
             "shoulder_hip": round(shoulder_hip_target(sex, e.chest_cm, e.hip_cm), 3),
-            "waist_depth": waist_depth_target(sex, shape)}
+            "waist_depth": waist_depth_target(sex, shape), "bust_drop_max": BUST_DROP_MAX[sex] + (4.0 if (sex, shape) == ("female", "hourglass") else 0.0)}
 
 
 def _entry_ok(c: dict) -> bool:

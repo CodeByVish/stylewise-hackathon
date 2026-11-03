@@ -13,27 +13,29 @@
       "waist": 89.5,
       "hip": 115.5,
       "shoulder_hip": 0.895,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 114.39,
-      "waist": 89.61,
-      "hip": 115.34,
+      "chest": 114.07,
+      "waist": 90.04,
+      "hip": 115.21,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 16.42
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.11,
-      "waist": 0.11,
-      "hip": -0.16
+      "chest": -0.43,
+      "waist": 0.54,
+      "hip": -0.29
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 90.4,
+    "seconds": 135.5,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -52,27 +54,29 @@
       "waist": 89.5,
       "hip": 115.5,
       "shoulder_hip": 0.895,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 114.4,
-      "waist": 89.59,
-      "hip": 115.41,
-      "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "chest": 113.88,
+      "waist": 90.17,
+      "hip": 115.38,
+      "shoulder_hip": 0.9,
+      "waist_depth": 0.7,
+      "bust_drop": 16.64
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.1,
-      "waist": 0.09,
-      "hip": -0.09
+      "chest": -0.62,
+      "waist": 0.67,
+      "hip": -0.12
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 104.1,
+    "seconds": 118.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -91,27 +95,29 @@
       "waist": 89.5,
       "hip": 115.5,
       "shoulder_hip": 0.895,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 114.42,
-      "waist": 89.57,
-      "hip": 115.45,
-      "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "chest": 114.45,
+      "waist": 89.58,
+      "hip": 115.49,
+      "shoulder_hip": 0.9,
+      "waist_depth": 0.7,
+      "bust_drop": 16.01
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.08,
-      "waist": 0.07,
-      "hip": -0.05
+      "chest": -0.05,
+      "waist": 0.08,
+      "hip": -0.01
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 22,
-    "seconds": 64.7,
+    "nfev": 24,
+    "seconds": 87.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -130,27 +136,29 @@
       "waist": 97.5,
       "hip": 123.5,
       "shoulder_hip": 0.892,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 122.39,
-      "waist": 97.61,
-      "hip": 123.26,
+      "chest": 122.3,
+      "waist": 97.71,
+      "hip": 123.24,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 16.12
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.11,
-      "waist": 0.11,
-      "hip": -0.24
+      "chest": -0.2,
+      "waist": 0.21,
+      "hip": -0.26
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 91.3,
+    "seconds": 107.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -169,27 +177,29 @@
       "waist": 97.5,
       "hip": 123.5,
       "shoulder_hip": 0.892,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 122.4,
-      "waist": 97.6,
-      "hip": 123.34,
-      "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "chest": 121.97,
+      "waist": 98.41,
+      "hip": 122.75,
+      "shoulder_hip": 0.88,
+      "waist_depth": 0.69,
+      "bust_drop": 16.78
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.1,
-      "waist": 0.1,
-      "hip": -0.16
+      "chest": -0.53,
+      "waist": 0.91,
+      "hip": -0.75
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 100.6,
+    "seconds": 145.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -208,27 +218,29 @@
       "waist": 97.5,
       "hip": 123.5,
       "shoulder_hip": 0.892,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 122.42,
-      "waist": 97.57,
-      "hip": 123.41,
+      "chest": 121.97,
+      "waist": 98.17,
+      "hip": 123.35,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 16.63
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": -0.08,
-      "waist": 0.07,
-      "hip": -0.09
+      "height": 0.0,
+      "chest": -0.53,
+      "waist": 0.67,
+      "hip": -0.15
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 88.8,
+    "seconds": 115.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -247,27 +259,29 @@
       "waist": 74.5,
       "hip": 100.5,
       "shoulder_hip": 0.902,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 99.39,
-      "waist": 74.6,
-      "hip": 100.44,
-      "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "chest": 98.61,
+      "waist": 75.4,
+      "hip": 100.54,
+      "shoulder_hip": 0.91,
+      "waist_depth": 0.7,
+      "bust_drop": 16.93
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.11,
-      "waist": 0.1,
-      "hip": -0.06
+      "chest": -0.89,
+      "waist": 0.9,
+      "hip": 0.04
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 24,
-    "seconds": 70.7,
+    "seconds": 74.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -286,27 +300,29 @@
       "waist": 74.5,
       "hip": 100.5,
       "shoulder_hip": 0.902,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 99.41,
-      "waist": 74.54,
-      "hip": 100.49,
-      "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "chest": 98.71,
+      "waist": 75.31,
+      "hip": 100.67,
+      "shoulder_hip": 0.91,
+      "waist_depth": 0.7,
+      "bust_drop": 16.91
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.09,
-      "waist": 0.04,
-      "hip": -0.01
+      "chest": -0.79,
+      "waist": 0.81,
+      "hip": 0.17
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 21,
-    "seconds": 73.0,
+    "nfev": 24,
+    "seconds": 98.5,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -325,27 +341,29 @@
       "waist": 74.5,
       "hip": 100.5,
       "shoulder_hip": 0.902,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 99.46,
-      "waist": 74.52,
-      "hip": 100.58,
-      "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "chest": 98.64,
+      "waist": 75.35,
+      "hip": 100.85,
+      "shoulder_hip": 0.91,
+      "waist_depth": 0.7,
+      "bust_drop": 16.99
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.04,
-      "waist": 0.02,
-      "hip": 0.08
+      "chest": -0.86,
+      "waist": 0.85,
+      "hip": 0.35
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 18,
-    "seconds": 53.6,
+    "nfev": 25,
+    "seconds": 122.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -364,27 +382,29 @@
       "waist": 67.5,
       "hip": 93.5,
       "shoulder_hip": 0.907,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 92.41,
-      "waist": 67.57,
-      "hip": 93.51,
+      "chest": 91.57,
+      "waist": 68.46,
+      "hip": 93.68,
       "shoulder_hip": 0.91,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 17.03
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.09,
-      "waist": 0.07,
-      "hip": 0.01
+      "chest": -0.93,
+      "waist": 0.96,
+      "hip": 0.18
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 89.6,
+    "seconds": 102.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -403,29 +423,31 @@
       "waist": 67.5,
       "hip": 93.5,
       "shoulder_hip": 0.907,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 92.44,
-      "waist": 67.53,
-      "hip": 93.59,
+      "chest": 92.32,
+      "waist": 67.72,
+      "hip": 93.68,
       "shoulder_hip": 0.91,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 16.22
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.06,
-      "waist": 0.03,
-      "hip": 0.09
+      "chest": -0.18,
+      "waist": 0.22,
+      "hip": 0.18
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 20,
-    "seconds": 61.5,
+    "nfev": 23,
+    "seconds": 177.0,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "female_hourglass_M_155",
     "accepted": true
   },
   {
@@ -442,29 +464,31 @@
       "waist": 67.5,
       "hip": 93.5,
       "shoulder_hip": 0.907,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 92.48,
-      "waist": 67.49,
-      "hip": 93.7,
-      "shoulder_hip": 0.91,
-      "waist_depth": 0.7
+      "chest": 92.52,
+      "waist": 68.21,
+      "hip": 95.03,
+      "shoulder_hip": 0.92,
+      "waist_depth": 0.68,
+      "bust_drop": 17.0
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.02,
-      "waist": -0.01,
-      "hip": 0.2
+      "chest": 0.02,
+      "waist": 0.71,
+      "hip": 1.53
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 21,
-    "seconds": 76.9,
+    "nfev": 19,
+    "seconds": 139.9,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "female_hourglass_M_155",
     "accepted": true
   },
   {
@@ -481,27 +505,29 @@
       "waist": 62.5,
       "hip": 88.5,
       "shoulder_hip": 0.91,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 87.41,
-      "waist": 62.51,
-      "hip": 88.55,
-      "shoulder_hip": 0.91,
-      "waist_depth": 0.71
+      "chest": 86.52,
+      "waist": 63.46,
+      "hip": 88.86,
+      "shoulder_hip": 0.92,
+      "waist_depth": 0.7,
+      "bust_drop": 17.07
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.09,
-      "waist": 0.01,
-      "hip": 0.05
+      "chest": -0.98,
+      "waist": 0.96,
+      "hip": 0.36
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 20,
-    "seconds": 69.5,
+    "nfev": 25,
+    "seconds": 109.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -520,29 +546,31 @@
       "waist": 62.5,
       "hip": 88.5,
       "shoulder_hip": 0.91,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 87.47,
-      "waist": 62.5,
-      "hip": 88.69,
+      "chest": 87.29,
+      "waist": 62.76,
+      "hip": 88.77,
       "shoulder_hip": 0.91,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 16.28
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.03,
-      "waist": 0.0,
-      "hip": 0.19
+      "chest": -0.21,
+      "waist": 0.26,
+      "hip": 0.27
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 23,
-    "seconds": 80.3,
+    "nfev": 24,
+    "seconds": 155.3,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "female_hourglass_S_175",
     "accepted": true
   },
   {
@@ -559,27 +587,29 @@
       "waist": 62.5,
       "hip": 88.5,
       "shoulder_hip": 0.91,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 87.49,
-      "waist": 62.47,
-      "hip": 88.83,
-      "shoulder_hip": 0.91,
-      "waist_depth": 0.7
+      "chest": 86.74,
+      "waist": 63.38,
+      "hip": 89.19,
+      "shoulder_hip": 0.92,
+      "waist_depth": 0.7,
+      "bust_drop": 17.02
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": -0.01,
-      "waist": -0.03,
-      "hip": 0.33
+      "height": -0.0,
+      "chest": -0.76,
+      "waist": 0.88,
+      "hip": 0.69
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 25,
-    "seconds": 86.7,
+    "nfev": 24,
+    "seconds": 76.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -598,27 +628,29 @@
       "waist": 81.5,
       "hip": 107.5,
       "shoulder_hip": 0.899,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 106.38,
-      "waist": 81.61,
-      "hip": 107.37,
+      "chest": 106.46,
+      "waist": 81.56,
+      "hip": 107.39,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 13.74
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.12,
-      "waist": 0.11,
-      "hip": -0.13
+      "chest": -0.04,
+      "waist": 0.06,
+      "hip": -0.11
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 90.9,
+    "seconds": 118.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -637,27 +669,29 @@
       "waist": 81.5,
       "hip": 107.5,
       "shoulder_hip": 0.899,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 106.41,
-      "waist": 81.58,
-      "hip": 107.45,
+      "chest": 106.43,
+      "waist": 81.6,
+      "hip": 107.51,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 16.02
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.09,
-      "waist": 0.08,
-      "hip": -0.05
+      "chest": -0.07,
+      "waist": 0.1,
+      "hip": 0.01
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 85.2,
+    "seconds": 102.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -676,27 +710,29 @@
       "waist": 81.5,
       "hip": 107.5,
       "shoulder_hip": 0.899,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 106.43,
-      "waist": 81.55,
-      "hip": 107.51,
+      "chest": 105.97,
+      "waist": 82.1,
+      "hip": 107.68,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 16.67
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.07,
-      "waist": 0.05,
-      "hip": 0.01
+      "chest": -0.53,
+      "waist": 0.6,
+      "hip": 0.18
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 18,
-    "seconds": 60.2,
+    "nfev": 25,
+    "seconds": 71.5,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -715,27 +751,29 @@
       "waist": 56.5,
       "hip": 82.5,
       "shoulder_hip": 0.915,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 18.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 81.46,
-      "waist": 56.52,
-      "hip": 82.69,
+      "chest": 80.65,
+      "waist": 57.43,
+      "hip": 82.98,
       "shoulder_hip": 0.92,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 18.93
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.04,
-      "waist": 0.02,
-      "hip": 0.19
+      "chest": -0.85,
+      "waist": 0.93,
+      "hip": 0.48
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 23,
-    "seconds": 69.9,
+    "nfev": 24,
+    "seconds": 60.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -754,27 +792,29 @@
       "waist": 56.5,
       "hip": 82.5,
       "shoulder_hip": 0.915,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 18.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 81.49,
-      "waist": 56.47,
-      "hip": 82.86,
+      "chest": 81.1,
+      "waist": 56.91,
+      "hip": 83.06,
       "shoulder_hip": 0.92,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 18.48
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.01,
-      "waist": -0.03,
-      "hip": 0.36
+      "chest": -0.4,
+      "waist": 0.41,
+      "hip": 0.56
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 93.4,
+    "seconds": 89.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -793,29 +833,31 @@
       "waist": 56.5,
       "hip": 82.5,
       "shoulder_hip": 0.915,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 16.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 81.52,
-      "waist": 56.44,
-      "hip": 83.1,
-      "shoulder_hip": 0.92,
-      "waist_depth": 0.7
+      "chest": 81.93,
+      "waist": 58.57,
+      "hip": 83.59,
+      "shoulder_hip": 0.93,
+      "waist_depth": 0.67,
+      "bust_drop": 17.27
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.02,
-      "waist": -0.06,
-      "hip": 0.6
+      "chest": 0.43,
+      "waist": 2.07,
+      "hip": 1.09
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 25,
-    "seconds": 99.3,
+    "nfev": 18,
+    "seconds": 115.2,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "female_hourglass_S_175",
     "accepted": true
   },
   {
@@ -832,7 +874,8 @@
       "waist": 96.5,
       "hip": 102.5,
       "shoulder_hip": 1.009,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
@@ -840,7 +883,8 @@
       "waist": 96.35,
       "hip": 102.25,
       "shoulder_hip": 1.01,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 4.4
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -852,7 +896,7 @@
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 96.0,
+    "seconds": 106.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -871,27 +915,29 @@
       "waist": 96.5,
       "hip": 102.5,
       "shoulder_hip": 1.009,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 114.5,
-      "waist": 96.38,
-      "hip": 102.32,
-      "shoulder_hip": 1.01,
-      "waist_depth": 0.71
+      "chest": 114.55,
+      "waist": 96.25,
+      "hip": 102.11,
+      "shoulder_hip": 1.0,
+      "waist_depth": 0.71,
+      "bust_drop": 7.13
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.0,
-      "waist": -0.12,
-      "hip": -0.18
+      "chest": 0.05,
+      "waist": -0.25,
+      "hip": -0.39
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 126.5,
+    "seconds": 137.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -910,27 +956,29 @@
       "waist": 96.5,
       "hip": 102.5,
       "shoulder_hip": 1.009,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
       "chest": 114.49,
       "waist": 96.43,
-      "hip": 102.39,
+      "hip": 102.4,
       "shoulder_hip": 1.01,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 10.51
     },
     "fit_error_cm": {
       "height": 0.0,
       "chest": -0.01,
       "waist": -0.07,
-      "hip": -0.11
+      "hip": -0.1
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 22,
-    "seconds": 78.5,
+    "nfev": 25,
+    "seconds": 95.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -949,7 +997,8 @@
       "waist": 104.5,
       "hip": 110.5,
       "shoulder_hip": 0.997,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
@@ -957,7 +1006,8 @@
       "waist": 104.32,
       "hip": 110.23,
       "shoulder_hip": 0.99,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 2.71
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -968,8 +1018,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 24,
-    "seconds": 86.0,
+    "nfev": 25,
+    "seconds": 111.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -988,27 +1038,29 @@
       "waist": 104.5,
       "hip": 110.5,
       "shoulder_hip": 0.997,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 122.45,
-      "waist": 104.54,
-      "hip": 110.31,
+      "chest": 122.49,
+      "waist": 104.33,
+      "hip": 110.27,
       "shoulder_hip": 0.99,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 4.68
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.05,
-      "waist": 0.04,
-      "hip": -0.19
+      "chest": -0.01,
+      "waist": -0.17,
+      "hip": -0.23
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 24,
-    "seconds": 166.3,
+    "nfev": 25,
+    "seconds": 151.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1027,7 +1079,8 @@
       "waist": 104.5,
       "hip": 110.5,
       "shoulder_hip": 0.997,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
@@ -1035,7 +1088,8 @@
       "waist": 104.39,
       "hip": 110.32,
       "shoulder_hip": 0.99,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 6.78
     },
     "fit_error_cm": {
       "height": 0.0,
@@ -1047,7 +1101,7 @@
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 112.6,
+    "seconds": 106.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1066,7 +1120,8 @@
       "waist": 81.5,
       "hip": 87.5,
       "shoulder_hip": 1.036,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
@@ -1074,7 +1129,8 @@
       "waist": 81.44,
       "hip": 87.41,
       "shoulder_hip": 1.03,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 9.62
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -1086,7 +1142,7 @@
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 77.1,
+    "seconds": 90.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1105,27 +1161,29 @@
       "waist": 81.5,
       "hip": 87.5,
       "shoulder_hip": 1.036,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
       "chest": 99.48,
-      "waist": 81.52,
+      "waist": 81.53,
       "hip": 87.55,
       "shoulder_hip": 1.04,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.0
     },
     "fit_error_cm": {
       "height": -0.0,
       "chest": -0.02,
-      "waist": 0.02,
+      "waist": 0.03,
       "hip": 0.05
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 23,
-    "seconds": 76.7,
+    "nfev": 22,
+    "seconds": 70.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1144,27 +1202,29 @@
       "waist": 81.5,
       "hip": 87.5,
       "shoulder_hip": 1.036,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 99.49,
-      "waist": 81.48,
-      "hip": 87.62,
+      "chest": 99.34,
+      "waist": 81.65,
+      "hip": 87.68,
       "shoulder_hip": 1.04,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 14.2
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": -0.01,
-      "waist": -0.02,
-      "hip": 0.12
+      "height": -0.0,
+      "chest": -0.16,
+      "waist": 0.15,
+      "hip": 0.18
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 85.1,
+    "seconds": 106.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1183,7 +1243,8 @@
       "waist": 74.5,
       "hip": 80.5,
       "shoulder_hip": 1.053,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
@@ -1191,7 +1252,8 @@
       "waist": 74.54,
       "hip": 80.57,
       "shoulder_hip": 1.05,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 13.32
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -1202,8 +1264,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 25,
-    "seconds": 86.7,
+    "nfev": 19,
+    "seconds": 68.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1222,27 +1284,29 @@
       "waist": 74.5,
       "hip": 80.5,
       "shoulder_hip": 1.053,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 92.48,
-      "waist": 74.49,
-      "hip": 80.62,
+      "chest": 92.35,
+      "waist": 74.63,
+      "hip": 80.66,
       "shoulder_hip": 1.05,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 14.16
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.02,
-      "waist": -0.01,
-      "hip": 0.12
+      "chest": -0.15,
+      "waist": 0.13,
+      "hip": 0.16
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 18,
-    "seconds": 41.6,
+    "nfev": 25,
+    "seconds": 76.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1261,27 +1325,29 @@
       "waist": 74.5,
       "hip": 80.5,
       "shoulder_hip": 1.053,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 92.51,
-      "waist": 74.46,
-      "hip": 80.72,
-      "shoulder_hip": 1.05,
-      "waist_depth": 0.71
+      "chest": 92.3,
+      "waist": 74.7,
+      "hip": 80.81,
+      "shoulder_hip": 1.06,
+      "waist_depth": 0.7,
+      "bust_drop": 14.27
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": 0.01,
-      "waist": -0.04,
-      "hip": 0.22
+      "height": 0.0,
+      "chest": -0.2,
+      "waist": 0.2,
+      "hip": 0.31
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 95.0,
+    "seconds": 85.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1300,27 +1366,29 @@
       "waist": 69.5,
       "hip": 75.5,
       "shoulder_hip": 1.067,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 87.47,
-      "waist": 69.51,
-      "hip": 75.61,
+      "chest": 87.27,
+      "waist": 69.71,
+      "hip": 75.69,
       "shoulder_hip": 1.07,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 14.26
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.03,
-      "waist": 0.01,
-      "hip": 0.11
+      "chest": -0.23,
+      "waist": 0.21,
+      "hip": 0.19
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 20,
-    "seconds": 52.7,
+    "nfev": 22,
+    "seconds": 81.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1339,27 +1407,29 @@
       "waist": 69.5,
       "hip": 75.5,
       "shoulder_hip": 1.067,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 87.5,
-      "waist": 69.47,
-      "hip": 75.71,
+      "chest": 87.31,
+      "waist": 69.67,
+      "hip": 75.8,
       "shoulder_hip": 1.07,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 14.24
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.0,
-      "waist": -0.03,
-      "hip": 0.21
+      "chest": -0.19,
+      "waist": 0.17,
+      "hip": 0.3
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 24,
-    "seconds": 87.2,
+    "nfev": 23,
+    "seconds": 70.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1378,27 +1448,29 @@
       "waist": 69.5,
       "hip": 75.5,
       "shoulder_hip": 1.067,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 87.53,
-      "waist": 69.44,
-      "hip": 75.84,
+      "chest": 87.24,
+      "waist": 69.76,
+      "hip": 75.99,
       "shoulder_hip": 1.07,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.35
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.03,
-      "waist": -0.06,
-      "hip": 0.34
+      "chest": -0.26,
+      "waist": 0.26,
+      "hip": 0.49
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 94.8,
+    "seconds": 93.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1417,7 +1489,8 @@
       "waist": 88.5,
       "hip": 94.5,
       "shoulder_hip": 1.022,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
@@ -1425,7 +1498,8 @@
       "waist": 88.38,
       "hip": 94.31,
       "shoulder_hip": 1.02,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 6.38
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -1436,8 +1510,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 25,
-    "seconds": 88.9,
+    "nfev": 19,
+    "seconds": 70.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1456,7 +1530,8 @@
       "waist": 88.5,
       "hip": 94.5,
       "shoulder_hip": 1.022,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
@@ -1464,7 +1539,8 @@
       "waist": 88.44,
       "hip": 94.41,
       "shoulder_hip": 1.02,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 10.38
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -1475,8 +1551,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 18,
-    "seconds": 43.7,
+    "nfev": 21,
+    "seconds": 65.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1495,27 +1571,29 @@
       "waist": 88.5,
       "hip": 94.5,
       "shoulder_hip": 1.022,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
       "chest": 106.48,
       "waist": 88.51,
-      "hip": 94.53,
+      "hip": 94.54,
       "shoulder_hip": 1.02,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 14.01
     },
     "fit_error_cm": {
       "height": 0.0,
       "chest": -0.02,
       "waist": 0.01,
-      "hip": 0.03
+      "hip": 0.04
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 19,
-    "seconds": 50.0,
+    "nfev": 25,
+    "seconds": 87.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1534,27 +1612,29 @@
       "waist": 63.5,
       "hip": 69.5,
       "shoulder_hip": 1.086,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 81.49,
-      "waist": 63.48,
-      "hip": 69.71,
+      "chest": 81.17,
+      "waist": 63.8,
+      "hip": 69.88,
       "shoulder_hip": 1.09,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.37
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.01,
-      "waist": -0.02,
-      "hip": 0.21
+      "chest": -0.33,
+      "waist": 0.3,
+      "hip": 0.38
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 120.3,
+    "seconds": 76.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1573,27 +1653,29 @@
       "waist": 63.5,
       "hip": 69.5,
       "shoulder_hip": 1.086,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 81.52,
-      "waist": 63.45,
-      "hip": 69.87,
+      "chest": 81.12,
+      "waist": 63.84,
+      "hip": 70.16,
       "shoulder_hip": 1.09,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.48
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.02,
-      "waist": -0.05,
-      "hip": 0.37
+      "chest": -0.38,
+      "waist": 0.34,
+      "hip": 0.66
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 91.3,
+    "seconds": 90.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1612,27 +1694,29 @@
       "waist": 63.5,
       "hip": 69.5,
       "shoulder_hip": 1.086,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 81.54,
-      "waist": 63.42,
-      "hip": 70.15,
+      "chest": 81.16,
+      "waist": 63.85,
+      "hip": 70.52,
       "shoulder_hip": 1.09,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.48
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.04,
-      "waist": -0.08,
-      "hip": 0.65
+      "chest": -0.34,
+      "waist": 0.35,
+      "hip": 1.02
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 105.3,
+    "seconds": 92.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1651,27 +1735,29 @@
       "waist": 112.5,
       "hip": 111.5,
       "shoulder_hip": 0.927,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 114.39,
-      "waist": 112.32,
-      "hip": 111.58,
+      "chest": 114.55,
+      "waist": 112.41,
+      "hip": 111.4,
       "shoulder_hip": 0.93,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 0.74
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.11,
-      "waist": -0.18,
-      "hip": 0.08
+      "chest": 0.05,
+      "waist": -0.09,
+      "hip": -0.1
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 17,
-    "seconds": 95.1,
+    "nfev": 25,
+    "seconds": 171.1,
     "prior_weight": 0.2,
     "warm_start": "female_oval_3XL_155",
     "accepted": true
@@ -1690,29 +1776,31 @@
       "waist": 112.5,
       "hip": 111.5,
       "shoulder_hip": 0.927,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 114.53,
-      "waist": 111.43,
-      "hip": 110.36,
+      "chest": 114.68,
+      "waist": 112.35,
+      "hip": 111.46,
       "shoulder_hip": 0.93,
-      "waist_depth": 0.75
+      "waist_depth": 0.75,
+      "bust_drop": 1.33
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.03,
-      "waist": -1.07,
-      "hip": -1.14
+      "chest": 0.18,
+      "waist": -0.15,
+      "hip": -0.04
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 25,
-    "seconds": 161.3,
+    "seconds": 152.6,
     "prior_weight": 0.2,
-    "warm_start": "female_oval_XL_165",
+    "warm_start": "female_oval_XL_175",
     "accepted": true
   },
   {
@@ -1729,29 +1817,31 @@
       "waist": 112.5,
       "hip": 111.5,
       "shoulder_hip": 0.927,
-      "waist_depth": 0.749
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 115.47,
-      "waist": 111.67,
-      "hip": 111.71,
+      "chest": 115.32,
+      "waist": 112.11,
+      "hip": 111.75,
       "shoulder_hip": 0.93,
-      "waist_depth": 0.75
+      "waist_depth": 0.74,
+      "bust_drop": 2.22
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.97,
-      "waist": -0.83,
-      "hip": 0.21
+      "chest": 0.82,
+      "waist": -0.39,
+      "hip": 0.25
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 339.5,
+    "nfev": 24,
+    "seconds": 113.9,
     "prior_weight": 0.2,
-    "warm_start": "female_oval_2XL_165",
+    "warm_start": "female_oval_XL_175",
     "accepted": true
   },
   {
@@ -1768,27 +1858,29 @@
       "waist": 120.5,
       "hip": 119.5,
       "shoulder_hip": 0.922,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 122.34,
-      "waist": 120.33,
-      "hip": 119.39,
+      "chest": 122.52,
+      "waist": 120.27,
+      "hip": 119.28,
       "shoulder_hip": 0.92,
-      "waist_depth": 0.71
+      "waist_depth": 0.75,
+      "bust_drop": -0.0
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.16,
-      "waist": -0.17,
-      "hip": -0.11
+      "chest": 0.02,
+      "waist": -0.23,
+      "hip": -0.22
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 25,
-    "seconds": 79.4,
+    "seconds": 88.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1807,27 +1899,29 @@
       "waist": 120.5,
       "hip": 119.5,
       "shoulder_hip": 0.922,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 122.57,
-      "waist": 120.45,
+      "chest": 122.55,
+      "waist": 120.34,
       "hip": 119.38,
       "shoulder_hip": 0.92,
-      "waist_depth": 0.71
+      "waist_depth": 0.75,
+      "bust_drop": -0.05
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.07,
-      "waist": -0.05,
+      "chest": 0.05,
+      "waist": -0.16,
       "hip": -0.12
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 117.6,
+    "nfev": 18,
+    "seconds": 154.7,
     "prior_weight": 0.2,
     "warm_start": "female_oval_3XL_155",
     "accepted": true
@@ -1846,27 +1940,29 @@
       "waist": 120.5,
       "hip": 119.5,
       "shoulder_hip": 0.922,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 122.55,
-      "waist": 120.44,
-      "hip": 119.39,
+      "chest": 124.05,
+      "waist": 119.17,
+      "hip": 119.46,
       "shoulder_hip": 0.92,
-      "waist_depth": 0.71
+      "waist_depth": 0.75,
+      "bust_drop": 4.82
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.05,
-      "waist": -0.06,
-      "hip": -0.11
+      "height": -0.0,
+      "chest": 1.55,
+      "waist": -1.33,
+      "hip": -0.04
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 149.5,
+    "nfev": 22,
+    "seconds": 168.5,
     "prior_weight": 0.2,
     "warm_start": "female_oval_3XL_155",
     "accepted": true
@@ -1885,27 +1981,29 @@
       "waist": 97.5,
       "hip": 96.5,
       "shoulder_hip": 0.94,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 100.15,
-      "waist": 97.02,
-      "hip": 95.53,
-      "shoulder_hip": 0.92,
-      "waist_depth": 0.7
+      "chest": 100.82,
+      "waist": 96.37,
+      "hip": 96.57,
+      "shoulder_hip": 0.94,
+      "waist_depth": 0.75,
+      "bust_drop": 4.09
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.65,
-      "waist": -0.48,
-      "hip": -0.97
+      "chest": 1.32,
+      "waist": -1.13,
+      "hip": 0.07
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 23,
-    "seconds": 97.1,
+    "nfev": 24,
+    "seconds": 141.3,
     "prior_weight": 0.2,
     "warm_start": "female_oval_L_165",
     "accepted": true
@@ -1924,27 +2022,29 @@
       "waist": 97.5,
       "hip": 96.5,
       "shoulder_hip": 0.94,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 100.19,
-      "waist": 96.58,
-      "hip": 96.95,
-      "shoulder_hip": 0.94,
-      "waist_depth": 0.7
+      "chest": 100.54,
+      "waist": 96.2,
+      "hip": 97.36,
+      "shoulder_hip": 0.95,
+      "waist_depth": 0.73,
+      "bust_drop": 3.74
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.69,
-      "waist": -0.92,
-      "hip": 0.45
+      "chest": 1.04,
+      "waist": -1.3,
+      "hip": 0.86
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 23,
-    "seconds": 54.5,
+    "nfev": 20,
+    "seconds": 43.5,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -1963,29 +2063,31 @@
       "waist": 97.5,
       "hip": 96.5,
       "shoulder_hip": 0.94,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 100.57,
-      "waist": 96.65,
-      "hip": 97.86,
-      "shoulder_hip": 0.95,
-      "waist_depth": 0.69
+      "chest": 100.91,
+      "waist": 96.07,
+      "hip": 97.82,
+      "shoulder_hip": 0.96,
+      "waist_depth": 0.74,
+      "bust_drop": 4.78
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 1.07,
-      "waist": -0.85,
-      "hip": 1.36
+      "chest": 1.41,
+      "waist": -1.43,
+      "hip": 1.32
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 22,
-    "seconds": 94.4,
+    "nfev": 23,
+    "seconds": 86.9,
     "prior_weight": 0.2,
-    "warm_start": "female_oval_L_165",
+    "warm_start": null,
     "accepted": true
   },
   {
@@ -2002,27 +2104,29 @@
       "waist": 90.5,
       "hip": 89.5,
       "shoulder_hip": 0.947,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 93.96,
-      "waist": 88.63,
-      "hip": 90.5,
+      "chest": 93.11,
+      "waist": 89.12,
+      "hip": 90.59,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.71
+      "waist_depth": 0.75,
+      "bust_drop": 3.79
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 1.46,
-      "waist": -1.87,
-      "hip": 1.0
+      "chest": 0.61,
+      "waist": -1.38,
+      "hip": 1.09
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 23,
-    "seconds": 58.8,
+    "seconds": 63.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2041,27 +2145,29 @@
       "waist": 90.5,
       "hip": 89.5,
       "shoulder_hip": 0.947,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 93.55,
-      "waist": 89.44,
-      "hip": 90.38,
+      "chest": 93.89,
+      "waist": 89.02,
+      "hip": 90.95,
       "shoulder_hip": 0.96,
-      "waist_depth": 0.71
+      "waist_depth": 0.75,
+      "bust_drop": 4.82
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 1.05,
-      "waist": -1.06,
-      "hip": 0.88
+      "chest": 1.39,
+      "waist": -1.48,
+      "hip": 1.45
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 25,
-    "seconds": 111.7,
+    "seconds": 92.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2080,30 +2186,32 @@
       "waist": 90.5,
       "hip": 89.5,
       "shoulder_hip": 0.947,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 93.65,
-      "waist": 89.18,
-      "hip": 91.39,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.69
+      "chest": 94.52,
+      "waist": 88.32,
+      "hip": 92.16,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.74,
+      "bust_drop": 6.18
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 1.15,
-      "waist": -1.32,
-      "hip": 1.89
+      "chest": 2.02,
+      "waist": -2.18,
+      "hip": 2.66
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
-    "ffit_class_of_mesh": "oval",
-    "nfev": 22,
-    "seconds": 139.3,
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 25,
+    "seconds": 167.1,
     "prior_weight": 0.2,
-    "warm_start": "female_oval_M_165",
-    "accepted": true
+    "warm_start": null,
+    "accepted": false
   },
   {
     "id": "female_oval_S_155",
@@ -2119,27 +2227,29 @@
       "waist": 85.5,
       "hip": 84.5,
       "shoulder_hip": 0.953,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 88.55,
-      "waist": 84.48,
-      "hip": 85.52,
-      "shoulder_hip": 0.96,
-      "waist_depth": 0.71
+      "chest": 88.6,
+      "waist": 84.35,
+      "hip": 85.59,
+      "shoulder_hip": 0.97,
+      "waist_depth": 0.74,
+      "bust_drop": 4.16
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 1.05,
-      "waist": -1.02,
-      "hip": 1.02
+      "chest": 1.1,
+      "waist": -1.15,
+      "hip": 1.09
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 25,
-    "seconds": 141.8,
+    "seconds": 93.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2158,30 +2268,32 @@
       "waist": 85.5,
       "hip": 84.5,
       "shoulder_hip": 0.953,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 88.77,
-      "waist": 84.13,
-      "hip": 86.16,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.7
+      "chest": 88.78,
+      "waist": 84.07,
+      "hip": 86.66,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.73,
+      "bust_drop": 4.67
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 1.27,
-      "waist": -1.37,
-      "hip": 1.66
+      "chest": 1.28,
+      "waist": -1.43,
+      "hip": 2.16
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
-    "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 111.6,
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 21,
+    "seconds": 204.8,
     "prior_weight": 0.2,
-    "warm_start": null,
-    "accepted": true
+    "warm_start": "female_oval_S_155",
+    "accepted": false
   },
   {
     "id": "female_oval_S_175",
@@ -2197,27 +2309,29 @@
       "waist": 85.5,
       "hip": 84.5,
       "shoulder_hip": 0.953,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 88.5,
-      "waist": 84.53,
-      "hip": 85.66,
+      "chest": 88.71,
+      "waist": 84.51,
+      "hip": 85.82,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.7
+      "waist_depth": 0.74,
+      "bust_drop": 1.33
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 1.0,
-      "waist": -0.97,
-      "hip": 1.16
+      "chest": 1.21,
+      "waist": -0.99,
+      "hip": 1.32
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 100.5,
+    "nfev": 24,
+    "seconds": 91.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2236,30 +2350,32 @@
       "waist": 104.5,
       "hip": 103.5,
       "shoulder_hip": 0.933,
-      "waist_depth": 0.749
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 108.1,
-      "waist": 101.61,
-      "hip": 101.84,
+      "chest": 106.61,
+      "waist": 103.91,
+      "hip": 103.11,
       "shoulder_hip": 0.92,
-      "waist_depth": 0.8
+      "waist_depth": 0.75,
+      "bust_drop": 1.59
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 1.6,
-      "waist": -2.89,
-      "hip": -1.66
+      "chest": 0.11,
+      "waist": -0.59,
+      "hip": -0.39
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 276.0,
+    "nfev": 24,
+    "seconds": 130.4,
     "prior_weight": 0.2,
-    "warm_start": null,
-    "accepted": false
+    "warm_start": "female_oval_XL_175",
+    "accepted": true
   },
   {
     "id": "female_oval_XL_165",
@@ -2275,29 +2391,31 @@
       "waist": 104.5,
       "hip": 103.5,
       "shoulder_hip": 0.933,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 107.54,
-      "waist": 102.71,
-      "hip": 103.03,
+      "chest": 106.62,
+      "waist": 103.57,
+      "hip": 103.76,
       "shoulder_hip": 0.92,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 2.35
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 1.04,
-      "waist": -1.79,
-      "hip": -0.47
+      "chest": 0.12,
+      "waist": -0.93,
+      "hip": 0.26
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 23,
-    "seconds": 93.0,
+    "nfev": 22,
+    "seconds": 100.3,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "female_oval_XL_175",
     "accepted": true
   },
   {
@@ -2314,27 +2432,29 @@
       "waist": 104.5,
       "hip": 103.5,
       "shoulder_hip": 0.933,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 106.99,
-      "waist": 103.77,
-      "hip": 104.01,
-      "shoulder_hip": 0.93,
-      "waist_depth": 0.71
+      "chest": 107.35,
+      "waist": 103.15,
+      "hip": 104.52,
+      "shoulder_hip": 0.94,
+      "waist_depth": 0.73,
+      "bust_drop": 3.99
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.49,
-      "waist": -0.73,
-      "hip": 0.51
+      "chest": 0.85,
+      "waist": -1.35,
+      "hip": 1.02
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 107.7,
+    "nfev": 20,
+    "seconds": 38.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2353,30 +2473,32 @@
       "waist": 79.5,
       "hip": 78.5,
       "shoulder_hip": 0.961,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 82.72,
-      "waist": 78.18,
-      "hip": 80.19,
-      "shoulder_hip": 0.98,
-      "waist_depth": 0.7
+      "chest": 83.38,
+      "waist": 77.45,
+      "hip": 80.93,
+      "shoulder_hip": 0.99,
+      "waist_depth": 0.74,
+      "bust_drop": 5.94
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 1.22,
-      "waist": -1.32,
-      "hip": 1.69
+      "chest": 1.88,
+      "waist": -2.05,
+      "hip": 2.43
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
-    "ffit_class_of_mesh": "oval",
+    "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 101.5,
+    "seconds": 194.1,
     "prior_weight": 0.2,
     "warm_start": null,
-    "accepted": true
+    "accepted": false
   },
   {
     "id": "female_oval_XS_165",
@@ -2392,27 +2514,29 @@
       "waist": 79.5,
       "hip": 78.5,
       "shoulder_hip": 0.961,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 82.95,
-      "waist": 78.22,
-      "hip": 79.9,
-      "shoulder_hip": 0.98,
-      "waist_depth": 0.7
+      "chest": 82.47,
+      "waist": 78.5,
+      "hip": 79.71,
+      "shoulder_hip": 0.97,
+      "waist_depth": 0.75,
+      "bust_drop": 1.37
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 1.45,
-      "waist": -1.28,
-      "hip": 1.4
+      "chest": 0.97,
+      "waist": -1.0,
+      "hip": 1.21
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 24,
-    "seconds": 70.6,
+    "nfev": 25,
+    "seconds": 103.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2431,27 +2555,29 @@
       "waist": 79.5,
       "hip": 78.5,
       "shoulder_hip": 0.961,
-      "waist_depth": 0.705
+      "waist_depth": 0.749,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 82.6,
-      "waist": 78.29,
-      "hip": 80.32,
+      "chest": 82.74,
+      "waist": 78.18,
+      "hip": 80.44,
       "shoulder_hip": 0.98,
-      "waist_depth": 0.7
+      "waist_depth": 0.75,
+      "bust_drop": 1.85
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": 1.1,
-      "waist": -1.21,
-      "hip": 1.82
+      "height": 0.0,
+      "chest": 1.24,
+      "waist": -1.32,
+      "hip": 1.94
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 25,
-    "seconds": 107.6,
+    "seconds": 111.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2470,27 +2596,29 @@
       "waist": 100.5,
       "hip": 116.5,
       "shoulder_hip": 0.887,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 114.61,
-      "waist": 100.41,
-      "hip": 116.27,
-      "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "chest": 114.49,
+      "waist": 100.53,
+      "hip": 116.24,
+      "shoulder_hip": 0.88,
+      "waist_depth": 0.71,
+      "bust_drop": 10.61
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.11,
-      "waist": -0.09,
-      "hip": -0.23
+      "chest": -0.01,
+      "waist": 0.03,
+      "hip": -0.26
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 95.2,
+    "seconds": 117.5,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2509,27 +2637,29 @@
       "waist": 100.5,
       "hip": 116.5,
       "shoulder_hip": 0.887,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 114.49,
-      "waist": 100.51,
-      "hip": 116.41,
+      "chest": 114.56,
+      "waist": 100.47,
+      "hip": 116.4,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 10.64
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.01,
-      "waist": 0.01,
-      "hip": -0.09
+      "chest": 0.06,
+      "waist": -0.03,
+      "hip": -0.1
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 25,
-    "seconds": 78.4,
+    "nfev": 22,
+    "seconds": 96.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2548,7 +2678,8 @@
       "waist": 100.5,
       "hip": 116.5,
       "shoulder_hip": 0.887,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
@@ -2556,7 +2687,8 @@
       "waist": 100.48,
       "hip": 116.47,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 12.28
     },
     "fit_error_cm": {
       "height": 0.0,
@@ -2567,8 +2699,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 17,
-    "seconds": 60.1,
+    "nfev": 23,
+    "seconds": 81.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2587,27 +2719,29 @@
       "waist": 108.5,
       "hip": 124.5,
       "shoulder_hip": 0.885,
-      "waist_depth": 0.704
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 120.67,
-      "waist": 107.21,
-      "hip": 123.51,
+      "chest": 121.16,
+      "waist": 107.81,
+      "hip": 123.67,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.82
+      "waist_depth": 0.83,
+      "bust_drop": 9.7
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -1.83,
-      "waist": -1.29,
-      "hip": -0.99
+      "chest": -1.34,
+      "waist": -0.69,
+      "hip": -0.83
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 25,
-    "seconds": 350.8,
+    "nfev": 21,
+    "seconds": 180.8,
     "prior_weight": 0.2,
     "warm_start": "female_rectangle_3XL_165",
     "accepted": true
@@ -2626,27 +2760,29 @@
       "waist": 108.5,
       "hip": 124.5,
       "shoulder_hip": 0.885,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 122.19,
-      "waist": 109.02,
-      "hip": 122.46,
+      "chest": 122.2,
+      "waist": 109.03,
+      "hip": 122.39,
       "shoulder_hip": 0.86,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 10.28
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.31,
-      "waist": 0.52,
-      "hip": -2.04
+      "chest": -0.3,
+      "waist": 0.53,
+      "hip": -2.11
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 72.8,
+    "seconds": 90.5,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2665,27 +2801,29 @@
       "waist": 108.5,
       "hip": 124.5,
       "shoulder_hip": 0.885,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
       "chest": 122.49,
-      "waist": 108.48,
-      "hip": 124.41,
+      "waist": 108.5,
+      "hip": 124.42,
       "shoulder_hip": 0.88,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 10.71
     },
     "fit_error_cm": {
       "height": 0.0,
       "chest": -0.01,
-      "waist": -0.02,
-      "hip": -0.09
+      "waist": -0.0,
+      "hip": -0.08
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 22,
-    "seconds": 97.2,
+    "nfev": 25,
+    "seconds": 111.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2704,27 +2842,29 @@
       "waist": 85.5,
       "hip": 101.5,
       "shoulder_hip": 0.894,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 99.48,
-      "waist": 85.5,
-      "hip": 101.45,
+      "chest": 99.45,
+      "waist": 85.42,
+      "hip": 101.48,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 12.76
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.02,
-      "waist": -0.0,
-      "hip": -0.05
+      "chest": -0.05,
+      "waist": -0.08,
+      "hip": -0.02
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 20,
-    "seconds": 48.9,
+    "nfev": 23,
+    "seconds": 114.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2743,27 +2883,29 @@
       "waist": 85.5,
       "hip": 101.5,
       "shoulder_hip": 0.894,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 99.54,
-      "waist": 85.44,
-      "hip": 101.59,
-      "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "chest": 99.52,
+      "waist": 85.46,
+      "hip": 101.54,
+      "shoulder_hip": 0.89,
+      "waist_depth": 0.7,
+      "bust_drop": 13.86
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.04,
-      "waist": -0.06,
-      "hip": 0.09
+      "chest": 0.02,
+      "waist": -0.04,
+      "hip": 0.04
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 25,
-    "seconds": 120.3,
+    "nfev": 22,
+    "seconds": 77.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2782,27 +2924,29 @@
       "waist": 85.5,
       "hip": 101.5,
       "shoulder_hip": 0.894,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 99.55,
-      "waist": 85.44,
+      "chest": 99.52,
+      "waist": 85.47,
       "hip": 101.62,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 14.03
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.05,
-      "waist": -0.06,
+      "chest": 0.02,
+      "waist": -0.03,
       "hip": 0.12
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 25,
-    "seconds": 78.6,
+    "nfev": 20,
+    "seconds": 65.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2821,7 +2965,8 @@
       "waist": 78.5,
       "hip": 94.5,
       "shoulder_hip": 0.897,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
@@ -2829,7 +2974,8 @@
       "waist": 78.47,
       "hip": 94.55,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 13.77
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -2840,8 +2986,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 17,
-    "seconds": 51.5,
+    "nfev": 23,
+    "seconds": 79.5,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2860,27 +3006,29 @@
       "waist": 78.5,
       "hip": 94.5,
       "shoulder_hip": 0.897,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 92.54,
-      "waist": 78.44,
+      "chest": 92.51,
+      "waist": 78.47,
       "hip": 94.64,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 14.04
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.04,
-      "waist": -0.06,
+      "chest": 0.01,
+      "waist": -0.03,
       "hip": 0.14
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 25,
-    "seconds": 88.1,
+    "nfev": 20,
+    "seconds": 55.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2899,27 +3047,29 @@
       "waist": 78.5,
       "hip": 94.5,
       "shoulder_hip": 0.897,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 92.57,
-      "waist": 78.41,
-      "hip": 94.75,
+      "chest": 92.54,
+      "waist": 78.44,
+      "hip": 94.76,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.04
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.07,
-      "waist": -0.09,
-      "hip": 0.25
+      "chest": 0.04,
+      "waist": -0.06,
+      "hip": 0.26
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 89.3,
+    "seconds": 89.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2938,27 +3088,29 @@
       "waist": 73.5,
       "hip": 89.5,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 87.53,
-      "waist": 73.45,
+      "chest": 87.51,
+      "waist": 73.47,
       "hip": 89.62,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 14.03
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.03,
-      "waist": -0.05,
+      "chest": 0.01,
+      "waist": -0.03,
       "hip": 0.12
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 25,
-    "seconds": 81.0,
+    "nfev": 22,
+    "seconds": 62.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -2977,27 +3129,29 @@
       "waist": 73.5,
       "hip": 89.5,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 87.57,
-      "waist": 73.41,
+      "chest": 87.53,
+      "waist": 73.45,
       "hip": 89.74,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.04
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.07,
-      "waist": -0.09,
+      "chest": 0.03,
+      "waist": -0.05,
       "hip": 0.24
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 91.9,
+    "seconds": 119.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3016,27 +3170,29 @@
       "waist": 73.5,
       "hip": 89.5,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 87.61,
-      "waist": 73.38,
-      "hip": 89.91,
+      "chest": 87.57,
+      "waist": 73.4,
+      "hip": 89.89,
       "shoulder_hip": 0.9,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.04
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.11,
-      "waist": -0.12,
-      "hip": 0.41
+      "chest": 0.07,
+      "waist": -0.1,
+      "hip": 0.39
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 21,
-    "seconds": 45.1,
+    "nfev": 22,
+    "seconds": 63.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3055,7 +3211,8 @@
       "waist": 92.5,
       "hip": 108.5,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
@@ -3063,7 +3220,8 @@
       "waist": 92.51,
       "hip": 108.41,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 10.53
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -3074,8 +3232,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 21,
-    "seconds": 69.5,
+    "nfev": 25,
+    "seconds": 106.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3094,7 +3252,8 @@
       "waist": 92.5,
       "hip": 108.5,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
@@ -3102,7 +3261,8 @@
       "waist": 92.49,
       "hip": 108.48,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 12.52
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -3113,8 +3273,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 19,
-    "seconds": 53.3,
+    "nfev": 20,
+    "seconds": 75.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3133,7 +3293,8 @@
       "waist": 92.5,
       "hip": 108.5,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
@@ -3141,10 +3302,11 @@
       "waist": 92.46,
       "hip": 108.54,
       "shoulder_hip": 0.89,
-      "waist_depth": 0.71
+      "waist_depth": 0.7,
+      "bust_drop": 13.72
     },
     "fit_error_cm": {
-      "height": 0.0,
+      "height": -0.0,
       "chest": 0.02,
       "waist": -0.04,
       "hip": 0.04
@@ -3152,8 +3314,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 16,
-    "seconds": 38.3,
+    "nfev": 23,
+    "seconds": 84.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3172,27 +3334,29 @@
       "waist": 67.5,
       "hip": 83.5,
       "shoulder_hip": 0.904,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 81.58,
-      "waist": 67.4,
-      "hip": 83.77,
+      "chest": 81.53,
+      "waist": 67.45,
+      "hip": 83.76,
       "shoulder_hip": 0.91,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.04
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.08,
-      "waist": -0.1,
-      "hip": 0.27
+      "chest": 0.03,
+      "waist": -0.05,
+      "hip": 0.26
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 20,
-    "seconds": 62.5,
+    "nfev": 22,
+    "seconds": 60.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3211,27 +3375,29 @@
       "waist": 67.5,
       "hip": 83.5,
       "shoulder_hip": 0.904,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 81.6,
+      "chest": 81.58,
       "waist": 67.38,
-      "hip": 84.02,
+      "hip": 83.95,
       "shoulder_hip": 0.91,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.0
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.1,
+      "chest": 0.08,
       "waist": -0.12,
-      "hip": 0.52
+      "hip": 0.45
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 25,
-    "seconds": 71.0,
+    "nfev": 24,
+    "seconds": 80.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3250,27 +3416,29 @@
       "waist": 67.5,
       "hip": 83.5,
       "shoulder_hip": 0.904,
-      "waist_depth": 0.705
+      "waist_depth": 0.704,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 81.69,
-      "waist": 67.26,
-      "hip": 84.14,
+      "chest": 81.58,
+      "waist": 67.38,
+      "hip": 84.15,
       "shoulder_hip": 0.91,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 14.06
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.19,
-      "waist": -0.24,
-      "hip": 0.64
+      "chest": 0.08,
+      "waist": -0.12,
+      "hip": 0.65
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 97.1,
+    "seconds": 106.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3289,27 +3457,29 @@
       "waist": 106.5,
       "hip": 126.5,
       "shoulder_hip": 0.817,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 114.54,
+      "chest": 114.55,
       "waist": 106.46,
       "hip": 126.34,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 5.72
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.04,
+      "chest": 0.05,
       "waist": -0.04,
       "hip": -0.16
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 23,
-    "seconds": 65.6,
+    "nfev": 22,
+    "seconds": 71.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3328,7 +3498,8 @@
       "waist": 106.5,
       "hip": 126.5,
       "shoulder_hip": 0.817,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
@@ -3336,7 +3507,8 @@
       "waist": 106.44,
       "hip": 126.41,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 6.76
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -3347,8 +3519,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 24,
-    "seconds": 78.1,
+    "nfev": 19,
+    "seconds": 64.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3367,7 +3539,8 @@
       "waist": 106.5,
       "hip": 126.5,
       "shoulder_hip": 0.817,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
@@ -3375,7 +3548,8 @@
       "waist": 106.42,
       "hip": 126.47,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 8.02
     },
     "fit_error_cm": {
       "height": 0.0,
@@ -3386,8 +3560,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 21,
-    "seconds": 67.5,
+    "nfev": 22,
+    "seconds": 66.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3406,27 +3580,29 @@
       "waist": 114.5,
       "hip": 134.5,
       "shoulder_hip": 0.819,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 122.45,
-      "waist": 114.47,
-      "hip": 134.18,
+      "chest": 122.5,
+      "waist": 114.52,
+      "hip": 134.26,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 5.39
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.05,
-      "waist": -0.03,
-      "hip": -0.32
+      "chest": 0.0,
+      "waist": 0.02,
+      "hip": -0.24
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 24,
-    "seconds": 113.6,
+    "nfev": 25,
+    "seconds": 86.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3445,7 +3621,8 @@
       "waist": 114.5,
       "hip": 134.5,
       "shoulder_hip": 0.819,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
@@ -3453,7 +3630,8 @@
       "waist": 114.45,
       "hip": 134.35,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 5.33
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -3465,7 +3643,7 @@
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 91.1,
+    "seconds": 106.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3484,7 +3662,8 @@
       "waist": 114.5,
       "hip": 134.5,
       "shoulder_hip": 0.819,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
@@ -3492,7 +3671,8 @@
       "waist": 114.44,
       "hip": 134.41,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 6.56
     },
     "fit_error_cm": {
       "height": 0.0,
@@ -3503,8 +3683,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 22,
-    "seconds": 93.4,
+    "nfev": 19,
+    "seconds": 106.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3523,27 +3703,29 @@
       "waist": 91.5,
       "hip": 111.5,
       "shoulder_hip": 0.813,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
-      "chest": 99.57,
+      "chest": 99.56,
       "waist": 91.44,
       "hip": 111.47,
       "shoulder_hip": 0.81,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 8.05
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.07,
+      "chest": 0.06,
       "waist": -0.06,
       "hip": -0.03
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 22,
-    "seconds": 70.9,
+    "nfev": 24,
+    "seconds": 97.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3562,27 +3744,29 @@
       "waist": 91.5,
       "hip": 111.5,
       "shoulder_hip": 0.813,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 99.61,
+      "chest": 99.6,
       "waist": 91.39,
       "hip": 111.56,
       "shoulder_hip": 0.81,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 8.1
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.11,
+      "chest": 0.1,
       "waist": -0.11,
       "hip": 0.06
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 20,
-    "seconds": 60.9,
+    "nfev": 22,
+    "seconds": 94.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3601,27 +3785,29 @@
       "waist": 91.5,
       "hip": 111.5,
       "shoulder_hip": 0.813,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 99.64,
-      "waist": 91.36,
+      "chest": 99.65,
+      "waist": 91.35,
       "hip": 111.66,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 7.97
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.14,
-      "waist": -0.14,
+      "chest": 0.15,
+      "waist": -0.15,
       "hip": 0.16
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 25,
-    "seconds": 72.5,
+    "nfev": 22,
+    "seconds": 77.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3640,7 +3826,8 @@
       "waist": 84.5,
       "hip": 104.5,
       "shoulder_hip": 0.811,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
@@ -3648,7 +3835,8 @@
       "waist": 84.38,
       "hip": 104.57,
       "shoulder_hip": 0.81,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 8.01
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -3659,8 +3847,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 17,
-    "seconds": 48.2,
+    "nfev": 23,
+    "seconds": 85.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3679,27 +3867,29 @@
       "waist": 84.5,
       "hip": 104.5,
       "shoulder_hip": 0.811,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 92.65,
-      "waist": 84.35,
-      "hip": 104.68,
+      "chest": 92.66,
+      "waist": 84.33,
+      "hip": 104.7,
       "shoulder_hip": 0.81,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 8.03
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.15,
-      "waist": -0.15,
-      "hip": 0.18
+      "chest": 0.16,
+      "waist": -0.17,
+      "hip": 0.2
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 24,
-    "seconds": 100.4,
+    "nfev": 25,
+    "seconds": 110.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3718,27 +3908,29 @@
       "waist": 84.5,
       "hip": 104.5,
       "shoulder_hip": 0.811,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 92.7,
+      "chest": 92.71,
       "waist": 84.29,
-      "hip": 104.81,
+      "hip": 104.82,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 7.6
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.2,
+      "height": -0.0,
+      "chest": 0.21,
       "waist": -0.21,
-      "hip": 0.31
+      "hip": 0.32
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 25,
-    "seconds": 79.9,
+    "nfev": 22,
+    "seconds": 90.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3757,27 +3949,29 @@
       "waist": 79.5,
       "hip": 99.5,
       "shoulder_hip": 0.809,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
       "chest": 87.65,
-      "waist": 79.35,
-      "hip": 99.66,
+      "waist": 79.34,
+      "hip": 99.67,
       "shoulder_hip": 0.81,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 7.97
     },
     "fit_error_cm": {
       "height": -0.0,
       "chest": 0.15,
-      "waist": -0.15,
-      "hip": 0.16
+      "waist": -0.16,
+      "hip": 0.17
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 22,
-    "seconds": 54.3,
+    "nfev": 25,
+    "seconds": 80.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3796,27 +3990,29 @@
       "waist": 79.5,
       "hip": 99.5,
       "shoulder_hip": 0.809,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
       "chest": 87.7,
       "waist": 79.29,
-      "hip": 99.8,
+      "hip": 99.83,
       "shoulder_hip": 0.81,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 7.9
     },
     "fit_error_cm": {
       "height": -0.0,
       "chest": 0.2,
       "waist": -0.21,
-      "hip": 0.3
+      "hip": 0.33
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 21,
-    "seconds": 67.4,
+    "nfev": 22,
+    "seconds": 74.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3835,27 +4031,29 @@
       "waist": 79.5,
       "hip": 99.5,
       "shoulder_hip": 0.809,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 87.78,
-      "waist": 79.22,
-      "hip": 100.0,
+      "chest": 87.75,
+      "waist": 79.23,
+      "hip": 99.97,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 7.69
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.28,
-      "waist": -0.28,
-      "hip": 0.5
+      "height": -0.0,
+      "chest": 0.25,
+      "waist": -0.27,
+      "hip": 0.47
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 132.3,
+    "seconds": 141.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3874,7 +4072,8 @@
       "waist": 98.5,
       "hip": 118.5,
       "shoulder_hip": 0.815,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
@@ -3882,7 +4081,8 @@
       "waist": 98.44,
       "hip": 118.41,
       "shoulder_hip": 0.81,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 6.87
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -3894,7 +4094,7 @@
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 23,
-    "seconds": 70.4,
+    "seconds": 75.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3913,27 +4113,29 @@
       "waist": 98.5,
       "hip": 118.5,
       "shoulder_hip": 0.815,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 106.62,
-      "waist": 98.39,
+      "chest": 106.58,
+      "waist": 98.42,
       "hip": 118.47,
-      "shoulder_hip": 0.82,
-      "waist_depth": 0.71
+      "shoulder_hip": 0.81,
+      "waist_depth": 0.71,
+      "bust_drop": 8.04
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.12,
-      "waist": -0.11,
+      "chest": 0.08,
+      "waist": -0.08,
       "hip": -0.03
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 20,
-    "seconds": 40.6,
+    "nfev": 22,
+    "seconds": 65.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3952,7 +4154,8 @@
       "waist": 98.5,
       "hip": 118.5,
       "shoulder_hip": 0.815,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
@@ -3960,7 +4163,8 @@
       "waist": 98.39,
       "hip": 118.55,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.71
+      "waist_depth": 0.71,
+      "bust_drop": 8.09
     },
     "fit_error_cm": {
       "height": 0.0,
@@ -3971,8 +4175,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 22,
-    "seconds": 50.0,
+    "nfev": 24,
+    "seconds": 85.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -3991,7 +4195,8 @@
       "waist": 73.5,
       "hip": 93.5,
       "shoulder_hip": 0.807,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 155.0,
@@ -3999,7 +4204,8 @@
       "waist": 73.29,
       "hip": 93.83,
       "shoulder_hip": 0.81,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 7.78
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -4011,7 +4217,7 @@
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 82.6,
+    "seconds": 113.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4030,7 +4236,8 @@
       "waist": 73.5,
       "hip": 93.5,
       "shoulder_hip": 0.807,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 165.0,
@@ -4038,7 +4245,8 @@
       "waist": 73.23,
       "hip": 94.01,
       "shoulder_hip": 0.81,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 7.63
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -4050,7 +4258,7 @@
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 95.5,
+    "seconds": 131.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4069,27 +4277,29 @@
       "waist": 73.5,
       "hip": 93.5,
       "shoulder_hip": 0.807,
-      "waist_depth": 0.705
+      "waist_depth": 0.705,
+      "bust_drop_max": 14.0
     },
     "measured_cm": {
       "height": 175.0,
       "chest": 81.85,
       "waist": 73.13,
-      "hip": 94.28,
+      "hip": 94.27,
       "shoulder_hip": 0.82,
-      "waist_depth": 0.7
+      "waist_depth": 0.7,
+      "bust_drop": 7.43
     },
     "fit_error_cm": {
       "height": -0.0,
       "chest": 0.35,
       "waist": -0.37,
-      "hip": 0.78
+      "hip": 0.77
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 73.3,
+    "seconds": 88.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4108,27 +4318,29 @@
       "waist": 88.0,
       "hip": 112.0,
       "shoulder_hip": 0.951,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 111.92,
-      "waist": 88.08,
-      "hip": 111.87,
+      "chest": 112.02,
+      "waist": 88.01,
+      "hip": 111.81,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.11
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.08,
-      "waist": 0.08,
-      "hip": -0.13
+      "chest": 0.02,
+      "waist": 0.01,
+      "hip": -0.19
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 25,
-    "seconds": 181.7,
+    "nfev": 21,
+    "seconds": 73.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4147,27 +4359,29 @@
       "waist": 88.0,
       "hip": 112.0,
       "shoulder_hip": 0.951,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 111.93,
+      "chest": 111.99,
       "waist": 88.06,
-      "hip": 111.93,
+      "hip": 111.92,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.14
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": -0.07,
+      "height": -0.0,
+      "chest": -0.01,
       "waist": 0.06,
-      "hip": -0.07
+      "hip": -0.08
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 23,
-    "seconds": 84.8,
+    "nfev": 25,
+    "seconds": 114.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4186,27 +4400,29 @@
       "waist": 88.0,
       "hip": 112.0,
       "shoulder_hip": 0.951,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 111.95,
-      "waist": 88.04,
-      "hip": 111.97,
+      "chest": 111.98,
+      "waist": 88.11,
+      "hip": 112.05,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.15
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.05,
-      "waist": 0.04,
-      "hip": -0.03
+      "chest": -0.02,
+      "waist": 0.11,
+      "hip": 0.05
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 25,
-    "seconds": 104.1,
+    "nfev": 22,
+    "seconds": 90.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4225,27 +4441,29 @@
       "waist": 93.0,
       "hip": 117.0,
       "shoulder_hip": 0.952,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 116.84,
-      "waist": 93.19,
-      "hip": 116.55,
+      "chest": 117.02,
+      "waist": 92.97,
+      "hip": 116.74,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.09
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.16,
-      "waist": 0.19,
-      "hip": -0.45
+      "chest": 0.02,
+      "waist": -0.03,
+      "hip": -0.26
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 77.6,
+    "seconds": 121.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4264,27 +4482,29 @@
       "waist": 93.0,
       "hip": 117.0,
       "shoulder_hip": 0.952,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 116.93,
-      "waist": 93.07,
-      "hip": 116.89,
+      "chest": 117.0,
+      "waist": 93.01,
+      "hip": 116.83,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.11
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.07,
-      "waist": 0.07,
-      "hip": -0.11
+      "chest": 0.0,
+      "waist": 0.01,
+      "hip": -0.17
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 25,
-    "seconds": 85.9,
+    "nfev": 24,
+    "seconds": 98.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4303,27 +4523,29 @@
       "waist": 93.0,
       "hip": 117.0,
       "shoulder_hip": 0.952,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 116.94,
-      "waist": 93.05,
-      "hip": 116.94,
+      "chest": 116.99,
+      "waist": 93.06,
+      "hip": 116.95,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.13
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": -0.06,
-      "waist": 0.05,
-      "hip": -0.06
+      "height": -0.0,
+      "chest": -0.01,
+      "waist": 0.06,
+      "hip": -0.05
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 81.2,
+    "seconds": 125.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4342,27 +4564,29 @@
       "waist": 78.0,
       "hip": 102.0,
       "shoulder_hip": 0.947,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 101.92,
-      "waist": 78.07,
-      "hip": 101.95,
+      "chest": 101.97,
+      "waist": 78.12,
+      "hip": 102.03,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.17
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.08,
-      "waist": 0.07,
-      "hip": -0.05
+      "chest": -0.03,
+      "waist": 0.12,
+      "hip": 0.03
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 22,
-    "seconds": 53.2,
+    "nfev": 21,
+    "seconds": 64.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4381,29 +4605,31 @@
       "waist": 78.0,
       "hip": 102.0,
       "shoulder_hip": 0.947,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 101.94,
-      "waist": 78.04,
-      "hip": 102.01,
+      "chest": 101.95,
+      "waist": 78.17,
+      "hip": 102.19,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.18
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": -0.06,
-      "waist": 0.04,
-      "hip": 0.01
+      "height": 0.0,
+      "chest": -0.05,
+      "waist": 0.17,
+      "hip": 0.19
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 21,
-    "seconds": 59.0,
+    "nfev": 25,
+    "seconds": 183.8,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_hourglass_L_165",
     "accepted": true
   },
   {
@@ -4420,29 +4646,31 @@
       "waist": 78.0,
       "hip": 102.0,
       "shoulder_hip": 0.947,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 101.99,
-      "waist": 77.99,
-      "hip": 102.1,
+      "chest": 101.93,
+      "waist": 78.23,
+      "hip": 102.34,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.19
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.01,
-      "waist": -0.01,
-      "hip": 0.1
+      "chest": -0.07,
+      "waist": 0.23,
+      "hip": 0.34
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 79.2,
+    "seconds": 172.8,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_hourglass_L_165",
     "accepted": true
   },
   {
@@ -4459,29 +4687,31 @@
       "waist": 73.0,
       "hip": 97.0,
       "shoulder_hip": 0.946,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 96.93,
-      "waist": 73.06,
-      "hip": 97.0,
+      "chest": 96.94,
+      "waist": 73.18,
+      "hip": 97.18,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.19
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.07,
-      "waist": 0.06,
-      "hip": -0.0
+      "chest": -0.06,
+      "waist": 0.18,
+      "hip": 0.18
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 17,
-    "seconds": 41.3,
+    "nfev": 19,
+    "seconds": 135.1,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_hourglass_L_165",
     "accepted": true
   },
   {
@@ -4498,29 +4728,31 @@
       "waist": 73.0,
       "hip": 97.0,
       "shoulder_hip": 0.946,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 96.96,
-      "waist": 73.03,
-      "hip": 97.06,
+      "chest": 96.92,
+      "waist": 73.24,
+      "hip": 97.36,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.21
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": -0.04,
-      "waist": 0.03,
-      "hip": 0.06
+      "height": -0.0,
+      "chest": -0.08,
+      "waist": 0.24,
+      "hip": 0.36
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 81.7,
+    "seconds": 164.9,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_hourglass_L_165",
     "accepted": true
   },
   {
@@ -4537,29 +4769,31 @@
       "waist": 73.0,
       "hip": 97.0,
       "shoulder_hip": 0.946,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 96.99,
-      "waist": 72.99,
-      "hip": 97.15,
+      "chest": 96.91,
+      "waist": 73.31,
+      "hip": 97.48,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.21
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.01,
-      "waist": -0.01,
-      "hip": 0.15
+      "chest": -0.09,
+      "waist": 0.31,
+      "hip": 0.48
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 23,
-    "seconds": 66.3,
+    "nfev": 25,
+    "seconds": 167.3,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_hourglass_L_165",
     "accepted": true
   },
   {
@@ -4576,29 +4810,31 @@
       "waist": 67.0,
       "hip": 91.0,
       "shoulder_hip": 0.943,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 90.96,
-      "waist": 67.03,
-      "hip": 91.08,
-      "shoulder_hip": 0.94,
-      "waist_depth": 0.72
+      "chest": 90.97,
+      "waist": 67.27,
+      "hip": 91.34,
+      "shoulder_hip": 0.95,
+      "waist_depth": 0.72,
+      "bust_drop": 5.36
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.04,
-      "waist": 0.03,
-      "hip": 0.08
+      "chest": -0.03,
+      "waist": 0.27,
+      "hip": 0.34
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 25,
-    "seconds": 97.9,
+    "nfev": 22,
+    "seconds": 144.1,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_hourglass_L_165",
     "accepted": true
   },
   {
@@ -4615,29 +4851,31 @@
       "waist": 67.0,
       "hip": 91.0,
       "shoulder_hip": 0.943,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 90.98,
-      "waist": 67.0,
-      "hip": 91.17,
-      "shoulder_hip": 0.94,
-      "waist_depth": 0.72
+      "chest": 90.89,
+      "waist": 67.33,
+      "hip": 91.53,
+      "shoulder_hip": 0.95,
+      "waist_depth": 0.72,
+      "bust_drop": 5.25
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.02,
-      "waist": -0.0,
-      "hip": 0.17
+      "chest": -0.11,
+      "waist": 0.33,
+      "hip": 0.53
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 25,
-    "seconds": 88.0,
+    "nfev": 18,
+    "seconds": 123.3,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_hourglass_L_165",
     "accepted": true
   },
   {
@@ -4654,30 +4892,32 @@
       "waist": 67.0,
       "hip": 91.0,
       "shoulder_hip": 0.943,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 91.01,
-      "waist": 66.96,
-      "hip": 91.3,
-      "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "chest": 87.63,
+      "waist": 71.09,
+      "hip": 93.65,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.69,
+      "bust_drop": 10.02
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.01,
-      "waist": -0.04,
-      "hip": 0.3
+      "chest": -3.37,
+      "waist": 4.09,
+      "hip": 2.65
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
-    "ffit_class_of_mesh": "hourglass",
-    "nfev": 25,
-    "seconds": 87.5,
+    "ffit_class_of_mesh": "rectangle",
+    "nfev": 24,
+    "seconds": 58.2,
     "prior_weight": 0.2,
     "warm_start": null,
-    "accepted": true
+    "accepted": false
   },
   {
     "id": "male_hourglass_XL_165",
@@ -4693,27 +4933,29 @@
       "waist": 83.0,
       "hip": 107.0,
       "shoulder_hip": 0.949,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 106.92,
-      "waist": 83.08,
-      "hip": 106.91,
+      "chest": 107.0,
+      "waist": 83.03,
+      "hip": 106.93,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.16
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.08,
-      "waist": 0.08,
-      "hip": -0.09
+      "chest": 0.0,
+      "waist": 0.03,
+      "hip": -0.07
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 101.7,
+    "seconds": 108.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4732,27 +4974,29 @@
       "waist": 83.0,
       "hip": 107.0,
       "shoulder_hip": 0.949,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 106.93,
-      "waist": 83.06,
-      "hip": 106.96,
+      "chest": 106.97,
+      "waist": 83.11,
+      "hip": 107.04,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.16
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.07,
-      "waist": 0.06,
-      "hip": -0.04
+      "chest": -0.03,
+      "waist": 0.11,
+      "hip": 0.04
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 21,
-    "seconds": 66.8,
+    "nfev": 25,
+    "seconds": 99.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4771,27 +5015,29 @@
       "waist": 83.0,
       "hip": 107.0,
       "shoulder_hip": 0.949,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 106.96,
-      "waist": 83.03,
-      "hip": 107.01,
+      "chest": 106.95,
+      "waist": 83.17,
+      "hip": 107.18,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.17
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.04,
-      "waist": 0.03,
-      "hip": 0.01
+      "chest": -0.05,
+      "waist": 0.17,
+      "hip": 0.18
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 20,
-    "seconds": 80.4,
+    "nfev": 25,
+    "seconds": 111.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4810,29 +5056,31 @@
       "waist": 62.0,
       "hip": 86.0,
       "shoulder_hip": 0.941,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 85.97,
-      "waist": 62.01,
-      "hip": 86.18,
-      "shoulder_hip": 0.94,
-      "waist_depth": 0.72
+      "chest": 85.87,
+      "waist": 62.35,
+      "hip": 86.54,
+      "shoulder_hip": 0.95,
+      "waist_depth": 0.72,
+      "bust_drop": 5.27
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.03,
-      "waist": 0.01,
-      "hip": 0.18
+      "chest": -0.13,
+      "waist": 0.35,
+      "hip": 0.54
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 114.6,
+    "seconds": 179.8,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_hourglass_L_165",
     "accepted": true
   },
   {
@@ -4849,29 +5097,31 @@
       "waist": 62.0,
       "hip": 86.0,
       "shoulder_hip": 0.941,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 86.0,
-      "waist": 61.97,
-      "hip": 86.31,
-      "shoulder_hip": 0.94,
-      "waist_depth": 0.72
+      "chest": 85.65,
+      "waist": 62.32,
+      "hip": 86.69,
+      "shoulder_hip": 0.95,
+      "waist_depth": 0.73,
+      "bust_drop": 5.55
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": 0.0,
-      "waist": -0.03,
-      "hip": 0.31
+      "height": 0.0,
+      "chest": -0.35,
+      "waist": 0.32,
+      "hip": 0.69
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
-    "nfev": 24,
-    "seconds": 65.4,
+    "nfev": 19,
+    "seconds": 121.4,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_hourglass_L_165",
     "accepted": true
   },
   {
@@ -4888,29 +5138,31 @@
       "waist": 62.0,
       "hip": 86.0,
       "shoulder_hip": 0.941,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 86.02,
-      "waist": 61.93,
-      "hip": 86.5,
+      "chest": 85.77,
+      "waist": 62.34,
+      "hip": 86.84,
       "shoulder_hip": 0.95,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 5.47
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.02,
-      "waist": -0.07,
-      "hip": 0.5
+      "chest": -0.23,
+      "waist": 0.34,
+      "hip": 0.84
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "hourglass",
     "ffit_class_of_mesh": "hourglass",
     "nfev": 25,
-    "seconds": 78.2,
+    "seconds": 172.1,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_hourglass_L_165",
     "accepted": true
   },
   {
@@ -4927,27 +5179,29 @@
       "waist": 98.0,
       "hip": 101.0,
       "shoulder_hip": 1.054,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 112.01,
-      "waist": 97.84,
-      "hip": 100.79,
+      "chest": 112.03,
+      "waist": 97.91,
+      "hip": 100.81,
       "shoulder_hip": 1.05,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 5.24
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.01,
-      "waist": -0.16,
-      "hip": -0.21
+      "chest": 0.03,
+      "waist": -0.09,
+      "hip": -0.19
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 22,
-    "seconds": 77.6,
+    "seconds": 64.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -4966,29 +5220,31 @@
       "waist": 98.0,
       "hip": 101.0,
       "shoulder_hip": 1.054,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
       "chest": 112.01,
-      "waist": 97.88,
-      "hip": 100.85,
+      "waist": 97.89,
+      "hip": 100.91,
       "shoulder_hip": 1.05,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 5.04
     },
     "fit_error_cm": {
       "height": 0.0,
       "chest": 0.01,
-      "waist": -0.12,
-      "hip": -0.15
+      "waist": -0.11,
+      "hip": -0.09
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 16,
-    "seconds": 100.1,
+    "nfev": 22,
+    "seconds": 84.1,
     "prior_weight": 0.2,
-    "warm_start": "male_inverted_triangle_2XL_165",
+    "warm_start": null,
     "accepted": true
   },
   {
@@ -5005,27 +5261,29 @@
       "waist": 98.0,
       "hip": 101.0,
       "shoulder_hip": 1.054,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 112.1,
-      "waist": 97.89,
-      "hip": 100.98,
+      "chest": 112.01,
+      "waist": 97.96,
+      "hip": 100.99,
       "shoulder_hip": 1.05,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 5.08
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.1,
-      "waist": -0.11,
-      "hip": -0.02
+      "height": -0.0,
+      "chest": 0.01,
+      "waist": -0.04,
+      "hip": -0.01
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 25,
-    "seconds": 80.6,
+    "nfev": 19,
+    "seconds": 52.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5044,29 +5302,31 @@
       "waist": 103.0,
       "hip": 106.0,
       "shoulder_hip": 1.051,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
       "chest": 117.01,
-      "waist": 102.82,
-      "hip": 105.76,
+      "waist": 102.84,
+      "hip": 105.77,
       "shoulder_hip": 1.05,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 2.85
     },
     "fit_error_cm": {
       "height": -0.0,
       "chest": 0.01,
-      "waist": -0.18,
-      "hip": -0.24
+      "waist": -0.16,
+      "hip": -0.23
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 23,
-    "seconds": 74.5,
+    "nfev": 21,
+    "seconds": 132.3,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_inverted_triangle_3XL_185",
     "accepted": true
   },
   {
@@ -5083,29 +5343,31 @@
       "waist": 103.0,
       "hip": 106.0,
       "shoulder_hip": 1.051,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
       "chest": 117.01,
-      "waist": 102.85,
+      "waist": 102.88,
       "hip": 105.82,
       "shoulder_hip": 1.05,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 5.02
     },
     "fit_error_cm": {
       "height": 0.0,
       "chest": 0.01,
-      "waist": -0.15,
+      "waist": -0.12,
       "hip": -0.18
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 25,
-    "seconds": 106.3,
+    "nfev": 18,
+    "seconds": 135.2,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_inverted_triangle_3XL_185",
     "accepted": true
   },
   {
@@ -5122,27 +5384,29 @@
       "waist": 103.0,
       "hip": 106.0,
       "shoulder_hip": 1.051,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 117.0,
+      "chest": 117.01,
       "waist": 102.91,
-      "hip": 105.96,
+      "hip": 105.92,
       "shoulder_hip": 1.05,
-      "waist_depth": 0.73
+      "waist_depth": 0.75,
+      "bust_drop": 5.05
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.0,
+      "chest": 0.01,
       "waist": -0.09,
-      "hip": -0.04
+      "hip": -0.08
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 22,
-    "seconds": 91.1,
+    "nfev": 25,
+    "seconds": 94.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5161,27 +5425,29 @@
       "waist": 88.0,
       "hip": 91.0,
       "shoulder_hip": 1.062,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 101.96,
-      "waist": 86.76,
-      "hip": 90.42,
-      "shoulder_hip": 1.05,
-      "waist_depth": 0.75
+      "chest": 102.01,
+      "waist": 87.93,
+      "hip": 90.96,
+      "shoulder_hip": 1.06,
+      "waist_depth": 0.75,
+      "bust_drop": 5.06
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.04,
-      "waist": -1.24,
-      "hip": -0.58
+      "chest": 0.01,
+      "waist": -0.07,
+      "hip": -0.04
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 22,
-    "seconds": 91.4,
+    "nfev": 25,
+    "seconds": 111.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5200,27 +5466,29 @@
       "waist": 88.0,
       "hip": 91.0,
       "shoulder_hip": 1.062,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 102.02,
-      "waist": 87.96,
-      "hip": 91.07,
+      "chest": 102.0,
+      "waist": 87.98,
+      "hip": 91.16,
       "shoulder_hip": 1.06,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 5.1
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.02,
-      "waist": -0.04,
-      "hip": 0.07
+      "chest": -0.0,
+      "waist": -0.02,
+      "hip": 0.16
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 61.6,
+    "seconds": 97.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5239,27 +5507,29 @@
       "waist": 88.0,
       "hip": 91.0,
       "shoulder_hip": 1.062,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 102.03,
-      "waist": 87.95,
-      "hip": 91.1,
-      "shoulder_hip": 1.06,
-      "waist_depth": 0.72
+      "chest": 102.01,
+      "waist": 88.8,
+      "hip": 91.84,
+      "shoulder_hip": 1.08,
+      "waist_depth": 0.74,
+      "bust_drop": 5.35
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.03,
-      "waist": -0.05,
-      "hip": 0.1
+      "chest": 0.01,
+      "waist": 0.8,
+      "hip": 0.84
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 23,
-    "seconds": 61.6,
+    "nfev": 20,
+    "seconds": 45.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5278,27 +5548,29 @@
       "waist": 83.0,
       "hip": 86.0,
       "shoulder_hip": 1.066,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
       "chest": 97.0,
-      "waist": 82.96,
-      "hip": 86.01,
+      "waist": 83.0,
+      "hip": 86.1,
       "shoulder_hip": 1.07,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 5.09
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.0,
-      "waist": -0.04,
-      "hip": 0.01
+      "chest": 0.0,
+      "waist": -0.0,
+      "hip": 0.1
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 22,
-    "seconds": 53.4,
+    "nfev": 25,
+    "seconds": 109.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5317,27 +5589,29 @@
       "waist": 83.0,
       "hip": 86.0,
       "shoulder_hip": 1.066,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 97.03,
-      "waist": 82.96,
-      "hip": 86.1,
-      "shoulder_hip": 1.07,
-      "waist_depth": 0.72
+      "chest": 96.82,
+      "waist": 83.27,
+      "hip": 87.2,
+      "shoulder_hip": 1.08,
+      "waist_depth": 0.73,
+      "bust_drop": 5.63
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.03,
-      "waist": -0.04,
-      "hip": 0.1
+      "height": -0.0,
+      "chest": -0.18,
+      "waist": 0.27,
+      "hip": 1.2
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 20,
-    "seconds": 52.7,
+    "nfev": 19,
+    "seconds": 57.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5356,27 +5630,29 @@
       "waist": 83.0,
       "hip": 86.0,
       "shoulder_hip": 1.066,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 97.05,
-      "waist": 82.94,
-      "hip": 86.18,
+      "chest": 96.96,
+      "waist": 83.26,
+      "hip": 86.43,
       "shoulder_hip": 1.07,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 5.13
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.05,
-      "waist": -0.06,
-      "hip": 0.18
+      "chest": -0.04,
+      "waist": 0.26,
+      "hip": 0.43
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 21,
-    "seconds": 72.0,
+    "nfev": 25,
+    "seconds": 99.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5395,27 +5671,29 @@
       "waist": 77.0,
       "hip": 80.0,
       "shoulder_hip": 1.073,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 91.02,
-      "waist": 76.96,
-      "hip": 80.11,
-      "shoulder_hip": 1.07,
-      "waist_depth": 0.72
+      "chest": 90.99,
+      "waist": 77.82,
+      "hip": 80.92,
+      "shoulder_hip": 1.09,
+      "waist_depth": 0.74,
+      "bust_drop": 5.39
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.02,
-      "waist": -0.04,
-      "hip": 0.11
+      "chest": -0.01,
+      "waist": 0.82,
+      "hip": 0.92
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 19,
-    "seconds": 52.4,
+    "nfev": 20,
+    "seconds": 44.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5434,29 +5712,31 @@
       "waist": 77.0,
       "hip": 80.0,
       "shoulder_hip": 1.073,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 91.04,
-      "waist": 76.94,
-      "hip": 80.2,
-      "shoulder_hip": 1.07,
-      "waist_depth": 0.72
+      "chest": 90.95,
+      "waist": 77.31,
+      "hip": 80.49,
+      "shoulder_hip": 1.08,
+      "waist_depth": 0.75,
+      "bust_drop": 5.14
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.04,
-      "waist": -0.06,
-      "hip": 0.2
+      "height": -0.0,
+      "chest": -0.05,
+      "waist": 0.31,
+      "hip": 0.49
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 21,
-    "seconds": 65.9,
+    "nfev": 20,
+    "seconds": 91.0,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_inverted_triangle_S_165",
     "accepted": true
   },
   {
@@ -5473,29 +5753,31 @@
       "waist": 77.0,
       "hip": 80.0,
       "shoulder_hip": 1.073,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 91.06,
-      "waist": 76.91,
-      "hip": 80.32,
+      "chest": 90.94,
+      "waist": 77.38,
+      "hip": 80.78,
       "shoulder_hip": 1.08,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 5.14
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.06,
-      "waist": -0.09,
-      "hip": 0.32
+      "chest": -0.06,
+      "waist": 0.38,
+      "hip": 0.78
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 88.5,
+    "seconds": 153.3,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_inverted_triangle_S_165",
     "accepted": true
   },
   {
@@ -5512,27 +5794,29 @@
       "waist": 93.0,
       "hip": 96.0,
       "shoulder_hip": 1.058,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 106.77,
-      "waist": 92.85,
-      "hip": 95.73,
-      "shoulder_hip": 1.05,
-      "waist_depth": 0.72
+      "chest": 107.01,
+      "waist": 92.89,
+      "hip": 95.86,
+      "shoulder_hip": 1.06,
+      "waist_depth": 0.75,
+      "bust_drop": 5.03
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.23,
-      "waist": -0.15,
-      "hip": -0.27
+      "chest": 0.01,
+      "waist": -0.11,
+      "hip": -0.14
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 93.1,
+    "seconds": 98.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5551,27 +5835,29 @@
       "waist": 93.0,
       "hip": 96.0,
       "shoulder_hip": 1.058,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 107.0,
-      "waist": 92.9,
-      "hip": 95.9,
+      "chest": 107.01,
+      "waist": 92.94,
+      "hip": 95.97,
       "shoulder_hip": 1.06,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 5.07
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.0,
-      "waist": -0.1,
-      "hip": -0.1
+      "chest": 0.01,
+      "waist": -0.06,
+      "hip": -0.03
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 73.2,
+    "seconds": 100.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5590,27 +5876,29 @@
       "waist": 93.0,
       "hip": 96.0,
       "shoulder_hip": 1.058,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 107.08,
-      "waist": 92.9,
-      "hip": 96.3,
+      "chest": 107.0,
+      "waist": 93.06,
+      "hip": 96.08,
       "shoulder_hip": 1.06,
-      "waist_depth": 0.72
+      "waist_depth": 0.75,
+      "bust_drop": 5.1
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.08,
-      "waist": -0.1,
-      "hip": 0.3
+      "height": -0.0,
+      "chest": 0.0,
+      "waist": 0.06,
+      "hip": 0.08
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
-    "nfev": 25,
-    "seconds": 103.6,
+    "nfev": 23,
+    "seconds": 94.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5629,29 +5917,31 @@
       "waist": 72.0,
       "hip": 75.0,
       "shoulder_hip": 1.079,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 86.04,
-      "waist": 71.94,
-      "hip": 75.21,
-      "shoulder_hip": 1.08,
-      "waist_depth": 0.72
+      "chest": 85.95,
+      "waist": 72.34,
+      "hip": 75.5,
+      "shoulder_hip": 1.09,
+      "waist_depth": 0.75,
+      "bust_drop": 5.14
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.04,
-      "waist": -0.06,
-      "hip": 0.21
+      "chest": -0.05,
+      "waist": 0.34,
+      "hip": 0.5
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 119.4,
+    "seconds": 124.8,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_inverted_triangle_S_165",
     "accepted": true
   },
   {
@@ -5668,29 +5958,31 @@
       "waist": 72.0,
       "hip": 75.0,
       "shoulder_hip": 1.079,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 86.06,
-      "waist": 71.91,
-      "hip": 75.34,
-      "shoulder_hip": 1.08,
-      "waist_depth": 0.72
+      "chest": 85.93,
+      "waist": 72.41,
+      "hip": 75.84,
+      "shoulder_hip": 1.09,
+      "waist_depth": 0.75,
+      "bust_drop": 5.15
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.06,
-      "waist": -0.09,
-      "hip": 0.34
+      "chest": -0.07,
+      "waist": 0.41,
+      "hip": 0.84
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 88.7,
+    "seconds": 169.0,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_inverted_triangle_S_165",
     "accepted": true
   },
   {
@@ -5707,29 +5999,31 @@
       "waist": 72.0,
       "hip": 75.0,
       "shoulder_hip": 1.079,
-      "waist_depth": 0.721
+      "waist_depth": 0.753,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 86.08,
-      "waist": 71.89,
-      "hip": 75.56,
-      "shoulder_hip": 1.08,
-      "waist_depth": 0.72
+      "chest": 85.9,
+      "waist": 72.45,
+      "hip": 76.1,
+      "shoulder_hip": 1.09,
+      "waist_depth": 0.75,
+      "bust_drop": 5.17
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.08,
-      "waist": -0.11,
-      "hip": 0.56
+      "chest": -0.1,
+      "waist": 0.45,
+      "hip": 1.1
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "inverted_triangle",
     "ffit_class_of_mesh": "inverted_triangle",
     "nfev": 25,
-    "seconds": 114.6,
+    "seconds": 150.6,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_inverted_triangle_S_165",
     "accepted": true
   },
   {
@@ -5746,29 +6040,31 @@
       "waist": 107.5,
       "hip": 107.0,
       "shoulder_hip": 0.995,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 112.19,
-      "waist": 107.43,
-      "hip": 106.71,
-      "shoulder_hip": 0.99,
-      "waist_depth": 0.71
+      "chest": 111.12,
+      "waist": 107.06,
+      "hip": 105.85,
+      "shoulder_hip": 0.96,
+      "waist_depth": 0.72,
+      "bust_drop": 3.82
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.19,
-      "waist": -0.07,
-      "hip": -0.29
+      "chest": -0.88,
+      "waist": -0.44,
+      "hip": -1.15
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 23,
-    "seconds": 177.5,
+    "nfev": 21,
+    "seconds": 173.8,
     "prior_weight": 0.2,
-    "warm_start": "male_oval_2XL_185",
+    "warm_start": "male_oval_2XL_175",
     "accepted": true
   },
   {
@@ -5785,29 +6081,31 @@
       "waist": 107.5,
       "hip": 107.0,
       "shoulder_hip": 0.995,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 110.58,
-      "waist": 105.98,
-      "hip": 105.98,
-      "shoulder_hip": 0.98,
-      "waist_depth": 0.75
+      "chest": 112.2,
+      "waist": 107.34,
+      "hip": 106.91,
+      "shoulder_hip": 0.99,
+      "waist_depth": 0.77,
+      "bust_drop": 4.54
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": -1.42,
-      "waist": -1.52,
-      "hip": -1.02
+      "height": 0.0,
+      "chest": 0.2,
+      "waist": -0.16,
+      "hip": -0.09
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 17,
-    "seconds": 157.1,
+    "nfev": 23,
+    "seconds": 90.0,
     "prior_weight": 0.2,
-    "warm_start": "male_oval_2XL_185",
+    "warm_start": null,
     "accepted": true
   },
   {
@@ -5824,27 +6122,29 @@
       "waist": 107.5,
       "hip": 107.0,
       "shoulder_hip": 0.995,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 112.39,
-      "waist": 107.16,
-      "hip": 107.01,
-      "shoulder_hip": 1.0,
-      "waist_depth": 0.72
+      "chest": 112.19,
+      "waist": 106.61,
+      "hip": 107.14,
+      "shoulder_hip": 0.99,
+      "waist_depth": 0.78,
+      "bust_drop": 5.25
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.39,
-      "waist": -0.34,
-      "hip": 0.01
+      "chest": 0.19,
+      "waist": -0.89,
+      "hip": 0.14
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 92.4,
+    "nfev": 22,
+    "seconds": 112.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5863,29 +6163,31 @@
       "waist": 112.5,
       "hip": 112.0,
       "shoulder_hip": 0.994,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 116.97,
-      "waist": 112.44,
-      "hip": 111.96,
+      "chest": 116.92,
+      "waist": 112.58,
+      "hip": 111.85,
       "shoulder_hip": 0.99,
-      "waist_depth": 0.73
+      "waist_depth": 0.77,
+      "bust_drop": 3.98
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -0.03,
-      "waist": -0.06,
-      "hip": -0.04
+      "chest": -0.08,
+      "waist": 0.08,
+      "hip": -0.15
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 24,
-    "seconds": 167.1,
+    "nfev": 23,
+    "seconds": 154.9,
     "prior_weight": 0.2,
-    "warm_start": "male_oval_3XL_185",
+    "warm_start": "male_oval_3XL_175",
     "accepted": true
   },
   {
@@ -5902,29 +6204,31 @@
       "waist": 112.5,
       "hip": 112.0,
       "shoulder_hip": 0.994,
-      "waist_depth": 0.769
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 117.37,
-      "waist": 112.2,
-      "hip": 111.93,
+      "chest": 117.03,
+      "waist": 112.34,
+      "hip": 111.81,
       "shoulder_hip": 0.99,
-      "waist_depth": 0.77
+      "waist_depth": 0.77,
+      "bust_drop": 3.96
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.37,
-      "waist": -0.3,
-      "hip": -0.07
+      "chest": 0.03,
+      "waist": -0.16,
+      "hip": -0.19
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 25,
-    "seconds": 372.0,
+    "seconds": 104.7,
     "prior_weight": 0.2,
-    "warm_start": "male_oval_3XL_165",
+    "warm_start": null,
     "accepted": true
   },
   {
@@ -5941,27 +6245,29 @@
       "waist": 112.5,
       "hip": 112.0,
       "shoulder_hip": 0.994,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 117.87,
-      "waist": 110.65,
-      "hip": 111.26,
-      "shoulder_hip": 0.98,
-      "waist_depth": 0.74
+      "chest": 117.18,
+      "waist": 112.36,
+      "hip": 111.95,
+      "shoulder_hip": 0.99,
+      "waist_depth": 0.77,
+      "bust_drop": 4.59
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": 0.87,
-      "waist": -1.85,
-      "hip": -0.74
+      "height": 0.0,
+      "chest": 0.18,
+      "waist": -0.14,
+      "hip": -0.05
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 81.8,
+    "nfev": 23,
+    "seconds": 86.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -5980,27 +6286,29 @@
       "waist": 97.5,
       "hip": 97.0,
       "shoulder_hip": 0.996,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 102.61,
-      "waist": 97.0,
-      "hip": 96.92,
-      "shoulder_hip": 1.0,
-      "waist_depth": 0.72
+      "chest": 102.06,
+      "waist": 96.68,
+      "hip": 97.19,
+      "shoulder_hip": 0.99,
+      "waist_depth": 0.77,
+      "bust_drop": 5.07
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.61,
-      "waist": -0.5,
-      "hip": -0.08
+      "chest": 0.06,
+      "waist": -0.82,
+      "hip": 0.19
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 24,
-    "seconds": 105.0,
+    "nfev": 25,
+    "seconds": 93.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6019,27 +6327,29 @@
       "waist": 97.5,
       "hip": 97.0,
       "shoulder_hip": 0.996,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
       "chest": 102.24,
-      "waist": 96.79,
-      "hip": 97.21,
+      "waist": 96.99,
+      "hip": 97.48,
       "shoulder_hip": 1.0,
-      "waist_depth": 0.72
+      "waist_depth": 0.77,
+      "bust_drop": 4.75
     },
     "fit_error_cm": {
       "height": 0.0,
       "chest": 0.24,
-      "waist": -0.71,
-      "hip": 0.21
+      "waist": -0.51,
+      "hip": 0.48
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 24,
-    "seconds": 72.8,
+    "nfev": 25,
+    "seconds": 66.5,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6058,27 +6368,29 @@
       "waist": 97.5,
       "hip": 97.0,
       "shoulder_hip": 0.996,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 102.99,
-      "waist": 96.54,
-      "hip": 97.92,
+      "chest": 102.57,
+      "waist": 96.68,
+      "hip": 98.6,
       "shoulder_hip": 1.01,
-      "waist_depth": 0.72
+      "waist_depth": 0.77,
+      "bust_drop": 5.58
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.99,
-      "waist": -0.96,
-      "hip": 0.92
+      "chest": 0.57,
+      "waist": -0.82,
+      "hip": 1.6
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 25,
-    "seconds": 63.3,
+    "seconds": 80.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6097,29 +6409,31 @@
       "waist": 92.5,
       "hip": 92.0,
       "shoulder_hip": 0.997,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 97.05,
-      "waist": 91.87,
-      "hip": 92.24,
-      "shoulder_hip": 0.99,
-      "waist_depth": 0.72
+      "chest": 97.39,
+      "waist": 92.42,
+      "hip": 92.54,
+      "shoulder_hip": 1.0,
+      "waist_depth": 0.76,
+      "bust_drop": 4.54
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.05,
-      "waist": -0.63,
-      "hip": 0.24
+      "chest": 0.39,
+      "waist": -0.08,
+      "hip": 0.54
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 23,
-    "seconds": 120.7,
+    "seconds": 50.5,
     "prior_weight": 0.2,
-    "warm_start": "male_oval_M_175",
+    "warm_start": null,
     "accepted": true
   },
   {
@@ -6136,29 +6450,31 @@
       "waist": 92.5,
       "hip": 92.0,
       "shoulder_hip": 0.997,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 97.98,
-      "waist": 91.56,
-      "hip": 92.84,
-      "shoulder_hip": 1.01,
-      "waist_depth": 0.72
+      "chest": 97.32,
+      "waist": 92.02,
+      "hip": 92.69,
+      "shoulder_hip": 1.0,
+      "waist_depth": 0.75,
+      "bust_drop": 5.13
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.98,
-      "waist": -0.94,
-      "hip": 0.84
+      "height": -0.0,
+      "chest": 0.32,
+      "waist": -0.48,
+      "hip": 0.69
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 73.8,
+    "nfev": 20,
+    "seconds": 84.6,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_oval_M_165",
     "accepted": true
   },
   {
@@ -6175,27 +6491,29 @@
       "waist": 92.5,
       "hip": 92.0,
       "shoulder_hip": 0.997,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 97.63,
-      "waist": 91.88,
-      "hip": 92.9,
+      "chest": 97.36,
+      "waist": 91.97,
+      "hip": 93.61,
       "shoulder_hip": 1.01,
-      "waist_depth": 0.72
+      "waist_depth": 0.76,
+      "bust_drop": 5.29
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.63,
-      "waist": -0.62,
-      "hip": 0.9
+      "height": -0.0,
+      "chest": 0.36,
+      "waist": -0.53,
+      "hip": 1.61
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 22,
-    "seconds": 53.7,
+    "nfev": 25,
+    "seconds": 90.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6214,27 +6532,29 @@
       "waist": 86.5,
       "hip": 86.0,
       "shoulder_hip": 0.998,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 91.84,
+      "chest": 91.78,
       "waist": 85.68,
-      "hip": 86.83,
-      "shoulder_hip": 1.01,
-      "waist_depth": 0.72
+      "hip": 87.95,
+      "shoulder_hip": 1.02,
+      "waist_depth": 0.77,
+      "bust_drop": 5.66
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.84,
+      "chest": 0.78,
       "waist": -0.82,
-      "hip": 0.83
+      "hip": 1.95
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 25,
-    "seconds": 73.4,
+    "seconds": 83.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6253,27 +6573,29 @@
       "waist": 86.5,
       "hip": 86.0,
       "shoulder_hip": 0.998,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 91.48,
+      "chest": 91.31,
       "waist": 85.93,
-      "hip": 86.78,
+      "hip": 87.54,
       "shoulder_hip": 1.01,
-      "waist_depth": 0.71
+      "waist_depth": 0.76,
+      "bust_drop": 5.3
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.48,
+      "chest": 0.31,
       "waist": -0.57,
-      "hip": 0.78
+      "hip": 1.54
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 22,
-    "seconds": 55.3,
+    "nfev": 25,
+    "seconds": 84.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6292,30 +6614,32 @@
       "waist": 86.5,
       "hip": 86.0,
       "shoulder_hip": 0.998,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 91.88,
-      "waist": 85.25,
-      "hip": 87.78,
-      "shoulder_hip": 1.02,
-      "waist_depth": 0.71
+      "chest": 91.43,
+      "waist": 85.61,
+      "hip": 89.02,
+      "shoulder_hip": 1.03,
+      "waist_depth": 0.75,
+      "bust_drop": 5.74
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.88,
-      "waist": -1.25,
-      "hip": 1.78
+      "chest": 0.43,
+      "waist": -0.89,
+      "hip": 3.02
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
-    "ffit_class_of_mesh": "oval",
+    "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 67.2,
+    "seconds": 83.2,
     "prior_weight": 0.2,
     "warm_start": null,
-    "accepted": true
+    "accepted": false
   },
   {
     "id": "male_oval_XL_165",
@@ -6331,29 +6655,31 @@
       "waist": 102.5,
       "hip": 102.0,
       "shoulder_hip": 0.996,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 105.5,
-      "waist": 100.74,
-      "hip": 100.61,
-      "shoulder_hip": 0.98,
-      "waist_depth": 0.75
+      "chest": 107.08,
+      "waist": 102.44,
+      "hip": 101.95,
+      "shoulder_hip": 1.0,
+      "waist_depth": 0.77,
+      "bust_drop": 4.41
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": -1.5,
-      "waist": -1.76,
-      "hip": -1.39
+      "chest": 0.08,
+      "waist": -0.06,
+      "hip": -0.05
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 17,
-    "seconds": 127.7,
+    "nfev": 25,
+    "seconds": 100.3,
     "prior_weight": 0.2,
-    "warm_start": "male_oval_XL_175",
+    "warm_start": null,
     "accepted": true
   },
   {
@@ -6370,27 +6696,29 @@
       "waist": 102.5,
       "hip": 102.0,
       "shoulder_hip": 0.996,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 107.65,
-      "waist": 101.98,
-      "hip": 101.85,
-      "shoulder_hip": 0.99,
-      "waist_depth": 0.72
+      "chest": 107.44,
+      "waist": 102.11,
+      "hip": 102.21,
+      "shoulder_hip": 1.0,
+      "waist_depth": 0.77,
+      "bust_drop": 4.76
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.65,
-      "waist": -0.52,
-      "hip": -0.15
+      "chest": 0.44,
+      "waist": -0.39,
+      "hip": 0.21
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 80.1,
+    "nfev": 23,
+    "seconds": 90.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6409,27 +6737,29 @@
       "waist": 102.5,
       "hip": 102.0,
       "shoulder_hip": 0.996,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 107.07,
-      "waist": 102.14,
-      "hip": 102.33,
+      "chest": 107.55,
+      "waist": 102.05,
+      "hip": 102.23,
       "shoulder_hip": 1.0,
-      "waist_depth": 0.72
+      "waist_depth": 0.77,
+      "bust_drop": 4.78
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.07,
-      "waist": -0.36,
-      "hip": 0.33
+      "chest": 0.55,
+      "waist": -0.45,
+      "hip": 0.23
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 23,
-    "seconds": 83.9,
+    "nfev": 24,
+    "seconds": 67.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6448,27 +6778,29 @@
       "waist": 81.5,
       "hip": 81.0,
       "shoulder_hip": 0.999,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 86.42,
-      "waist": 81.02,
-      "hip": 81.77,
+      "chest": 86.33,
+      "waist": 81.03,
+      "hip": 82.41,
       "shoulder_hip": 1.01,
-      "waist_depth": 0.72
+      "waist_depth": 0.76,
+      "bust_drop": 5.24
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.42,
-      "waist": -0.48,
-      "hip": 0.77
+      "chest": 0.33,
+      "waist": -0.47,
+      "hip": 1.41
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
     "nfev": 25,
-    "seconds": 69.9,
+    "seconds": 84.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6487,30 +6819,32 @@
       "waist": 81.5,
       "hip": 81.0,
       "shoulder_hip": 0.999,
-      "waist_depth": 0.721
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 86.74,
-      "waist": 81.05,
-      "hip": 82.59,
-      "shoulder_hip": 1.01,
-      "waist_depth": 0.71
+      "chest": 86.57,
+      "waist": 81.07,
+      "hip": 83.6,
+      "shoulder_hip": 1.02,
+      "waist_depth": 0.75,
+      "bust_drop": 5.44
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.74,
-      "waist": -0.45,
-      "hip": 1.59
+      "chest": 0.57,
+      "waist": -0.43,
+      "hip": 2.6
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 74.9,
+    "nfev": 19,
+    "seconds": 211.9,
     "prior_weight": 0.2,
-    "warm_start": null,
-    "accepted": true
+    "warm_start": "male_oval_XS_165",
+    "accepted": false
   },
   {
     "id": "male_oval_XS_185",
@@ -6526,30 +6860,32 @@
       "waist": 81.5,
       "hip": 81.0,
       "shoulder_hip": 0.999,
-      "waist_depth": 0.769
+      "waist_depth": 0.769,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 86.93,
-      "waist": 80.48,
-      "hip": 82.56,
-      "shoulder_hip": 1.01,
-      "waist_depth": 0.77
+      "chest": 87.99,
+      "waist": 82.47,
+      "hip": 84.51,
+      "shoulder_hip": 1.02,
+      "waist_depth": 0.68,
+      "bust_drop": 5.49
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.93,
-      "waist": -1.02,
-      "hip": 1.56
+      "chest": 1.99,
+      "waist": 0.97,
+      "hip": 3.51
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "oval",
     "ffit_class_of_mesh": "oval",
-    "nfev": 25,
-    "seconds": 257.4,
+    "nfev": 23,
+    "seconds": 114.7,
     "prior_weight": 0.2,
     "warm_start": null,
-    "accepted": true
+    "accepted": false
   },
   {
     "id": "male_rectangle_2XL_165",
@@ -6565,29 +6901,31 @@
       "waist": 99.5,
       "hip": 109.5,
       "shoulder_hip": 0.972,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
       "chest": 112.02,
       "waist": 99.41,
-      "hip": 109.25,
+      "hip": 109.27,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "waist_depth": 0.71,
+      "bust_drop": 5.03
     },
     "fit_error_cm": {
       "height": -0.0,
       "chest": 0.02,
       "waist": -0.09,
-      "hip": -0.25
+      "hip": -0.23
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 83.9,
+    "seconds": 181.4,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_rectangle_2XL_185",
     "accepted": true
   },
   {
@@ -6604,29 +6942,31 @@
       "waist": 99.5,
       "hip": 109.5,
       "shoulder_hip": 0.972,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 112.47,
-      "waist": 99.13,
-      "hip": 108.02,
-      "shoulder_hip": 0.95,
-      "waist_depth": 0.73
+      "chest": 112.02,
+      "waist": 99.45,
+      "hip": 109.37,
+      "shoulder_hip": 0.97,
+      "waist_depth": 0.71,
+      "bust_drop": 5.07
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.47,
-      "waist": -0.37,
-      "hip": -1.48
+      "chest": 0.02,
+      "waist": -0.05,
+      "hip": -0.13
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 21,
-    "seconds": 100.8,
+    "nfev": 25,
+    "seconds": 155.3,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_rectangle_2XL_185",
     "accepted": true
   },
   {
@@ -6643,27 +6983,29 @@
       "waist": 99.5,
       "hip": 109.5,
       "shoulder_hip": 0.972,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 112.03,
-      "waist": 99.46,
-      "hip": 109.5,
+      "chest": 112.01,
+      "waist": 99.5,
+      "hip": 109.48,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "waist_depth": 0.71,
+      "bust_drop": 5.1
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.03,
-      "waist": -0.04,
-      "hip": -0.0
+      "chest": 0.01,
+      "waist": -0.0,
+      "hip": -0.02
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 19,
-    "seconds": 56.8,
+    "nfev": 24,
+    "seconds": 85.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6682,7 +7024,8 @@
       "waist": 104.5,
       "hip": 114.5,
       "shoulder_hip": 0.973,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
@@ -6690,7 +7033,8 @@
       "waist": 104.38,
       "hip": 114.23,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "waist_depth": 0.71,
+      "bust_drop": 5.01
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -6701,8 +7045,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 23,
-    "seconds": 140.0,
+    "nfev": 25,
+    "seconds": 141.0,
     "prior_weight": 0.2,
     "warm_start": "male_rectangle_3XL_185",
     "accepted": true
@@ -6721,27 +7065,29 @@
       "waist": 104.5,
       "hip": 114.5,
       "shoulder_hip": 0.973,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 116.06,
-      "waist": 103.71,
-      "hip": 112.78,
-      "shoulder_hip": 0.94,
-      "waist_depth": 0.75
+      "chest": 117.02,
+      "waist": 104.42,
+      "hip": 114.31,
+      "shoulder_hip": 0.97,
+      "waist_depth": 0.71,
+      "bust_drop": 5.04
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": -0.94,
-      "waist": -0.79,
-      "hip": -1.72
+      "chest": 0.02,
+      "waist": -0.08,
+      "hip": -0.19
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 22,
-    "seconds": 130.7,
+    "nfev": 19,
+    "seconds": 106.1,
     "prior_weight": 0.2,
     "warm_start": "male_rectangle_3XL_185",
     "accepted": true
@@ -6760,27 +7106,29 @@
       "waist": 104.5,
       "hip": 114.5,
       "shoulder_hip": 0.973,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 117.42,
-      "waist": 104.07,
-      "hip": 113.76,
+      "chest": 116.64,
+      "waist": 104.62,
+      "hip": 112.32,
       "shoulder_hip": 0.96,
-      "waist_depth": 0.73
+      "waist_depth": 0.75,
+      "bust_drop": 10.39
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.42,
-      "waist": -0.43,
-      "hip": -0.74
+      "height": -0.0,
+      "chest": -0.36,
+      "waist": 0.12,
+      "hip": -2.18
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 25,
-    "seconds": 83.5,
+    "nfev": 22,
+    "seconds": 60.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6799,27 +7147,29 @@
       "waist": 89.5,
       "hip": 99.5,
       "shoulder_hip": 0.971,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
       "chest": 102.01,
-      "waist": 89.48,
-      "hip": 99.48,
+      "waist": 89.49,
+      "hip": 99.44,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "waist_depth": 0.71,
+      "bust_drop": 5.1
     },
     "fit_error_cm": {
       "height": -0.0,
       "chest": 0.01,
-      "waist": -0.02,
-      "hip": -0.02
+      "waist": -0.01,
+      "hip": -0.06
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 89.6,
+    "seconds": 85.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6838,27 +7188,29 @@
       "waist": 89.5,
       "hip": 99.5,
       "shoulder_hip": 0.971,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 102.03,
-      "waist": 89.46,
-      "hip": 99.54,
+      "chest": 101.99,
+      "waist": 89.56,
+      "hip": 99.58,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "waist_depth": 0.71,
+      "bust_drop": 5.13
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": 0.03,
-      "waist": -0.04,
-      "hip": 0.04
+      "height": 0.0,
+      "chest": -0.01,
+      "waist": 0.06,
+      "hip": 0.08
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 25,
-    "seconds": 100.3,
+    "nfev": 24,
+    "seconds": 94.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6877,27 +7229,29 @@
       "waist": 89.5,
       "hip": 99.5,
       "shoulder_hip": 0.971,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 102.05,
-      "waist": 89.43,
-      "hip": 99.61,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "chest": 100.95,
+      "waist": 90.53,
+      "hip": 100.77,
+      "shoulder_hip": 0.99,
+      "waist_depth": 0.71,
+      "bust_drop": 7.32
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.05,
-      "waist": -0.07,
-      "hip": 0.11
+      "chest": -1.05,
+      "waist": 1.03,
+      "hip": 1.27
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 84.1,
+    "seconds": 95.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6916,27 +7270,29 @@
       "waist": 84.5,
       "hip": 94.5,
       "shoulder_hip": 0.971,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 97.03,
-      "waist": 84.46,
-      "hip": 94.53,
+      "chest": 97.0,
+      "waist": 84.55,
+      "hip": 94.57,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "waist_depth": 0.71,
+      "bust_drop": 5.13
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.03,
-      "waist": -0.04,
-      "hip": 0.03
+      "chest": -0.0,
+      "waist": 0.05,
+      "hip": 0.07
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 17,
-    "seconds": 41.5,
+    "nfev": 25,
+    "seconds": 95.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6955,27 +7311,29 @@
       "waist": 84.5,
       "hip": 94.5,
       "shoulder_hip": 0.971,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 97.05,
-      "waist": 84.44,
-      "hip": 94.61,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "chest": 95.69,
+      "waist": 85.79,
+      "hip": 95.35,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.71,
+      "bust_drop": 6.95
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.05,
-      "waist": -0.06,
-      "hip": 0.11
+      "chest": -1.31,
+      "waist": 1.29,
+      "hip": 0.85
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 21,
-    "seconds": 82.4,
+    "nfev": 25,
+    "seconds": 85.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -6994,27 +7352,29 @@
       "waist": 84.5,
       "hip": 94.5,
       "shoulder_hip": 0.971,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 97.07,
-      "waist": 84.41,
-      "hip": 94.69,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "chest": 95.83,
+      "waist": 85.7,
+      "hip": 95.17,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.71,
+      "bust_drop": 6.69
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.07,
-      "waist": -0.09,
-      "hip": 0.19
+      "chest": -1.17,
+      "waist": 1.2,
+      "hip": 0.67
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 95.3,
+    "seconds": 95.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7033,27 +7393,29 @@
       "waist": 78.5,
       "hip": 88.5,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 91.05,
-      "waist": 78.44,
-      "hip": 88.62,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "chest": 89.78,
+      "waist": 79.69,
+      "hip": 89.47,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.71,
+      "bust_drop": 6.99
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.05,
-      "waist": -0.06,
-      "hip": 0.12
+      "chest": -1.22,
+      "waist": 1.19,
+      "hip": 0.97
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 20,
-    "seconds": 53.1,
+    "nfev": 24,
+    "seconds": 89.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7072,27 +7434,29 @@
       "waist": 78.5,
       "hip": 88.5,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 91.07,
-      "waist": 78.41,
-      "hip": 88.72,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "chest": 89.87,
+      "waist": 79.63,
+      "hip": 89.23,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.71,
+      "bust_drop": 6.61
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": 0.07,
-      "waist": -0.09,
-      "hip": 0.22
+      "height": 0.0,
+      "chest": -1.13,
+      "waist": 1.13,
+      "hip": 0.73
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 77.5,
+    "seconds": 107.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7111,27 +7475,29 @@
       "waist": 78.5,
       "hip": 88.5,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 91.09,
-      "waist": 78.38,
-      "hip": 88.85,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "chest": 90.05,
+      "waist": 79.48,
+      "hip": 89.31,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.71,
+      "bust_drop": 6.41
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.09,
-      "waist": -0.12,
-      "hip": 0.35
+      "chest": -0.95,
+      "waist": 0.98,
+      "hip": 0.81
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 78.1,
+    "seconds": 86.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7150,27 +7516,29 @@
       "waist": 94.5,
       "hip": 104.5,
       "shoulder_hip": 0.972,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 107.23,
-      "waist": 94.24,
-      "hip": 102.39,
-      "shoulder_hip": 0.95,
-      "waist_depth": 0.73
+      "chest": 107.02,
+      "waist": 94.44,
+      "hip": 104.34,
+      "shoulder_hip": 0.97,
+      "waist_depth": 0.71,
+      "bust_drop": 5.07
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.23,
-      "waist": -0.26,
-      "hip": -2.11
+      "chest": 0.02,
+      "waist": -0.06,
+      "hip": -0.16
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 22,
-    "seconds": 92.2,
+    "nfev": 25,
+    "seconds": 98.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7189,27 +7557,29 @@
       "waist": 94.5,
       "hip": 104.5,
       "shoulder_hip": 0.972,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 107.02,
-      "waist": 94.47,
-      "hip": 104.49,
+      "chest": 107.0,
+      "waist": 94.43,
+      "hip": 104.53,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "waist_depth": 0.71,
+      "bust_drop": 5.12
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": 0.02,
-      "waist": -0.03,
-      "hip": -0.01
+      "height": 0.0,
+      "chest": 0.0,
+      "waist": -0.07,
+      "hip": 0.03
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 22,
-    "seconds": 60.3,
+    "nfev": 25,
+    "seconds": 125.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7228,27 +7598,29 @@
       "waist": 94.5,
       "hip": 104.5,
       "shoulder_hip": 0.972,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 107.04,
-      "waist": 94.45,
-      "hip": 104.54,
+      "chest": 107.0,
+      "waist": 94.54,
+      "hip": 104.61,
       "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "waist_depth": 0.71,
+      "bust_drop": 5.13
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.04,
-      "waist": -0.05,
-      "hip": 0.04
+      "chest": -0.0,
+      "waist": 0.04,
+      "hip": 0.11
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 73.3,
+    "seconds": 95.5,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7267,27 +7639,29 @@
       "waist": 73.5,
       "hip": 83.5,
       "shoulder_hip": 0.969,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 86.07,
-      "waist": 73.41,
-      "hip": 83.73,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "chest": 84.92,
+      "waist": 74.63,
+      "hip": 84.23,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.71,
+      "bust_drop": 6.59
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.07,
-      "waist": -0.09,
-      "hip": 0.23
+      "chest": -1.08,
+      "waist": 1.13,
+      "hip": 0.73
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 92.6,
+    "seconds": 70.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7306,27 +7680,29 @@
       "waist": 73.5,
       "hip": 83.5,
       "shoulder_hip": 0.969,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 86.09,
-      "waist": 73.38,
-      "hip": 83.87,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "chest": 85.49,
+      "waist": 74.27,
+      "hip": 85.36,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.7,
+      "bust_drop": 6.56
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.09,
-      "waist": -0.12,
-      "hip": 0.37
+      "chest": -0.51,
+      "waist": 0.77,
+      "hip": 1.86
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
-    "nfev": 25,
-    "seconds": 71.6,
+    "nfev": 19,
+    "seconds": 38.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7345,27 +7721,29 @@
       "waist": 73.5,
       "hip": 83.5,
       "shoulder_hip": 0.969,
-      "waist_depth": 0.721
+      "waist_depth": 0.712,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 86.1,
-      "waist": 73.34,
-      "hip": 84.04,
-      "shoulder_hip": 0.97,
-      "waist_depth": 0.72
+      "chest": 84.98,
+      "waist": 74.49,
+      "hip": 84.73,
+      "shoulder_hip": 0.98,
+      "waist_depth": 0.71,
+      "bust_drop": 6.48
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.1,
-      "waist": -0.16,
-      "hip": 0.54
+      "chest": -1.02,
+      "waist": 0.99,
+      "hip": 1.23
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "rectangle",
     "ffit_class_of_mesh": "rectangle",
     "nfev": 25,
-    "seconds": 130.0,
+    "seconds": 86.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7384,27 +7762,29 @@
       "waist": 110.0,
       "hip": 123.0,
       "shoulder_hip": 0.866,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 112.21,
-      "waist": 109.85,
-      "hip": 122.83,
+      "chest": 112.11,
+      "waist": 109.9,
+      "hip": 122.88,
       "shoulder_hip": 0.86,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 1.55
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.21,
-      "waist": -0.15,
-      "hip": -0.17
+      "chest": 0.11,
+      "waist": -0.1,
+      "hip": -0.12
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 90.8,
+    "seconds": 76.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7423,27 +7803,29 @@
       "waist": 110.0,
       "hip": 123.0,
       "shoulder_hip": 0.866,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 113.06,
-      "waist": 109.19,
-      "hip": 122.67,
-      "shoulder_hip": 0.86,
-      "waist_depth": 0.73
+      "chest": 112.71,
+      "waist": 109.42,
+      "hip": 122.89,
+      "shoulder_hip": 0.87,
+      "waist_depth": 0.72,
+      "bust_drop": 2.9
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 1.06,
-      "waist": -0.81,
-      "hip": -0.33
+      "chest": 0.71,
+      "waist": -0.58,
+      "hip": -0.11
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 22,
-    "seconds": 110.0,
+    "nfev": 24,
+    "seconds": 99.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7462,27 +7844,29 @@
       "waist": 110.0,
       "hip": 123.0,
       "shoulder_hip": 0.866,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 112.23,
-      "waist": 109.8,
+      "chest": 112.25,
+      "waist": 109.78,
       "hip": 123.03,
       "shoulder_hip": 0.87,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 1.03
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": 0.23,
-      "waist": -0.2,
+      "height": 0.0,
+      "chest": 0.25,
+      "waist": -0.22,
       "hip": 0.03
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 70.2,
+    "seconds": 108.3,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7501,27 +7885,29 @@
       "waist": 115.0,
       "hip": 128.0,
       "shoulder_hip": 0.87,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 117.72,
-      "waist": 114.53,
-      "hip": 127.18,
-      "shoulder_hip": 0.86,
-      "waist_depth": 0.73
+      "chest": 117.43,
+      "waist": 114.67,
+      "hip": 127.87,
+      "shoulder_hip": 0.87,
+      "waist_depth": 0.72,
+      "bust_drop": 2.75
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.72,
-      "waist": -0.47,
-      "hip": -0.82
+      "chest": 0.43,
+      "waist": -0.33,
+      "hip": -0.13
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 91.0,
+    "seconds": 84.5,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7540,27 +7926,29 @@
       "waist": 115.0,
       "hip": 128.0,
       "shoulder_hip": 0.87,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 117.16,
-      "waist": 114.87,
-      "hip": 127.9,
+      "chest": 117.14,
+      "waist": 114.88,
+      "hip": 127.89,
       "shoulder_hip": 0.87,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 1.07
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.16,
-      "waist": -0.13,
-      "hip": -0.1
+      "chest": 0.14,
+      "waist": -0.12,
+      "hip": -0.11
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 117.5,
+    "seconds": 91.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7579,27 +7967,29 @@
       "waist": 115.0,
       "hip": 128.0,
       "shoulder_hip": 0.87,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 118.08,
-      "waist": 114.12,
-      "hip": 127.78,
+      "chest": 117.84,
+      "waist": 114.27,
+      "hip": 128.01,
       "shoulder_hip": 0.87,
-      "waist_depth": 0.73
+      "waist_depth": 0.72,
+      "bust_drop": 2.84
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 1.08,
-      "waist": -0.88,
-      "hip": -0.22
+      "chest": 0.84,
+      "waist": -0.73,
+      "hip": 0.01
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 24,
-    "seconds": 87.3,
+    "nfev": 23,
+    "seconds": 100.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7618,27 +8008,29 @@
       "waist": 100.0,
       "hip": 113.0,
       "shoulder_hip": 0.855,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 103.26,
-      "waist": 98.89,
+      "chest": 102.76,
+      "waist": 99.33,
       "hip": 113.03,
       "shoulder_hip": 0.86,
-      "waist_depth": 0.73
+      "waist_depth": 0.72,
+      "bust_drop": 2.98
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 1.26,
-      "waist": -1.11,
+      "chest": 0.76,
+      "waist": -0.67,
       "hip": 0.03
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 22,
-    "seconds": 82.6,
+    "nfev": 24,
+    "seconds": 101.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7657,27 +8049,29 @@
       "waist": 100.0,
       "hip": 113.0,
       "shoulder_hip": 0.855,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 103.73,
-      "waist": 98.37,
-      "hip": 113.77,
-      "shoulder_hip": 0.87,
-      "waist_depth": 0.72
+      "chest": 102.66,
+      "waist": 99.44,
+      "hip": 113.23,
+      "shoulder_hip": 0.86,
+      "waist_depth": 0.72,
+      "bust_drop": 2.62
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 1.73,
-      "waist": -1.63,
-      "hip": 0.77
+      "chest": 0.66,
+      "waist": -0.56,
+      "hip": 0.23
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 25,
-    "seconds": 91.3,
+    "nfev": 22,
+    "seconds": 65.2,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7696,29 +8090,31 @@
       "waist": 100.0,
       "hip": 113.0,
       "shoulder_hip": 0.855,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 102.36,
-      "waist": 99.68,
-      "hip": 113.19,
+      "chest": 102.34,
+      "waist": 99.69,
+      "hip": 113.22,
       "shoulder_hip": 0.86,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 1.19
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.36,
-      "waist": -0.32,
-      "hip": 0.19
+      "chest": 0.34,
+      "waist": -0.31,
+      "hip": 0.22
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 134.0,
+    "seconds": 92.6,
     "prior_weight": 0.2,
-    "warm_start": "male_triangle_L_175",
+    "warm_start": null,
     "accepted": true
   },
   {
@@ -7735,7 +8131,8 @@
       "waist": 95.0,
       "hip": 108.0,
       "shoulder_hip": 0.849,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
@@ -7743,7 +8140,8 @@
       "waist": 94.74,
       "hip": 108.09,
       "shoulder_hip": 0.85,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 1.33
     },
     "fit_error_cm": {
       "height": -0.0,
@@ -7754,8 +8152,8 @@
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 22,
-    "seconds": 61.4,
+    "nfev": 25,
+    "seconds": 108.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7774,27 +8172,29 @@
       "waist": 95.0,
       "hip": 108.0,
       "shoulder_hip": 0.849,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 99.38,
-      "waist": 92.66,
-      "hip": 109.36,
-      "shoulder_hip": 0.87,
-      "waist_depth": 0.71
+      "chest": 98.87,
+      "waist": 92.7,
+      "hip": 109.97,
+      "shoulder_hip": 0.88,
+      "waist_depth": 0.69,
+      "bust_drop": 5.93
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 2.38,
-      "waist": -2.34,
-      "hip": 1.36
+      "chest": 1.87,
+      "waist": -2.3,
+      "hip": 1.97
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 20,
-    "seconds": 47.6,
+    "nfev": 19,
+    "seconds": 39.6,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7813,27 +8213,29 @@
       "waist": 95.0,
       "hip": 108.0,
       "shoulder_hip": 0.849,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 97.36,
-      "waist": 94.65,
-      "hip": 108.34,
-      "shoulder_hip": 0.85,
-      "waist_depth": 0.72
+      "chest": 97.63,
+      "waist": 94.34,
+      "hip": 108.53,
+      "shoulder_hip": 0.86,
+      "waist_depth": 0.72,
+      "bust_drop": 2.55
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.36,
-      "waist": -0.35,
-      "hip": 0.34
+      "chest": 0.63,
+      "waist": -0.66,
+      "hip": 0.53
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 75.4,
+    "seconds": 112.8,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7852,27 +8254,29 @@
       "waist": 89.0,
       "hip": 102.0,
       "shoulder_hip": 0.841,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 93.16,
-      "waist": 87.39,
-      "hip": 103.51,
-      "shoulder_hip": 0.86,
-      "waist_depth": 0.71
+      "chest": 91.67,
+      "waist": 88.17,
+      "hip": 102.32,
+      "shoulder_hip": 0.84,
+      "waist_depth": 0.73,
+      "bust_drop": 2.94
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 2.16,
-      "waist": -1.61,
-      "hip": 1.51
+      "chest": 0.67,
+      "waist": -0.83,
+      "hip": 0.32
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 24,
-    "seconds": 70.0,
+    "nfev": 20,
+    "seconds": 50.9,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7891,27 +8295,29 @@
       "waist": 89.0,
       "hip": 102.0,
       "shoulder_hip": 0.841,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 91.37,
-      "waist": 88.64,
-      "hip": 102.34,
-      "shoulder_hip": 0.85,
-      "waist_depth": 0.72
+      "chest": 93.07,
+      "waist": 86.86,
+      "hip": 104.4,
+      "shoulder_hip": 0.87,
+      "waist_depth": 0.71,
+      "bust_drop": 4.72
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.37,
-      "waist": -0.36,
-      "hip": 0.34
+      "chest": 2.07,
+      "waist": -2.14,
+      "hip": 2.4
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 80.1,
+    "seconds": 131.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7930,27 +8336,29 @@
       "waist": 89.0,
       "hip": 102.0,
       "shoulder_hip": 0.841,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 91.86,
-      "waist": 88.22,
-      "hip": 102.61,
+      "chest": 91.84,
+      "waist": 88.17,
+      "hip": 102.51,
       "shoulder_hip": 0.85,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 2.64
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.86,
-      "waist": -0.78,
-      "hip": 0.61
+      "chest": 0.84,
+      "waist": -0.83,
+      "hip": 0.51
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 100.2,
+    "seconds": 126.1,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -7969,27 +8377,29 @@
       "waist": 105.0,
       "hip": 118.0,
       "shoulder_hip": 0.861,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 107.45,
-      "waist": 104.64,
-      "hip": 117.84,
+      "chest": 107.78,
+      "waist": 104.36,
+      "hip": 117.8,
       "shoulder_hip": 0.86,
-      "waist_depth": 0.73
+      "waist_depth": 0.72,
+      "bust_drop": 3.26
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.45,
-      "waist": -0.36,
-      "hip": -0.16
+      "chest": 0.78,
+      "waist": -0.64,
+      "hip": -0.2
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 21,
-    "seconds": 43.9,
+    "nfev": 22,
+    "seconds": 89.0,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -8008,7 +8418,8 @@
       "waist": 105.0,
       "hip": 118.0,
       "shoulder_hip": 0.861,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
@@ -8016,10 +8427,11 @@
       "waist": 104.8,
       "hip": 118.02,
       "shoulder_hip": 0.86,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 1.45
     },
     "fit_error_cm": {
-      "height": 0.0,
+      "height": -0.0,
       "chest": 0.23,
       "waist": -0.2,
       "hip": 0.02
@@ -8028,7 +8440,7 @@
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 86.0,
+    "seconds": 87.7,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -8047,27 +8459,29 @@
       "waist": 105.0,
       "hip": 118.0,
       "shoulder_hip": 0.861,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 107.24,
-      "waist": 104.79,
-      "hip": 118.09,
+      "chest": 107.56,
+      "waist": 104.48,
+      "hip": 118.2,
       "shoulder_hip": 0.86,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 2.48
     },
     "fit_error_cm": {
       "height": 0.0,
-      "chest": 0.24,
-      "waist": -0.21,
-      "hip": 0.09
+      "chest": 0.56,
+      "waist": -0.52,
+      "hip": 0.2
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 25,
-    "seconds": 93.1,
+    "nfev": 21,
+    "seconds": 85.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -8086,27 +8500,29 @@
       "waist": 84.0,
       "hip": 97.0,
       "shoulder_hip": 0.834,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 165.0,
-      "chest": 86.45,
-      "waist": 83.57,
-      "hip": 97.43,
+      "chest": 86.81,
+      "waist": 83.17,
+      "hip": 97.69,
       "shoulder_hip": 0.84,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 3.19
     },
     "fit_error_cm": {
       "height": -0.0,
-      "chest": 0.45,
-      "waist": -0.43,
-      "hip": 0.43
+      "chest": 0.81,
+      "waist": -0.83,
+      "hip": 0.69
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
     "nfev": 25,
-    "seconds": 89.7,
+    "seconds": 112.4,
     "prior_weight": 0.2,
     "warm_start": null,
     "accepted": true
@@ -8125,29 +8541,31 @@
       "waist": 84.0,
       "hip": 97.0,
       "shoulder_hip": 0.834,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 175.0,
-      "chest": 86.86,
-      "waist": 83.27,
-      "hip": 97.69,
+      "chest": 86.47,
+      "waist": 83.54,
+      "hip": 97.52,
       "shoulder_hip": 0.84,
-      "waist_depth": 0.72
+      "waist_depth": 0.72,
+      "bust_drop": 1.13
     },
     "fit_error_cm": {
-      "height": 0.0,
-      "chest": 0.86,
-      "waist": -0.73,
-      "hip": 0.69
+      "height": -0.0,
+      "chest": 0.47,
+      "waist": -0.46,
+      "hip": 0.52
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 24,
-    "seconds": 69.2,
+    "nfev": 25,
+    "seconds": 169.7,
     "prior_weight": 0.2,
-    "warm_start": null,
+    "warm_start": "male_triangle_XS_185",
     "accepted": true
   },
   {
@@ -8164,29 +8582,31 @@
       "waist": 84.0,
       "hip": 97.0,
       "shoulder_hip": 0.834,
-      "waist_depth": 0.721
+      "waist_depth": 0.721,
+      "bust_drop_max": 5.0
     },
     "measured_cm": {
       "height": 185.0,
-      "chest": 87.06,
-      "waist": 83.54,
-      "hip": 99.05,
-      "shoulder_hip": 0.85,
-      "waist_depth": 0.69
+      "chest": 86.52,
+      "waist": 83.48,
+      "hip": 97.76,
+      "shoulder_hip": 0.84,
+      "waist_depth": 0.72,
+      "bust_drop": 1.03
     },
     "fit_error_cm": {
-      "height": -0.0,
-      "chest": 1.06,
-      "waist": -0.46,
-      "hip": 2.05
+      "height": 0.0,
+      "chest": 0.52,
+      "waist": -0.52,
+      "hip": 0.76
     },
     "uncertainty_cm": 2.5,
     "ffit_class_of_target": "triangle",
     "ffit_class_of_mesh": "triangle",
-    "nfev": 19,
-    "seconds": 98.7,
+    "nfev": 22,
+    "seconds": 78.6,
     "prior_weight": 0.2,
-    "warm_start": "male_triangle_XS_175",
+    "warm_start": null,
     "accepted": true
   }
 ]

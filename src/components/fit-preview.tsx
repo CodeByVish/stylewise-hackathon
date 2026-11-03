@@ -16,7 +16,7 @@ export default function FitPreview({ body, garmentId, size, preferences, enabled
   const [shownFor, setShownFor] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const key = JSON.stringify({ body, garmentId, size, style });
+  const key = JSON.stringify({ body, garmentId, size, style, preferences });
   const stale = result !== null && shownFor !== key;
 
   async function show() {
@@ -36,7 +36,7 @@ export default function FitPreview({ body, garmentId, size, preferences, enabled
 
   return <section className="card fit-preview" aria-label="Visual fit preview">
     <div className="nisha-chat-heading"><span className="tiny-label">SEE THE FIT</span><span className="scene-badge">{size}</span></div>
-    <h2>How size {size} sits</h2>
+    <h2>AI illustration of size {size}</h2>
     {!enabled ? <p className="field-note">Pick a silhouette to see this size on a mannequin with that shape.</p>
       : <>
         {!hasPhoto && <p className="field-note">No product photo yet: drawn from the catalogue description.</p>}
