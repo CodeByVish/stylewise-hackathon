@@ -204,5 +204,6 @@
 .room-body-edit > summary::-webkit-details-marker { display: none; }
 .room-body-edit-cta { font-size: 13px; color: var(--room-olive); text-decoration: underline; text-underline-offset: 4px; }
 .room-body-edit[open] > summary { border-bottom: 1px solid var(--room-line); margin-bottom: 16px; }
-.room-body-edit[open] .room-body-edit-cta { visibility: hidden; }
+.room-body-edit:not([open]) .room-body-edit-cta { font-size: 0; }
+.room-body-edit:not([open]) .room-body-edit-cta::after { content: 'Edit'; font-size: 13px; }
 .room-evidence summary span { font-size: 12px; color: #8b9381; margin-left: 8px; }

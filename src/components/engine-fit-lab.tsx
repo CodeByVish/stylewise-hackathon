@@ -199,7 +199,7 @@ export default function EngineFitLab() {
       <div className="room-layout" id="fitting">
         <aside className="room-person" id="your-shape" aria-label="Your body and preferences">
           <div className="room-section-title"><span>01</span><h2>Made around you</h2></div>
-          <details className="room-body-edit"><summary><span>{mode === 'preset' ? `${shapeInfo[1]} · usual ${usualSize} · ${height} cm` : `Your measurements · ${height} cm`}</span><span className="room-body-edit-cta">Edit</span></summary>
+          <details className="room-body-edit" open><summary><span>{mode === 'preset' ? `${shapeInfo[1]} · usual ${usualSize} · ${height} cm` : `Your measurements · ${height} cm`}</span><span className="room-body-edit-cta">Collapse</span></summary>
           <div className="room-mode" aria-label="Body input method"><button aria-pressed={mode === 'preset'} onClick={() => changeBody(() => { setMode('preset'); setHeight(sex === 'female' ? 165 : 175); })}>Choose a shape</button><button aria-pressed={mode === 'measured'} onClick={() => changeBody(() => { setMode('measured'); setHeight(168); })}>Enter measurements</button></div>
           <label className="room-field">Body proportions<select value={sex} onChange={event => selectSex(event.target.value as typeof sex)}><option value="female">Female proportions</option><option value="male">Male proportions</option></select></label>
           {mode === 'preset' ? <>

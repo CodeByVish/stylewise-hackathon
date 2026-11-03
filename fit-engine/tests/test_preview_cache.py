@@ -56,7 +56,7 @@ def test_cache_only_deployment_never_calls_the_model(monkeypatch):
     r = TestClient(app).post('/preview/photo', json={
         'body': {'source': 'preset', 'height_cm': 155, 'preset': {'shape': 'oval', 'usual_size': 'XL', 'sex': 'female'}},
         'garment_id': 'emerald-wrap-dress', 'size': 'XS', 'view': 'back'})
-    assert r.status_code == 404 and 'pre-generated' in r.json()['detail']
+    assert r.status_code == 404 and "isn't prepared yet" in r.json()['detail']
 
 
 def test_daily_budget_allows_live_try_ons_then_stops(tmp_path, monkeypatch):
@@ -67,3 +67,22 @@ def test_daily_budget_allows_live_try_ons_then_stops(tmp_path, monkeypatch):
     import pytest
     with pytest.raises(previews.CacheOnly):
         previews._spend_budget()
+
+
+def test_exhausted_primary_key_switches_to_backup(monkeypatch):
+    import io, json, urllib.error
+    env = {'MODEL_API_KEY': 'primary', 'MODEL_API_KEY_BACKUP': 'backup'}
+    monkeypatch.setattr(previews, '_env', lambda name: env.get(name))
+    monkeypatch.setattr(previews, 'KEY_STATUS', {'active': 'primary', 'switched_at': None, 'reason': None})
+    used = []
+
+    def fake(req, timeout=0):
+        key = req.headers['Authorization'].split()[-1]; used.append(key)
+        if key == 'primary':
+            raise urllib.error.HTTPError(req.full_url, 402, 'Payment Required', {}, io.BytesIO(b'{"error":"insufficient credits"}'))
+        return io.BytesIO(json.dumps({'data': [{'b64_json': 'aGk='}]}).encode())
+
+    monkeypatch.setattr(previews.urllib.request, 'urlopen', fake)
+    assert previews._generate({}, previews.api_keys()) == {'b64_json': 'aGk='}
+    assert used == ['primary', 'backup'] and previews.KEY_STATUS['active'] == 'backup'
+    assert previews.api_keys() == ['backup']  # later images go straight to the backup key

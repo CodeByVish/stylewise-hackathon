@@ -22,8 +22,10 @@ app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:3000"],
 
 @app.get("/health")
 def health() -> dict:
+    from .preview import KEY_STATUS
+    # "image_key" shows "backup" once the primary Meta key ran out (the MUSE ALERT in the logs)
     return {"ok": True, "engine_version": __version__, "contract_version": CONTRACT_VERSION,
-            "muse": muse_configured()}
+            "muse": muse_configured(), "image_key": KEY_STATUS["active"], "image_key_switched_at": KEY_STATUS["switched_at"]}
 
 
 class OutfitPiece(BaseModel):

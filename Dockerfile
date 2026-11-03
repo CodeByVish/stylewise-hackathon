@@ -3,7 +3,7 @@
 FROM python:3.12-slim
 WORKDIR /app
 # live try-ons for visitors, capped per day (set PREVIEW_CACHE_ONLY=1 instead to serve only cached looks)
-ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PREVIEW_DAILY_LIMIT=15
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PREVIEW_DAILY_LIMIT=66
 COPY fit-engine/pyproject.toml fit-engine/pyproject.toml
 COPY fit-engine/stylewise_fit fit-engine/stylewise_fit
 RUN pip install --no-cache-dir "./fit-engine[api]"
