@@ -10,6 +10,7 @@ the engine with a fixed Nisha template, so the demo works offline.
 """
 import json
 import os
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -49,7 +50,8 @@ How to answer:
 - Plain words only: never say "borderline", "ease", "verdict", "region" or "tape-measure". Say "a little snug", "close to
   your measurement", "a bit tight", "comfortable room", "loose". If a body area cannot be checked, say briefly why
   ("the brand gives no hip measurement for this one"), once, without dwelling on it.
-- Short, simple sentences. No dashes, brackets, lists or symbols. Spell sizes as letters (S, M, L).
+- Short, simple sentences with normal punctuation: a full stop at the end of every sentence and commas where you would pause.
+  Avoid dashes, brackets, lists and symbols. Spell sizes as letters (S, M, L).
 - Under 70 words. End with one short, useful question or next step only if it helps.
 Fit rules, which override everything else:
 - Never state or estimate a body or garment measurement yourself. Call evaluate_fit and use only its facts; never add numbers.
@@ -175,21 +177,41 @@ def template_reply(report: FitReport) -> str:
     return " ".join([lead, *facts, tail])
 
 
+def _endpoints() -> list[tuple[str, str, str]]:
+    """(base, key, model) to try in order: Muse Spark Open on Baseten when configured, then Muse Spark on the
+    Meta Model API. Each needs its own key; a Baseten setting never sends the Meta key to Baseten or vice versa."""
+    out = []
+    if _env("NISHA_API_BASE") and _env("NISHA_API_KEY"):
+        out.append((_env("NISHA_API_BASE"), _env("NISHA_API_KEY"), _env("MUSE_MODEL") or "meta-models/muse-spark-open-1026"))
+    meta_key = _env("MODEL_API_KEY") or _env("META_API_KEY")
+    if meta_key:
+        model = _env("MUSE_MODEL") if _env("MUSE_MODEL") and not _env("MUSE_MODEL").startswith("meta-models/") else DEFAULT_MODEL
+        out.append((os.environ.get("META_API_BASE", "https://api.meta.ai/v1"), meta_key, model))
+    return out
+
+
 def _chat(messages: list[dict]) -> dict:
-    # Nisha can run on Meta's hosted Muse Spark (default) or on the open-weight Muse Spark Open through an
-    # OpenAI-compatible partner such as Baseten: set NISHA_API_BASE, NISHA_API_KEY and MUSE_MODEL
-    # (e.g. https://inference.baseten.co/v1, your Baseten key, meta-models/muse-spark-open-1026).
-    base = (_env("NISHA_API_BASE") or os.environ.get("META_API_BASE", "https://api.meta.ai/v1")).rstrip("/")
-    key = _env("NISHA_API_KEY") or _env("MODEL_API_KEY") or _env("META_API_KEY")
-    body = {"model": _env("MUSE_MODEL") or DEFAULT_MODEL, "messages": messages, "tools": [TOOL]}
-    req = urllib.request.Request(f"{base}/chat/completions", data=json.dumps(body).encode(),
-                                 headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)
+    # Nisha runs on the open-weight Muse Spark Open through Baseten when NISHA_API_BASE and NISHA_API_KEY are set
+    # (MUSE_MODEL e.g. meta-models/muse-spark-open-1026), and falls back to Muse Spark on the Meta Model API.
+    import logging
+
+    last = None
+    for base, key, model in _endpoints():
+        body = {"model": model, "messages": messages, "tools": [TOOL]}
+        req = urllib.request.Request(f"{base.rstrip('/')}/chat/completions", data=json.dumps(body).encode(),
+                                     headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.load(r)
+        except (urllib.error.URLError, TimeoutError, ValueError) as error:
+            detail = error.read()[:200].decode(errors="replace") if isinstance(error, urllib.error.HTTPError) else str(error)
+            logging.getLogger("stylewise").warning("Nisha model call failed (%s, %s): %s", base, model, detail)
+            last = error
+    raise RuntimeError(f"no Nisha model endpoint answered: {last}")
 
 
 def muse_configured() -> bool:
-    return bool(_env("NISHA_API_KEY") or _env("MODEL_API_KEY") or _env("META_API_KEY"))
+    return bool(_endpoints())
 
 
 def chat(req: NishaRequest) -> NishaReply:
@@ -211,7 +233,14 @@ def chat(req: NishaRequest) -> NishaReply:
                 *[{"role": m.role, "content": scrub(m.content)} for m in req.messages]]
     report = None
     for _ in range(MAX_TOOL_ROUNDS):
-        msg = _chat(messages)["choices"][0]["message"]
+        try:
+            msg = _chat(messages)["choices"][0]["message"]
+        except (RuntimeError, KeyError, IndexError):  # every endpoint failed: answer from the engine, never a 500
+            if preset_args is None:
+                return NishaReply(reply="Beta, I can't reach my assistant right now. Pick a silhouette and a size and "
+                                        "I'll still check the fit from the chart.", source="engine-template")
+            fallback = run_tool(preset_args)
+            return NishaReply(reply=template_reply(fallback), report=fallback, source="engine-template")
         calls = msg.get("tool_calls") or []
         if not calls:
             return NishaReply(reply=msg.get("content") or "", report=report, source="muse")
