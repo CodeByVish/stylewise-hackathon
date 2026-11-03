@@ -61,3 +61,7 @@ __pycache__/
 .claude/
 Stylewise _ Meta Hackathon Research*
 docs/SUBMISSION_CHECKLIST_P0.md
+
+# demo video assets and the recording script (local only)
+*.mp4
+docs/DEMO_SCRIPT.md
