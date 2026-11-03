@@ -57,3 +57,13 @@ def test_cache_only_deployment_never_calls_the_model(monkeypatch):
         'body': {'source': 'preset', 'height_cm': 155, 'preset': {'shape': 'oval', 'usual_size': 'XL', 'sex': 'female'}},
         'garment_id': 'emerald-wrap-dress', 'size': 'XS', 'view': 'back'})
     assert r.status_code == 404 and 'pre-generated' in r.json()['detail']
+
+
+def test_daily_budget_allows_live_try_ons_then_stops(tmp_path, monkeypatch):
+    env = {'PREVIEW_DAILY_LIMIT': '2', 'MODEL_API_KEY': 'key'}
+    monkeypatch.setattr(previews, '_env', lambda name: env.get(name))
+    monkeypatch.setattr(previews, '_BUDGET', {'day': None, 'used': 0})
+    previews._spend_budget(); previews._spend_budget()  # two new images allowed today
+    import pytest
+    with pytest.raises(previews.CacheOnly):
+        previews._spend_budget()

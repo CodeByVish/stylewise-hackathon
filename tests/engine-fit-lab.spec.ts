@@ -4,7 +4,7 @@ test('the fitting room loads a real catalogue photo and chart-backed size choice
   test.setTimeout(60_000);
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
-  await page.goto('/');
+  await page.goto('/try');
   const fit = page.getByRole('complementary', { name: 'Your fit report' });
   await expect(fit.getByRole('button', { name: 'Garment size M', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(fit.locator('.room-regions')).toContainText('cm', { timeout: 30_000 });
@@ -22,7 +22,7 @@ test('the fitting room loads a real catalogue photo and chart-backed size choice
 
 test('size comparison keeps the body fixed and never substitutes a missing size preview', async ({ page }) => {
   test.setTimeout(60_000);
-  await page.goto('/');
+  await page.goto('/try');
   await expect(page.locator('.room-fit')).toHaveAttribute('aria-busy', 'false', { timeout: 30_000 });
   await page.locator('.room-fit .room-primary').click();
   const comparison = page.getByRole('dialog', { name: 'Compare sizes on your shape' });
@@ -43,7 +43,7 @@ test('Nisha drawer opens from the verdict, suggests questions and preserves garm
     context = route.request().postDataJSON().context;
     await route.fulfill({ json: { reply: 'Compare the documented dimensions before choosing.', report: null, source: 'engine-template' } });
   });
-  await page.goto('/');
+  await page.goto('/try');
   const trigger = page.getByRole('button', { name: 'Ask Nisha about this size', exact: false });
   await trigger.click();
   const drawer = page.getByRole('dialog', { name: 'Ask Nisha', exact: true });
@@ -60,7 +60,7 @@ test('Nisha drawer opens from the verdict, suggests questions and preserves garm
 
 test('body size and garment size remain independent and the body model is available', async ({ page }) => {
   test.setTimeout(60_000);
-  await page.goto('/');
+  await page.goto('/try');
   await page.getByRole('button', { name: 'S', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Garment size M', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: 'Explore your body model', exact: false }).click();
@@ -81,7 +81,7 @@ test('loading and missing preview states do not hide the fit report', async ({ p
     await gate;
     await route.fulfill({ status: 404, json: { detail: 'Not prepared' } });
   });
-  await page.goto('/');
+  await page.goto('/try');
   await expect(page.getByText('Preparing the front view', { exact: true })).toBeVisible();
   await expect(page.locator('.room-fit')).toHaveAttribute('aria-busy', 'false', { timeout: 30_000 });
   release();
@@ -92,7 +92,7 @@ test('loading and missing preview states do not hide the fit report', async ({ p
 
 test('mobile fitting room and Nisha bottom sheet have no overflow or pill controls', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/');
+  await page.goto('/try');
   await expect(page.locator('.room-fit')).toHaveAttribute('aria-busy', 'false', { timeout: 30_000 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   expect(await page.evaluate(() => scrollY)).toBe(0);

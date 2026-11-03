@@ -58,11 +58,11 @@ ITEMS = {
 # unknown. Sizes: Uniqlo XXL -> 2XL.
 UNIQLO_ITEMS = {
     "uniqlo-crew-tee": {
-        "name": "Crew neck T-shirt (Uniqlo SG)", "category": "top", "fabric": None,
+        "name": "Navy crew-neck T-shirt (Uniqlo SG)", "category": "top", "fabric": None,
         "body_width": {"XS": 45.5, "S": 47.5, "M": 49.5, "L": 52.5, "XL": 55.5, "2XL": 58.5, "3XL": 61.5},
         "source": "UNIQLO SG Unisex Crew Neck T-Shirt product page, Product Size table (flat-laid body "
                   "width x2), https://www.uniqlo.com/sg/en/products/E465193-000/00 (accessed 2026-11-02). Sleeve column ignored "
-                  "(76-83 cm is inconsistent with a short sleeve)",
+                  "(76-83 cm is inconsistent with a short sleeve). Product photo: generated with Meta Muse Image",
     },
     "uniqlo-dress-E487286": {
         "name": "Long dress E487286 (Uniqlo SG)", "category": "dress", "fabric": "cotton elastane",
@@ -164,6 +164,33 @@ UNIQLO_ITEMS = {
                   "(waist in cm; hip not given, an A-line skirt is free at the hip) (accessed 2026-11-03). Elastic waist: "
                   "not stated as body or garment, ASSUMED garment. Applied to the Stylewise catalogue item",
     },
+    # Men's charts provided by the team as screenshots (Nov 3); the product listings were not recorded, so each
+    # report says the sizes come from a general reference table ("unverified reference").
+    "mens-chino-trousers": {
+        "name": "Men's slim chinos", "category": "bottom", "fabric": "cotton twill",
+        # garment inches: tag 30/32/34/36 = waist 29/31/33/35, hip 36.5/38/39.7/41.3 (x2.54); tags mapped to
+        # XS-L by matching their waist to the men's body chart below (30/32/34/36 in)
+        "ranges": {"XS": {"waist": (73.7, 73.7), "hip": (92.7, 92.7)}, "S": {"waist": (78.7, 78.7), "hip": (96.5, 96.5)},
+                   "M": {"waist": (83.8, 83.8), "hip": (100.8, 100.8)}, "L": {"waist": (88.9, 88.9), "hip": (104.9, 104.9)}},
+        "for": "men",
+        "source": "UNVERIFIED reference: men's pant size chart provided by the team (garment measurements in inches, tag "
+                  "sizes 30-36), listing not recorded. Product photo: generated with Meta Muse Image",
+    },
+    "mens-polo-shirt": {
+        "name": "Men's white polo shirt", "category": "top", "fabric": "cotton pique",
+        # men's chest chart (cm body ranges): XS 87-92 ... XXL 114-122; garment = top of the range it is made for
+        "chest": {"XS": 92, "S": 97, "M": 102, "L": 107, "XL": 114, "2XL": 122},
+        "for": "men",
+        "source": "UNVERIFIED reference: men's size chart provided by the team (chest in cm, body ranges; garment taken "
+                  "as the top of each range), listing not recorded. Product photo: generated with Meta Muse Image",
+    },
+    "mens-crew-sweater": {
+        "name": "Men's charcoal crew-neck sweater", "category": "top", "fabric": "merino wool",
+        "chest": {"XS": 92, "S": 97, "M": 102, "L": 107, "XL": 114, "2XL": 122},
+        "for": "men",
+        "source": "UNVERIFIED reference: men's size chart provided by the team (chest in cm, body ranges; garment taken "
+                  "as the top of each range), listing not recorded. Product photo: generated with Meta Muse Image",
+    },
     "reference-dress": {
         "name": "Short-sleeve casual dress (reference)", "category": "dress", "fabric": None,
         "body_width": {"XS": 44.0, "S": 46.0, "M": 48.0, "L": 51.0, "XL": 54.0, "2XL": 57.0, "3XL": 60.0},
@@ -201,6 +228,8 @@ def spec(kind: str, row: dict) -> tuple[dict, dict]:
 # Per-item cut read from each product photo (fixtures/garment_photos): overrides the type default in
 # scripts/render_fit.py CUTS. hem: fraction of stature; sleeve_m from the top of the shoulder.
 ITEM_CUTS = {
+    "mens-polo-shirt": {"hem": 0.52, "sleeve_m": 0.20, "neck": "collar"},
+    "mens-crew-sweater": {"hem": 0.52, "sleeve_m": 0.58, "neck": "crew"},
     "emerald-wrap-dress": {"hem": 0.15, "sleeve_m": 0.54, "flare_cm": 5, "neck": "v", "belt": True, "openings": []},
     "green-kurta": {"hem": 0.30, "sleeve_m": 0.36, "neck": "collar",
                     "openings": [{"at": "sides", "from": "hip", "width_cm": 12}]},

@@ -2,7 +2,7 @@ const allowed = new Map([
   ['GET:health', '/health'], ['GET:catalogue', '/catalogue'],
   ['POST:fit/outfit', '/fit/outfit'], ['POST:fit/evaluate', '/fit/evaluate'],
   ['POST:nisha/chat', '/nisha/chat'], ['POST:viewer/scene', '/viewer/scene'],
-  ['POST:preview/photo', '/preview/photo'],
+  ['POST:preview/photo', '/preview/photo'], ['POST:presets/nearest', '/presets/nearest'],
 ]);
 async function proxy(request: Request, context: { params: Promise<{path: string[]}> }) {
   const { path } = await context.params;

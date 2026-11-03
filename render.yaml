@@ -8,8 +8,9 @@ services:
     dockerfilePath: ./Dockerfile
     healthCheckPath: /health
     envVars:
-      - key: PREVIEW_CACHE_ONLY
-        value: "1"          # public demo: serve the pre-generated images, never spend credits on new ones
+      - key: PREVIEW_DAILY_LIMIT
+        value: "15"         # new try-ons per day (about 5 garments x 3 views); cached looks are always free
+      # or PREVIEW_CACHE_ONLY=1 to serve only the pre-generated looks
       - key: MODEL_API_KEY
         sync: false         # Meta Model API key (set in the dashboard, never committed)
       - key: NISHA_API_BASE

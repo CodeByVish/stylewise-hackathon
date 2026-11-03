@@ -1061,7 +1061,7 @@
     "for": "women"
   },
   "uniqlo-crew-tee": {
-    "name": "Crew neck T-shirt (Uniqlo SG)",
+    "name": "Navy crew-neck T-shirt (Uniqlo SG)",
     "category": "top",
     "fabric": null,
     "sizes": {
@@ -1108,7 +1108,12 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "UNIQLO SG Unisex Crew Neck T-Shirt product page, Product Size table (flat-laid body width x2), https://www.uniqlo.com/sg/en/products/E465193-000/00 (accessed 2026-11-02). Sleeve column ignored (76-83 cm is inconsistent with a short sleeve)",
+    "spec_source": "UNIQLO SG Unisex Crew Neck T-Shirt product page, Product Size table (flat-laid body width x2), https://www.uniqlo.com/sg/en/products/E465193-000/00 (accessed 2026-11-02). Sleeve column ignored (76-83 cm is inconsistent with a short sleeve). Product photo: generated with Meta Muse Image",
+    "rgb": [
+      0.09,
+      0.11,
+      0.176
+    ],
     "for": "unisex"
   },
   "uniqlo-dress-E487286": {
@@ -1389,6 +1394,170 @@
       0.09
     ],
     "for": "women"
+  },
+  "mens-chino-trousers": {
+    "name": "Men's slim chinos",
+    "category": "bottom",
+    "fabric": "cotton twill",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "waist": 73.7,
+          "hip": 92.7
+        },
+        "stretch_cm": {
+          "waist": 0.0,
+          "hip": 0.0
+        }
+      },
+      "S": {
+        "spec_cm": {
+          "waist": 78.7,
+          "hip": 96.5
+        },
+        "stretch_cm": {
+          "waist": 0.0,
+          "hip": 0.0
+        }
+      },
+      "M": {
+        "spec_cm": {
+          "waist": 83.8,
+          "hip": 100.8
+        },
+        "stretch_cm": {
+          "waist": 0.0,
+          "hip": 0.0
+        }
+      },
+      "L": {
+        "spec_cm": {
+          "waist": 88.9,
+          "hip": 104.9
+        },
+        "stretch_cm": {
+          "waist": 0.0,
+          "hip": 0.0
+        }
+      }
+    },
+    "spec_source": "UNVERIFIED reference: men's pant size chart provided by the team (garment measurements in inches, tag sizes 30-36), listing not recorded. Product photo: generated with Meta Muse Image",
+    "rgb": [
+      0.631,
+      0.549,
+      0.455
+    ],
+    "for": "men"
+  },
+  "mens-polo-shirt": {
+    "name": "Men's white polo shirt",
+    "category": "top",
+    "fabric": "cotton pique",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 92
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 97
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 102
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 107
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 114
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "chest": 122
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "UNVERIFIED reference: men's size chart provided by the team (chest in cm, body ranges; garment taken as the top of each range), listing not recorded. Product photo: generated with Meta Muse Image",
+    "cut": {
+      "hem": 0.52,
+      "sleeve_m": 0.2,
+      "neck": "collar"
+    },
+    "rgb": [
+      0.867,
+      0.867,
+      0.863
+    ],
+    "for": "men"
+  },
+  "mens-crew-sweater": {
+    "name": "Men's charcoal crew-neck sweater",
+    "category": "top",
+    "fabric": "merino wool",
+    "sizes": {
+      "XS": {
+        "spec_cm": {
+          "chest": 92
+        },
+        "stretch_cm": {}
+      },
+      "S": {
+        "spec_cm": {
+          "chest": 97
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 102
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 107
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 114
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "chest": 122
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "UNVERIFIED reference: men's size chart provided by the team (chest in cm, body ranges; garment taken as the top of each range), listing not recorded. Product photo: generated with Meta Muse Image",
+    "cut": {
+      "hem": 0.52,
+      "sleeve_m": 0.58,
+      "neck": "crew"
+    },
+    "rgb": [
+      0.18,
+      0.176,
+      0.18
+    ],
+    "for": "men"
   },
   "reference-dress": {
     "name": "Short-sleeve casual dress (reference)",

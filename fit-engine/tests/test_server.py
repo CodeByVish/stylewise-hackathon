@@ -85,7 +85,8 @@ def test_catalogue_reports_photo_availability():
     items = {i["garment_id"]: i for i in client.get("/catalogue").json()}
     assert items["emerald-wrap-dress"]["photo"]
     assert not {"green-kurta", "ivory-set", "gold-trousers", "navy-bottom",
-                "black-satin-dress", "uniqlo-crew-tee", "uniqlo-dress-E487286"} & items.keys()
+                "black-satin-dress", "uniqlo-dress-E487286"} & items.keys()
+    assert items["uniqlo-crew-tee"]["photo"] and items["uniqlo-crew-tee"]["for"] == "unisex"  # generated photo
 
 
 def test_demo_chart_ambiguity_is_visible():
@@ -98,3 +99,11 @@ def test_demo_chart_ambiguity_is_visible():
     reports = response.json()
     assert any('ranges may describe body measurements' in w for w in reports[0]['report']['warnings'])
     assert any('body or garment measurements' in w for w in reports[1]['report']['warnings'])
+
+
+def test_measurements_get_the_closest_preset_for_visuals():
+    r = client.post("/presets/nearest", json={"sex": "female", "height_cm": 162, "chest_cm": 90, "waist_cm": 74, "hip_cm": 96}).json()
+    assert (r["shape"], r["usual_size"], r["height_cm"]) == ("rectangle", "M", 165.0)
+    assert set(r["preset_cm"]) == {"chest", "waist", "hip"}
+    men = client.post("/presets/nearest", json={"sex": "male", "height_cm": 178, "chest_cm": 90, "waist_cm": 60, "hip_cm": 92}).json()
+    assert men["shape"] != "hourglass"  # not offered for men
