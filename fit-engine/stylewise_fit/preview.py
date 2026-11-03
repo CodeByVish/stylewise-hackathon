@@ -62,6 +62,26 @@ class CacheOnly(RuntimeError):
     """A preview that is not pre-generated, on a deployment that only serves cached images."""
 
 
+_BUDGET = {"day": None, "used": 0}
+
+
+def _spend_budget() -> None:
+    """Count one new image against PREVIEW_DAILY_LIMIT (unset = unlimited, e.g. local development)."""
+    import datetime
+
+    limit = (_env("PREVIEW_DAILY_LIMIT") or "").strip()
+    if not limit.isdigit():  # unset (or not a number): no cap
+        return
+    today = datetime.date.today().isoformat()
+    if _BUDGET["day"] != today:
+        _BUDGET.update(day=today, used=0)
+    if _BUDGET["used"] >= int(limit):
+        raise CacheOnly("Today's new try-ons for the public demo are used up. Pre-generated looks still load "
+                        "(The Column, garment M on body S, M or L; or body M in S, M or L), and the size-chart "
+                        "comparison works for every garment.")
+    _BUDGET["used"] += 1
+
+
 CAPTION = "AI-generated illustration; proportions, garment details and fit may be inaccurate. Refer to the measurements."
 
 REGION_WORDS = {"chest": "chest area", "waist": "waist area", "hip": "hip area"}
@@ -155,8 +175,27 @@ def guide_png(preset: dict, garment_id: str, size: str, view: str = "front", pai
     return buf.getvalue()
 
 
+def _same_body_reference(shape, usual_size, sex, height_cm, garment_id, style, view) -> bytes | None:
+    """The already-drawn image of this garment in the body's own size on the same body and view, if cached.
+    Shown to the image model when drawing another garment size, so the mannequin stays identical and only
+    the garment changes (without it the model sometimes slimmed or widened the body between sizes)."""
+    from .catalogue import catalogue, garment_input
+    from .fit import evaluate
+    from .schemas import BodyInput, FitRequest, Preferences
+
+    if usual_size not in catalogue()[garment_id]["sizes"]:
+        return None
+    body = BodyInput(source="preset", height_cm=height_cm,
+                     preset={"shape": shape, "usual_size": usual_size, "sex": sex})
+    report = evaluate(FitRequest(body=body, garment=garment_input(garment_id, usual_size),
+                                 preferences=Preferences(fit_pref="regular")))
+    return preview(shape, usual_size, sex, height_cm, garment_id, usual_size, style, fit_notes(report), view,
+                   only_cached=True)
+
+
 def preview(shape: str, usual_size: str, sex: str, height_cm: float, garment_id: str, size: str,
-            style: str = "mannequin", fit: str = "", view: str = "front", pair: tuple[str, str] | None = None) -> bytes:
+            style: str = "mannequin", fit: str = "", view: str = "front", pair: tuple[str, str] | None = None,
+            only_cached: bool = False) -> bytes | None:
     if style not in STYLES:
         raise ValueError(f"unknown style {style!r}; expected one of {list(STYLES)}")
     from .presets import preset_id
@@ -193,27 +232,41 @@ def preview(shape: str, usual_size: str, sex: str, height_cm: float, garment_id:
     if garment_id == 'manyavar-mens-kurta':
         template += (" The kurta is a straight, short men's kurta with a level, unbunched hem; "
                      "the hem hangs freely over the trousers, never tucked in.")
+    reference = None
+    if size != usual_size and not pair and not only_cached:
+        reference = _same_body_reference(shape, usual_size, sex, height_cm, garment_id, style, view)
+        if reference:
+            template += (f" The mannequin must be IDENTICAL to the one in image {len(images_from) + 2}: same body size, "
+                         "proportions, waist, hips, height and pose. Only the garment size and how it fits change.")
     # A result is valid only for the inputs that shape it: this body (mesh + its index row), these
     # garments (catalogue entries + photos), the guide renderer and the final prompt. Unrelated presets
     # or garments changing must not throw away paid-for images.
     cat = catalogue()
     files = [ROOT / "fixtures/presets" / f"{pid}.glb", ROOT / "fit-engine/scripts/render_fit.py", *images_from]
     tag = json.dumps([pid, entry, garment_id, size, cat[garment_id], pair, pair and cat[pair[0]], style, fit, view,
-                      template, [hashlib.sha256(f.read_bytes()).hexdigest() for f in files]], sort_keys=True, default=str)
+                      template, [hashlib.sha256(f.read_bytes()).hexdigest() for f in files]]
+                     + ([hashlib.sha256(reference).hexdigest()] if reference else []), sort_keys=True, default=str)
     cached = CACHE / f"{garment_id}_{size}_{view}_{hashlib.sha1(tag.encode()).hexdigest()[:12]}.png"
     if cached.exists():
         return cached.read_bytes()
+    if only_cached:
+        return None
     # Public deployments set PREVIEW_CACHE_ONLY=1: visitors see the pre-generated demo set, and nobody can
     # spend the team's Meta credits by clicking through new combinations.
     if (_env("PREVIEW_CACHE_ONLY") or "").lower() in ("1", "true", "yes"):
         raise CacheOnly("This combination isn't pre-generated in the public demo. Try The Column with garment "
                         "size M on body S, M or L, or run Stylewise locally to draw any combination.")
+    # Public deployments can instead allow live try-ons up to a daily number of new images
+    # (PREVIEW_DAILY_LIMIT): visitors get a real try-on, and the API spend per day is capped.
+    _spend_budget()
     key = _env("MODEL_API_KEY") or _env("META_API_KEY")
     if not key:
         raise RuntimeError("no Meta API key: set META_API_KEY in .env")
     guide = guide_png(preset, garment_id, size, view, pair)
     uri = lambda b, mime: f"data:{mime};base64,{base64.b64encode(b).decode()}"  # noqa: E731
     images = [{"image_url": uri(guide, "image/png")}] + [{"image_url": uri(f.read_bytes(), "image/jpeg")} for f in images_from]
+    if reference:
+        images.append({"image_url": uri(reference, "image/png")})
     # The image model's safety filter sometimes rejects strained-fabric results on curvy figures. Fall back
     # to milder but still honest descriptions rather than to a flattering picture.
     attempts = [fit or "no measurements given.",

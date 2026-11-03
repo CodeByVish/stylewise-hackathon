@@ -43,9 +43,37 @@ export function briefSpokenReply(text: string) {
   return selected.sort((a, b) => a.index - b.index).map(item => item.sentence).join(" ");
 }
 
+/** Fit replies are full of symbols a voice reads badly: say them as words. */
+function speakFitTerms(text: string) {
+  return text
+    .replace(/±\s*(\d+(?:\.\d+)?)/g, "plus or minus $1")
+    .replace(/(^|[\s(])\+(\d)/g, "$1plus $2")
+    .replace(/(^|[\s(])[-−](\d)/g, "$1minus $2")
+    .replace(/(\d)\s*cm\b/g, "$1 centimetres")
+    .replace(/(\d)\s*in\b(?!\s+\w+ing)/g, "$1 inches")
+    .replace(/\b(XS|S|M|L|XL)\s*\/\s*(?=(XS|S|M|L|XL)\b)/g, "$1, ")
+    .replace(/\b([23])XL\b/g, "$1 X L").replace(/\bXXL\b/g, "double X L").replace(/\bXL\b/g, "X L").replace(/\bXS\b/g, "X S");
+}
+
+/** Sentence-sized pieces (never cut mid-sentence), so the voice keeps its rhythm and pauses. */
+export function speechPieces(text: string, max = 220) {
+  // a sentence ends at . ! ? followed by a space or the end, so decimals like "2.5" stay whole
+  const sentences = text.match(/.+?(?:[.!?]+["')]*(?=\s|$)|$)/g) || [text];
+  const pieces: string[] = [];
+  for (const raw of sentences) {
+    const sentence = raw.trim();
+    if (!sentence) continue;
+    const last = pieces[pieces.length - 1];
+    if (last && last.length + sentence.length + 1 <= max) pieces[pieces.length - 1] = `${last} ${sentence}`;
+    else if (sentence.length <= max) pieces.push(sentence);
+    else pieces.push(...(sentence.match(new RegExp(`.{1,${max}}(?:,\\s|\\s|$)`, "g")) || [sentence]).map(part => part.trim()));
+  }
+  return pieces.length ? pieces : [text];
+}
+
 /** Plain speech punctuation, avoiding report labels and awkward stacked pauses. */
 export function normalizeSpokenText(text: string) {
-  return text
+  return speakFitTerms(text)
     .replace(/\[\[[\s\S]*?\]\]/g, "")
     .replace(/\*\*|__|`/g, "")
     .replace(/(?:^|\n)\s*[-*•]\s+/g, "")

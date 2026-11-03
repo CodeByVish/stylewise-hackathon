@@ -1,3 +1,6 @@
+import re
+from pathlib import Path
+import json
 """HTTP wrapper around fit.evaluate. Run: uvicorn stylewise_fit.server:app --port 8000"""
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -46,15 +49,45 @@ class PieceResult(BaseModel):
 # The legacy green kurta uses a men's photo with a women's chart; the ivory set's
 # guide depicts a different cut. Items without photos cannot be previewed faithfully.
 HIDDEN = {"green-kurta", "ivory-set", "ivory-kurta", "gold-trousers", "navy-bottom",
-          "black-satin-dress", "uniqlo-crew-tee", "uniqlo-dress-E487286", "reference-dress",
+          "black-satin-dress", "uniqlo-dress-E487286", "reference-dress",
           # photos read as menswear or as a coat/cape rather than a women's set; premium and budget share one photo
           "evening-kurta", "premium-set", "budget-set", "navy-set", "maroon-set"}
+
+
+class NearestPresetRequest(BaseModel):
+    sex: str = "female"
+    height_cm: float
+    chest_cm: float
+    waist_cm: float
+    hip_cm: float
+
+
+@app.post("/presets/nearest")
+def nearest_preset(req: NearestPresetRequest) -> dict:
+    """The prepared preset closest to entered measurements, for the visuals only (the fit itself always uses
+    the exact measurements): the shape and usual size whose estimated girths are nearest, and the nearest height."""
+    from .presets import SHAPES, SIZE_BUST, estimate, nearest_height
+
+    sex = req.sex if req.sex in SIZE_BUST else "female"
+    shapes = [s for s in SHAPES if not (sex == "male" and s == "hourglass")]  # not a male build (hidden in the app)
+    best = min(((sh, z) for sh in shapes for z in SIZE_BUST[sex]),
+               key=lambda c: sum((getattr(estimate(c[0], c[1], sex), k) - getattr(req, k)) ** 2
+                                 for k in ("chest_cm", "waist_cm", "hip_cm")))
+    from .presets import DISPLAY_NAMES, preset_id
+
+    height = nearest_height(req.height_cm, sex)
+    pid = preset_id(best[0], best[1], height, sex)
+    rows = json.loads((Path(__file__).resolve().parents[2] / "fixtures/presets/index.json").read_text())
+    m = next((r["measured_cm"] for r in rows if r["id"] == pid), {})
+    return {"sex": sex, "shape": best[0], "shape_name": DISPLAY_NAMES[best[0]], "usual_size": best[1],
+            "height_cm": height, "preset_cm": {k: round(m[k], 1) for k in ("chest", "waist", "hip") if k in m}}
 
 
 @app.get("/catalogue")
 def list_catalogue() -> list[dict]:
     """Catalogue items and whether they have sourced garment cm (only those can be fitted)."""
-    return [{"garment_id": gid, "name": g["name"], "category": g["category"], "fabric": g["fabric"],
+    # shown without the brand in brackets ("(ZESICA)"); the brand stays in each item's cited source
+    return [{"garment_id": gid, "name": re.sub(r"\s*\([^)]*\)\s*$", "", g["name"]), "category": g["category"], "fabric": g["fabric"],
              "sizes": list(g["sizes"]), "fittable": bool(g["sizes"]), "for": g.get("for", "unisex"),
              "photo": (PHOTOS / f"{gid}.jpg").exists()}
             for gid, g in catalogue().items() if gid not in HIDDEN]

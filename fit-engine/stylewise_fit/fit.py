@@ -89,8 +89,8 @@ def evaluate(req: FitRequest, body_mesh_ref: str | None = None,
     elif "synthetic" in src:
         warnings.append("Sizes come from a sample test garment, not a real product's chart; ease is approximate.")
     elif "unverified reference" in src:
-        warnings.append("Sizes taken from a general reference table (UNIQLO SG fit guide pattern), not this "
-                        "product's own chart; ease is approximate.")
+        warnings.append("Sizes taken from a general reference size chart, not this product's own chart; "
+                        "ease is approximate.")
     elif src in ("", "llm", "unknown"):
         warnings.append("This garment has no size chart source; ease is approximate.")
     if "assumed garment" in src:

@@ -67,6 +67,23 @@ export default function EngineFitLab() {
     ? { source: 'preset', height_cm: height, preset: { shape, usual_size: usualSize, sex } }
     : { source: 'measured', height_cm: height, ...girths };
   const bodyKey = JSON.stringify(body);
+  // Entered measurements still get visuals: the closest prepared preset (the fit itself uses the exact numbers).
+  const [nearest, setNearest] = useState<{ shape: string; shape_name?: string; usual_size: string; height_cm: number; sex: string; preset_cm?: { chest?: number; waist?: number; hip?: number } } | null>(null);
+  useEffect(() => {
+    if (mode !== 'measured') return;
+    const controller = new AbortController();
+    const timer = setTimeout(() => {
+      fetch('/api/engine/presets/nearest', { method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: controller.signal,
+        body: JSON.stringify({ sex, height_cm: height, ...girths }) })
+        .then(response => response.ok ? response.json() : null)
+        .then(value => { if (!controller.signal.aborted) setNearest(value); }).catch(() => {});
+    }, 300);
+    return () => { clearTimeout(timer); controller.abort(); };
+  }, [mode, sex, height, girths]);
+  const visualBody = (mode === 'preset' ? body : nearest
+    ? { source: 'preset', height_cm: nearest.height_cm, preset: { shape: nearest.shape, usual_size: nearest.usual_size, sex: nearest.sex } }
+    : null) as BodyInput | null;
+  const visualKey = JSON.stringify(visualBody);
   const preferences = { fit_pref: fitPref, ...(closure ? { closure } : {}) };
   const allSizes = item?.sizes || ['S', 'M', 'L'];
   const at = Math.max(0, allSizes.indexOf(garmentSize));
@@ -77,7 +94,7 @@ export default function EngineFitLab() {
   const pairOptions = catalogue.filter(value => available(value, sex) && value.category === pairCategory);
   const pairItem = pairOptions.find(value => value.garment_id === pairId);
   const pair = pairItem ? { garment_id: pairItem.garment_id, size: pairItem.sizes.includes(garmentSize) ? garmentSize : pairItem.sizes[0] } : null;
-  const browseItems = catalogue.filter(value => (mode === 'measured' ? value.fittable : available(value, sex)) && (category === 'all' || value.category === category));
+  const browseItems = catalogue.filter(value => (available(value, sex)) && (category === 'all' || value.category === category));
   const photo = photos[garmentId] || null;
   const updatePhoto = (next: GarmentPhoto | null) => setPhotos(previous => ({ ...previous, [garmentId]: next }));
   const report = results?.find(value => value.garment_id === garmentId && value.size === garmentSize)?.report;
@@ -108,17 +125,18 @@ export default function EngineFitLab() {
 
   // A separately labelled body model. Never show a previous body's mesh under new inputs.
   useEffect(() => {
-    if (mode !== 'preset') return;
+    if (!visualBody) return;
     const controller = new AbortController(); let url = '';
     fetch('/api/engine/viewer/scene', { method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: controller.signal,
-      body: JSON.stringify({ body: JSON.parse(bodyKey), items: [], tone: 'grey' }) })
+      body: JSON.stringify({ body: JSON.parse(visualKey), items: [], tone: 'grey' }) })
       .then(response => response.ok ? response.blob() : Promise.reject(new Error('Could not load your body model. Try again.')))
       .then(blob => {
         if (controller.signal.aborted) return;
-        url = URL.createObjectURL(blob); setBodyScene({ key: bodyKey, url });
+        url = URL.createObjectURL(blob); setBodyScene({ key: visualKey, url });
       }).catch(cause => { if (!controller.signal.aborted) setBodyError(cause.message); });
     return () => { controller.abort(); if (url) URL.revokeObjectURL(url); };
-  }, [bodyKey, mode, refresh]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [visualKey, refresh]);
 
   // Catalogue photos and user replacements share the same selected-garment/SAM state.
   useEffect(() => {
@@ -171,7 +189,7 @@ export default function EngineFitLab() {
   return <div className="fitting-room">
     <header className="room-header">
       <Link href="/" className="room-brand">stylewise<span>FIT LAB</span></Link>
-      <nav aria-label="Fitting room"><a href="#fitting">Try on</a><button disabled={!results} onClick={() => setDialog('compare')}>Compare sizes</button><a href="#method">How it works</a></nav>
+      <nav aria-label="Fitting room"><a href="#fitting">Try on</a><button disabled={!results} onClick={() => setDialog('compare')}>Compare sizes</button><a href="/#how">How it works</a></nav>
       <button className="room-header-nisha" onClick={() => setDialog('nisha')}>Ask Nisha <span aria-hidden="true">↗</span></button>
     </header>
 
@@ -181,6 +199,7 @@ export default function EngineFitLab() {
       <div className="room-layout" id="fitting">
         <aside className="room-person" id="your-shape" aria-label="Your body and preferences">
           <div className="room-section-title"><span>01</span><h2>Made around you</h2></div>
+          <details className="room-body-edit"><summary><span>{mode === 'preset' ? `${shapeInfo[1]} · usual ${usualSize} · ${height} cm` : `Your measurements · ${height} cm`}</span><span className="room-body-edit-cta">Edit</span></summary>
           <div className="room-mode" aria-label="Body input method"><button aria-pressed={mode === 'preset'} onClick={() => changeBody(() => { setMode('preset'); setHeight(sex === 'female' ? 165 : 175); })}>Choose a shape</button><button aria-pressed={mode === 'measured'} onClick={() => changeBody(() => { setMode('measured'); setHeight(168); })}>Enter measurements</button></div>
           <label className="room-field">Body proportions<select value={sex} onChange={event => selectSex(event.target.value as typeof sex)}><option value="female">Female proportions</option><option value="male">Male proportions</option></select></label>
           {mode === 'preset' ? <>
@@ -191,21 +210,22 @@ export default function EngineFitLab() {
             <p className="room-small">A preset with estimated dimensions.<br />Not a scan or a photograph of you.</p>
           </> : <><div className="room-measurements">{[['height_cm', 'Height'], ['chest_cm', sex === 'female' ? 'Bust' : 'Chest'], ['waist_cm', 'Waist'], ['hip_cm', 'Hips']].map(([key, label]) => <label key={key}>{label}<span><input type="number" aria-label={`${label} in centimeters`} min={key === 'height_cm' ? 101 : key === 'waist_cm' ? 41 : 51} max={key === 'height_cm' ? 229 : 199} value={key === 'height_cm' ? height : girths[key as keyof typeof girths]} onChange={event => changeBody(() => key === 'height_cm' ? setHeight(Number(event.target.value)) : setGirths(previous => ({ ...previous, [key]: Number(event.target.value) })))} /><small>cm</small></span></label>)}</div><p className="room-small">Your inputs are compared with the chart. A photo preview needs a preset.</p></>}
           <details className="room-preferences"><summary>Preferences <span>{fitPref} fit</span></summary><label className="room-field">Preferred fit<select value={fitPref} onChange={event => changeBody(() => setFitPref(event.target.value as typeof fitPref))}><option value="snug">Snug</option><option value="regular">Regular</option><option value="relaxed">Relaxed</option></select></label><label className="room-field">Dressing preference<select value={closure} onChange={event => changeBody(() => setClosure(event.target.value as typeof closure))}><option value="">No preference</option><option value="front_open">Front opening</option><option value="pullover">Pullover</option></select></label></details>
+          </details>
           <div className="room-body-link"><span className="room-overline">THE STARTING POINT</span><p>A three-dimensional body built from your selected preset.</p><button onClick={() => changeLook('3d')} disabled={mode !== 'preset'}>Explore your body model <span aria-hidden="true">↗</span></button></div>
         </aside>
 
         <section className="room-stage" aria-label="Garment preview">
           <div className="room-stage-heading"><div><span className="room-overline">IN THE FITTING ROOM</span><h2>{item?.name || 'Loading your garment…'}<span>Size {garmentSize}</span></h2></div><span className="room-stage-index">{look === 'real' ? 'STYLED VIEW' : '3D BODY MODEL'}</span></div>
           <div className="room-stage-image">
-            {mode === 'preset' ? look === 'real'
-              ? <RealisticView key={JSON.stringify({ body, garmentId, garmentSize, preferences, view, pair })} body={body} garmentId={garmentId} size={garmentSize} preferences={preferences} view={view} hasPhoto={!!item?.photo} pair={pair} />
-              : bodyScene?.key === bodyKey ? <Viewer bodyUrl={bodyScene.url} combined view={view} rotating={rotating} showBody skinTone="#a8a69f" />
+            {visualBody ? look === 'real'
+              ? <RealisticView key={JSON.stringify({ visualBody, garmentId, garmentSize, preferences, view, pair })} body={visualBody} garmentId={garmentId} size={garmentSize} preferences={preferences} view={view} hasPhoto={!!item?.photo} pair={pair} />
+              : bodyScene?.key === visualKey ? <Viewer bodyUrl={bodyScene.url} combined view={view} rotating={rotating} showBody skinTone="#a8a69f" />
                 : <div className="room-stage-message" role="status">{bodyError || 'Preparing your body model…'}{bodyError && <button onClick={() => setRefresh(value => value + 1)}>Try again</button>}</div>
-              : <div className="room-stage-message">Your measurements are being compared with the garment chart.<button onClick={() => changeBody(() => { setMode('preset'); setHeight(sex === 'female' ? 165 : 175); })}>Choose a shape for a visual preview</button></div>}
+              : <div className="room-stage-message" role="status">Finding the closest body to your measurements…</div>}
             <div className="room-angle-controls" aria-label="Preview angle">{((look === '3d' ? ['front', 'quarter', 'side', 'back'] : ['front', 'side', 'back']) as View[]).map(angle => <button key={angle} aria-pressed={view === angle} onClick={() => { setView(angle); setRotating(false); }}>{angle === 'quarter' ? '¾' : angle}</button>)}</div>
             {look === '3d' && <button className="room-rotate" aria-pressed={rotating} onClick={() => setRotating(!rotating)}>{rotating ? 'Pause rotation' : 'Rotate model'}</button>}
           </div>
-          <div className="room-stage-foot"><p>{mode === 'measured' ? 'Numeric fit comparison' : look === 'real' ? 'Styled on your measured body with Meta Muse Image. Use the chart comparison to assess size.' : 'Estimated body geometry. Garments are not shown in 3D.'}</p><button disabled={mode !== 'preset'} onClick={() => changeLook(look === 'real' ? '3d' : 'real')}>{look === 'real' ? '3D body model ↗' : 'Back to styled view ↗'}</button></div>
+          <div className="room-stage-foot"><p>{mode === 'measured' && nearest ? `Shown on the closest prepared body: ${nearest.shape_name || nearest.shape}, ${nearest.usual_size}, ${nearest.height_cm} cm (bust ${nearest.preset_cm?.chest ?? '?'}, waist ${nearest.preset_cm?.waist ?? '?'}, hip ${nearest.preset_cm?.hip ?? '?'} cm; yours ${girths.chest_cm}/${girths.waist_cm}/${girths.hip_cm} cm). The fit uses your exact measurements. ` : ''}{look === 'real' ? 'Styled on your measured body with Meta Muse Image. Use the chart comparison to assess size.' : 'Estimated body geometry. Garments are not shown in 3D.'}</p><button disabled={!visualBody} onClick={() => changeLook(look === 'real' ? '3d' : 'real')}>{look === 'real' ? '3D body model ↗' : 'Back to styled view ↗'}</button></div>
 
           <section className="room-browse" aria-label="Browse garments"><div className="room-browse-heading"><h3>Find your next piece</h3><div><button aria-label="Previous garments" onClick={() => rail.current?.scrollBy({ left: -240, behavior: 'smooth' })}>←</button><button aria-label="Next garments" onClick={() => rail.current?.scrollBy({ left: 240, behavior: 'smooth' })}>→</button></div></div>
             <div className="room-categories" aria-label="Garment categories">{categories.map(([id, name]) => <button key={id} aria-pressed={category === id} onClick={() => setCategory(id)}>{name}</button>)}</div>
@@ -231,17 +251,17 @@ export default function EngineFitLab() {
           })}</div>
           <button className="room-primary" onClick={() => setDialog('compare')} disabled={!results || comparisonSizes.length < 2}>Compare {comparisonSizes.join(', ')} <span aria-hidden="true">↗</span></button>
           <button className="room-secondary" onClick={() => setDialog('nisha')}>Ask Nisha about this size <span aria-hidden="true">↗</span></button>
-          <p className="room-fit-note">Room is the difference between garment and body dimensions. It does not establish comfort.</p>
-          {report && <>
-            {report.warnings.length > 0 && <p className="room-source-warning">{report.warnings[0]}</p>}
-            <details className="room-evidence"><summary>How we know</summary><p>{report.provenance.garment_source}</p><p>Body: {report.provenance.body_source}</p><ul>{report.advice_facts.map((fact, index) => <li key={index}>{fact}</li>)}</ul>{report.warnings.slice(1).map((warning, index) => <p key={index}>{warning}</p>)}</details>
-            {report.unknowns.length > 0 && <details className="room-evidence"><summary>What we can’t assess <span>{report.unknowns.length}</span></summary><ul>{report.unknowns.map((unknown, index) => <li key={index}>{unknown}</li>)}</ul></details>}
-          </>}
+          {report && <details className="room-evidence"><summary>How we know {report.unknowns.length > 0 && <span>{report.unknowns.length} not assessed</span>}</summary>
+            <p>Room is the difference between garment and body dimensions. It does not establish comfort.</p>
+            {report.warnings.map((warning, index) => <p key={index} className="room-source-warning">{warning}</p>)}
+            <p>{report.provenance.garment_source}</p><p>Body: {report.provenance.body_source}</p>
+            <ul>{report.advice_facts.map((fact, index) => <li key={index}>{fact}</li>)}</ul>
+            {report.unknowns.length > 0 && <><p><strong>What we can’t assess</strong></p><ul>{report.unknowns.map((unknown, index) => <li key={index}>{unknown}</li>)}</ul></>}
+          </details>}
           {pairCategory && <details className="room-evidence"><summary>Style it with another piece</summary><label className="room-field">Pair with<select value={pairItem ? pairId : ''} onChange={event => { setPairId(event.target.value); setView('front'); }}><option value="">{pairCategory === 'bottom' ? 'Plain trousers — styling only' : 'No additional piece'}</option>{pairOptions.map(value => <option key={value.garment_id} value={value.garment_id}>{value.name}</option>)}</select></label><p>The companion piece is styling context. The report above assesses the selected garment.</p></details>}
         </aside>
       </div>
 
-      <section className="room-method" id="method"><div><span className="room-overline">BEHIND THE FIT</span><h2>A picture is only<br /><em>part of the story.</em></h2><p>The illustration helps you explore a look. The fit engine compares the size chart with your body inputs, region by region.</p></div><div className="room-method-steps"><article><span>01 / YOUR SHAPE</span><h3>A starting point, not a scan</h3><p>Choose a prepared body preset or enter your dimensions for a numeric comparison.</p></article><article><span>02 / THE CHART</span><h3>Know where the numbers come from</h3><p>Open “How we know” for chart sources, estimates, and limitations.</p></article><article><span>03 / YOUR DECISION</span><h3>Compare before you choose</h3><p>Check another size and ask Nisha to explain the evidence.</p></article></div></section>
       <details className="room-tools"><summary>Garment photo & segmentation <span>Explore how SAM isolates garment pixels</span></summary><div className="room-tools-grid"><GarmentPhotoCard key={garmentId} name={item?.name || 'Your garment'} fabric={item?.fabric} photo={photo} onChange={updatePhoto} /><SamGarment key={`sam-${garmentId}`} garment={(item?.name || 'garment').replace(/\s*\(.*\)\s*$/, '').toLowerCase()} photo={photo} onPhotoChange={updatePhoto} /></div></details>
       <footer className="room-footer"><Link href="/" className="room-brand">stylewise</Link><p>A visual guide, a size-chart comparison, and room for your judgement.</p><span>FIT LAB / RESEARCH PROTOTYPE</span></footer>
     </main>

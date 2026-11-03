@@ -23,7 +23,7 @@ function draw(props: Props): Promise<Result> {
         ...(pair ? { pair_garment_id: pair.garment_id, pair_size: pair.size } : {}) }),
     }).then(async response => {
       const json = await response.json();
-      if (!response.ok) throw new Error(response.status === 404 ? 'An AI preview is not prepared for this combination. The size-chart comparison is still available.' : 'The AI preview is unavailable right now. The size-chart comparison is still available.');
+      if (!response.ok) throw new Error(response.status === 404 ? (json.detail || 'This styled view is not available right now. The size-chart comparison is still available.') : 'The styled view is unavailable right now. The size-chart comparison is still available.');
       cache.set(key, json);
       return json as Result;
     }).finally(() => inFlight.delete(key));

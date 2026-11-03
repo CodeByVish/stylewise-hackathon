@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { normalizeSpokenText } from "../lib/voice/spoken-text";
+import { normalizeSpokenText, speechPieces } from "../lib/voice/spoken-text";
 import { readVoiceStream } from "../lib/voice/stream";
 import { voiceJob } from "../lib/voice/client";
 import type { VoiceId } from "../lib/voice/voices";
@@ -10,7 +10,7 @@ function preferredBrowserVoice(stylistId: string) {
   const locale = stylistId === "chinese-aunty" ? ["en-SG", "zh-SG", "zh-CN", "en-US"]
     : stylistId === "british-bestie" ? ["en-GB", "en-AU", "en-US"]
     : stylistId === "desi-aunty" ? ["en-IN", "en-SG", "en-US", "en-GB"] : ["en-US", "en-SG", "en-GB"];
-  const feminine = /ava|samantha|victoria|zira|jenny|aria|allison|karen|moira|tara|serena|siri|female/i;
+  const feminine = /ava|samantha|victoria|zira|jenny|aria|allison|karen|moira|tara|serena|siri|female|veena|isha|lekha|kajal|heera|neerja|swara/i;
   for (const code of locale) {
     const match = voices.find(item => item.lang.toLowerCase() === code.toLowerCase() && feminine.test(item.name));
     if (match) return match;
@@ -112,6 +112,19 @@ export function useSpokenReplies() {
     stop(); setError(""); setSpeaking(true); setStatus("Preparing your stylist's voice…");
     const id = active.current;
     try {
+      // Nisha: an Indian English system voice (e.g. Veena, Isha) reads clearer, with natural rhythm, than the
+      // small in-browser model, so use it when the device has one; otherwise fall through to the model.
+      const native = stylistId === "desi-aunty" && typeof window !== "undefined" && window.speechSynthesis
+        ? preferredBrowserVoice(stylistId) : undefined;
+      if (native && native.lang.toLowerCase() === "en-in") {
+        setStatus("Speaking…");
+        for (const piece of speechPieces(text, 220)) {
+          if (active.current !== id) return;
+          await speakInBrowser(piece, stylistId);
+        }
+        if (active.current === id) { setSpeaking(false); setStatus(""); }
+        return;
+      }
       await unlock();
       if (active.current !== id) return;
       const audioContext = context.current!;
@@ -134,7 +147,7 @@ export function useSpokenReplies() {
           }));
           setStatus(remoteVoice ? "Speaking…" : "Speaking · streaming audio from your Mac…");
         };
-        const pieces = text.replace(/\s+/g, " ").match(/.{1,1000}(?:[.!?]\s|$)|.{1,1000}(?:\s|$)|\S{1,1000}/g) || [text];
+        const pieces = speechPieces(text.replace(/\s+/g, " "), 1000);
         for (const piece of pieces) {
           if (active.current !== id) return;
           if (!nextTime) setStatus("Starting your stylist's voice stream…");
@@ -160,7 +173,7 @@ export function useSpokenReplies() {
         }
         await Promise.all(playing);
       } else {
-        const pieces = text.replace(/\s+/g, " ").match(/.{1,220}(?:\s|$)|\S{1,220}/g) || [text];
+        const pieces = speechPieces(text.replace(/\s+/g, " "), 220);
         for (const piece of pieces) {
           if (active.current !== id) return;
           const result = await voiceJob("speak", value => { if (active.current === id) setStatus(value); }, {text: piece, voice});
