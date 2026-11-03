@@ -66,7 +66,6 @@ export default function EngineFitLab() {
   const body: BodyInput = mode === 'preset'
     ? { source: 'preset', height_cm: height, preset: { shape, usual_size: usualSize, sex } }
     : { source: 'measured', height_cm: height, ...girths };
-  const bodyKey = JSON.stringify(body);
   // Entered measurements still get visuals: the closest prepared preset (the fit itself uses the exact numbers).
   const [nearest, setNearest] = useState<{ shape: string; shape_name?: string; usual_size: string; height_cm: number; sex: string; preset_cm?: { chest?: number; waist?: number; hip?: number } } | null>(null);
   useEffect(() => {
@@ -189,12 +188,12 @@ export default function EngineFitLab() {
   return <div className="fitting-room">
     <header className="room-header">
       <Link href="/" className="room-brand">stylewise<span>FIT LAB</span></Link>
-      <nav aria-label="Fitting room"><a href="#fitting">Try on</a><button disabled={!results} onClick={() => setDialog('compare')}>Compare sizes</button><a href="/#how">How it works</a></nav>
+      <nav aria-label="Fitting room"><a href="#fitting">Try on</a><button disabled={!results} onClick={() => setDialog('compare')}>Compare sizes</button><Link href="/#how">How it works</Link></nav>
       <button className="room-header-nisha" onClick={() => setDialog('nisha')}>Ask Nisha <span aria-hidden="true">↗</span></button>
     </header>
 
     <main>
-      <div className="room-intro"><div><p className="room-overline">A MORE CONSIDERED WAY TO SHOP</p><h1>Find your size <em>before you buy.</em></h1></div><p>Choose your shape. Find a piece.<br />See what the size chart says.</p></div>
+      <div className="room-intro" data-scroll-reveal><div><p className="room-overline">A MORE CONSIDERED WAY TO SHOP</p><h1>Find your size <em>before you buy.</em></h1></div><p>Choose your shape. Find a piece.<br />See what the size chart says.</p></div>
       <a className="room-mobile-adjust" href="#your-shape"><span>{mode === 'preset' ? `${shapeInfo[1]} · usual ${usualSize} · ${height} cm` : 'Your entered measurements'}</span><span>Edit your shape ↓</span></a>
       <div className="room-layout" id="fitting">
         <aside className="room-person" id="your-shape" aria-label="Your body and preferences">
@@ -215,7 +214,11 @@ export default function EngineFitLab() {
         </aside>
 
         <section className="room-stage" aria-label="Garment preview">
-          <div className="room-stage-heading"><div><span className="room-overline">IN THE FITTING ROOM</span><h2>{item?.name || 'Loading your garment…'}<span>Size {garmentSize}</span></h2></div><span className="room-stage-index">{look === 'real' ? 'STYLED VIEW' : '3D BODY MODEL'}</span></div>
+          <div className="room-stage-heading"><div><span className="room-overline">IN THE FITTING ROOM</span><h2>{look === '3d' ? 'Your body model' : item?.name || 'Loading your garment…'}<span>{look === '3d' ? `${shapeInfo[1]} · usual ${usualSize}` : `Size ${garmentSize}`}</span></h2></div><span className="room-stage-index">{look === 'real' ? 'STYLED VIEW' : '3D BODY MODEL'}</span></div>
+          <div className="room-view-mode" role="group" aria-label="Figure display">
+            <button aria-pressed={look === 'real'} disabled={!visualBody} onClick={() => changeLook('real')}>Styled view</button>
+            <button aria-pressed={look === '3d'} disabled={!visualBody} onClick={() => changeLook('3d')}>3D body <span>Drag & zoom</span></button>
+          </div>
           <div className="room-stage-image">
             {visualBody ? look === 'real'
               ? <RealisticView key={JSON.stringify({ visualBody, garmentId, garmentSize, preferences, view, pair })} body={visualBody} garmentId={garmentId} size={garmentSize} preferences={preferences} view={view} hasPhoto={!!item?.photo} pair={pair} />
@@ -225,7 +228,7 @@ export default function EngineFitLab() {
             <div className="room-angle-controls" aria-label="Preview angle">{((look === '3d' ? ['front', 'quarter', 'side', 'back'] : ['front', 'side', 'back']) as View[]).map(angle => <button key={angle} aria-pressed={view === angle} onClick={() => { setView(angle); setRotating(false); }}>{angle === 'quarter' ? '¾' : angle}</button>)}</div>
             {look === '3d' && <button className="room-rotate" aria-pressed={rotating} onClick={() => setRotating(!rotating)}>{rotating ? 'Pause rotation' : 'Rotate model'}</button>}
           </div>
-          <div className="room-stage-foot"><p>{mode === 'measured' && nearest ? `Shown on the closest prepared body: ${nearest.shape_name || nearest.shape}, ${nearest.usual_size}, ${nearest.height_cm} cm (bust ${nearest.preset_cm?.chest ?? '?'}, waist ${nearest.preset_cm?.waist ?? '?'}, hip ${nearest.preset_cm?.hip ?? '?'} cm; yours ${girths.chest_cm}/${girths.waist_cm}/${girths.hip_cm} cm). The fit uses your exact measurements. ` : ''}{look === 'real' ? 'Styled on your measured body with Meta Muse Image. Use the chart comparison to assess size.' : 'Estimated body geometry. Garments are not shown in 3D.'}</p><button disabled={!visualBody} onClick={() => changeLook(look === 'real' ? '3d' : 'real')}>{look === 'real' ? '3D body model ↗' : 'Back to styled view ↗'}</button></div>
+          <div className="room-stage-foot"><p>{mode === 'measured' && nearest ? `Shown on the closest prepared body: ${nearest.shape_name || nearest.shape}, ${nearest.usual_size}, ${nearest.height_cm} cm (bust ${nearest.preset_cm?.chest ?? '?'}, waist ${nearest.preset_cm?.waist ?? '?'}, hip ${nearest.preset_cm?.hip ?? '?'} cm; yours ${girths.chest_cm}/${girths.waist_cm}/${girths.hip_cm} cm). The fit uses your exact measurements. ` : ''}{look === 'real' ? 'Styled on your measured body with Meta Muse Image. Use the chart comparison to assess size.' : 'Drag to rotate · Scroll or pinch to zoom. Estimated body only; garments are not shown in 3D.'}</p><button disabled={!visualBody} onClick={() => changeLook(look === 'real' ? '3d' : 'real')}>{look === 'real' ? '3D body model ↗' : 'Back to styled view ↗'}</button></div>
 
           <section className="room-browse" aria-label="Browse garments"><div className="room-browse-heading"><h3>Find your next piece</h3><div><button aria-label="Previous garments" onClick={() => rail.current?.scrollBy({ left: -240, behavior: 'smooth' })}>←</button><button aria-label="Next garments" onClick={() => rail.current?.scrollBy({ left: 240, behavior: 'smooth' })}>→</button></div></div>
             <div className="room-categories" aria-label="Garment categories">{categories.map(([id, name]) => <button key={id} aria-pressed={category === id} onClick={() => setCategory(id)}>{name}</button>)}</div>
@@ -236,7 +239,7 @@ export default function EngineFitLab() {
         <aside className="room-fit" aria-label="Your fit report" aria-busy={pending}>
           <div className="room-section-title"><span>02</span><h2>The fit, explained</h2></div>
           <p className="room-overline">{item?.category === 'outfit' ? 'A COMPLETE SET' : 'YOUR SELECTED PIECE'}</p>
-          <h2 className="room-product-title">{item?.name || 'Your garment'}</h2><p className="room-fabric">{item?.fabric}</p>
+          <h2 className="room-product-title" data-scroll-reveal>{item?.name || 'Your garment'}</h2><p className="room-fabric">{item?.fabric}</p>
           <div className={`room-verdict ${pending ? 'unknown' : summary.verdict}`} role="status"><span className="room-verdict-mark" aria-hidden="true" /><div><strong>{pending ? 'Checking the size chart…' : summary.text}</strong><p>{pending ? 'Comparing your selected dimensions.' : `Size ${garmentSize} · ${fitPref} fit preference`}</p></div></div>
           {(error || selectedError) && <p role="alert" className="room-error">{error || selectedError}<button onClick={() => { setError(''); setRefresh(value => value + 1); }}>Try again</button></p>}
           <fieldset className="room-size-options"><legend>Choose a garment size <span>Size {garmentSize} selected</span></legend><div>{allSizes.map(size => {
@@ -263,7 +266,7 @@ export default function EngineFitLab() {
       </div>
 
       <details className="room-tools"><summary>Garment photo & segmentation <span>Explore how SAM isolates garment pixels</span></summary><div className="room-tools-grid"><GarmentPhotoCard key={garmentId} name={item?.name || 'Your garment'} fabric={item?.fabric} photo={photo} onChange={updatePhoto} /><SamGarment key={`sam-${garmentId}`} garment={(item?.name || 'garment').replace(/\s*\(.*\)\s*$/, '').toLowerCase()} photo={photo} onPhotoChange={updatePhoto} /></div></details>
-      <footer className="room-footer"><Link href="/" className="room-brand">stylewise</Link><p>A visual guide, a size-chart comparison, and room for your judgement.</p><span>FIT LAB / RESEARCH PROTOTYPE</span></footer>
+      <footer className="room-footer"><Link href="/" className="room-brand">stylewise</Link><p data-scroll-reveal>A visual guide, a size-chart comparison, and room for your judgement.</p><span>FIT LAB / RESEARCH PROTOTYPE</span></footer>
     </main>
 
     <FittingDialog open={dialog === 'nisha'} title="Ask Nisha" side onClose={() => setDialog(null)}><p className="room-dialog-context">{item?.name} · Size {garmentSize}</p><NishaChat context={{ body, garment_id: garmentId, garment_size: garmentSize, preferences }} /></FittingDialog>
