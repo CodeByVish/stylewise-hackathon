@@ -16,6 +16,8 @@ import GarmentPhotoCard from './garment-photo-card';
 import './fitting-room.css';
 
 const Viewer = dynamic(() => import('./fit-viewer'), { ssr: false });
+// approximate height of each body area in a full-figure styled view (top = 0, feet = 1), for zoom and highlight
+const REGION_HEIGHT: Record<string, number> = { chest: 0.31, waist: 0.40, hip: 0.49 };
 const shapes = [
   ['hourglass', 'The Balance', 'Defined waist, balanced proportions'],
   ['triangle', 'The Anchor', 'Fuller through the hips'],
@@ -67,6 +69,7 @@ export default function EngineFitLab() {
     ? { source: 'preset', height_cm: height, preset: { shape, usual_size: usualSize, sex } }
     : { source: 'measured', height_cm: height, ...girths };
   const bodyKey = JSON.stringify(body);
+  const [compareZoom, setCompareZoom] = useState<Record<string, boolean>>({});
   // Entered measurements still get visuals: the closest prepared preset (the fit itself uses the exact numbers).
   const [nearest, setNearest] = useState<{ shape: string; shape_name?: string; usual_size: string; height_cm: number; sex: string; preset_cm?: { chest?: number; waist?: number; hip?: number } } | null>(null);
   useEffect(() => {
@@ -270,7 +273,18 @@ export default function EngineFitLab() {
     <FittingDialog open={dialog === 'compare'} title="Compare sizes on your shape" onClose={() => setDialog(null)}><p className="room-dialog-context">{item?.name} · {mode === 'preset' ? `${shapeInfo[1]}, usual size ${usualSize}, ${height} cm` : 'Your entered measurements'}</p><div className="room-compare-grid">{comparisonSizes.map(size => {
       const value = results?.find(result => result.size === size && result.garment_id === garmentId);
       const fit = fitSummary(value?.report, sex);
-      return <article className={`room-compare-card ${fit.verdict}`} key={size}><div className="room-compare-image">{dialog === 'compare' && mode === 'preset' ? <RealisticView key={JSON.stringify({ body, garmentId, size, preferences, pair })} body={body} garmentId={garmentId} size={size} preferences={preferences} view="front" hasPhoto={!!item?.photo} pair={pair} /> : <p>Numeric comparison</p>}</div><div className="room-compare-copy"><span>SIZE {size}</span><h3>{fit.text}</h3><dl>{['chest', 'waist', 'hip'].map(region => <div key={region}><dt>{regionLabel(region, sex)}</dt><dd>{dimensionLabel(value?.report?.regions[region]?.ease_cm ?? null)}</dd></div>)}</dl>{value?.report?.warnings[0] && <p className="room-source-warning">{value.report.warnings[0]}</p>}<button onClick={() => { selectSize(size); setDialog(null); }}>View size {size} <span aria-hidden="true">↗</span></button></div></article>;
+      // the body area that decides this size, for "zoom to the waist": the first tight, close or roomy area
+      const issue = (['tight', 'borderline', 'loose'] as const).map(v => ['chest', 'waist', 'hip'].find(r => value?.report?.regions[r]?.verdict === v) && { verdict: v, region: ['chest', 'waist', 'hip'].find(r => value?.report?.regions[r]?.verdict === v)! }).find(Boolean) || null;
+      const zoomed = issue && compareZoom[size];
+      const at = issue ? REGION_HEIGHT[issue.region] : 0.4;
+      return <article className={`room-compare-card ${fit.verdict}`} key={size}><div className="room-compare-image">{dialog === 'compare' && visualBody ? <>
+        <div className="room-compare-zoom" style={zoomed ? { transform: 'scale(2.1)', transformOrigin: `50% ${at * 100}%` } : undefined}>
+          <RealisticView key={JSON.stringify({ visualBody, garmentId, size, preferences, pair })} body={visualBody} garmentId={garmentId} size={size} preferences={preferences} view="front" hasPhoto={!!item?.photo} pair={pair} />
+          {issue && zoomed && <div className={`room-issue-band ${issue.verdict}`} style={{ top: `${at * 100}%` }} aria-hidden="true" />}
+        </div>
+        {issue && zoomed && <p className={`room-issue-label ${issue.verdict}`}>{fit.text} · {dimensionLabel(value?.report?.regions[issue.region]?.ease_cm ?? null)}</p>}
+        {issue && <button className="room-issue-zoom" onClick={() => setCompareZoom(prev => ({ ...prev, [size]: !prev[size] }))}>{zoomed ? 'Zoom out' : `Zoom to the ${regionLabel(issue.region, sex).toLowerCase()}`}</button>}
+      </> : <p>Numeric comparison</p>}</div><div className="room-compare-copy"><span>SIZE {size}</span><h3>{fit.text}</h3><dl>{['chest', 'waist', 'hip'].map(region => <div key={region}><dt>{regionLabel(region, sex)}</dt><dd>{dimensionLabel(value?.report?.regions[region]?.ease_cm ?? null)}</dd></div>)}</dl>{value?.report?.warnings[0] && <p className="room-source-warning">{value.report.warnings[0]}</p>}<button onClick={() => { selectSize(size); setDialog(null); }}>View size {size} <span aria-hidden="true">↗</span></button></div></article>;
     })}</div><p className="room-comparison-note">Same preset and fit preference for each size. These are styled views generated with Meta Muse Image, not cloth simulations; body appearance may vary. Use the numeric report to compare fit.</p></FittingDialog>
   </div>;
 }
