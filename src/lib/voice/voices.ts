@@ -7,4 +7,4 @@ export const VOICES = [
   {id: "bm_george", name: "George · British English · masculine"},
 ] as const;
 export type VoiceId = typeof VOICES[number]["id"];
-export const VOICE_PREVIEW = "Hello, let's explore your wardrobe with a budget of sixty Singapore dollars, you may already own the perfect outfit.";
+export const VOICE_PREVIEW = "Hello beta, pick a garment and a size, and I will check how it sits on your shape.";

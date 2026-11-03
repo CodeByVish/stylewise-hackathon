@@ -66,8 +66,21 @@ def scene_bytes(payload: str) -> bytes:
     ys = body.vertices[body.faces][:, :, 1]
     top = render.waistband(landmarks) - 0.02 * H
     keep = (~render.ARM_FACES) & (ys.max(1) >= 0.452 * H - 0.02) & (ys.min(1) <= top + 0.02)
-    briefs = render.smooth_base(body).submesh([np.where(keep)[0]], append=True)
-    briefs.vertices = briefs.vertices + briefs.vertex_normals * 0.006
+    # from the real body (the smoothed base sits inside it at the buttocks, which let the body poke through),
+    # pushed 7 mm out, then smoothed on its own so no anatomy reads through
+    briefs = body.submesh([np.where(keep)[0]], append=True)
+    # push every point 8 mm straight out from the body's vertical axis (around each leg below the crotch
+    # line it still moves outward); normal offsets plus smoothing let the buttocks poke through at the back
+    v = briefs.vertices
+    centres = np.tile([v[:, 0].mean(), 0.0, v[:, 2].mean()], (len(v), 1))
+    legs = v[:, 1] < 0.49 * H  # around the crotch and thighs: push out from each leg's own centre
+    for side in (v[:, 0] >= 0, v[:, 0] < 0):
+        m = legs & side
+        if m.any():
+            centres[m] = [v[m, 0].mean(), 0.0, v[m, 2].mean()]
+    radial = v - centres
+    radial[:, 1] = 0
+    briefs.vertices = v + radial / np.maximum(np.linalg.norm(radial, axis=1, keepdims=True), 1e-9) * 0.008
     parts = [render.band(briefs, 0.452 * H, top)]
     if preset.sex == 'female':
         parts.append(render.skirt_tube(body, landmarks['chest'] + 0.012 * H, landmarks['chest'] - 0.045 * H,

@@ -24,6 +24,8 @@ COMBINATIONS = [
     *(("female", body_size, "zesica-black-midi-dress", "M") for body_size in ("S", "M", "L")),
     *(("female", body_size, "parthvi-anarkali-set", "M") for body_size in ("S", "M", "L")),
     ("male", "M", "manyavar-mens-kurta", "M"),
+    # one body, three garment sizes: only the dress changes, so the fit difference is unambiguous
+    *(("female", "M", "zesica-black-midi-dress", garment_size) for garment_size in ("S", "L")),
 ]
 
 

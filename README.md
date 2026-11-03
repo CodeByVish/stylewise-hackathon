@@ -1,116 +1,89 @@
-# Stylewise Fit Lab
+# Stylewise: find your size before you buy
 
-**Know what works with your wardrobe before you buy.** Stylewise is a fit-aware shopping and virtual closet prototype for the Meta hackathon, October 28-November 4, 2026.
+Online shoppers guess their size from a chart, and many guess wrong. Stylewise shows **how each size of a
+real garment sits on your body shape**, region by region, and explains why. It does that from the brand's
+own size chart and a body built from your shape and usual size, not from a guess.
 
-## Product goal
+**Live demo:** _add link_ · **Video (3 min):** _add link_ · Built for the Meta Global AI Developer Hackathon
+(Cerebral Valley), Oct 26 to Nov 4, 2026. Problem statement: **Build for Your World**.
 
-Help someone decide whether to investigate buying a garment by comparing documented garment measurements with user-provided measurements and preferences, checking their existing wardrobe, and showing an approximate 3D outfit. Recommendations are conditional, explain their evidence, and are not guarantees of physical fit.
+## What it does
 
-The purchase decision simulator compares:
+1. **You:** pick one of five body shapes, your usual size and height (or enter your measurements).
+2. **A garment:** pick from the catalogue. Each item carries its brand or seller size chart, cited.
+3. **Every size, explained:** the engine compares the garment's girths with your body at the bust, waist
+   and hip and gives a verdict per region ("snug at the waist", "+13 cm at the hips"), with one size either
+   side for comparison.
+4. **See it:** a styled view of the garment on a faceless mannequin with your exact proportions, from the
+   front, side and back; and your measured body in 3D.
+5. **Ask Nisha:** a sizing assistant who answers from the engine's verdicts only, never inventing a number.
 
-- Buy size S.
-- Buy size M.
-- Skip the purchase and build a similar outfit from the user's wardrobe.
+## How Meta's models are used
 
-## Prototype scope
+| Model | Role |
+|---|---|
+| **Meta MHR** (Momentum Human Rig) | 210 body presets (5 shapes × 7 sizes × 3 heights × 2 sexes), fitted to size-chart girths by least squares with explicit Jacobians on NTU's NSCC cluster, with a bust-to-underbust cap so bodies keep natural proportions |
+| **Muse Spark Open** (open weights, via Baseten) | Nisha's reasoning. She calls our fit engine as a tool for every answer; falls back to Muse Spark on the Meta Model API |
+| **Muse Image** (`muse-image-1.0`) | The styled view: guided by a render of the measured body with the garment placed by measured ease, told the fit region by region, and the product photo. Also generated our product photos |
+| **SAM 3.1** | Isolates the garment in its product photo |
 
-- One garment category with two size variants and known, sourced measurements.
-- Optional height, chest, waist, and hip inputs; a fitted Meta MHR body is an experiment, with a controlled mannequin fallback.
-- A garment photo mask and structured attributes, while keeping pixel segmentation separate from garment dimensions and fabric properties.
-- Deterministic ease, clearance, and unknown-evidence checks, plus one supported pose or closure preference.
-- Wardrobe-aware outfit suggestions, a multi-view 3D viewer, and Nisha responses in text and voice where available.
-- Fixture meshes and JSON so body/fit and garment/viewer work can proceed independently.
+## What is new in this hackathon (and what is not)
 
-Out of scope: arbitrary-garment fit guarantees, full cloth physics, Quest support, and disability comfort claims. If evidence is missing, show the uncertainty instead of filling it in.
+**Built during the hackathon:** the MHR body presets and fitting pipeline; the fit engine (ease, verdicts,
+fabric stretch, uncertainty); the sourced size-chart catalogue; the styled view with Muse Image (prompting,
+caching, content-safe fit wording); SAM garment isolation; Nisha's fit reasoning with tool calling on Muse
+Spark Open; the privacy layer; the 3D body model viewer.
 
-## Technical direction
+**Reused from our earlier Stylewise project:** Nisha's persona and the browser voice input/output modules
+(`src/lib/voice/*`, `src/hooks/useSpeechInput.ts`, `src/hooks/useSpokenReplies.ts`), and catalogue item
+names. The earlier wardrobe planner is not part of this project.
 
-- Frontend: Next.js App Router, React, TypeScript, and Tailwind CSS.
-- Garment understanding: Meta SAM 3.1 for image segmentation; Muse Spark / Open for structured attributes and tool reasoning, subject to access.
-- Body: Meta MHR research, with a parametric mannequin fallback.
-- Garment geometry: legally usable GarmentCode/Blender assets or prepared meshes with measurement provenance.
-- Fit: deterministic Python geometry and measurement comparisons; never let a language model invent physical measurements.
-- Viewer: Three.js, using the same body and garment meshes for front, side, and back views.
+## Honesty and privacy
 
-## Working contracts
+- Ease is a tape-measure difference, not a promise of comfort. Every report says where its sizes came from;
+  where a seller does not say whether a chart is body or garment measurements, we state our assumption.
+- The styled view is an illustration guided by the measured fit; the measurements decide the fit.
+- Nisha: names, emails, phone numbers and addresses are removed on our server before any model call. Your
+  measurements are sent to the model only if you tick consent; otherwise the fit runs on our server and the
+  model sees only the verdicts.
+- The styled view sends a rendered faceless silhouette, never a photo of you. SAM receives product photos only.
+- The fit API is stateless: no database, no logging of bodies.
 
-Keep the shared request/result contract stable from the start. A fit request carries user measurements in centimeters, pose or preference, garment size-chart values, mesh references, and provenance. A fit report carries computed ease, supported checks, warnings, unknowns, and evidence-backed advice. Mesh references should identify the asset and its source; fixture assets remain valid inputs while either engine is in progress.
+## Data sources
 
-Ease differences are arithmetic, not proof of comfort. For example, a 90 cm chest and a documented 98 cm garment chest gives +8 cm chest ease; it does not establish that the garment will feel comfortable.
+Size charts are cited per item in `fit-engine/stylewise_fit/data/catalogue_garments.json` (ZESICA, PARTHVI,
+SimpleFun, SHINFY, H&C and other Amazon SG seller charts; Manyavar; Indubindu; Uniqlo SG). Body sizes:
+ANSUR II (public domain) and a general women's retail chart; shape classes: FFIT. Product photos in this
+repository were generated with Meta Muse Image. Early prototypes used retailer product photos as visual
+references; the submitted version replaces them.
 
-## Team workstreams
-
-- **P0: body and fit intelligence.** Measurement-to-body experiments, deterministic fit calculations, uncertainty, API/CLI, Muse tool semantics, and Nisha integration.
-- **P1: garment and try-on.** Segmentation, sourced size variants, garment meshes, pose experiments, viewer, and Fit Lab UI.
-- **Shared:** freeze the JSON/GLB contract, integrate on October 31 and November 2, rehearse November 3, and submit on November 4.
-
-Neither workstream should block on the other: P0 runs against synthetic garment specs, and P1 runs against fixture bodies and fit JSON.
-
-## Milestones
-
-| Date | Gate |
-| --- | --- |
-| Oct 28 | Freeze JSON/GLB contract; independent body and rotating-viewer baselines run. |
-| Oct 29-30 | Measure mesh accuracy, compare sizes/views, and decide MHR/mannequin and drape/static-shell fallbacks. |
-| Oct 31 | First integrated measurements-to-avatar-to-garment result. |
-| Nov 1 | One supported preference changes an evidence-backed recommendation. |
-| Nov 2 | Second integration; evaluate at least 12 controlled fit cases and two sizes across three views. |
-| Nov 3 | Freeze implementation, methods, limitations, docs, and demo; clean-run rehearsal. |
-| Nov 4 | Verify provenance, privacy, eligibility, demo links, and submission deadline; submit early. |
-
-## P1 implementation baseline
-
-The app now includes a Three.js fitting room, two illustrative garment GLBs, measurement/size controls, local garment photo preview, numeric ease comparison, and fit-request export/report import.
-
-These are synthetic integration fixtures, not verified retail assets. The body is fixed; measurement inputs update arithmetic only. SAM, P0's API, and existing Nisha voice/text navigation are not connected in this starter.
-
-Checks: `npm run lint`, `npm run build`, `npm run test:fixtures` (Node 22.18+ for the fixture test's TypeScript import). Regenerate assets with `npm run fixtures:generate`.
-
-## Getting started
-
-Requirements: Node.js and npm.
+## Run it locally
 
 ```bash
 npm install
-npm run dev
+python3 -m venv fit-engine/.venv && fit-engine/.venv/bin/pip install -e "fit-engine[api,dev]"
+cp .env.example .env    # or create .env: MODEL_API_KEY=<your dev.meta.ai key>
+npm run fit:dev         # fit engine on :8000
+npm run dev             # app on http://localhost:3000
 ```
 
-Open http://localhost:3000. Useful checks: `npm run lint` and `npm run build`.
+Optional: run Nisha on Muse Spark Open via Baseten with `NISHA_API_BASE=https://inference.baseten.co/v1`,
+`NISHA_API_KEY=<Baseten key>`, `MUSE_MODEL=meta-models/muse-spark-open-1026` in `.env`.
+Tests: `cd fit-engine && .venv/bin/python -m pytest -q`.
 
-## Hackathon eligibility and provenance
+## Deploy
 
-This folder is a fresh starter. A pre-existing Stylewise project is also present on this desktop, and the event rules described by the team may distinguish new contributions from reused work. Confirm the applicable rules with organizers in writing before copying code or assets into this repo. Track what is built during the event, record model versions and asset sources, and disclose prior work as required by the submission rules.
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+App on Vercel (set `FIT_API_URL`); fit engine as a Docker service on Render (`render.yaml`, `Dockerfile`).
+Set `PREVIEW_CACHE_ONLY=1` on public deployments so visitors see the pre-generated styled views and never
+spend API credits.
 
-## Getting Started
+## Limitations
 
-First, run the development server:
+No cloth simulation; the styled view is an illustration. Body presets are estimates from shape and usual
+size, not a scan. Some seller charts do not say body or garment measurements. The 3D body keeps a neutral
+measuring pose.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Team and licence
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Riddhima Jain (body model, fit engine, size charts, styled view, Nisha's reasoning, SAM) and Vishakha
+Maheshwari (app and interface). Apache-2.0, see `LICENSE` and `NOTICE`.

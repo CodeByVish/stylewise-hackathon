@@ -44,6 +44,9 @@ export default function RealisticView(props: Props) {
     draw(JSON.parse(key)).then(json => { if (live) setResult(json); })
       .catch(cause => { if (live) setError(cause instanceof Error ? cause.message : 'The preview could not be prepared.'); })
       .finally(() => { if (live) setLoading(false); });
+    // start the other angles too, so turning the figure is instant (each is drawn once, then cached)
+    (['front', 'side', 'back'] as const).filter(other => other !== view)
+      .forEach(other => draw({ ...JSON.parse(key), view: other }).catch(() => {}));
     return () => { live = false; };
   }, [key, attempt]);
   return <div className="realistic-view" aria-busy={loading}>
