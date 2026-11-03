@@ -20,8 +20,8 @@ export default function Landing() {
       <section className="land-hero">
         <div>
           <p className="land-eyebrow">FIND YOUR SIZE BEFORE YOU BUY</p>
-          <h1>See how every size<br/><em>sits on your shape.</em></h1>
-          <p className="land-lede">Real brand size charts, a body built from your shape and size, and an honest answer for every size. No model faces.</p>
+          <h1 data-scroll-reveal>See how every size<br/><em>sits on your shape.</em></h1>
+          <p className="land-lede" data-scroll-reveal>Real brand size charts, a body built from your shape and size, and an honest answer for every size. No model faces.</p>
           <div className="land-actions"><Link href="/try" className="land-primary">Start fitting</Link><a href="#how" className="land-secondary">See how it works</a></div>
         </div>
         <div className="land-room">
@@ -34,21 +34,21 @@ export default function Landing() {
       </section>
 
       <section className="land-usp" aria-label="What makes Stylewise different">
-        <article><Tape/><div><h2>Measured, not guessed</h2><p>Brand charts in centimetres against a body built from your shape and size.</p></div></article>
-        <article><Tag size="L" tone="olive"/><div><h2>Every size has a verdict</h2><p>Snug, fits or roomy, region by region, and the best fit for you.</p></div></article>
-        <article><span className="land-mannequin"><Mannequin/></span><div><h2>Your shape, no model faces</h2><p>Every shape from XS to 3XL, women and men, on a calm faceless mannequin.</p></div></article>
+        <article data-scroll-reveal><Tape/><div><h2>Measured, not guessed</h2><p>Brand charts in centimetres against a body built from your shape and size.</p></div></article>
+        <article data-scroll-reveal><Tag size="L" tone="olive"/><div><h2>Every size has a verdict</h2><p>Snug, fits or roomy, region by region, and the best fit for you.</p></div></article>
+        <article data-scroll-reveal><span className="land-mannequin"><Mannequin/></span><div><h2>Your shape, no model faces</h2><p>Every shape from XS to 3XL, women and men, on a calm faceless mannequin.</p></div></article>
       </section>
 
       <section className="land-how" id="how">
-        <h2>How it works</h2>
+        <h2 data-scroll-reveal>How it works</h2>
         <div className="land-steps">
-          <article><div className="land-step-art shapes">{['hourglass', 'triangle', 'rectangle', 'inverted', 'oval'].map(shape => <span key={shape} className={shape === 'rectangle' ? 'on' : ''}><Mannequin/></span>)}</div><h3><b>1</b>Pick your shape</h3><p>Five silhouettes, your usual size and height, or your own measurements.</p></article>
-          <article><div className="land-step-art garments"><Hanger/><div>{['zesica-black-midi-dress', 'emerald-wrap-dress', 'parthvi-anarkali-set'].map(id => <Image key={id} src={`/api/assets/garment_photos/${id}.jpg`} alt="" width={84} height={84} unoptimized/>)}</div></div><h3><b>2</b>Pick a garment</h3><p>Dresses, tops, sets and menswear, each with its own size chart.</p></article>
-          <article><div className="land-step-art sizes"><figure><Image src="/landing/body-s.jpg" alt="Dress size M on a size-S body: roomy" width={110} height={150}/><Tag size="S" tone="olive"/></figure><figure><Image src="/landing/body-m.jpg" alt="Dress size M on a size-M body: fits" width={110} height={150}/><Tag size="M" tone="ok"/></figure><figure><Image src="/landing/body-l.jpg" alt="Dress size M on a size-L body: tight" width={110} height={150}/><Tag size="L" tone="warn"/></figure></div><h3><b>3</b>See how it sits</h3><p>The same dress on different bodies, front, side and back, with a verdict for every size and a sizing assistant, Nisha.</p></article>
+          <article data-scroll-reveal><div className="land-step-art shapes">{['hourglass', 'triangle', 'rectangle', 'inverted', 'oval'].map(shape => <span key={shape} className={shape === 'rectangle' ? 'on' : ''}><Mannequin/></span>)}</div><h3><b>1</b>Pick your shape</h3><p>Five silhouettes, your usual size and height, or your own measurements.</p></article>
+          <article data-scroll-reveal><div className="land-step-art garments"><Hanger/><div>{['zesica-black-midi-dress', 'emerald-wrap-dress', 'parthvi-anarkali-set'].map(id => <Image key={id} src={`/api/assets/garment_photos/${id}.jpg`} alt="" width={84} height={84} unoptimized/>)}</div></div><h3><b>2</b>Pick a garment</h3><p>Dresses, tops, sets and menswear, each with its own size chart.</p></article>
+          <article data-scroll-reveal><div className="land-step-art sizes"><figure><Image src="/landing/body-s.jpg" alt="Dress size M on a size-S body: roomy" width={110} height={150}/><Tag size="S" tone="olive"/></figure><figure><Image src="/landing/body-m.jpg" alt="Dress size M on a size-M body: fits" width={110} height={150}/><Tag size="M" tone="ok"/></figure><figure><Image src="/landing/body-l.jpg" alt="Dress size M on a size-L body: tight" width={110} height={150}/><Tag size="L" tone="warn"/></figure></div><h3><b>3</b>See how it sits</h3><p>The same dress on different bodies, front, side and back, with a verdict for every size and a sizing assistant, Nisha.</p></article>
         </div>
       </section>
 
-      <section className="land-cta"><h2>Ready to check a size?</h2><Link href="/try" className="land-primary">Open the fitting room</Link></section>
+      <section className="land-cta"><h2 data-scroll-reveal>Ready to check a size?</h2><Link href="/try" className="land-primary">Open the fitting room</Link></section>
     </main>
     <footer className="land-footer"><span>stylewise</span><p>A visual guide and a size-chart comparison, built with Meta MHR, Muse Spark Open, Muse Image and SAM 3.1.</p></footer>
   </div>;
