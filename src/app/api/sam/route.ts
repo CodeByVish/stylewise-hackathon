@@ -13,7 +13,7 @@ async function* events(body:ReadableStream<Uint8Array>):AsyncGenerator<Responses
 }
 export async function POST(request:Request){
   const key=process.env.MODEL_API_KEY||process.env.META_API_KEY;
-  if(!key)return Response.json({error:'Save MODEL_API_KEY in .env.local and restart Next.js to enable SAM.'},{status:503});
+  if(!key)return Response.json({error:'SAM needs MODEL_API_KEY: in .env.local locally (then restart), or in the host's environment variables (then redeploy).'},{status:503});
   try{
     if(Number(request.headers.get('Content-Length'))>7_000_000)return Response.json({error:'Image too large'},{status:413});
     const raw=await request.text();if(raw.length>7_000_000)return Response.json({error:'Image too large'},{status:413});
