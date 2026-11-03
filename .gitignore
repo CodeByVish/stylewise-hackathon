@@ -56,3 +56,8 @@ __pycache__/
 /test-results/
 /playwright-report/
 !.env.example
+
+# local only: agent settings, internal planning notes
+.claude/
+Stylewise _ Meta Hackathon Research*
+docs/SUBMISSION_CHECKLIST_P0.md
