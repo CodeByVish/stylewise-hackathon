@@ -58,6 +58,42 @@ def measures_text(entry: dict) -> str:
             f"{m['height']:.0f} cm tall, so draw exactly that size.")
 
 
+# When the primary Meta key's credits or quota run out, switch to the backup key (MODEL_API_KEY_BACKUP) and
+# say so loudly: in the server log and on GET /health, so the team knows to top up or rotate keys.
+KEY_STATUS = {"active": "primary", "switched_at": None, "reason": None}
+_EXHAUSTED = ("insufficient", "quota", "credit", "billing", "balance", "exceeded", "payment", "rate limit")
+
+
+def api_keys() -> list[str]:
+    primary = _env("MODEL_API_KEY") or _env("META_API_KEY")
+    backup = _env("MODEL_API_KEY_BACKUP")
+    keys = [k for k in (primary, backup) if k]
+    return keys[1:] if KEY_STATUS["active"] == "backup" and len(keys) > 1 else keys
+
+
+def _generate(body: dict, keys: list[str]) -> dict:
+    """Call Muse Image, moving to the next key when one is out of credits or quota."""
+    for i, key in enumerate(keys):
+        req = urllib.request.Request("https://api.meta.ai/v1/images/edits", data=json.dumps(body).encode(),
+                                     headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                return json.load(r)["data"][0]
+        except urllib.error.HTTPError as error:
+            text = error.read()[:300].decode(errors="replace")
+            exhausted = error.code in (402, 429) or (error.code == 403 and any(w in text.lower() for w in _EXHAUSTED))
+            if exhausted and i + 1 < len(keys):
+                import datetime
+                import logging
+                KEY_STATUS.update(active="backup", switched_at=datetime.datetime.now().isoformat(timespec="seconds"),
+                                  reason=f"HTTP {error.code}: {text[:120]}")
+                logging.getLogger("stylewise").warning("MUSE ALERT: primary Meta key exhausted (%s); switched to backup key",
+                                                       KEY_STATUS["reason"])
+                continue
+            raise urllib.error.HTTPError(error.url, error.code, error.reason, error.headers, io.BytesIO(text.encode()))
+    raise RuntimeError("no Meta API key available")
+
+
 class CacheOnly(RuntimeError):
     """A preview that is not pre-generated, on a deployment that only serves cached images."""
 
@@ -230,8 +266,11 @@ def preview(shape: str, usual_size: str, sex: str, height_cm: float, garment_id:
                      "cut-out, crop top or separate skirt. The small gold loop at one side of the ruched waist is "
                      "decorative only and does not open the dress.")
     if garment_id == 'manyavar-mens-kurta':
-        template += (" The kurta is a straight, short men's kurta with a level, unbunched hem; "
-                     "the hem hangs freely over the trousers, never tucked in.")
+        template += (" The kurta is a straight men's kurta reaching mid-thigh, with a level, unbunched hem that hangs "
+                     "freely, never tucked in. It is ALWAYS worn with plain off-white straight pyjama trousers that cover "
+                     "the legs down to the ankles, as in image 1, in every view including the side and back. The kurta hangs "
+                     "straight from the shoulders: any extra room shows as a loose, straight fall of fabric, NEVER gathered, "
+                     "bunched, scrunched, draped up or lifted at the sides or hem; the side slits stay closed and straight.")
     reference = None
     if size != usual_size and not pair and not only_cached:
         reference = _same_body_reference(shape, usual_size, sex, height_cm, garment_id, style, view)
@@ -253,14 +292,14 @@ def preview(shape: str, usual_size: str, sex: str, height_cm: float, garment_id:
         return None
     # Public deployments set PREVIEW_CACHE_ONLY=1: visitors see the pre-generated demo set, and nobody can
     # spend the team's Meta credits by clicking through new combinations.
-    if (_env("PREVIEW_CACHE_ONLY") or "").lower() in ("1", "true", "yes"):
-        raise CacheOnly("This combination isn't pre-generated in the public demo. Try The Column with garment "
-                        "size M on body S, M or L, or run Stylewise locally to draw any combination.")
+    # an explicit daily limit wins: live try-ons stay on (within the cap) even if cache-only is left set
+    if (_env("PREVIEW_CACHE_ONLY") or "").lower() in ("1", "true", "yes") and not (_env("PREVIEW_DAILY_LIMIT") or "").strip().isdigit():
+        raise CacheOnly("This look isn't prepared yet. The size-chart comparison beside it works for every garment.")
     # Public deployments can instead allow live try-ons up to a daily number of new images
     # (PREVIEW_DAILY_LIMIT): visitors get a real try-on, and the API spend per day is capped.
     _spend_budget()
-    key = _env("MODEL_API_KEY") or _env("META_API_KEY")
-    if not key:
+    keys = api_keys()
+    if not keys:
         raise RuntimeError("no Meta API key: set META_API_KEY in .env")
     guide = guide_png(preset, garment_id, size, view, pair)
     uri = lambda b, mime: f"data:{mime};base64,{base64.b64encode(b).decode()}"  # noqa: E731
@@ -273,21 +312,17 @@ def preview(shape: str, usual_size: str, sex: str, height_cm: float, garment_id:
                 " ".join(x for x in (fit or "").split(". ") if "too small" in x)[:220] or "Fits as described.",
                 "This garment is a size too small for this mannequin." if "too small" in (fit or "") else "Fits as described."]
     last = None
+    item = None
     for fit_text in dict.fromkeys(attempts):  # unique, in order
         body = {"model": "muse-image-1.0", "prompt": PURPOSE + template.format(fit=fit_text, view=view), "n": 1, "images": images}
-        req = urllib.request.Request("https://api.meta.ai/v1/images/edits", data=json.dumps(body).encode(),
-                                     headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
         try:
-            with urllib.request.urlopen(req, timeout=180) as r:
-                item = json.load(r)["data"][0]
+            item = _generate(body, keys)
             break
         except urllib.error.HTTPError as error:
             last = error.read()[:300].decode(errors="replace")
             if "content_policy" not in last:
                 break
-    else:
-        raise RuntimeError(f"image model refused every variant: {last}")
-    if last and "item" not in locals():
+    if item is None:
         raise RuntimeError(f"image model refused the request: {last}")
     png = base64.b64decode(item["b64_json"]) if item.get("b64_json") else urllib.request.urlopen(item["url"]).read()
     CACHE.mkdir(parents=True, exist_ok=True)

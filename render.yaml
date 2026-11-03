@@ -9,10 +9,12 @@ services:
     healthCheckPath: /health
     envVars:
       - key: PREVIEW_DAILY_LIMIT
-        value: "15"         # new try-ons per day (about 5 garments x 3 views); cached looks are always free
+        value: "66"         # new try-ons per day (about 22 garments x 3 views); cached looks are always free
       # or PREVIEW_CACHE_ONLY=1 to serve only the pre-generated looks
       - key: MODEL_API_KEY
         sync: false         # Meta Model API key (set in the dashboard, never committed)
+      - key: MODEL_API_KEY_BACKUP
+        sync: false         # second Meta key; used automatically when the first runs out (MUSE ALERT in logs)
       - key: NISHA_API_BASE
         sync: false         # e.g. https://inference.baseten.co/v1 to run Nisha on Muse Spark Open
       - key: NISHA_API_KEY
