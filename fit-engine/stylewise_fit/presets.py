@@ -3,8 +3,8 @@
 Shapes are the five standard apparel categories. Their bust/waist/hip relations follow
 the FFIT thresholds (Simmons, Istook & Devarajan, 2004, J. Textile & Apparel Tech. Mgmt),
 converted from inches to cm. Each preset is a prototype that sits safely inside its
-category, not on a boundary. Size -> bust comes from ANSUR II (US Army, public domain),
-split into sizes with the ISO 8559-3 approach; it is a military sample, not a retail chart.
+category, not on a boundary. Size -> bust comes from a general retail body chart
+(data/size_chart_standard.json); ANSUR II still informs the sex cue and shape priors.
 """
 import json
 from dataclasses import dataclass
@@ -53,13 +53,14 @@ DISPLAY_NAMES = {
     "oval": "The Orbit",
 }
 
-# usual size -> bust cm from ANSUR II via the ISO 8559-3 approach (scripts/ansur_sizes.py)
-SIZE_CHART = json.loads((Path(__file__).parent / "data/size_chart_ansur2.json").read_text())
-SIZE_BUST = {sex: {r["size"]: r["chest_cm"] for r in SIZE_CHART["sexes"][sex]["sizes"]} for sex in SEXES}
+# usual size -> bust cm: midpoint of a general retail body chart (data/size_chart_standard.json).
+# ANSUR II (data/size_chart_ansur2.json) ran ~1 size large for a general shopper (military sample).
+SIZE_CHART = json.loads((Path(__file__).parent / "data/size_chart_standard.json").read_text())
+SIZE_BUST = {sex: {r["size"]: sum(r["bust"]) / 2 for r in SIZE_CHART["sexes"][sex]["sizes"]} for sex in SEXES}
 SIZES = tuple(SIZE_BUST["female"])
-# +/- range on each estimated girth: half the widest size interval
+# +/- range on each estimated girth: half the widest printed bust range
 SIZE_UNCERTAINTY_CM = {
-    sex: round(max(r["chest_max_cm"] - r["chest_min_cm"] for r in SIZE_CHART["sexes"][sex]["sizes"]) / 2, 1)
+    sex: round(max(r["bust"][1] - r["bust"][0] for r in SIZE_CHART["sexes"][sex]["sizes"]) / 2, 1)
     for sex in SEXES}
 # generated statures, spanning roughly ANSUR II P5-P95 per sex
 HEIGHTS_CM = {"female": (155.0, 165.0, 175.0), "male": (165.0, 175.0, 185.0)}

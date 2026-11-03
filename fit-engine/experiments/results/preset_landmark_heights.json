@@ -1,1052 +1,1052 @@
 {
  "female_hourglass_2XL_155": {
-  "chest": 0.732,
-  "waist": 0.689,
-  "hip": 0.557
+  "chest": 0.7528,
+  "waist": 0.6606,
+  "hip": 0.5419
  },
  "female_hourglass_2XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.545
+  "chest": 0.7521,
+  "waist": 0.6651,
+  "hip": 0.5428
  },
  "female_hourglass_2XL_175": {
-  "chest": 0.739,
-  "waist": 0.686,
-  "hip": 0.526
+  "chest": 0.7436,
+  "waist": 0.6667,
+  "hip": 0.549
  },
  "female_hourglass_3XL_155": {
-  "chest": 0.729,
-  "waist": 0.689,
-  "hip": 0.557
+  "chest": 0.754,
+  "waist": 0.6605,
+  "hip": 0.5416
  },
  "female_hourglass_3XL_165": {
-  "chest": 0.732,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7524,
+  "waist": 0.6619,
+  "hip": 0.5425
  },
  "female_hourglass_3XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.546
+  "chest": 0.7523,
+  "waist": 0.6658,
+  "hip": 0.543
  },
  "female_hourglass_L_155": {
-  "chest": 0.735,
-  "waist": 0.686,
-  "hip": 0.528
+  "chest": 0.7417,
+  "waist": 0.6654,
+  "hip": 0.5495
  },
  "female_hourglass_L_165": {
-  "chest": 0.738,
-  "waist": 0.681,
-  "hip": 0.524
+  "chest": 0.7361,
+  "waist": 0.6663,
+  "hip": 0.5542
  },
  "female_hourglass_L_175": {
-  "chest": 0.739,
-  "waist": 0.677,
-  "hip": 0.511
+  "chest": 0.7319,
+  "waist": 0.678,
+  "hip": 0.5576
  },
  "female_hourglass_M_155": {
-  "chest": 0.738,
-  "waist": 0.683,
-  "hip": 0.525
+  "chest": 0.7351,
+  "waist": 0.6684,
+  "hip": 0.5541
  },
  "female_hourglass_M_165": {
-  "chest": 0.738,
-  "waist": 0.675,
-  "hip": 0.512
+  "chest": 0.7308,
+  "waist": 0.6778,
+  "hip": 0.5579
  },
  "female_hourglass_M_175": {
-  "chest": 0.739,
-  "waist": 0.666,
-  "hip": 0.494
+  "chest": 0.7296,
+  "waist": 0.6785,
+  "hip": 0.5586
  },
  "female_hourglass_S_155": {
-  "chest": 0.738,
-  "waist": 0.676,
-  "hip": 0.512
+  "chest": 0.7306,
+  "waist": 0.6771,
+  "hip": 0.5576
  },
  "female_hourglass_S_165": {
-  "chest": 0.738,
-  "waist": 0.666,
-  "hip": 0.496
+  "chest": 0.7289,
+  "waist": 0.6782,
+  "hip": 0.5588
  },
  "female_hourglass_S_175": {
-  "chest": 0.739,
-  "waist": 0.666,
-  "hip": 0.489
+  "chest": 0.729,
+  "waist": 0.6779,
+  "hip": 0.5579
  },
  "female_hourglass_XL_155": {
-  "chest": 0.732,
-  "waist": 0.689,
-  "hip": 0.557
+  "chest": 0.747,
+  "waist": 0.6631,
+  "hip": 0.5459
  },
  "female_hourglass_XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.527
+  "chest": 0.7424,
+  "waist": 0.6662,
+  "hip": 0.5494
  },
  "female_hourglass_XL_175": {
-  "chest": 0.739,
-  "waist": 0.68,
-  "hip": 0.523
+  "chest": 0.7371,
+  "waist": 0.6698,
+  "hip": 0.5537
  },
  "female_hourglass_XS_155": {
-  "chest": 0.738,
-  "waist": 0.666,
-  "hip": 0.495
+  "chest": 0.7279,
+  "waist": 0.6778,
+  "hip": 0.5589
  },
  "female_hourglass_XS_165": {
-  "chest": 0.738,
-  "waist": 0.666,
-  "hip": 0.487
+  "chest": 0.7282,
+  "waist": 0.6804,
+  "hip": 0.5579
  },
  "female_hourglass_XS_175": {
-  "chest": 0.739,
-  "waist": 0.654,
-  "hip": 0.46
+  "chest": 0.7295,
+  "waist": 0.6787,
+  "hip": 0.5555
  },
  "female_inverted_triangle_2XL_155": {
-  "chest": 0.738,
-  "waist": 0.686,
-  "hip": 0.557
+  "chest": 0.759,
+  "waist": 0.6155,
+  "hip": 0.5409
  },
  "female_inverted_triangle_2XL_165": {
-  "chest": 0.738,
-  "waist": 0.681,
-  "hip": 0.548
+  "chest": 0.7537,
+  "waist": 0.6141,
+  "hip": 0.5466
  },
  "female_inverted_triangle_2XL_175": {
-  "chest": 0.739,
-  "waist": 0.677,
-  "hip": 0.54
+  "chest": 0.7482,
+  "waist": 0.6126,
+  "hip": 0.5517
  },
  "female_inverted_triangle_3XL_155": {
-  "chest": 0.738,
-  "waist": 0.689,
-  "hip": 0.557
+  "chest": 0.7644,
+  "waist": 0.6145,
+  "hip": 0.5349
  },
  "female_inverted_triangle_3XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7585,
+  "waist": 0.6162,
+  "hip": 0.5412
  },
  "female_inverted_triangle_3XL_175": {
-  "chest": 0.739,
-  "waist": 0.68,
-  "hip": 0.546
+  "chest": 0.7537,
+  "waist": 0.6144,
+  "hip": 0.5461
  },
  "female_inverted_triangle_L_155": {
-  "chest": 0.738,
-  "waist": 0.676,
-  "hip": 0.541
+  "chest": 0.7481,
+  "waist": 0.6108,
+  "hip": 0.5524
  },
  "female_inverted_triangle_L_165": {
-  "chest": 0.738,
-  "waist": 0.669,
-  "hip": 0.533
+  "chest": 0.7423,
+  "waist": 0.6092,
+  "hip": 0.5572
  },
  "female_inverted_triangle_L_175": {
   "chest": 0.739,
-  "waist": 0.606,
-  "hip": 0.531
+  "waist": 0.6689,
+  "hip": 0.559
  },
  "female_inverted_triangle_M_155": {
-  "chest": 0.738,
-  "waist": 0.666,
-  "hip": 0.531
+  "chest": 0.7425,
+  "waist": 0.6076,
+  "hip": 0.5573
  },
  "female_inverted_triangle_M_165": {
-  "chest": 0.738,
-  "waist": 0.605,
-  "hip": 0.46
+  "chest": 0.7381,
+  "waist": 0.6683,
+  "hip": 0.5597
  },
  "female_inverted_triangle_M_175": {
-  "chest": 0.739,
-  "waist": 0.603,
-  "hip": 0.46
+  "chest": 0.7354,
+  "waist": 0.6677,
+  "hip": 0.5616
  },
  "female_inverted_triangle_S_155": {
-  "chest": 0.738,
-  "waist": 0.602,
-  "hip": 0.46
+  "chest": 0.7392,
+  "waist": 0.6664,
+  "hip": 0.5586
  },
  "female_inverted_triangle_S_165": {
-  "chest": 0.738,
-  "waist": 0.602,
-  "hip": 0.46
+  "chest": 0.7357,
+  "waist": 0.6662,
+  "hip": 0.5612
  },
  "female_inverted_triangle_S_175": {
-  "chest": 0.739,
-  "waist": 0.6,
-  "hip": 0.46
+  "chest": 0.7342,
+  "waist": 0.6677,
+  "hip": 0.5618
  },
  "female_inverted_triangle_XL_155": {
-  "chest": 0.738,
-  "waist": 0.679,
-  "hip": 0.547
+  "chest": 0.7536,
+  "waist": 0.6135,
+  "hip": 0.5471
  },
  "female_inverted_triangle_XL_165": {
-  "chest": 0.738,
-  "waist": 0.678,
-  "hip": 0.542
+  "chest": 0.7477,
+  "waist": 0.6121,
+  "hip": 0.5525
  },
  "female_inverted_triangle_XL_175": {
-  "chest": 0.739,
-  "waist": 0.669,
-  "hip": 0.531
+  "chest": 0.7422,
+  "waist": 0.6105,
+  "hip": 0.5571
  },
  "female_inverted_triangle_XS_155": {
-  "chest": 0.738,
-  "waist": 0.602,
-  "hip": 0.46
+  "chest": 0.7355,
+  "waist": 0.6648,
+  "hip": 0.5613
  },
  "female_inverted_triangle_XS_165": {
-  "chest": 0.738,
-  "waist": 0.599,
-  "hip": 0.46
+  "chest": 0.734,
+  "waist": 0.6662,
+  "hip": 0.5616
  },
  "female_inverted_triangle_XS_175": {
-  "chest": 0.739,
-  "waist": 0.594,
-  "hip": 0.46
+  "chest": 0.7341,
+  "waist": 0.666,
+  "hip": 0.5598
  },
  "female_oval_2XL_155": {
-  "chest": 0.738,
-  "waist": 0.56,
-  "hip": 0.557
+  "chest": 0.7562,
+  "waist": 0.6162,
+  "hip": 0.5421
  },
  "female_oval_2XL_165": {
-  "chest": 0.738,
-  "waist": 0.575,
-  "hip": 0.548
+  "chest": 0.745,
+  "waist": 0.7159,
+  "hip": 0.5611
  },
  "female_oval_2XL_175": {
-  "chest": 0.739,
-  "waist": 0.583,
-  "hip": 0.543
+  "chest": 0.7463,
+  "waist": 0.6786,
+  "hip": 0.5558
  },
  "female_oval_3XL_155": {
-  "chest": 0.738,
-  "waist": 0.56,
-  "hip": 0.557
+  "chest": 0.7589,
+  "waist": 0.6206,
+  "hip": 0.5392
  },
  "female_oval_3XL_165": {
-  "chest": 0.738,
-  "waist": 0.56,
-  "hip": 0.554
+  "chest": 0.7536,
+  "waist": 0.7222,
+  "hip": 0.5491
  },
  "female_oval_3XL_175": {
-  "chest": 0.739,
-  "waist": 0.574,
-  "hip": 0.546
+  "chest": 0.7452,
+  "waist": 0.7148,
+  "hip": 0.5616
  },
  "female_oval_L_155": {
-  "chest": 0.738,
-  "waist": 0.579,
-  "hip": 0.544
+  "chest": 0.7424,
+  "waist": 0.7145,
+  "hip": 0.5615
  },
  "female_oval_L_165": {
-  "chest": 0.738,
-  "waist": 0.572,
-  "hip": 0.554
+  "chest": 0.7429,
+  "waist": 0.5865,
+  "hip": 0.5589
  },
  "female_oval_L_175": {
-  "chest": 0.739,
-  "waist": 0.577,
-  "hip": 0.543
+  "chest": 0.7419,
+  "waist": 0.6809,
+  "hip": 0.5592
  },
  "female_oval_M_155": {
-  "chest": 0.738,
-  "waist": 0.583,
-  "hip": 0.541
+  "chest": 0.7435,
+  "waist": 0.5983,
+  "hip": 0.5575
  },
  "female_oval_M_165": {
-  "chest": 0.738,
-  "waist": 0.575,
-  "hip": 0.545
+  "chest": 0.7407,
+  "waist": 0.6811,
+  "hip": 0.5601
  },
  "female_oval_M_175": {
-  "chest": 0.739,
-  "waist": 0.577,
-  "hip": 0.546
+  "chest": 0.7396,
+  "waist": 0.6812,
+  "hip": 0.5599
  },
  "female_oval_S_155": {
-  "chest": 0.738,
-  "waist": 0.576,
-  "hip": 0.544
+  "chest": 0.7413,
+  "waist": 0.6806,
+  "hip": 0.5599
  },
  "female_oval_S_165": {
-  "chest": 0.738,
-  "waist": 0.575,
-  "hip": 0.548
+  "chest": 0.7396,
+  "waist": 0.6814,
+  "hip": 0.5607
  },
  "female_oval_S_175": {
-  "chest": 0.739,
-  "waist": 0.577,
-  "hip": 0.546
+  "chest": 0.7404,
+  "waist": 0.7111,
+  "hip": 0.5613
  },
  "female_oval_XL_155": {
-  "chest": 0.738,
-  "waist": 0.573,
-  "hip": 0.55
+  "chest": 0.7444,
+  "waist": 0.6915,
+  "hip": 0.557
  },
  "female_oval_XL_165": {
-  "chest": 0.738,
-  "waist": 0.575,
-  "hip": 0.548
+  "chest": 0.7442,
+  "waist": 0.6821,
+  "hip": 0.5571
  },
  "female_oval_XL_175": {
-  "chest": 0.739,
-  "waist": 0.577,
-  "hip": 0.546
+  "chest": 0.7433,
+  "waist": 0.5869,
+  "hip": 0.5593
  },
  "female_oval_XS_155": {
-  "chest": 0.738,
-  "waist": 0.579,
-  "hip": 0.541
+  "chest": 0.7392,
+  "waist": 0.6817,
+  "hip": 0.5615
  },
  "female_oval_XS_165": {
-  "chest": 0.738,
-  "waist": 0.575,
-  "hip": 0.548
+  "chest": 0.7377,
+  "waist": 0.7085,
+  "hip": 0.5644
  },
  "female_oval_XS_175": {
-  "chest": 0.739,
-  "waist": 0.58,
-  "hip": 0.54
+  "chest": 0.7401,
+  "waist": 0.7105,
+  "hip": 0.5607
  },
  "female_rectangle_2XL_155": {
-  "chest": 0.738,
-  "waist": 0.689,
-  "hip": 0.557
+  "chest": 0.7514,
+  "waist": 0.6743,
+  "hip": 0.5468
  },
  "female_rectangle_2XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.551
+  "chest": 0.7505,
+  "waist": 0.6711,
+  "hip": 0.5466
  },
  "female_rectangle_2XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.534
+  "chest": 0.7458,
+  "waist": 0.6764,
+  "hip": 0.5498
  },
  "female_rectangle_3XL_155": {
-  "chest": 0.738,
-  "waist": 0.689,
-  "hip": 0.557
+  "chest": 0.7501,
+  "waist": 0.6794,
+  "hip": 0.5493
  },
  "female_rectangle_3XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7494,
+  "waist": 0.6759,
+  "hip": 0.5488
  },
  "female_rectangle_3XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.546
+  "chest": 0.7502,
+  "waist": 0.6747,
+  "hip": 0.5471
  },
  "female_rectangle_L_155": {
-  "chest": 0.738,
-  "waist": 0.689,
-  "hip": 0.541
+  "chest": 0.7442,
+  "waist": 0.6736,
+  "hip": 0.5511
  },
  "female_rectangle_L_165": {
-  "chest": 0.738,
-  "waist": 0.681,
-  "hip": 0.53
+  "chest": 0.7397,
+  "waist": 0.6768,
+  "hip": 0.5551
  },
  "female_rectangle_L_175": {
-  "chest": 0.739,
-  "waist": 0.677,
-  "hip": 0.523
+  "chest": 0.7369,
+  "waist": 0.6817,
+  "hip": 0.5577
  },
  "female_rectangle_M_155": {
-  "chest": 0.738,
-  "waist": 0.683,
-  "hip": 0.531
+  "chest": 0.7388,
+  "waist": 0.6797,
+  "hip": 0.5554
  },
  "female_rectangle_M_165": {
-  "chest": 0.738,
-  "waist": 0.678,
-  "hip": 0.521
+  "chest": 0.7362,
+  "waist": 0.6816,
+  "hip": 0.5578
  },
  "female_rectangle_M_175": {
-  "chest": 0.739,
-  "waist": 0.669,
-  "hip": 0.506
+  "chest": 0.7355,
+  "waist": 0.6818,
+  "hip": 0.5581
  },
  "female_rectangle_S_155": {
-  "chest": 0.738,
-  "waist": 0.679,
-  "hip": 0.521
+  "chest": 0.7362,
+  "waist": 0.6811,
+  "hip": 0.5575
  },
  "female_rectangle_S_165": {
-  "chest": 0.738,
-  "waist": 0.669,
-  "hip": 0.505
+  "chest": 0.7346,
+  "waist": 0.6821,
+  "hip": 0.5588
  },
  "female_rectangle_S_175": {
-  "chest": 0.739,
-  "waist": 0.669,
-  "hip": 0.497
+  "chest": 0.7355,
+  "waist": 0.6808,
+  "hip": 0.5569
  },
  "female_rectangle_XL_155": {
-  "chest": 0.738,
-  "waist": 0.689,
-  "hip": 0.554
+  "chest": 0.7504,
+  "waist": 0.6704,
+  "hip": 0.5462
  },
  "female_rectangle_XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.539
+  "chest": 0.7448,
+  "waist": 0.6765,
+  "hip": 0.5503
  },
  "female_rectangle_XL_175": {
-  "chest": 0.739,
-  "waist": 0.68,
-  "hip": 0.529
+  "chest": 0.74,
+  "waist": 0.6801,
+  "hip": 0.5552
  },
  "female_rectangle_XS_155": {
-  "chest": 0.738,
-  "waist": 0.67,
-  "hip": 0.505
+  "chest": 0.7335,
+  "waist": 0.6824,
+  "hip": 0.5595
  },
  "female_rectangle_XS_165": {
-  "chest": 0.738,
-  "waist": 0.669,
-  "hip": 0.496
+  "chest": 0.7348,
+  "waist": 0.6811,
+  "hip": 0.5576
  },
  "female_rectangle_XS_175": {
-  "chest": 0.739,
-  "waist": 0.663,
-  "hip": 0.46
+  "chest": 0.7353,
+  "waist": 0.6825,
+  "hip": 0.5556
  },
  "female_triangle_2XL_155": {
-  "chest": 0.738,
-  "waist": 0.689,
-  "hip": 0.557
+  "chest": 0.7555,
+  "waist": 0.6782,
+  "hip": 0.5394
  },
  "female_triangle_2XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.539
+  "chest": 0.7501,
+  "waist": 0.6813,
+  "hip": 0.5443
  },
  "female_triangle_2XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.526
+  "chest": 0.7455,
+  "waist": 0.6811,
+  "hip": 0.5487
  },
  "female_triangle_3XL_155": {
-  "chest": 0.738,
-  "waist": 0.689,
-  "hip": 0.557
+  "chest": 0.7582,
+  "waist": 0.6784,
+  "hip": 0.5391
  },
  "female_triangle_3XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7559,
+  "waist": 0.6809,
+  "hip": 0.5394
  },
  "female_triangle_3XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.534
+  "chest": 0.7506,
+  "waist": 0.681,
+  "hip": 0.5443
  },
  "female_triangle_L_155": {
-  "chest": 0.738,
-  "waist": 0.689,
-  "hip": 0.528
+  "chest": 0.7448,
+  "waist": 0.6812,
+  "hip": 0.5486
  },
  "female_triangle_L_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.524
+  "chest": 0.7413,
+  "waist": 0.69,
+  "hip": 0.5526
  },
  "female_triangle_L_175": {
-  "chest": 0.739,
-  "waist": 0.68,
-  "hip": 0.52
+  "chest": 0.7406,
+  "waist": 0.6927,
+  "hip": 0.5531
  },
  "female_triangle_M_155": {
-  "chest": 0.738,
-  "waist": 0.689,
-  "hip": 0.521
+  "chest": 0.7407,
+  "waist": 0.6908,
+  "hip": 0.553
  },
  "female_triangle_M_165": {
-  "chest": 0.738,
-  "waist": 0.681,
-  "hip": 0.518
+  "chest": 0.7401,
+  "waist": 0.6934,
+  "hip": 0.5532
  },
  "female_triangle_M_175": {
-  "chest": 0.739,
-  "waist": 0.677,
-  "hip": 0.514
+  "chest": 0.7401,
+  "waist": 0.701,
+  "hip": 0.5529
  },
  "female_triangle_S_155": {
-  "chest": 0.738,
-  "waist": 0.679,
-  "hip": 0.518
+  "chest": 0.7398,
+  "waist": 0.6941,
+  "hip": 0.5532
  },
  "female_triangle_S_165": {
-  "chest": 0.738,
-  "waist": 0.678,
-  "hip": 0.515
+  "chest": 0.7402,
+  "waist": 0.6987,
+  "hip": 0.5524
  },
  "female_triangle_S_175": {
-  "chest": 0.739,
-  "waist": 0.671,
-  "hip": 0.509
+  "chest": 0.7384,
+  "waist": 0.702,
+  "hip": 0.5544
  },
  "female_triangle_XL_155": {
-  "chest": 0.738,
-  "waist": 0.689,
-  "hip": 0.547
+  "chest": 0.75,
+  "waist": 0.6783,
+  "hip": 0.5442
  },
  "female_triangle_XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.527
+  "chest": 0.7447,
+  "waist": 0.6824,
+  "hip": 0.5502
  },
  "female_triangle_XL_175": {
-  "chest": 0.739,
-  "waist": 0.683,
-  "hip": 0.523
+  "chest": 0.7419,
+  "waist": 0.6921,
+  "hip": 0.5522
  },
  "female_triangle_XS_155": {
-  "chest": 0.738,
-  "waist": 0.679,
-  "hip": 0.515
+  "chest": 0.7392,
+  "waist": 0.7002,
+  "hip": 0.5529
  },
  "female_triangle_XS_165": {
-  "chest": 0.738,
-  "waist": 0.672,
-  "hip": 0.505
+  "chest": 0.7394,
+  "waist": 0.7015,
+  "hip": 0.5522
  },
  "female_triangle_XS_175": {
-  "chest": 0.739,
-  "waist": 0.671,
-  "hip": 0.503
+  "chest": 0.7383,
+  "waist": 0.7048,
+  "hip": 0.5544
  },
  "male_hourglass_2XL_165": {
-  "chest": 0.732,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7507,
+  "waist": 0.6609,
+  "hip": 0.5453
  },
  "male_hourglass_2XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.56
+  "chest": 0.7477,
+  "waist": 0.666,
+  "hip": 0.5474
  },
  "male_hourglass_2XL_185": {
-  "chest": 0.739,
-  "waist": 0.69,
-  "hip": 0.546
+  "chest": 0.7418,
+  "waist": 0.6669,
+  "hip": 0.5519
  },
  "male_hourglass_3XL_165": {
-  "chest": 0.729,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7509,
+  "waist": 0.6614,
+  "hip": 0.5457
  },
  "male_hourglass_3XL_175": {
-  "chest": 0.733,
-  "waist": 0.689,
-  "hip": 0.557
+  "chest": 0.7504,
+  "waist": 0.6621,
+  "hip": 0.5457
  },
  "male_hourglass_3XL_185": {
-  "chest": 0.739,
-  "waist": 0.69,
-  "hip": 0.56
+  "chest": 0.7452,
+  "waist": 0.6653,
+  "hip": 0.5495
  },
  "male_hourglass_L_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.548
+  "chest": 0.7422,
+  "waist": 0.6645,
+  "hip": 0.5509
  },
  "male_hourglass_L_175": {
-  "chest": 0.739,
-  "waist": 0.686,
-  "hip": 0.529
+  "chest": 0.7376,
+  "waist": 0.6677,
+  "hip": 0.5545
  },
  "male_hourglass_L_185": {
-  "chest": 0.739,
-  "waist": 0.679,
-  "hip": 0.522
+  "chest": 0.734,
+  "waist": 0.6734,
+  "hip": 0.5578
  },
  "male_hourglass_M_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.527
+  "chest": 0.7378,
+  "waist": 0.6663,
+  "hip": 0.5539
  },
  "male_hourglass_M_175": {
-  "chest": 0.739,
-  "waist": 0.68,
-  "hip": 0.523
+  "chest": 0.7336,
+  "waist": 0.6725,
+  "hip": 0.5575
  },
  "male_hourglass_M_185": {
-  "chest": 0.739,
-  "waist": 0.668,
-  "hip": 0.509
+  "chest": 0.7316,
+  "waist": 0.6768,
+  "hip": 0.559
  },
  "male_hourglass_S_165": {
-  "chest": 0.738,
-  "waist": 0.678,
-  "hip": 0.524
+  "chest": 0.7326,
+  "waist": 0.6717,
+  "hip": 0.5576
  },
  "male_hourglass_S_175": {
-  "chest": 0.739,
-  "waist": 0.669,
-  "hip": 0.509
+  "chest": 0.7305,
+  "waist": 0.6763,
+  "hip": 0.5591
  },
  "male_hourglass_S_185": {
-  "chest": 0.739,
-  "waist": 0.665,
-  "hip": 0.495
+  "chest": 0.7305,
+  "waist": 0.6789,
+  "hip": 0.5585
  },
  "male_hourglass_XL_165": {
-  "chest": 0.732,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7491,
+  "waist": 0.6644,
+  "hip": 0.5461
  },
  "male_hourglass_XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.546
+  "chest": 0.742,
+  "waist": 0.6658,
+  "hip": 0.5515
  },
  "male_hourglass_XL_185": {
-  "chest": 0.739,
-  "waist": 0.687,
-  "hip": 0.533
+  "chest": 0.7375,
+  "waist": 0.6689,
+  "hip": 0.5551
  },
  "male_hourglass_XS_165": {
-  "chest": 0.738,
-  "waist": 0.666,
-  "hip": 0.502
+  "chest": 0.7297,
+  "waist": 0.6788,
+  "hip": 0.5593
  },
  "male_hourglass_XS_175": {
-  "chest": 0.739,
-  "waist": 0.666,
-  "hip": 0.494
+  "chest": 0.7298,
+  "waist": 0.6785,
+  "hip": 0.5586
  },
  "male_hourglass_XS_185": {
-  "chest": 0.739,
-  "waist": 0.665,
-  "hip": 0.484
+  "chest": 0.7297,
+  "waist": 0.6785,
+  "hip": 0.5581
  },
  "male_inverted_triangle_2XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7539,
+  "waist": 0.6143,
+  "hip": 0.5469
  },
  "male_inverted_triangle_2XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.557
+  "chest": 0.7486,
+  "waist": 0.6131,
+  "hip": 0.5522
  },
  "male_inverted_triangle_2XL_185": {
-  "chest": 0.739,
-  "waist": 0.682,
-  "hip": 0.546
+  "chest": 0.7438,
+  "waist": 0.6123,
+  "hip": 0.5573
  },
  "male_inverted_triangle_3XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7571,
+  "waist": 0.6147,
+  "hip": 0.5432
  },
  "male_inverted_triangle_3XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.56
+  "chest": 0.7523,
+  "waist": 0.613,
+  "hip": 0.5481
  },
  "male_inverted_triangle_3XL_185": {
-  "chest": 0.739,
-  "waist": 0.69,
-  "hip": 0.555
+  "chest": 0.7474,
+  "waist": 0.615,
+  "hip": 0.5534
  },
  "male_inverted_triangle_L_165": {
-  "chest": 0.738,
-  "waist": 0.681,
-  "hip": 0.548
+  "chest": 0.7423,
+  "waist": 0.6676,
+  "hip": 0.5581
  },
  "male_inverted_triangle_L_175": {
-  "chest": 0.739,
-  "waist": 0.68,
-  "hip": 0.543
+  "chest": 0.7414,
+  "waist": 0.6044,
+  "hip": 0.5601
  },
  "male_inverted_triangle_L_185": {
-  "chest": 0.739,
-  "waist": 0.606,
-  "hip": 0.538
+  "chest": 0.7399,
+  "waist": 0.6682,
+  "hip": 0.5602
  },
  "male_inverted_triangle_M_165": {
-  "chest": 0.738,
-  "waist": 0.678,
-  "hip": 0.542
+  "chest": 0.7416,
+  "waist": 0.605,
+  "hip": 0.5595
  },
  "male_inverted_triangle_M_175": {
-  "chest": 0.739,
-  "waist": 0.606,
-  "hip": 0.537
+  "chest": 0.7399,
+  "waist": 0.67,
+  "hip": 0.5602
  },
  "male_inverted_triangle_M_185": {
-  "chest": 0.739,
-  "waist": 0.603,
-  "hip": 0.536
+  "chest": 0.7375,
+  "waist": 0.6696,
+  "hip": 0.5622
  },
  "male_inverted_triangle_S_165": {
-  "chest": 0.738,
-  "waist": 0.605,
-  "hip": 0.536
+  "chest": 0.7398,
+  "waist": 0.6686,
+  "hip": 0.5598
  },
  "male_inverted_triangle_S_175": {
-  "chest": 0.739,
-  "waist": 0.603,
-  "hip": 0.534
+  "chest": 0.7373,
+  "waist": 0.668,
+  "hip": 0.5616
  },
  "male_inverted_triangle_S_185": {
-  "chest": 0.739,
-  "waist": 0.601,
-  "hip": 0.536
+  "chest": 0.7359,
+  "waist": 0.6696,
+  "hip": 0.5625
  },
  "male_inverted_triangle_XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7449,
+  "waist": 0.6699,
+  "hip": 0.5532
  },
  "male_inverted_triangle_XL_175": {
-  "chest": 0.739,
-  "waist": 0.68,
-  "hip": 0.546
+  "chest": 0.7441,
+  "waist": 0.6105,
+  "hip": 0.5567
  },
  "male_inverted_triangle_XL_185": {
-  "chest": 0.739,
-  "waist": 0.679,
-  "hip": 0.541
+  "chest": 0.7416,
+  "waist": 0.6059,
+  "hip": 0.5597
  },
  "male_inverted_triangle_XS_165": {
-  "chest": 0.738,
-  "waist": 0.602,
-  "hip": 0.536
+  "chest": 0.7369,
+  "waist": 0.6702,
+  "hip": 0.5622
  },
  "male_inverted_triangle_XS_175": {
-  "chest": 0.739,
-  "waist": 0.603,
-  "hip": 0.537
+  "chest": 0.7357,
+  "waist": 0.6684,
+  "hip": 0.5624
  },
  "male_inverted_triangle_XS_185": {
-  "chest": 0.739,
-  "waist": 0.592,
-  "hip": 0.46
+  "chest": 0.7357,
+  "waist": 0.6681,
+  "hip": 0.5608
  },
  "male_oval_2XL_165": {
-  "chest": 0.738,
-  "waist": 0.56,
-  "hip": 0.557
+  "chest": 0.751,
+  "waist": 0.6822,
+  "hip": 0.5488
  },
  "male_oval_2XL_175": {
-  "chest": 0.739,
-  "waist": 0.569,
-  "hip": 0.554
+  "chest": 0.7444,
+  "waist": 0.6836,
+  "hip": 0.5586
  },
  "male_oval_2XL_185": {
-  "chest": 0.739,
-  "waist": 0.579,
-  "hip": 0.544
+  "chest": 0.7438,
+  "waist": 0.6814,
+  "hip": 0.5591
  },
  "male_oval_3XL_165": {
-  "chest": 0.738,
-  "waist": 0.56,
-  "hip": 0.557
+  "chest": 0.7527,
+  "waist": 0.6196,
+  "hip": 0.5462
  },
  "male_oval_3XL_175": {
-  "chest": 0.739,
-  "waist": 0.56,
-  "hip": 0.557
+  "chest": 0.7443,
+  "waist": 0.681,
+  "hip": 0.5589
  },
  "male_oval_3XL_185": {
-  "chest": 0.739,
-  "waist": 0.571,
-  "hip": 0.549
+  "chest": 0.7443,
+  "waist": 0.6811,
+  "hip": 0.5587
  },
  "male_oval_L_165": {
-  "chest": 0.738,
-  "waist": 0.572,
-  "hip": 0.548
+  "chest": 0.7442,
+  "waist": 0.6809,
+  "hip": 0.5592
  },
  "male_oval_L_175": {
-  "chest": 0.739,
-  "waist": 0.571,
-  "hip": 0.549
+  "chest": 0.7421,
+  "waist": 0.5886,
+  "hip": 0.5615
  },
  "male_oval_L_185": {
-  "chest": 0.739,
-  "waist": 0.574,
-  "hip": 0.546
+  "chest": 0.7406,
+  "waist": 0.6826,
+  "hip": 0.561
  },
  "male_oval_M_165": {
-  "chest": 0.738,
-  "waist": 0.572,
-  "hip": 0.545
+  "chest": 0.7427,
+  "waist": 0.5871,
+  "hip": 0.5597
  },
  "male_oval_M_175": {
-  "chest": 0.739,
-  "waist": 0.574,
-  "hip": 0.546
+  "chest": 0.7405,
+  "waist": 0.6823,
+  "hip": 0.5611
  },
  "male_oval_M_185": {
-  "chest": 0.739,
-  "waist": 0.576,
-  "hip": 0.544
+  "chest": 0.7392,
+  "waist": 0.6833,
+  "hip": 0.5621
  },
  "male_oval_S_165": {
-  "chest": 0.738,
-  "waist": 0.575,
-  "hip": 0.545
+  "chest": 0.7403,
+  "waist": 0.6821,
+  "hip": 0.5613
  },
  "male_oval_S_175": {
-  "chest": 0.739,
-  "waist": 0.577,
-  "hip": 0.546
+  "chest": 0.7386,
+  "waist": 0.6835,
+  "hip": 0.5629
  },
  "male_oval_S_185": {
-  "chest": 0.739,
-  "waist": 0.576,
-  "hip": 0.546
+  "chest": 0.7376,
+  "waist": 0.6836,
+  "hip": 0.5627
  },
  "male_oval_XL_165": {
-  "chest": 0.738,
-  "waist": 0.569,
-  "hip": 0.551
+  "chest": 0.745,
+  "waist": 0.683,
+  "hip": 0.558
  },
  "male_oval_XL_175": {
-  "chest": 0.739,
-  "waist": 0.574,
-  "hip": 0.546
+  "chest": 0.7439,
+  "waist": 0.6811,
+  "hip": 0.5591
  },
  "male_oval_XL_185": {
-  "chest": 0.739,
-  "waist": 0.576,
-  "hip": 0.544
+  "chest": 0.7415,
+  "waist": 0.5883,
+  "hip": 0.5613
  },
  "male_oval_XS_165": {
-  "chest": 0.738,
-  "waist": 0.575,
-  "hip": 0.548
+  "chest": 0.7385,
+  "waist": 0.6832,
+  "hip": 0.5629
  },
  "male_oval_XS_175": {
-  "chest": 0.739,
-  "waist": 0.574,
-  "hip": 0.549
+  "chest": 0.7377,
+  "waist": 0.6829,
+  "hip": 0.5623
  },
  "male_oval_XS_185": {
-  "chest": 0.739,
-  "waist": 0.579,
-  "hip": 0.541
+  "chest": 0.7385,
+  "waist": 0.6706,
+  "hip": 0.56
  },
  "male_rectangle_2XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7528,
+  "waist": 0.6191,
+  "hip": 0.5456
  },
  "male_rectangle_2XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.56
+  "chest": 0.7455,
+  "waist": 0.6712,
+  "hip": 0.5539
  },
  "male_rectangle_2XL_185": {
-  "chest": 0.739,
-  "waist": 0.69,
-  "hip": 0.544
+  "chest": 0.7441,
+  "waist": 0.6722,
+  "hip": 0.5546
  },
  "male_rectangle_3XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.757,
+  "waist": 0.6181,
+  "hip": 0.5401
  },
  "male_rectangle_3XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.56
+  "chest": 0.7464,
+  "waist": 0.6766,
+  "hip": 0.5534
  },
  "male_rectangle_3XL_185": {
-  "chest": 0.739,
-  "waist": 0.69,
-  "hip": 0.555
+  "chest": 0.7458,
+  "waist": 0.672,
+  "hip": 0.554
  },
  "male_rectangle_L_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.548
+  "chest": 0.7454,
+  "waist": 0.6699,
+  "hip": 0.5531
  },
  "male_rectangle_L_175": {
-  "chest": 0.739,
-  "waist": 0.68,
-  "hip": 0.54
+  "chest": 0.7419,
+  "waist": 0.6698,
+  "hip": 0.5562
  },
  "male_rectangle_L_185": {
-  "chest": 0.739,
-  "waist": 0.679,
-  "hip": 0.53
+  "chest": 0.738,
+  "waist": 0.6811,
+  "hip": 0.5597
  },
  "male_rectangle_M_165": {
-  "chest": 0.738,
-  "waist": 0.681,
-  "hip": 0.542
+  "chest": 0.7415,
+  "waist": 0.6718,
+  "hip": 0.5561
  },
  "male_rectangle_M_175": {
-  "chest": 0.739,
-  "waist": 0.68,
-  "hip": 0.531
+  "chest": 0.7388,
+  "waist": 0.6798,
+  "hip": 0.5584
  },
  "male_rectangle_M_185": {
-  "chest": 0.739,
-  "waist": 0.671,
-  "hip": 0.528
+  "chest": 0.7369,
+  "waist": 0.6814,
+  "hip": 0.5603
  },
  "male_rectangle_S_165": {
-  "chest": 0.738,
-  "waist": 0.678,
-  "hip": 0.533
+  "chest": 0.7378,
+  "waist": 0.68,
+  "hip": 0.5593
  },
  "male_rectangle_S_175": {
-  "chest": 0.739,
-  "waist": 0.671,
-  "hip": 0.526
+  "chest": 0.7364,
+  "waist": 0.6809,
+  "hip": 0.5602
  },
  "male_rectangle_S_185": {
-  "chest": 0.739,
-  "waist": 0.668,
-  "hip": 0.506
+  "chest": 0.7359,
+  "waist": 0.6809,
+  "hip": 0.5599
  },
  "male_rectangle_XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7453,
+  "waist": 0.6705,
+  "hip": 0.554
  },
  "male_rectangle_XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.546
+  "chest": 0.7447,
+  "waist": 0.6712,
+  "hip": 0.554
  },
  "male_rectangle_XL_185": {
-  "chest": 0.739,
-  "waist": 0.682,
-  "hip": 0.538
+  "chest": 0.7416,
+  "waist": 0.6733,
+  "hip": 0.5563
  },
  "male_rectangle_XS_165": {
-  "chest": 0.738,
-  "waist": 0.669,
-  "hip": 0.527
+  "chest": 0.7361,
+  "waist": 0.6805,
+  "hip": 0.5602
  },
  "male_rectangle_XS_175": {
-  "chest": 0.739,
-  "waist": 0.669,
-  "hip": 0.506
+  "chest": 0.7359,
+  "waist": 0.6801,
+  "hip": 0.5594
  },
  "male_rectangle_XS_185": {
-  "chest": 0.739,
-  "waist": 0.611,
-  "hip": 0.46
+  "chest": 0.7362,
+  "waist": 0.6823,
+  "hip": 0.5583
  },
  "male_triangle_2XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7498,
+  "waist": 0.6811,
+  "hip": 0.5478
  },
  "male_triangle_2XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.551
+  "chest": 0.7479,
+  "waist": 0.6806,
+  "hip": 0.5511
  },
  "male_triangle_2XL_185": {
-  "chest": 0.739,
-  "waist": 0.69,
-  "hip": 0.536
+  "chest": 0.7474,
+  "waist": 0.7152,
+  "hip": 0.5505
  },
  "male_triangle_3XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.754,
+  "waist": 0.68,
+  "hip": 0.5457
  },
  "male_triangle_3XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.56
+  "chest": 0.7489,
+  "waist": 0.7178,
+  "hip": 0.5509
  },
  "male_triangle_3XL_185": {
-  "chest": 0.739,
-  "waist": 0.69,
-  "hip": 0.546
+  "chest": 0.7481,
+  "waist": 0.6826,
+  "hip": 0.5502
  },
  "male_triangle_L_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.539
+  "chest": 0.7463,
+  "waist": 0.6833,
+  "hip": 0.5509
  },
  "male_triangle_L_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.529
+  "chest": 0.7436,
+  "waist": 0.6922,
+  "hip": 0.5521
  },
  "male_triangle_L_185": {
-  "chest": 0.739,
-  "waist": 0.682,
-  "hip": 0.525
+  "chest": 0.7481,
+  "waist": 0.7179,
+  "hip": 0.5472
  },
  "male_triangle_M_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.53
+  "chest": 0.7469,
+  "waist": 0.7158,
+  "hip": 0.5499
  },
  "male_triangle_M_175": {
-  "chest": 0.739,
-  "waist": 0.683,
-  "hip": 0.526
+  "chest": 0.7412,
+  "waist": 0.7003,
+  "hip": 0.5552
  },
  "male_triangle_M_185": {
-  "chest": 0.739,
-  "waist": 0.682,
-  "hip": 0.525
+  "chest": 0.7471,
+  "waist": 0.7149,
+  "hip": 0.5502
  },
  "male_triangle_S_165": {
-  "chest": 0.738,
-  "waist": 0.684,
-  "hip": 0.527
+  "chest": 0.7412,
+  "waist": 0.708,
+  "hip": 0.556
  },
  "male_triangle_S_175": {
-  "chest": 0.739,
-  "waist": 0.683,
-  "hip": 0.523
+  "chest": 0.7482,
+  "waist": 0.7147,
+  "hip": 0.5441
  },
  "male_triangle_S_185": {
-  "chest": 0.739,
-  "waist": 0.682,
-  "hip": 0.517
+  "chest": 0.7486,
+  "waist": 0.6726,
+  "hip": 0.5447
  },
  "male_triangle_XL_165": {
-  "chest": 0.738,
-  "waist": 0.687,
-  "hip": 0.557
+  "chest": 0.7491,
+  "waist": 0.6837,
+  "hip": 0.551
  },
  "male_triangle_XL_175": {
-  "chest": 0.739,
-  "waist": 0.689,
-  "hip": 0.537
+  "chest": 0.747,
+  "waist": 0.7148,
+  "hip": 0.5511
  },
  "male_triangle_XL_185": {
-  "chest": 0.739,
-  "waist": 0.69,
-  "hip": 0.528
+  "chest": 0.7467,
+  "waist": 0.7145,
+  "hip": 0.5498
  },
  "male_triangle_XS_165": {
-  "chest": 0.738,
-  "waist": 0.681,
-  "hip": 0.524
+  "chest": 0.746,
+  "waist": 0.7137,
+  "hip": 0.5512
  },
  "male_triangle_XS_175": {
-  "chest": 0.739,
-  "waist": 0.68,
-  "hip": 0.517
+  "chest": 0.7484,
+  "waist": 0.6783,
+  "hip": 0.545
  },
  "male_triangle_XS_185": {
-  "chest": 0.739,
-  "waist": 0.674,
-  "hip": 0.517
+  "chest": 0.7472,
+  "waist": 0.6808,
+  "hip": 0.545
  }
 }

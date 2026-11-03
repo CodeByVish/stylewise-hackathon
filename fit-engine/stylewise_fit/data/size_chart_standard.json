@@ -1,0 +1,227 @@
+{
+  "source": "Women: general standard size chart (body measurements, cm), as provided by the team on 2026-11-02; typical international retail chart (XS-2XL with US/UK/EU equivalents). Primary source URL still to be cited. 3XL continues the 2XL step. Men: see sexes.male.source (Manyavar).",
+  "units": "cm, body measurements; midpoint of each printed range",
+  "sexes": {
+    "female": {
+      "sizes": [
+        {
+          "size": "XS",
+          "bust": [
+            79,
+            84
+          ],
+          "waist": [
+            61,
+            64
+          ],
+          "hip": [
+            86,
+            89
+          ]
+        },
+        {
+          "size": "S",
+          "bust": [
+            86,
+            89
+          ],
+          "waist": [
+            66,
+            69
+          ],
+          "hip": [
+            91,
+            94
+          ]
+        },
+        {
+          "size": "M",
+          "bust": [
+            91,
+            94
+          ],
+          "waist": [
+            71,
+            74
+          ],
+          "hip": [
+            97,
+            99
+          ]
+        },
+        {
+          "size": "L",
+          "bust": [
+            97,
+            102
+          ],
+          "waist": [
+            76,
+            81
+          ],
+          "hip": [
+            102,
+            107
+          ]
+        },
+        {
+          "size": "XL",
+          "bust": [
+            104,
+            109
+          ],
+          "waist": [
+            84,
+            89
+          ],
+          "hip": [
+            109,
+            114
+          ]
+        },
+        {
+          "size": "2XL",
+          "bust": [
+            112,
+            117
+          ],
+          "waist": [
+            91,
+            99
+          ],
+          "hip": [
+            117,
+            122
+          ]
+        },
+        {
+          "size": "3XL",
+          "bust": [
+            120,
+            125
+          ],
+          "waist": [
+            99,
+            107
+          ],
+          "hip": [
+            125,
+            130
+          ],
+          "extrapolated": true
+        }
+      ]
+    },
+    "male": {
+      "source": "Manyavar men's kurta size guide, BODY measurements (cm), https://www.manyavar.com/en-au/kurta/textured-green-kurta/UC103339.html (accessed 2026-11-03); single values per size, shown as +/-2.5 cm ranges; XS extrapolated one step below S",
+      "sizes": [
+        {
+          "size": "XS",
+          "bust": [
+            83.5,
+            88.5
+          ],
+          "waist": [
+            76.5,
+            81.5
+          ],
+          "hip": [
+            86.5,
+            91.5
+          ],
+          "extrapolated": true
+        },
+        {
+          "size": "S",
+          "bust": [
+            88.5,
+            93.5
+          ],
+          "waist": [
+            81.5,
+            86.5
+          ],
+          "hip": [
+            91.5,
+            96.5
+          ]
+        },
+        {
+          "size": "M",
+          "bust": [
+            94.5,
+            99.5
+          ],
+          "waist": [
+            86.5,
+            91.5
+          ],
+          "hip": [
+            96.5,
+            101.5
+          ]
+        },
+        {
+          "size": "L",
+          "bust": [
+            99.5,
+            104.5
+          ],
+          "waist": [
+            91.5,
+            96.5
+          ],
+          "hip": [
+            101.5,
+            106.5
+          ]
+        },
+        {
+          "size": "XL",
+          "bust": [
+            104.5,
+            109.5
+          ],
+          "waist": [
+            97.5,
+            102.5
+          ],
+          "hip": [
+            106.5,
+            111.5
+          ]
+        },
+        {
+          "size": "2XL",
+          "bust": [
+            109.5,
+            114.5
+          ],
+          "waist": [
+            102.5,
+            107.5
+          ],
+          "hip": [
+            109.5,
+            114.5
+          ]
+        },
+        {
+          "size": "3XL",
+          "bust": [
+            114.5,
+            119.5
+          ],
+          "waist": [
+            107.5,
+            112.5
+          ],
+          "hip": [
+            114.5,
+            119.5
+          ]
+        }
+      ]
+    }
+  }
+}

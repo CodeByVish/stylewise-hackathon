@@ -40,7 +40,20 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "cut": {
+      "hem": 0.3,
+      "sleeve_m": 0.36,
+      "neck": "collar",
+      "openings": [
+        {
+          "at": "sides",
+          "from": "hip",
+          "width_cm": 12
+        }
+      ]
+    },
+    "for": "women"
   },
   "evening-kurta": {
     "name": "Evening embroidered kurta",
@@ -83,7 +96,25 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "cut": {
+      "hem": 0.3,
+      "sleeve_m": 0.54,
+      "neck": "collar",
+      "openings": [
+        {
+          "at": "sides",
+          "from": "hip",
+          "width_cm": 12
+        }
+      ]
+    },
+    "rgb": [
+      0.678,
+      0.467,
+      0.2
+    ],
+    "for": "women"
   },
   "ivory-kurta": {
     "name": "Ivory festive kurta",
@@ -126,7 +157,20 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "cut": {
+      "hem": 0.3,
+      "sleeve_m": 0.36,
+      "neck": "collar",
+      "openings": [
+        {
+          "at": "sides",
+          "from": "hip",
+          "width_cm": 12
+        }
+      ]
+    },
+    "for": "women"
   },
   "gold-trousers": {
     "name": "Gold trousers",
@@ -178,7 +222,8 @@
         }
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "for": "women"
   },
   "cream-bottom": {
     "name": "Cream trousers",
@@ -230,7 +275,13 @@
         }
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "rgb": [
+      0.88,
+      0.83,
+      0.72
+    ],
+    "for": "women"
   },
   "navy-bottom": {
     "name": "Navy trousers",
@@ -282,7 +333,8 @@
         }
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "for": "women"
   },
   "ivory-set": {
     "name": "Ivory festive outfit",
@@ -329,7 +381,20 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "cut": {
+      "hem": 0.42,
+      "sleeve_m": 0.54,
+      "neck": "v",
+      "belt": true,
+      "openings": []
+    },
+    "rgb": [
+      0.93,
+      0.9,
+      0.82
+    ],
+    "for": "women"
   },
   "green-set": {
     "name": "Green daytime set",
@@ -376,7 +441,26 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "cut": {
+      "hem": 0.16,
+      "sleeve_m": 0.54,
+      "neck": "round",
+      "flare_cm": 10,
+      "openings": [
+        {
+          "at": "sides",
+          "from": "hip",
+          "width_cm": 16
+        }
+      ]
+    },
+    "rgb": [
+      0.176,
+      0.482,
+      0.318
+    ],
+    "for": "women"
   },
   "navy-set": {
     "name": "Navy evening set",
@@ -423,7 +507,20 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "cut": {
+      "hem": 0.1,
+      "sleeve_m": 0.54,
+      "neck": "collar",
+      "flare_cm": 14,
+      "openings": []
+    },
+    "rgb": [
+      0.153,
+      0.173,
+      0.235
+    ],
+    "for": "women"
   },
   "maroon-set": {
     "name": "Maroon festive set",
@@ -470,7 +567,20 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "cut": {
+      "hem": 0.04,
+      "sleeve_m": 0.54,
+      "neck": "round",
+      "flare_cm": 40,
+      "openings": []
+    },
+    "rgb": [
+      0.373,
+      0.118,
+      0.137
+    ],
+    "for": "women"
   },
   "premium-set": {
     "name": "Premium festive set",
@@ -517,7 +627,26 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "cut": {
+      "hem": 0.16,
+      "sleeve_m": 0.54,
+      "neck": "collar",
+      "flare_cm": 10,
+      "openings": [
+        {
+          "at": "sides",
+          "from": "hip",
+          "width_cm": 16
+        }
+      ]
+    },
+    "rgb": [
+      0.643,
+      0.512,
+      0.357
+    ],
+    "for": "women"
   },
   "budget-set": {
     "name": "Budget festive set (unavailable)",
@@ -564,7 +693,26 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item"
+    "spec_source": "Indubindu kurta set size chart, https://www.indubindu.com/pages/kurta-set-size-chart (accessed 2026-11-02; states 'All sizes are actual garment measurements in centimeter'). Brand chart applied to a Stylewise demo catalogue item",
+    "cut": {
+      "hem": 0.16,
+      "sleeve_m": 0.54,
+      "neck": "collar",
+      "flare_cm": 10,
+      "openings": [
+        {
+          "at": "sides",
+          "from": "hip",
+          "width_cm": 16
+        }
+      ]
+    },
+    "rgb": [
+      0.643,
+      0.512,
+      0.357
+    ],
+    "for": "women"
   },
   "cream-silk-blouse": {
     "name": "Cream silk blouse",
@@ -607,7 +755,18 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "cut": {
+      "hem": 0.45,
+      "sleeve_m": 0.54,
+      "neck": "collar"
+    },
+    "rgb": [
+      0.92,
+      0.89,
+      0.82
+    ],
+    "for": "women"
   },
   "blush-shell-top": {
     "name": "Blush satin shell top",
@@ -650,7 +809,18 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "cut": {
+      "hem": 0.46,
+      "sleeve_m": 0.0,
+      "neck": "crew"
+    },
+    "rgb": [
+      0.729,
+      0.498,
+      0.463
+    ],
+    "for": "women"
   },
   "silk-skirt": {
     "name": "Gold silk skirt",
@@ -693,7 +863,17 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "cut": {
+      "hem": 0.3,
+      "flare_cm": 22
+    },
+    "rgb": [
+      0.612,
+      0.427,
+      0.176
+    ],
+    "for": "women"
   },
   "charcoal-skirt": {
     "name": "Charcoal pencil skirt",
@@ -736,7 +916,24 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "cut": {
+      "hem": 0.28,
+      "flare_cm": 0,
+      "openings": [
+        {
+          "at": "back",
+          "from": 16,
+          "width_cm": 5
+        }
+      ]
+    },
+    "rgb": [
+      0.271,
+      0.263,
+      0.255
+    ],
+    "for": "women"
   },
   "emerald-wrap-dress": {
     "name": "Emerald wrap dress",
@@ -784,7 +981,21 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "cut": {
+      "hem": 0.15,
+      "sleeve_m": 0.54,
+      "flare_cm": 5,
+      "neck": "v",
+      "belt": true,
+      "openings": []
+    },
+    "rgb": [
+      0.071,
+      0.349,
+      0.255
+    ],
+    "for": "women"
   },
   "black-satin-dress": {
     "name": "Black satin midi dress",
@@ -832,7 +1043,8 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements"
+    "spec_source": "ESTIMATED (synthetic): Uniqlo SG women's body chart midpoints + project design-ease guess for this garment type; not product measurements",
+    "for": "women"
   },
   "uniqlo-crew-tee": {
     "name": "Crew neck T-shirt (Uniqlo SG)",
@@ -882,7 +1094,8 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "UNIQLO SG Unisex Crew Neck T-Shirt product page, Product Size table (flat-laid body width x2), https://www.uniqlo.com/sg/en/products/E465193-000/00 (accessed 2026-11-02). Sleeve column ignored (76-83 cm is inconsistent with a short sleeve)"
+    "spec_source": "UNIQLO SG Unisex Crew Neck T-Shirt product page, Product Size table (flat-laid body width x2), https://www.uniqlo.com/sg/en/products/E465193-000/00 (accessed 2026-11-02). Sleeve column ignored (76-83 cm is inconsistent with a short sleeve)",
+    "for": "unisex"
   },
   "uniqlo-dress-E487286": {
     "name": "Long dress E487286 (Uniqlo SG)",
@@ -932,7 +1145,236 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "UNIQLO SG product E487286, Product Size table (body width x2 = bust; hip width taken as circumference), https://www.uniqlo.com/sg/en/products/E487286-000/00 (accessed 2026-11-02). Fabric: cotton with stretch (team-confirmed), so the bust can give a little"
+    "spec_source": "UNIQLO SG product E487286, Product Size table (body width x2 = bust; hip width taken as circumference), https://www.uniqlo.com/sg/en/products/E487286-000/00 (accessed 2026-11-02). Fabric: cotton with stretch (team-confirmed), so the bust can give a little",
+    "for": "women"
+  },
+  "manyavar-mens-kurta": {
+    "name": "Men's textured green kurta (Manyavar)",
+    "category": "top",
+    "fabric": "viscose",
+    "sizes": {
+      "S": {
+        "spec_cm": {
+          "chest": 102,
+          "waist": 97
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 107,
+          "waist": 102
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 112,
+          "waist": 107
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 117,
+          "waist": 112
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "chest": 122,
+          "waist": 117
+        },
+        "stretch_cm": {}
+      },
+      "3XL": {
+        "spec_cm": {
+          "chest": 127,
+          "waist": 122
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Manyavar UC103339 'Textured Green Kurta', SHORT KURTA garment measurement table (cm), https://www.manyavar.com/en-au/kurta/textured-green-kurta/UC103339.html (accessed 2026-11-03); blended viscose, mandarin collar",
+    "cut": {
+      "hem": 0.4,
+      "sleeve_m": 0.54,
+      "layer": 1,
+      "flare_cm": 3,
+      "neck": "collar",
+      "openings": [
+        {
+          "at": "sides",
+          "from": "hip",
+          "width_cm": 10
+        }
+      ]
+    },
+    "rgb": [
+      0.275,
+      0.353,
+      0.141
+    ],
+    "for": "men"
+  },
+  "parthvi-anarkali-set": {
+    "name": "Grey printed Anarkali kurta set (PARTHVI)",
+    "category": "outfit",
+    "fabric": "rayon",
+    "sizes": {
+      "S": {
+        "spec_cm": {
+          "chest": 91.4
+        },
+        "stretch_cm": {}
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 96.5
+        },
+        "stretch_cm": {}
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 101.6
+        },
+        "stretch_cm": {}
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 106.7
+        },
+        "stretch_cm": {}
+      },
+      "2XL": {
+        "spec_cm": {
+          "chest": 111.8
+        },
+        "stretch_cm": {}
+      }
+    },
+    "spec_source": "Amazon SG listing B0DHY1L5PX, PARTHVI Anarkali kurta & pant with dupatta, seller size chart 'Kurta-S=36\", M=38\", L=40\", XL=42\", XXL=44\"' (kurta bust, inches; whether body or garment is not stated), https://www.amazon.sg/dp/B0DHY1L5PX (accessed 2026-11-03); rayon, calf length, 3/4 sleeves, round neck",
+    "cut": {
+      "hem": 0.1,
+      "sleeve_m": 0.4,
+      "layer": 1,
+      "flare_cm": 36,
+      "neck": "round",
+      "openings": [],
+      "fall": "chest",
+      "legs_to": 0.05
+    },
+    "rgb": [
+      0.549,
+      0.569,
+      0.58
+    ],
+    "for": "women"
+  },
+  "itos365-mens-kurta-set": {
+    "name": "Men's green kurta pyjama set (ITOS365)",
+    "category": "outfit",
+    "fabric": "cotton blend",
+    "sizes": {},
+    "spec_source": "Amazon SG listing B09J6HBQ94, ITOS365 men's cotton-blend kurta pyjama set (accessed 2026-11-03). The listing gives no size chart in cm, so no sizes are claimed",
+    "cut": {
+      "hem": 0.36,
+      "sleeve_m": 0.58,
+      "layer": 1,
+      "flare_cm": 3,
+      "neck": "collar",
+      "openings": [
+        {
+          "at": "sides",
+          "from": "hip",
+          "width_cm": 10
+        }
+      ],
+      "legs_to": 0.05
+    },
+    "rgb": [
+      0.788,
+      0.89,
+      0.639
+    ],
+    "for": "men"
+  },
+  "zesica-black-midi-dress": {
+    "name": "Black bodycon midi dress (ZESICA)",
+    "category": "dress",
+    "fabric": "polyester elastane",
+    "sizes": {
+      "S": {
+        "spec_cm": {
+          "chest": 84.3,
+          "waist": 65.5,
+          "hip": 92.7
+        },
+        "stretch_cm": {
+          "chest": 3.8,
+          "waist": 3.6,
+          "hip": 3.6
+        }
+      },
+      "M": {
+        "spec_cm": {
+          "chest": 91.9,
+          "waist": 72.9,
+          "hip": 100.3
+        },
+        "stretch_cm": {
+          "chest": 3.9,
+          "waist": 3.8,
+          "hip": 3.6
+        }
+      },
+      "L": {
+        "spec_cm": {
+          "chest": 99.6,
+          "waist": 80.5,
+          "hip": 108.0
+        },
+        "stretch_cm": {
+          "chest": 3.8,
+          "waist": 3.8,
+          "hip": 3.5
+        }
+      },
+      "XL": {
+        "spec_cm": {
+          "chest": 107.2,
+          "waist": 88.1,
+          "hip": 115.6
+        },
+        "stretch_cm": {
+          "chest": 3.8,
+          "waist": 3.8,
+          "hip": 3.5
+        }
+      }
+    },
+    "spec_source": "Amazon SG listing B0DR7MTRZP, ZESICA bodycon midi dress, brand size chart SG Regular (bust/waist/hip ranges, length 112-118 cm, cm), https://www.amazon.sg/dp/B0DR7MTRZP (accessed 2026-11-03); 91% polyester 9% elastane, medium stretch, mock neck, cap sleeves, front slit",
+    "cut": {
+      "hem": 0.13,
+      "sleeve_m": 0.08,
+      "layer": 1,
+      "flare_cm": 0,
+      "neck": "crew",
+      "openings": [
+        {
+          "at": "front",
+          "from": 18,
+          "width_cm": 4
+        }
+      ]
+    },
+    "rgb": [
+      0.122,
+      0.114,
+      0.118
+    ],
+    "for": "women"
   },
   "reference-dress": {
     "name": "Short-sleeve casual dress (reference)",
@@ -982,6 +1424,7 @@
         "stretch_cm": {}
       }
     },
-    "spec_source": "UNVERIFIED reference table 'based on Uniqlo height-to-size mapping patterns' (UNIQLO SG Clothing Fit Guide), not a specific product's measurements"
+    "spec_source": "UNVERIFIED reference table 'based on Uniqlo height-to-size mapping patterns' (UNIQLO SG Clothing Fit Guide), not a specific product's measurements",
+    "for": "women"
   }
 }

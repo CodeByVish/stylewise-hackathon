@@ -47,10 +47,10 @@ def preset_req(shape, usual_size, chest, waist, height=165):
 
 
 def test_preset_fills_estimates_with_range():
-    r = evaluate(preset_req("rectangle", "M", 103.9, 86))  # ANSUR II est chest 95.9, waist 81.9
+    r = evaluate(preset_req("rectangle", "M", 100.5, 86))  # standard chart est chest 92.5, waist 78.5
     assert r.regions["chest"].ease_cm == 8
-    assert r.regions["chest"].uncertainty_cm == 2.7
-    assert r.regions["chest"].verdict == "ok"  # 5.3..10.7 stays inside regular 2..12
+    assert r.regions["chest"].uncertainty_cm == 2.5
+    assert r.regions["chest"].verdict == "ok"  # 5.5..10.5 stays inside regular 2..12
     assert r.provenance.body_preset_id == "female_rectangle_M_165"
 
 
@@ -66,7 +66,7 @@ def test_measured_body_has_no_preset_mesh():
 
 
 def test_preset_near_band_edge_is_borderline():
-    r = evaluate(preset_req("rectangle", "M", 98.9, 86))  # chest ease +3 ±2.7 crosses 2
+    r = evaluate(preset_req("rectangle", "M", 95.5, 86))  # chest ease +3 ±2.5 crosses 2
     assert r.regions["chest"].verdict == "borderline"
 
 

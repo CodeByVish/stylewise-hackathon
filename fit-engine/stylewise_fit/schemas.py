@@ -17,7 +17,7 @@ class BodyPreset(BaseModel):
     """For users who prefer not to share measurements: silhouette + usual size."""
     shape: Shape
     usual_size: Size
-    # selects the ANSUR II size chart and shape prototypes; default keeps v0.2 requests valid
+    # selects the size chart and shape prototypes; default keeps v0.2 requests valid
     sex: Sex = "female"
 
 

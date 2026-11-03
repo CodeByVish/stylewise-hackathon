@@ -1,0 +1,13 @@
+Stylewise
+Copyright 2026 Riddhima Jain and Vishakha Maheshwari
+
+This product includes software developed by Riddhima Jain and Vishakha Maheshwari, originally for the Meta AI Developer Hackathon, November 2026.
+
+Licensed under the Apache License, Version 2.0 (see LICENSE). Redistributions and derivative works
+must keep this NOTICE file and credit the original authors, as required by section 4(d) of the license.
+
+Third-party models and data used, under their own terms:
+- Meta Momentum Human Rig (MHR) body model
+- Meta Model API: Muse (chat), muse-image-1.0 (images), SAM (segmentation)
+- ANSUR II anthropometric survey (U.S. Army, public domain)
+- Brand size charts cited per garment in fit-engine/stylewise_fit/data/catalogue_garments.json

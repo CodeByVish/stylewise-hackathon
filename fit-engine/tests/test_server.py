@@ -58,3 +58,22 @@ def test_uniqlo_tee_chest_is_twice_body_width_and_reference_dress_warns():
     assert tee["report"]["regions"]["chest"]["garment_cm"] == 99  # 2 x 49.5
     assert not tee["report"]["warnings"] and not kurta["report"]["warnings"]
     assert any("no verified source" in w for w in dress["report"]["warnings"])
+
+
+def test_preview_photo_rejects_measured_bodies():
+    r = client.post("/preview/photo", json={"body": {"height_cm": 165, "chest_cm": 90}, "garment_id": "green-kurta", "size": "M"})
+    assert r.status_code == 422
+
+
+def test_garments_without_a_photo_are_described_in_words():
+    from stylewise_fit.preview import described
+
+    text = described("gold-trousers")
+    assert "gold trousers" in text and "rgb(" not in text or "colour" in text
+
+
+def test_catalogue_reports_photo_availability():
+    items = {i["garment_id"]: i for i in client.get("/catalogue").json()}
+    assert items["emerald-wrap-dress"]["photo"]
+    assert not {"green-kurta", "ivory-set", "gold-trousers", "navy-bottom",
+                "black-satin-dress", "uniqlo-crew-tee", "uniqlo-dress-E487286"} & items.keys()

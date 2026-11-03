@@ -1,6 +1,6 @@
 import type { FitContext } from './nisha';
 export type BodyInput = NonNullable<FitContext['body']>;
-export type CatalogueItem = {garment_id:string;name:string;category:string;fabric:string;sizes:string[];fittable:boolean};
+export type CatalogueItem = {garment_id:string;name:string;category:string;fabric:string;sizes:string[];fittable:boolean; for?: 'women' | 'men' | 'unisex'; photo?: boolean };
 export type EngineReport = {
   contract_version:string;body_mesh_ref:string|null;garment_mesh_ref:string|null;
   regions:Record<string,{body_cm:number|null;garment_cm:number|null;ease_cm:number|null;uncertainty_cm:number;stretch_cm:number;verdict:'tight'|'ok'|'loose'|'borderline'|'unknown'}>;

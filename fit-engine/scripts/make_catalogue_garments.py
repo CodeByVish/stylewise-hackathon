@@ -73,6 +73,50 @@ UNIQLO_ITEMS = {
                   "taken as circumference), https://www.uniqlo.com/sg/en/products/E487286-000/00 "
                   "(accessed 2026-11-02). Fabric: cotton with stretch (team-confirmed), so the bust can give a little",
     },
+    "manyavar-mens-kurta": {
+        "name": "Men's textured green kurta (Manyavar)", "category": "top", "fabric": "viscose",
+        "chest": {"S": 102, "M": 107, "L": 112, "XL": 117, "2XL": 122, "3XL": 127},
+        "waist": {"S": 97, "M": 102, "L": 107, "XL": 112, "2XL": 117, "3XL": 122},
+        "for": "men",
+        "cut": {"hem": 0.40, "sleeve_m": 0.54, "layer": 1, "flare_cm": 3, "neck": "collar",
+                "openings": [{"at": "sides", "from": "hip", "width_cm": 10}]},
+        "source": "Manyavar UC103339 'Textured Green Kurta', SHORT KURTA garment measurement table (cm), "
+                  "https://www.manyavar.com/en-au/kurta/textured-green-kurta/UC103339.html (accessed 2026-11-03); "
+                  "blended viscose, mandarin collar",
+    },
+    "parthvi-anarkali-set": {
+        "name": "Grey printed Anarkali kurta set (PARTHVI)", "category": "outfit", "fabric": "rayon",
+        # seller chart in inches: Kurta S=36, M=38, L=40, XL=42, XXL=44 (3XL also printed as 44: left out)
+        "chest": {"S": 91.4, "M": 96.5, "L": 101.6, "XL": 106.7, "2XL": 111.8},
+        "for": "women",
+        "cut": {"hem": 0.10, "sleeve_m": 0.40, "layer": 1, "flare_cm": 36, "neck": "round", "openings": [],
+                "fall": "chest", "legs_to": 0.05},
+        "source": "Amazon SG listing B0DHY1L5PX, PARTHVI Anarkali kurta & pant with dupatta, seller size chart "
+                  "'Kurta-S=36\", M=38\", L=40\", XL=42\", XXL=44\"' (kurta bust, inches; whether body or garment is not "
+                  "stated), https://www.amazon.sg/dp/B0DHY1L5PX (accessed 2026-11-03); rayon, calf length, 3/4 sleeves, round neck",
+    },
+    "itos365-mens-kurta-set": {
+        "name": "Men's green kurta pyjama set (ITOS365)", "category": "outfit", "fabric": "cotton blend",
+        "chest": {}, "for": "men",
+        "cut": {"hem": 0.36, "sleeve_m": 0.58, "layer": 1, "flare_cm": 3, "neck": "collar",
+                "openings": [{"at": "sides", "from": "hip", "width_cm": 10}], "legs_to": 0.05},
+        "source": "Amazon SG listing B09J6HBQ94, ITOS365 men's cotton-blend kurta pyjama set (accessed 2026-11-03). "
+                  "The listing gives no size chart in cm, so no sizes are claimed",
+    },
+    "zesica-black-midi-dress": {
+        "name": "Black bodycon midi dress (ZESICA)", "category": "dress", "fabric": "polyester elastane",
+        # the brand prints a fit range per size: garment = low end, stretch = range (91/9 poly-elastane)
+        "ranges": {"S": {"chest": (84.3, 88.1), "waist": (65.5, 69.1), "hip": (92.7, 96.3)},
+                   "M": {"chest": (91.9, 95.8), "waist": (72.9, 76.7), "hip": (100.3, 103.9)},
+                   "L": {"chest": (99.6, 103.4), "waist": (80.5, 84.3), "hip": (108.0, 111.5)},
+                   "XL": {"chest": (107.2, 111.0), "waist": (88.1, 91.9), "hip": (115.6, 119.1)}},
+        "for": "women",
+        "cut": {"hem": 0.13, "sleeve_m": 0.08, "layer": 1, "flare_cm": 0, "neck": "crew",
+                "openings": [{"at": "front", "from": 18, "width_cm": 4}]},
+        "source": "Amazon SG listing B0DR7MTRZP, ZESICA bodycon midi dress, brand size chart SG Regular "
+                  "(bust/waist/hip ranges, length 112-118 cm, cm), https://www.amazon.sg/dp/B0DR7MTRZP (accessed "
+                  "2026-11-03); 91% polyester 9% elastane, medium stretch, mock neck, cap sleeves, front slit",
+    },
     "reference-dress": {
         "name": "Short-sleeve casual dress (reference)", "category": "dress", "fabric": None,
         "body_width": {"XS": 44.0, "S": 46.0, "M": 48.0, "L": 51.0, "XL": 54.0, "2XL": 57.0, "3XL": 60.0},
@@ -112,6 +156,53 @@ def spec(kind: str, row: dict) -> tuple[dict, dict]:
     return {"chest": row["bust"], "waist": row["kurta_waist"], "hip": hip}, {}
 
 
+# Per-item cut read from each product photo (fixtures/garment_photos): overrides the type default in
+# scripts/render_fit.py CUTS. hem: fraction of stature; sleeve_m from the top of the shoulder.
+ITEM_CUTS = {
+    "emerald-wrap-dress": {"hem": 0.15, "sleeve_m": 0.54, "flare_cm": 5, "neck": "v", "belt": True, "openings": []},
+    "green-kurta": {"hem": 0.30, "sleeve_m": 0.36, "neck": "collar",
+                    "openings": [{"at": "sides", "from": "hip", "width_cm": 12}]},
+    "evening-kurta": {"hem": 0.30, "sleeve_m": 0.54, "neck": "collar",
+                      "openings": [{"at": "sides", "from": "hip", "width_cm": 12}]},
+    "ivory-kurta": {"hem": 0.30, "sleeve_m": 0.36, "neck": "collar",
+                    "openings": [{"at": "sides", "from": "hip", "width_cm": 12}]},
+    "green-set": {"hem": 0.16, "sleeve_m": 0.54, "neck": "round", "flare_cm": 10,
+                  "openings": [{"at": "sides", "from": "hip", "width_cm": 16}]},
+    "premium-set": {"hem": 0.16, "sleeve_m": 0.54, "neck": "collar", "flare_cm": 10,
+                    "openings": [{"at": "sides", "from": "hip", "width_cm": 16}]},
+    "budget-set": {"hem": 0.16, "sleeve_m": 0.54, "neck": "collar", "flare_cm": 10,
+                   "openings": [{"at": "sides", "from": "hip", "width_cm": 16}]},
+    "maroon-set": {"hem": 0.04, "sleeve_m": 0.54, "neck": "round", "flare_cm": 40, "openings": []},
+    "navy-set": {"hem": 0.10, "sleeve_m": 0.54, "neck": "collar", "flare_cm": 14, "openings": []},
+    "ivory-set": {"hem": 0.42, "sleeve_m": 0.54, "neck": "v", "belt": True, "openings": []},
+    "silk-skirt": {"hem": 0.30, "flare_cm": 22},
+    "charcoal-skirt": {"hem": 0.28, "flare_cm": 0, "openings": [{"at": "back", "from": 16, "width_cm": 5}]},
+    "cream-silk-blouse": {"hem": 0.45, "sleeve_m": 0.54, "neck": "collar"},
+    "blush-shell-top": {"hem": 0.46, "sleeve_m": 0.0, "neck": "crew"},
+}
+
+
+# light garments on a light background: the sampler mixes in background, so set these by eye
+PHOTO_COLOUR_FIX = {"ivory-set": [0.93, 0.90, 0.82], "cream-silk-blouse": [0.92, 0.89, 0.82],
+                    "cream-bottom": [0.88, 0.83, 0.72]}
+
+
+def photo_colour(gid: str) -> list[float] | None:
+    """Median colour of the garment pixels in its product photo (background = the corners' colour)."""
+    import numpy as np
+    from PIL import Image
+
+    path = Path(__file__).resolve().parents[2] / f"fixtures/garment_photos/{gid}.jpg"
+    if not path.exists():
+        return None
+    img = np.asarray(Image.open(path).convert("RGB").resize((160, 160)), dtype=float) / 255
+    corners = np.concatenate([img[:12, :12].reshape(-1, 3), img[:12, -12:].reshape(-1, 3)])
+    bg = np.median(corners, 0)
+    centre = img[25:135, 40:120].reshape(-1, 3)
+    fg = centre[np.linalg.norm(centre - bg, axis=1) > 0.12]
+    return [round(float(c), 3) for c in np.median(fg, 0)] if len(fg) else None
+
+
 def main() -> None:
     out = {}
     for gid, (name, cat, fab, kind) in ITEMS.items():
@@ -128,10 +219,25 @@ def main() -> None:
                                  "stretch_cm": {}} for z in UQ_BODY["bust"]}
         out[gid]["spec_source"] = ESTIMATED_SOURCE
     for gid, u in UNIQLO_ITEMS.items():
-        out[gid] = {"name": u["name"], "category": u["category"], "fabric": u["fabric"],
-                    "sizes": {z: {"spec_cm": {"chest": 2 * w} | ({"hip": u["hip"][z]} if "hip" in u else {}),
-                                  "stretch_cm": {}} for z, w in u["body_width"].items()},
-                    "spec_source": u["source"]}
+        if "ranges" in u:  # brand fit ranges: low end is the garment, the range is how far it stretches
+            sizes = {z: {"spec_cm": {r: lo for r, (lo, hi) in row.items()},
+                         "stretch_cm": {r: round(hi - lo, 1) for r, (lo, hi) in row.items()}} for z, row in u["ranges"].items()}
+        elif "chest" in u:  # full-girth garment table (e.g. Manyavar)
+            sizes = {z: {"spec_cm": {"chest": c} | ({"waist": u["waist"][z]} if "waist" in u else {}),
+                         "stretch_cm": {}} for z, c in u["chest"].items()}
+        else:  # Uniqlo flat-laid body width x2
+            sizes = {z: {"spec_cm": {"chest": 2 * w} | ({"hip": u["hip"][z]} if "hip" in u else {}),
+                         "stretch_cm": {}} for z, w in u["body_width"].items()}
+        out[gid] = {"name": u["name"], "category": u["category"], "fabric": u["fabric"], "sizes": sizes,
+                    "spec_source": u["source"]} | ({"cut": u["cut"]} if "cut" in u else {})
+    for gid, item in out.items():
+        if gid in ITEM_CUTS:
+            item["cut"] = ITEM_CUTS[gid]
+        rgb = PHOTO_COLOUR_FIX.get(gid) or photo_colour(gid)
+        if rgb:
+            item["rgb"] = rgb
+    for gid, item in out.items():  # the Stylewise app's catalogue is women's wear; the Uniqlo tee is unisex
+        item["for"] = UNIQLO_ITEMS.get(gid, {}).get("for") or ("unisex" if gid == "uniqlo-crew-tee" else "women")
     OUT.write_text(json.dumps(out, indent=2) + "\n")
     print(f"{sum(1 for g in out.values() if g['sizes'])} of {len(out)} items have garment cm (see spec_source for how each was obtained) -> {OUT}")
 
